@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Byul Notes</title>
+    <link>http://example.org/</link>
+    <description>Recent content on Byul Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Apr 2023 02:13:09 -0700</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EJS</title>
+      <link>http://example.org/aws/1_ec2.md/2-ejs-node/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/aws/1_ec2.md/2-ejs-node/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HTML/CSS</title>
+      <link>http://example.org/frontend/html-css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/frontend/html-css/</guid>
+      <description>Haha </description>
+    </item>
+    
+    <item>
+      <title>Lambda Function</title>
+      <link>http://example.org/aws/4_serverless.md/1-lambda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/aws/4_serverless.md/1-lambda/</guid>
+      <description>Lambda Serverless, event-driven compute service
+Serverless Cloud-native development model. Applications without having to manage severs. (Pay what you use) Lambda Function Setup AWS &amp;gt; Lambda &amp;gt; Function &amp;gt; Create function Function name : get/post/put etc Runtime : Lambda function language (Node.js 18.x) Architecture : x86_64 (arm64 is for mobile) Lambda Function mjs : Moduled Javascript (ES6, same as javascript file with type:module in package.json) Hit Deploy &amp;gt; Test Every lambda is triggered by something &amp;hellip; here, test btn is the trigger API Gateway is one of trigger (it is kind of nginx , accept http request) Check console.</description>
+    </item>
+    
+    <item>
+      <title>React</title>
+      <link>http://example.org/aws/1_ec2.md/1-react-node/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/aws/1_ec2.md/1-react-node/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL, Domain</title>
+      <link>http://example.org/aws/1_ec2.md/3-sql-domain/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/aws/1_ec2.md/3-sql-domain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>API Gateway</title>
+      <link>http://example.org/aws/4_serverless.md/2-api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/aws/4_serverless.md/2-api/</guid>
+      <description>API Gateway Setup AWS &amp;gt; API Gateway &amp;gt; HTTP API &amp;gt; Build (or Create API) &amp;gt; API name &amp;gt; Review and Create API Gateway &amp;gt; Develop &amp;gt; Routes : Create endpoints (get, post, etc) Dynamic ID ex) get, /book/{id} Click Route &amp;gt; Route details &amp;gt; Attach integration Integration target &amp;gt; Lambda function &amp;gt; Select lambda function you created it for URL : API &amp;gt; invoke URL CORS API Gateway &amp;gt; Develop &amp;gt; CORS access-control-allow-origin : * (only for the get request) access-control-allow-headers : * =&amp;gt; not safe way but just use it for now credentials :no </description>
+    </item>
+    
+    <item>
+      <title>Sass</title>
+      <link>http://example.org/frontend/sass/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/frontend/sass/</guid>
+      <description>Haha </description>
+    </item>
+    
+    <item>
+      <title>Bootstrap</title>
+      <link>http://example.org/frontend/bootstrap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/frontend/bootstrap/</guid>
+      <description>Haha </description>
+    </item>
+    
+    <item>
+      <title>Cognito</title>
+      <link>http://example.org/aws/4_serverless.md/3-cognito/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/aws/4_serverless.md/3-cognito/</guid>
+      <description>Cognito import { CognitoUserPool, CognitoUser, AuthenticationDetails, CognitoUserAttribute } from &amp;#34;amazon-cognito-identity-js&amp;#34;; function promisify(func) { return function () { return new Promise((resolve, reject) =&amp;gt; { func.apply(this, [ ...Array.from(arguments), (err, result) =&amp;gt; { if (err) { reject(err); return; } resolve(result); }, ]); }); }; } // Add VITE_USER_POOL_ID, and VITE_USER_POOL_CLIENT_ID to a .env.local file in your project root const poolData = { UserPoolId: process.env.REACT_APP_USER_POOL_ID, ClientId: process.env.REACT_APP_USER_POOL_CLIENT_ID, }; const userPool = new CognitoUserPool(poolData); async function getUserSession() { const user = getCurrentUser(); if (!</description>
+    </item>
+    
+    <item>
+      <title>Tailwind</title>
+      <link>http://example.org/frontend/tailwind/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/frontend/tailwind/</guid>
+      <description>Haha </description>
+    </item>
+    
+    <item>
+      <title>Angular</title>
+      <link>http://example.org/angular/hahahoho/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/angular/hahahoho/</guid>
+      <description>Haha </description>
+    </item>
+    
+  </channel>
+</rss>

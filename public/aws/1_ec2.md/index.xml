@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EC2 on Byul Notes</title>
+    <link>http://example.org/aws/1_ec2.md/</link>
+    <description>Recent content in EC2 on Byul Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/aws/1_ec2.md/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EJS</title>
+      <link>http://example.org/aws/1_ec2.md/2-ejs-node/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/aws/1_ec2.md/2-ejs-node/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>React</title>
+      <link>http://example.org/aws/1_ec2.md/1-react-node/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/aws/1_ec2.md/1-react-node/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL, Domain</title>
+      <link>http://example.org/aws/1_ec2.md/3-sql-domain/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/aws/1_ec2.md/3-sql-domain/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
