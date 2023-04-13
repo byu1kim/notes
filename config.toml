@@ -1,0 +1,24 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Byul Notes'
+
+theme = "hugo-theme-learn"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[params]
+  custom_css = ["css/style.css"]
+
+  themeVariant = "blue"
+
+  author = "Byul Kim"
+
+  description = "Coding Notes for Byul"
+
+  showVisitedLinks = false
+  
+  disableSearch = true
+
+  # Set this to true to disable copy-to-clipboard button for inline code.
+  disableInlineCopyToClipBoard = true
