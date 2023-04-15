@@ -17,8 +17,6 @@ home = [ "HTML", "RSS", "JSON"]
   description = "Coding Notes for Byul"
 
   showVisitedLinks = false
-  
-  disableSearch = true
 
   # Set this to true to disable copy-to-clipboard button for inline code.
   disableInlineCopyToClipBoard = true

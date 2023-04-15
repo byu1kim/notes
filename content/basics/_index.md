@@ -6,6 +6,10 @@ chapter = true
 pre = "<i class='fas fa-book-open'></i> &nbsp"
 +++
 
+### Link
+
+https://learn.netlify.app/en/shortcodes/
+
 # Heading
 
 ## hah
@@ -133,3 +137,40 @@ A tip disclaimer
 {{% notice warning %}}
 A warning disclaimer
 {{% /notice %}}
+
+{{< vbox >}}
+hho blue, pink, indigo, cyan, orange...
+{{< /vbox >}}
+
+{{< hbox >}}
+hho blue, pink, indigo, cyan, orange...
+{{< /hbox >}}
+
+dp?
+
+### Wargning
+
+# WTF?
+
+## hey!
+
+https://learn.netlify.app/en/shortcodes/
+
+{{< vbox >}}
+hho blue, pink, indigo, cyan, orange...
+{{< /vbox >}}
+
+{{< hbox pink >}}
+hho blue, pink, indigo, cyan, orange...ggg
+{{< /hbox >}}
+
+`heheeh wow`
+
+```
+code
+<tag>wow</tag>
+```
+
+dp?
+
+### Wargning

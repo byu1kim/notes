@@ -1,10 +1,144 @@
 +++
 title = "Cognito"
-weight = 3
-pre = "- "
+weight = 4
+pre = "<i class='fas fa-pen'></i> &nbsp"
 +++
 
-### Cognito
+## Cognito in AWS
+
+Authentication with Server-less. Auth zero is the most populate one that takes care of UI
+
+{{< hbox green >}}
+AWS > Cognito > User pools > Create User Pool
+{{< /hbox >}}
+
+##### Step 1
+
+- Cognito user pool sign-in options : Username, email (Phone number gets complicated)
+- User name requirement : Allow users to sign in with a preferred user name > Next
+
+##### Step 2
+
+- Password policy mode : Cognito defaults or Custom > select the options
+- Multi-factor Authentication > No MFA
+- User account Recovery : Enable self-service account recovery, Delivery method : Email only > Next
+
+##### Step 3
+
+- Self registration : enable
+- Attribute verification : Allow Cognito to send a message, send email, verify email > Next
+- Active attribute values when an update is pending (like identity stuff.. something saved in token) > Next
+
+##### Step4
+
+- Email Provider : Send email with Cognito
+- From email address > Next
+
+##### Step5
+
+- Uncheck Use the cogito hosted UI
+- App type : Public client
+- Don't generate a client secret > Review and Create
+
+##### Save the User pool ID
+
+##### Click the pool > App Integration > Copy the Client Id (at bottom)
+
+---
+
+## React APP
+
+### Setup
+
+```
+npm i amazon-cognito-identity-js
+```
+
+download cognito.js file, add your userPoolId and ClientId in this file
+in Vite, update [ vite.config.js ]
+
+```
+export default defineConfig({
+  plugins: [react()],
+  define: {
+    global: {}, }, })
+```
+
+### Signup
+
+```
+import {signUp} from './cognito'
+... handleSubmit = async (e) => { ...
+await signup({username, email, password}) }
+```
+
+### Confirm Email
+
+```
+try {
+   await confirmUser({username, code})
+} catch (e) {
+   setError(e.message) }
+```
+
+### Login
+
+```
+await signIn({username, code})
+```
+
+### Logout
+
+```
+signOut() // clear localStorage
+```
+
+### Get user profile
+
+```
+getCurrentUser()
+```
+
+### Reset Password
+
+Forgot password
+
+```
+await forgotPassword({username})
+```
+
+Reset password
+
+```
+await resetPassword({username, code, newPassword})
+```
+
+### Authorize Requests
+
+```
+const token = await userToken()
+const imagesResult = await axios.get("whatever your url is", {
+  headers: {
+    Authorization: token
+  }
+ })
+
+```
+
+- api with authorization > lambda > authorizaiton > create authorizer.... so only login user can acces this endpoint
+
+https://aws.amazon.com/blogs/security/how-to-secure-api-gateway-http-endpoints-with-jwt-authorizer/
+
+In the API gateway, add a JWT Authorizer and under Authorizer settings enter the following details:
+
+- Name: JWTAuth
+- Identity source: $request.header.Authorization
+- Issuer URL: https://cognito-idp.us-east-1.amazonaws.com/<your_userpool_id>
+- Audience: <app_client_id_of_userpool>
+
+- how to add env in React
+
+### Cognito.js
 
 ```js
 import { CognitoUserPool, CognitoUser, AuthenticationDetails, CognitoUserAttribute } from "amazon-cognito-identity-js";
