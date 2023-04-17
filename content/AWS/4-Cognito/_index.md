@@ -72,6 +72,28 @@ import {signUp} from './cognito'
 await signup({username, email, password}) }
 ```
 
+```
+import { useNavigate } from "react-router-dom";
+...
+  const navigate = useNavigate();
+..
+ const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (password !== passwordConfirm) {
+      setError("Password doesn't match");
+    } else {
+      try {
+        await signUp({ username, email, password });
+        setError("Check your email");
+        navigate(`/confirm?username=${username}`);
+      } catch (e) {
+        setError(e.message);
+        console.log(e.message);
+      }
+    }
+  };
+```
+
 ### Confirm Email
 
 ```

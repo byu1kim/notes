@@ -65,7 +65,12 @@ AWS > API Gateway > HTTP API > Build (or Create API) > API name > Review and Cre
 
 - API Gateway > Routes > Route details > Attach authorization
 - Create and attach an authorizer > JWT (IAM is more advanced)
-- Issuer URL : https://cognito-idp.<region>.amazonaws.com/<userpoolid>
+- Issuer URL :
+
+```
+https://cognito-idp.<region>.amazonaws.com/<userpoolid>
+```
+
 - Audience : Client ID from Cognito
 - Check : Gateway > Develop > Authorization
 
@@ -75,22 +80,26 @@ if you have no authorization with this endpoint, you have 401 error
 
 In your lambda function, you can get the user id like this
 
-```
+````
+
 const handler = async (event) => {
-  // Get the currently logged in user
-  const userId = event.requestContext.authorizer.jwt.claims.sub
-  location.userId = userId;
+// Get the currently logged in user
+const userId = event.requestContext.authorizer.jwt.claims.sub
+location.userId = userId;
+
 ```
 
 When making a request to one of the authoried endpoints, you have to send the JWT in the header like this: (from react)
 
 ```
+
 const token = await userToken()
 const imagesResult = await axios.get("whatever your url is", {
-  headers: {
-    Authorization: token
-  }
- })
+headers: {
+Authorization: token
+}
+})
+
 ```
 
 # Cockroach DB
@@ -102,12 +111,15 @@ Serverless Database
 ### Connection String in Terminal
 
 ```
+
 cockroach sql --url "postgresql://byul@absurd-beast-2237.g95.cockroachlabs.cloud:26257/[DB_name]?sslmode=verify-full"
+
 ```
 
 ### Schema Example
 
 ```
+
 CREATE TABLE locations (
 id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
 user_uuid UUID,
@@ -122,4 +134,8 @@ timestamp TIMESTAMP,
 temperature FLOAT,
 description STRING
 );
+
 ```
+
+```
+````

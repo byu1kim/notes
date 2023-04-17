@@ -2,7 +2,12 @@
 title = "Frontend"
 weight = 10
 chapter = true
-pre = ""
+pre = "<i class='fas fa-book-open'></i> &nbsp"
 +++
 
-# REACT
+# **Frontend**
+
+- HTML, CSS
+- Sass
+- Bootstrap
+- Tailwind
