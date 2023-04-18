@@ -140,3 +140,17 @@ Interview : 3-5
 ### Inverview Lab
 
 ### Smart Questions o Ask
+
+I just completed the BCIT Software Systems Development, an intensive, 9-month hands on program
+I am proud to share that I developed .net mvc project ....
+
+## Interview Questions
+
+- Soft skills
+- Your super power
+- middleware in NodeJS
+- css vs Tailwind
+- Conditional statement in Vue.js
+- Relational DB vs NoSQL
+- HTML : src set, sizes
+- In flexbox, what is to place an item?
