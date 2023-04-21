@@ -1,9 +1,8 @@
 +++
 title = "Python"
-date = 2023-04-12T02:13:09-07:00
 weight = 5
 chapter = true
-pre = " "
+pre = "<i class='fas fa-book-open'></i> &nbsp"
 +++
 
 ### Chapter Xe

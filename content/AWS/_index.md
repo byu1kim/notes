@@ -19,3 +19,8 @@ BCIT SSD AWS 2023
 - SST
 
 http://ssd-aws.s3-website.ca-central-1.amazonaws.com/week_2_db/database/105_dd/
+
+# Production
+
+- create your dev route in your personal account
+- separate account : dev/stage/production
