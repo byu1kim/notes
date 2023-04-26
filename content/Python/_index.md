@@ -1,38 +1,20 @@
 +++
 title = "Python"
-weight = 5
+weight = 1
 chapter = true
 pre = "<i class='fas fa-book-open'></i> &nbsp"
 +++
 
-### Chapter Xe
+### OOP
 
-# Some Chapter title
+# **Python**
 
-Lorem Ipsum.
-
-#
-
-https://learn.netlify.app/en/basics/configuration/
-
-#
-
-Inside project folder,
-hugo new site Name_of_project
-cd themes
-git clone https://github.com/matcornic/hugo-theme-learn.git
-cd ..
-hugo serve
-
-# building the website
-
-hugo
-(before deploy, built it)
-
-# Header
-
-layouts/logo.html
-
-# color
-
-config.toml or static/css (own colour)
+- [Introduction : Install, Basic, Operators, Errors](/python/intro)
+- [Variable](/python/variable)
+- [Function](/python/function)
+- [Module](/python/module)
+- [String](/python/string)
+- [If, For, While](/python/flow)
+- [Data structure : List, Tuple, Set, Dictionary](/python/datastructure)
+- [Files](/python/file)
+- [Regular Expression](/python/regex)
