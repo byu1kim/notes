@@ -1,8 +1,12 @@
 +++
 title = "Javascript"
-weight = 5
+weight = 20
 chapter = true
 pre = " "
 +++
 
-# Javascript
+### Language
+
+# **Javascript**
+
+---

@@ -7,7 +7,10 @@ pre = "<i class='fas fa-book-open'></i> &nbsp"
 
 # **Frontend**
 
-- HTML, CSS
-- Sass
-- Bootstrap
-- Tailwind
+---
+
+- [Introduction : Install, Basic, Operators, Errors](/python/intro)
+- [HTML, CSS](/frontend/css)
+- [Sass](/frontend/sass)
+- [Bootstrap](/frontend/bootstrap)
+- [Tailwind](/frontend/tailwind)

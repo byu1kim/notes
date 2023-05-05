@@ -42,21 +42,15 @@ output = "a: %s b: %d c: %f c: %.2f" %(a, b, c, c)
 # a: 12.1 b: 22 c: 3.021000 c: 3.02
 ```
 
-%s - String (or any object with a string representation, like numbers, %5s : min 5chracters)
-
-%-5s string is justified to the lft rather than the right
-
-%d - Integers (%3d : min 3 digits, %03d : zeros to fill the spaces)
-
-%f - Floating point numbers
-
-%.nf - Floating point numbers with a fixed amount of digits to the right of the dot.
-
-%x/%X - Integers in hex representation (lowercase/uppercase)
-
-%e/%E - Floating points in Exponential format (lowercase/uppercase ex: 1.7e3)
-
-%% percentage sign (%)
+| Sign  | Meaning                                                                       |
+| ----- | ----------------------------------------------------------------------------- |
+| %s    | String (%5s : min 5chracters)                                                 |
+| %d    | Integers (%3d : min 3 digits, %03d : zeros to fill the spaces)                |
+| %f    | Floating point numbers                                                        |
+| %.nf  | Floating point numbers with a fixed amount of digits to the right of the dot. |
+| %x/%X | Integers in hex representation (lowercase/uppercase)                          |
+| %e/%E | Floating points in Exponential format (lowercase/uppercase ex: 1.7e3)         |
+| %%    | percentage sign (%)                                                           |
 
 ```python
 message = "{} and {}".format("value1", "value2")
@@ -88,7 +82,9 @@ len(message)
 # 6
 ```
 
-#### String Split
+#### split()
+
+`str.split('char')`
 
 ```python
 message = "test:aa"
@@ -98,16 +94,31 @@ print(message.split(":"))
 
 #### join()
 
+`str.join(array)`
+
 ```python
 message = ['a', 'b']
 print("+".join(message))
 # a+b
 ```
 
+#### replace()
+
+`str.replace(old, new, count)`
+
+replace returns new value, count times. it there's nothing to replace, it returns original string.
+
+```python
+# Single usage
+test = "banana"
+replaced_text = text.replace('ba', 'ro') # ronana
+
+# Multiple usage
+replaced = text.replace('a', 'b').replace('n', 'm')
+```
+
 #### More String methods
 
-- replace(old, new)
-- replace(old, new, count) : replace count times
 - find(x)
 - find(x, start) : find from start point
 - find(x, start, end) : fint range from start to end

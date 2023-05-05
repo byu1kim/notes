@@ -16,7 +16,7 @@ list_sample = ['a','b','c']
 ```
 
 {{% notice info %}}
-Mutate means change modify
+Mutate means change. You can modify something mutuable.
 {{% /notice %}}
 
 #### List Comprehensions
@@ -28,7 +28,67 @@ provinces = ['bc', 'ab']
 new_prov = [province for province in provinces if 'a' in province]
 ```
 
+#### Range
+
+`range(start, stop, step)`
+
+```python
+x = range(3, 6) # 3, 4, 5, 6
+```
+
+#### Loop
+
+Loop list with index
+
+```python
+for i in range(len(my_array)):
+  pass
+```
+
+Loop list with index and its item.
+
+```python
+for index, item in enumerate(my_array):
+    pass
+```
+
 ## Methods
+
+#### Mapping list
+
+`map(function, array)`
+
+Convert to list before using mapped list : `list(words)`
+
+```python
+def myfunc(a, b):
+  return a + b
+
+x = map(myfunc, ('apple', 'banana', 'cherry'), ('orange', 'lemon', 'pineapple'))
+```
+
+Convert string items to integers
+
+```python
+int_nums = map(int, ['1', '2', '3'])
+words = map(len, ['haha', 'hoho'])
+```
+
+Use lambda
+
+```python
+squared = map(lambda num: num**2, [1,2,3,4,5])
+```
+
+#### Get sum of array
+
+`sum(list or tuple or dict, start:optional)`
+
+start is starting number (10+list items)
+
+```python
+a = sum(map(int, ['1', '2', '3']))
+```
 
 #### remove(value)
 
@@ -40,7 +100,7 @@ p_list.remove()
 #### count()
 
 ```python
-p_list.cont('c')
+p_list.count('c')
 ```
 
 #### clear()
@@ -235,9 +295,3 @@ for val in p_dict.values():
 for key, val in p_dict.items():
   print(name, val) # name aa
 ```
-
----
-
-## Class
-
---

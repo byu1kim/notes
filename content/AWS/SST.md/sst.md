@@ -24,11 +24,10 @@ Setup
 $ npx create-sst@latest
 ```
 
-```
 cd into the app & npm install
-```
 
-Stack
+#### Stack
+
 Rename stacks/MyStack.ts to stacks/ApiStack.js
 
 ```

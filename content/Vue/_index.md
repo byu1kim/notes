@@ -1,8 +1,10 @@
 +++
 title = "Vue.js"
-weight = 12
+weight = 20
 chapter = true
 pre = ""
 +++
 
-# REACT
+### Framework
+
+# **VUE**

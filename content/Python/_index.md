@@ -9,12 +9,14 @@ pre = "<i class='fas fa-book-open'></i> &nbsp"
 
 # **Python**
 
+---
+
 - [Introduction : Install, Basic, Operators, Errors](/python/intro)
 - [Variable](/python/variable)
 - [Function](/python/function)
 - [Module](/python/module)
 - [String](/python/string)
 - [If, For, While](/python/flow)
-- [Data structure : List, Tuple, Set, Dictionary](/python/datastructure)
+- [Data structure : List, Tuple, Set, Dictionary](/python/list)
 - [Files](/python/file)
 - [Regular Expression](/python/regex)

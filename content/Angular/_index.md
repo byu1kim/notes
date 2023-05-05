@@ -1,8 +1,12 @@
 +++
 title = "Angular.js"
-weight = 11
+weight = 20
 chapter = true
 pre = ""
 +++
 
-# Angular
+### Framework
+
+# **Angular**
+
+---

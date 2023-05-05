@@ -9,7 +9,7 @@ pre = "<i class='fas fa-book-open'></i> &nbsp"
 
 # **REACT**
 
-REACT
+---
 
 - JSX, Event, State
 - Components, Props, UseEffect

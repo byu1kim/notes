@@ -1,9 +1,9 @@
 +++
-title = "Basics"
+title = "ETC"
 date = 2023-04-12T02:13:09-07:00
-weight = 1
+weight = 25
 chapter = true
-pre = "<i class='fas fa-book-open'></i> &nbsp"
+pre = "*"
 +++
 
 ### Link
@@ -12,17 +12,19 @@ https://learn.netlify.app/en/shortcodes/
 
 # Heading
 
-## hah
+## H1
 
-### hoho
+### H2
 
-#### hoho
+#### h3
 
 # Lines
 
-# What
+---
 
-hahahaha **bold** _italic_ ~~what happen~~
+# Text Style
+
+**bold** _italic_ ~~cross~~
 
 # quote
 
@@ -48,8 +50,6 @@ hahahaha **bold** _italic_ ~~what happen~~
 
 ```
 <html>
-// hoho
-
     line 1 of code
     line 2 of code
     line 3 of code
@@ -76,11 +76,16 @@ php, scss, swift, python,,,,,
 
 # Tables
 
-# link
+| header | header |
+| ------ | ------ |
+| aa     | bb     |
+| cc     | dd     |
+
+# Link
 
 [Assemble](http://assemble.io)
 
-# Imag
+# Image
 
 ![Minion](https://octodex.github.com/images/minion.png)
 
@@ -95,6 +100,7 @@ print("Hello World!")
 
 {{% /tab %}}
 {{% tab name="R" %}}
+This is R
 
 ```R
 > print("Hello World!")
@@ -120,57 +126,23 @@ echo "Hello World!"
 A notice disclaimer
 {{% /notice %}}
 
-# Info
-
 {{% notice info %}}
 An information disclaimer
 {{% /notice %}}
 
-# Tip
-
 {{% notice tip %}}
 A tip disclaimer
 {{% /notice %}}
-
-# Warning
 
 {{% notice warning %}}
 A warning disclaimer
 {{% /notice %}}
 
 {{< vbox >}}
-hho blue, pink, indigo, cyan, orange...
+blue, pink, cyan, green, orange, indigo
 {{< /vbox >}}
 
 {{< hbox >}}
-hho blue, pink, indigo, cyan, orange...
+blue, pink, cyan, green, orange, indigo
 {{< /hbox >}}
-
-dp?
-
-### Wargning
-
-# WTF?
-
-## hey!
-
-https://learn.netlify.app/en/shortcodes/
-
-{{< vbox >}}
-hho blue, pink, indigo, cyan, orange...
-{{< /vbox >}}
-
-{{< hbox pink >}}
-hho blue, pink, indigo, cyan, orange...ggg
-{{< /hbox >}}
-
-`heheeh wow`
-
-```
-code
-<tag>wow</tag>
-```
-
-dp?
-
-### Wargning
+You can add tags inside vbox, hbox

@@ -10,6 +10,8 @@ pre = "<i class='fas fa-book-open'></i> &nbsp"
 
 # **Amazon Web Services**
 
+---
+
 BCIT SSD AWS 2023
 
 - EC2 Intances

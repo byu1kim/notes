@@ -1,8 +1,12 @@
 +++
 title = "Kotlin"
-weight = 16
+weight = 20
 chapter = true
 pre = ""
 +++
 
-# Kotlin
+### Mobile
+
+# **Kotlin**
+
+---
