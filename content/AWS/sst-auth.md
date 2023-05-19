@@ -1,37 +1,27 @@
 +++
 title = "SST & Auth"
-weight = 1
+weight = 12
 pre = "<i class='fas fa-pen'></i> &nbsp"
 +++
 
-#### Create a new SST app
+## Backend
 
-```
-npx create-sst@latest
-```
+Add Auth to both ApiStack and FrontendStack
 
-cd into the app and install the dependencies
+> #### ApiStack.js
 
-## SST
+Add **Cognito**, **auth**, **authorizers**, **default authorizer**
 
-#### ApiStack.js
-
-API Stack structure
-
-1. import
-2. function that receives stack prop : function ApiStack({stack})
-3. auth
-4. api : authrizers, defaults, routes
-5. auth&stack configure
-6. return
+Once it's all set, you are not allowed to change any configs. (need to delete every stacks to re-do it)
 
 ```js
-import {, Api, Cognito } from "sst/constructs";
+import { Api, Cognito } from "sst/constructs";
 
 export function ApiStack({ stack }) {
   // Create auth provider
   const auth = new Cognito(stack, "Auth", {
-    login: ["email", "username"],
+    login: ["email"],
+    // login: ["email", "username"],
   });
 
   // Adjust the API
@@ -57,7 +47,6 @@ export function ApiStack({ stack }) {
     },
   });
 
-
   // Allow authenticated users invoke API
   auth.attachPermissionsForAuthUsers(stack, [api]);
 
@@ -70,12 +59,14 @@ export function ApiStack({ stack }) {
 
   return {
     api,
-    auth
-  }
+    auth,
+  };
 }
 ```
 
-#### FrontendStack.js
+> #### FrontendStack.js
+
+Add **auth**, **Environment variables**
 
 ```js
 import { StaticSite, Api, Auth, use } from "sst/constructs";
@@ -105,9 +96,7 @@ export function FrontendStack({ stack, app }) {
 }
 ```
 
-user pull id : get it from the frontend
-
-#### Lambda
+> #### Lambda
 
 You can access the logged in user’s username and sub (id) from the event object.
 
@@ -129,28 +118,109 @@ export async function handler(event: any, context: any) {
 
 Use this to store the user’s id in the database when they create a new item.
 
-## React Auth
+## Frontend
+
+cd into frontend
 
 ```
+yarn add aws-amplify
+```
+
+> #### Configure Amplify
+
+```js
+import { Amplify } from "aws-amplify";
+
+const amplifyConfig = {
+  Auth: {
+    mandatorySignIn: false,
+    region: import.meta.env.VITE_APP_REGION,
+    userPoolId: import.meta.env.VITE_APP_USER_POOL_ID,
+    userPoolWebClientId: import.meta.env.VITE_APP_USER_POOL_CLIENT_ID,
+  },
+  API: {
+    endpoints: [
+      {
+        name: "api",
+        endpoint: import.meta.env.VITE_APP_API_URL,
+        region: import.meta.env.VITE_APP_REGION,
+      },
+    ],
+  },
+};
+Amplify.configure(amplifyConfig);
+```
+
+> #### Register
+
+```js
+import { Auth } from "aws-amplify";
+
+Auth.signUp({
+  username: email,
+  password,
+})
+  .then(() => {})
+  .then((err) => err.message);
+```
+
+> #### Verification
+
+```js
+Auth.confirmSignUp(email, code)
+  .then((res) => {
+    console.log(res);
+  })
+  .catch((err) => setError(err.message));
+```
+
+> #### Login
+
+```js
+Auth.signIn(email, password)
+  .then(() => {})
+  .catch((err) => setError(err.message));
+```
+
+> #### Header Authorization
+
+```js
+headers: {
+    Authorization: `Bearer ${(await Auth.currentSession()).getAccessToken().getJwtToken()}`,
+  },
+```
+
+> #### Auth Class
+
+https://aws-amplify.github.io/amplify-js/api/classes/authclass.html
+
+#### {{% expand "Auth with UI" %}}
+
+```
+
 yarn add aws-amplify @aws-amplify/ui-react
+
 ```
 
 - aws-amplify : for aws
 - ui-react : auto ui style
 
-#### vite.config.js
+> #### vite.config.js
 
-```
-define: {
+```js
+export default defineConfig({
+  plugins: [react()],
+  define: {
     global: {},
-},
+  },
+});
 ```
 
-or global:window
+or `global:"window"`
 
-#### Configure auth
+> #### Configure auth
 
-Ususally configure where the routers are.
+Ususally configure where the routers are. (`App.jsx`)
 
 ```js
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
@@ -204,7 +274,7 @@ export default function App() {
 }
 ```
 
-#### How to use
+> #### How to use
 
 ```js
 import import { Auth, API } from "aws-amplify";
@@ -214,7 +284,7 @@ export default function Home() {
   const { user, signOut } = useAuthenticator((context) => [context.user]);
 ```
 
-#### Route guard
+> #### Route guard
 
 ```js
 import { Navigate } from "react-router-dom";
@@ -237,7 +307,7 @@ function RouteGuard({ children }) {
 export default RouteGuard;
 ```
 
-#### Login with ui
+> #### Login with ui
 
 ```js
 import { useAuthenticator } from "@aws-amplify/ui-react";
@@ -261,6 +331,4 @@ export default function Login() {
 }
 ```
 
-#### Auth Class
-
-https://aws-amplify.github.io/amplify-js/api/classes/authclass.html
+{{% /expand%}}

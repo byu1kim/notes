@@ -24,6 +24,15 @@ Mutate means change. You can modify something mutuable.
 A shorter way to create a new list, from another list, based upon conditions that you set.
 
 ```python
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
+
+newlist = [x for x in fruits if 'a' in x]
+
 provinces = ['bc', 'ab']
 new_prov = [province for province in provinces if 'a' in province]
 ```
@@ -90,23 +99,93 @@ start is starting number (10+list items)
 a = sum(map(int, ['1', '2', '3']))
 ```
 
-#### remove(value)
+#### Remove item from array
+
+`list.remove(value)`
+
+Remove the first instance of a value in a list.
 
 ```python
-p_list = ['a', 'b', 'c', 'd', 'e']
-p_list.remove()
+p_list = ['a', 'b', 'b', 'd', 'e']
+p_list.remove('b') # p_list = ['a', 'b', 'd', e]
+```
+
+`list.pop(index)`
+
+Remove an an element at a given index
+
+```python
+a = p_list.pop(0) # 'a'
+print(p_list) # ['b', 'b', 'd', 'e']
+
+# Negative index postion from end
+list.pop(-1)
+
+# Empty index remove the last item
+list.pop()
+
+```
+
+`list.clear()`
+
+Empty the list
+
+```python
+p_list.clear() # p_list = []
+```
+
+#### List to String: Join
+
+`string.join(iterable)`
+
+Returns a string by joining all the elements of an iterable.
+
+```python
+' '.join(p_list) # a b b d
+```
+
+#### Index : Index of in the list
+
+`list.index(element, start, end)`
+
+Returns only the first instance that matches.
+
+- **element** : the element(value) to be searched
+- **start** (optional) : start search from this index
+- **end** (optional) : search the element up to this index
+
+If the element is not in the list, it will throw a ValueError.
+
+```python
+p_list.index('a') # 0
+```
+
+#### Starswith
+
+`str.startswith(prefix, start, end)`
+
+Returns True if a string starts with prefix or False.
+
+- **prefix** : String or tuple of strings. If the string starts with any item of the tuple, it returns true
+- **start** (optional) : check from the start (index) of str
+- **end** (optional) : check until end (index) of str
+
+```python
+string = 'flower'
+print(string.startswith('fl')) # True
+
+```
+
+#### Add item in the list
+
+```python
+list.append(item)
 ```
 
 #### count()
 
 ```python
 p_list.count('c')
-```
-
-#### clear()
-
-```python
-p_list.clear()
 ```
 
 #### reverse()
@@ -116,14 +195,6 @@ p_list.reverse()
 ```
 
 #### append(value)
-
-```python
-p_list
-```
-
-#### pop()
-
-delete last item
 
 ```python
 p_list
@@ -139,12 +210,6 @@ min(p_list)
 
 ```python
 max(p_list)
-```
-
-#### index('item')
-
-```python
-p_list.index('a')
 ```
 
 #### sort()
@@ -285,13 +350,18 @@ p_dict.update(new_dict)
 #### Iterating
 
 ```python
+list_dic = {'key':'value'}
+
+# key
 for key in p_dict:
   print(key) # name
   print(p_dict[key]) # aa
 
+# value
 for val in p_dict.values():
   print(val) # aa
 
+# both
 for key, val in p_dict.items():
   print(name, val) # name aa
 ```

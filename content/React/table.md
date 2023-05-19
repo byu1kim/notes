@@ -1,3 +1,8 @@
++++
+title = "Table"
+pre = "<i class='fas fa-pen'></i> &nbsp"
++++
+
 ```js
 import React from "react";
 import { useTable, usePagination } from "react-table";

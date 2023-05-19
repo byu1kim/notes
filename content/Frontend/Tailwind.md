@@ -18,7 +18,7 @@ npx tailwindcss init
 `tailwind.config.js`
 
 ```
-content: ["./src/**/*.{html,js}"],
+content: ["./src/**/*.{html,js,jsx,tsx}"],
 ```
 
 #### Add the Tailwind directives to the index.css

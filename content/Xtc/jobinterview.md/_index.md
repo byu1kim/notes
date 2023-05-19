@@ -4,6 +4,16 @@ weight = 1
 pre = "<i class='fas fa-pen'></i> &nbsp"
 +++
 
+## Resume
+
+url:
+
+[ssd.oatwebdesign.com](ssd.oatwebdesign.com)
+
+Access Code:
+
+SSD-RESUMES&
+
 ### Resume Review
 
 Resume : 100

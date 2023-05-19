@@ -101,6 +101,48 @@ else:
 ```
 list_ex = [1,2,3]
 a, b, c = list_ex
+# a == 1, b == 2
 ```
 
 ---
+
+#### Beatiful Soup Methods
+
+- find_all()
+- find()
+
+`.string`
+
+Get string from HTML
+
+### Selenium
+
+It is automates browsers.
+It will actually start the browser. so indeed think we are not a bot.
+
+replit
+
+pkgs.chromium
+pkgs.chromedriver
+
+main.py
+
+```py
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+
+options = Options()
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
+
+browser = webderiver.Chrome(options=options)
+browser.get("url")
+
+response = browser.page_source
+```
+
+## Se
+
+- virtualenvwrapper
+- pipenv
+- poetry

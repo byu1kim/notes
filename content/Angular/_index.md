@@ -2,7 +2,7 @@
 title = "Angular.js"
 weight = 20
 chapter = true
-pre = ""
+pre = "<i class='fas fa-book-open'></i> &nbsp"
 +++
 
 ### Framework

@@ -4,10 +4,10 @@ weight = 25
 pre = ""
 +++
 
-## **May.4**
+## **May.5,6**
 
-- [ ] Leetcode
-- [ ] css challenge
+- [x] Leetcode
+- [x] css challenge
 - [ ] python lecture
 - [ ] Wordbook
 - [ ] Words

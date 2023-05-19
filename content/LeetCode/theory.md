@@ -175,3 +175,49 @@ Hashing is a technique that is used to uniquely identify a specific object from 
 {{< /hbox >}}
 
 ---
+
+## Linked List
+
+A linked list is a linear data sturcture that the elements are not stored at contiguous memory locations. It consists of nodes where each node contains a data and a reference(link) to the next node in the list.
+
+A linked list is a collection of nodes. The first node is called the **head**, and it's used as the starting point.
+
+Linked lists are more straightfoward when it comes to insertion and deletion of elements. (list can just add/delete at the last child)
+
+`List : [ node(data, next), node(data, next), ... ]`
+
+---
+
+## How to optimize your app
+
+1. Optimize the database queries.
+
+2. Caching
+
+If the data doesn't change frequently, consider caching it to reduce the number of database queries. (Tool: Redis, Memcached)
+
+3. Server-side rendering (SSR)
+
+Rendering a web page on the serverm rather than in the browser. It is also SEO-friendly. Use libraries like Next.js or Gatsby to implement SSR.
+
+4. CDN
+
+For static assets (images, videos, ...) use CDN(Content Delievery Network)
+
+5. Optimize the backend code
+
+Use the latest version, minimize the number of HTTP requests
+
+6. Profiling
+
+Profiling is the process of measuring and analyzing the performance of an application to identify performance bottlenecks. Use browser developer tolls in Chrome DevTools. (inspect -> performance -> record)
+
+7. Lazy loading
+
+Load the data when needed
+
+8. Infinite scrolling
+
+9. Database query
+
+Avoid using COUNT, MIN, MAX. Calculate in frontend

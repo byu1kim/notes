@@ -16,9 +16,23 @@ npm start
 
 #### Vite
 
+{{< tabs >}}
+{{% tab name="NPM" %}}
+
 ```
-vite?
+npm create vite@latest
 ```
+
+{{% /tab %}}
+
+{{% tab name="Yarn" %}}
+
+```
+yarn create vite
+```
+
+{{% /tab %}}
+{{< /tabs >}}
 
 ## JSX
 

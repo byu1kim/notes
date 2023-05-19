@@ -1,25 +1,96 @@
 +++
-title = "Fetch Data"
- 
+title = "Data Fetching"
 pre = "<i class='fas fa-pen'></i> &nbsp"
 +++
 
 ## Fetch
 
+#### Get
+
 ```js
-fetch("/api/login", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({ email, password }),
+await fetch(api, {
+  method: "GET",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: token,
+  },
+  body: JSON.stringify(dataObject),
+}).then((res) => res.json());
+```
+
+#### Post/Put
+
+```js
+await fetch(api, {
+  method: "POST", //or PUT
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: token,
+  },
+  body: JSON.stringify(dataObject),
+}).then((res) => res.json());
+```
+
+#### Delete
+
+```js
+await fetch(api, {
+  method: "DELETE",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: token,
+  },
+  body: JSON.stringify(dataObject),
 }).then((res) => res.json());
 ```
 
 ## Axios
 
+#### Get
+
 ```js
-axios.get("/api/pokemons").then((res) => {
-setUsers(res.data.pokemons);
-setIsLoading(true);}).catch((err) => { console.log(err); });}, []);
+await axios
+  .get(api, {
+    headers: {
+      Authorization: token,
+    },
+    params: {
+      param1,
+    },
+  })
+  .then((res) => {
+    setData(res.data);
+  })
+  .catch((err) => setError(err));
+```
+
+#### Post/Put
+
+```js
+await axios
+  .put(api, dataObject, {
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: token,
+    },
+  })
+  .then((res) => res.data)
+  .catch((err) => setError(err));
+```
+
+#### Delete
+
+Axios can't accept body. Use params to send the data with delete request
+
+```js
+await axios
+  .delete(api, {
+    headers: {
+      Authorization: token,
+    },
+  })
+  .then((res) => res.data)
+  .catch((err) => setError(err));
 ```
 
 - axios return : return.data

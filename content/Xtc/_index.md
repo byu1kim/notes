@@ -93,6 +93,16 @@ php, scss, swift, python,,,,,
 
 {{< tabs >}}
 {{% tab name="python" %}}
+{{% /tab %}}
+
+{{% tab name="R" %}}
+{{% /tab %}}
+{{< /tabs >}}
+
+---
+
+{{< tabs >}}
+{{% tab name="python" %}}
 
 ```python
 print("Hello World!")
