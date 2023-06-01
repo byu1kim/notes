@@ -12,11 +12,11 @@ Secondary memory is file. It is not erased when the power is turned off.
 
 ```python
 file = open('file_name.txt', 'r')
-  string = file.read()
-  file.close()
+string = file.read()
+file.close()
 
 with open('file.txt', 'r')
-  string = file.read()
+string = file.read()
 file.close()
 ```
 
@@ -43,7 +43,7 @@ f = open('file.text', 'a')
 #### Reading
 
 ```python
-f = open('file.text', 'f')
+f = open('file.text', 'r')
 aa = f.readlines() # as array by lines
 ab = f.read() # as string
 f.close()

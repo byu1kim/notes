@@ -2,7 +2,7 @@
 title = "Vue.js"
 weight = 20
 chapter = true
-pre = ""
+pre = "- "
 +++
 
 ### Framework

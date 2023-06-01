@@ -19,7 +19,7 @@ list_sample = ['a','b','c']
 Mutate means change. You can modify something mutuable.
 {{% /notice %}}
 
-#### List Comprehensions
+> #### List Comprehensions
 
 A shorter way to create a new list, from another list, based upon conditions that you set.
 
@@ -31,13 +31,13 @@ for x in fruits:
   if "a" in x:
     newlist.append(x)
 
-newlist = [x for x in fruits if 'a' in x]
+newlist = [x for x in fruits if 'a' in x] # x at the front is the item added to the list
 
 provinces = ['bc', 'ab']
 new_prov = [province for province in provinces if 'a' in province]
 ```
 
-#### Range
+> #### Range
 
 `range(start, stop, step)`
 
@@ -45,7 +45,17 @@ new_prov = [province for province in provinces if 'a' in province]
 x = range(3, 6) # 3, 4, 5, 6
 ```
 
-#### Loop
+> #### Python destructing
+
+When you know the length of array
+
+```
+list_ex = [1,2,3]
+a, b, c = list_ex
+# a == 1, b == 2
+```
+
+> #### Loop with List
 
 Loop list with index
 
@@ -63,7 +73,7 @@ for index, item in enumerate(my_array):
 
 ## Methods
 
-#### Mapping list
+> #### Mapping list
 
 `map(function, array)`
 
@@ -83,13 +93,14 @@ int_nums = map(int, ['1', '2', '3'])
 words = map(len, ['haha', 'hoho'])
 ```
 
-Use lambda
+Use lambda (lambda is function itself.)
+`lambda parameter: return`
 
 ```python
 squared = map(lambda num: num**2, [1,2,3,4,5])
 ```
 
-#### Get sum of array
+> #### Get sum of array
 
 `sum(list or tuple or dict, start:optional)`
 
@@ -99,7 +110,7 @@ start is starting number (10+list items)
 a = sum(map(int, ['1', '2', '3']))
 ```
 
-#### Remove item from array
+> #### Remove item from array
 
 `list.remove(value)`
 
@@ -134,7 +145,7 @@ Empty the list
 p_list.clear() # p_list = []
 ```
 
-#### List to String: Join
+> #### List to String: Join
 
 `string.join(iterable)`
 
@@ -144,7 +155,7 @@ Returns a string by joining all the elements of an iterable.
 ' '.join(p_list) # a b b d
 ```
 
-#### Index : Index of in the list
+> #### Index : Index of in the list
 
 `list.index(element, start, end)`
 
@@ -160,59 +171,43 @@ If the element is not in the list, it will throw a ValueError.
 p_list.index('a') # 0
 ```
 
-#### Starswith
-
-`str.startswith(prefix, start, end)`
-
-Returns True if a string starts with prefix or False.
-
-- **prefix** : String or tuple of strings. If the string starts with any item of the tuple, it returns true
-- **start** (optional) : check from the start (index) of str
-- **end** (optional) : check until end (index) of str
-
-```python
-string = 'flower'
-print(string.startswith('fl')) # True
-
-```
-
-#### Add item in the list
+> #### Add item in the list
 
 ```python
 list.append(item)
 ```
 
-#### count()
+> #### count()
 
 ```python
 p_list.count('c')
 ```
 
-#### reverse()
+> #### reverse()
 
 ```python
 p_list.reverse()
 ```
 
-#### append(value)
+> #### append(value)
 
 ```python
 p_list
 ```
 
-#### min()
+> #### min()
 
 ```python
 min(p_list)
 ```
 
-#### max()
+> #### max()
 
 ```python
 max(p_list)
 ```
 
-#### sort()
+> #### sort()
 
 ```python
 p_list
@@ -271,14 +266,6 @@ p_set.remove('a') # error if item does not exists
 p_set.discard('a') # if the item does not exists, it won't raise an error
 ```
 
-#### clear()
-
-Empty the set
-
-```python
-p_set.clear()
-```
-
 #### union()
 
 Return a new set with all itmes from both sets :
@@ -315,7 +302,7 @@ p_dict = dict(name='aa', age=1)
 p_dict = dict([('name', 'aa'), ('age', 1)])
 ```
 
-#### Access values
+> #### Access values
 
 ```python
 p_dict['name']
@@ -323,13 +310,13 @@ p_dict['name']
 p_dict.get('name')
 ```
 
-#### Add data
+> #### Add data
 
 ```python
 p_dict['newKey'] = 'haha'
 ```
 
-#### Delete
+> #### Delete
 
 ```python
 # Using del keyword
@@ -339,7 +326,7 @@ del p_dict['newKey']
 p_dict.clear()
 ```
 
-#### Merge dictionaries
+> #### Merge dictionaries
 
 Overwritten if the same key exists
 
@@ -347,7 +334,7 @@ Overwritten if the same key exists
 p_dict.update(new_dict)
 ```
 
-#### Iterating
+> #### Iterating
 
 ```python
 list_dic = {'key':'value'}

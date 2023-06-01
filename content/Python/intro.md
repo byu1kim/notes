@@ -4,7 +4,7 @@ weight = 1
 pre = "<i class='fas fa-pen'></i> &nbsp"
 +++
 
-## Install
+## Install Python
 
 Check Python version
 
@@ -19,17 +19,66 @@ https://www.python.org/downloads/
 brew install python3
 ```
 
-#### VSC Extension
+## Pipenv
+
+Pipenv is a packaging tool that provides all necessary means to create a virtual environment for the Python project.
+
+> #### Install
+
+Install python > Install pip > Install pipenv
+
+```
+pip install pipenv
+pipenv --version
+```
+
+> #### Create a new project
+
+In the root of working directory
+
+```
+pipenv --python 3.11
+```
+
+> #### Activate the virtual environment
+
+You have to activate to use virtual environment and use python command line
+
+```
+pipenv shell
+```
+
+> #### Install packages
+
+```
+pipenv install [name]
+```
+
+> #### Run the app
+
+```
+pipenv run python name.py
+or
+python name.py
+```
+
+> #### Install dependencies
+
+```
+pipenv install
+```
+
+> #### VSC Extension
 
 Python
 
 (I'm going to use VSC for Python for now but soon will shift to Pycharm)
 
-#### File extension
+> #### File extension
 
 name.py
 
-#### Official Docs
+> #### Official Docs
 
 https://www.python.org/
 
@@ -40,7 +89,7 @@ https://docs.python.org/
 ## Python
 
 Python is `script Language`. It is one of the most powerful programming languages, mostly used in data science, machine learning, and big data analytics.
-<point></point> <line></line>
+
 {{< vbox blue >}}
 <b>Programming Language</b> <br>
 A combination of words and symbols that is used to write programs. It is a way programmers communicate with computers through set of instructions known as code or program. Programming languages are <line>compiled languages. </line><br><br>
@@ -83,99 +132,3 @@ A mode to run the code step by step
 A part of code that the developer needs to write. It is a function that test the application functions.
 
 ---
-
-## Operators
-
-#### Arthmetic Operators
-
-`\+`, `\-`, `\*`, `/`, `%`(Modulus), `\*\*`(Power), `//`(Rounding after division)
-
-#### Assignment Operators
-
-`=`, `+=`, `-=`, `\*=`, `/=`, `%=`, `//=`
-
-#### Comparison or Relational Operators
-
-`==`, `!=`, `>`, `<`, `>=`, `<=`
-
-#### Logical Operators
-
-`and`, `or`, `not`
-
-- short-circuit evaluation : a or b 에서 이미 a가 true면 evaluating no need
-- use the first expression to guard the second expression
-
-#### Identity Operators
-
-`is`, `is not`
-
-#### Membership Operators
-
-`in`, `not in`
-
-#### Logical Operators
-
-`&`(AND), `|`(OR), `^`(XOR), `~`(NOT)
-
-#### Operators Precedence
-
-Python evaluates boolean expression from left to right
-
-1. Parentheses : ()
-2. Arithmetic : + /
-3. Relational operator : > >=
-4. not
-5. and
-6. or
-
----
-
-## Errors
-
-#### Syntax Errors
-
-A violation of the programming language rules
-{{< vbox blue >}}
-<b>Syntax</b><br>
-Set of keywords and set of rules for writing the code.
-{{< /vbox >}}
-
-#### Runtime Errors
-
-Correct syntax but the program attempts to do somthing impossible (like divide by zero or multiply string)
-
-- Syntax Error : Cannot be understood but was not caught at start
-- IndentationError : Lines are not indented
-- ValueError : Invalid value is used
-- NameError : variables that don't exist
-- TypeError : incorrect types
-
-{{< vbox blue >}}
-<b>Runtime</b><br>
-Time the program is running.
-{{< /vbox >}}
-
-#### Semantic (Logic) Error
-
-The program runs but does not do what you intended it to do
-
-#### Error Handling
-
-An exception is an error that happens during the execution of a program.
-
-```python
-while True:
-    try:
-        # Code
-        pass
-    except ValueError:
-        print("Error message")
-    except ZeroDivisionError:
-        print("Infinity")
-    finally:
-        print("This block is executed whether the error is or not")
-```
-
-#### Coding standards
-
-https://peps.python.org/pep-0008/

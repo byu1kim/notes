@@ -1,3 +1,9 @@
++++
+title = "Day2"
+weight = 2
+pre = "<i class='fas fa-pen'></i> &nbsp"
++++
+
 ## Angular Pipes
 
 Pipes allow us to easily and consistently format values and/or transform data.

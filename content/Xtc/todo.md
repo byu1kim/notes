@@ -19,8 +19,7 @@ pre = ""
 - [ ] React native note from Josh
 - [ ] Android note from Josh
 - [ ] PHP note from Josh
-- [ ] Resume
-- [ ] Portfolio repolish
+
 - [ ] Stopwatch app
 - [ ] The reminder app
 - [ ] AWS Note

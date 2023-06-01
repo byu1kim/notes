@@ -1,6 +1,6 @@
 +++
-title = "Intro"
-weight = 3
+title = "Day1"
+weight = 1
 pre = "<i class='fas fa-pen'></i> &nbsp"
 +++
 

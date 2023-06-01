@@ -63,7 +63,7 @@ message = "{} and {}".format("value1", "value2")
 
 ## String Methods
 
-#### String Slicing
+> #### String Slicing
 
 ```python
 message = "string"
@@ -75,14 +75,14 @@ print(message[:-1])
 # strin : all but the last
 ```
 
-#### Length
+> #### Length
 
 ```python
 len(message)
 # 6
 ```
 
-#### split()
+> #### split()
 
 `str.split('char')`
 
@@ -92,7 +92,7 @@ print(message.split(":"))
 # ['test', 'aa']
 ```
 
-#### join()
+> #### join()
 
 `str.join(array)`
 
@@ -102,7 +102,7 @@ print("+".join(message))
 # a+b
 ```
 
-#### replace()
+> #### replace()
 
 `str.replace(old, new, count)`
 
@@ -117,7 +117,22 @@ replaced_text = text.replace('ba', 'ro') # ronana
 replaced = text.replace('a', 'b').replace('n', 'm')
 ```
 
-#### More String methods
+> #### Starswith
+
+`str.startswith(prefix, start, end)`
+
+Returns True if a string starts with prefix or False.
+
+- **prefix** : String or tuple of strings. If the string starts with any item of the tuple, it returns true
+- **start** (optional) : check from the start (index) of str
+- **end** (optional) : check until end (index) of str
+
+```python
+string = 'flower'
+print(string.startswith('fl')) # True
+```
+
+> #### More String methods
 
 - find(x)
 - find(x, start) : find from start point
@@ -125,7 +140,7 @@ replaced = text.replace('a', 'b').replace('n', 'm')
 - rfind(x)
 - count(x)
 
-#### String methods returns boolean
+> #### String methods return boolean
 
 - isalnum() : lowercase or uppoercase or number from 0-9
 - isdigit()
@@ -135,7 +150,7 @@ replaced = text.replace('a', 'b').replace('n', 'm')
 - startswith(x)
 - endswith(x)
 
-#### String methods returns string
+> #### String methods returns string
 
 - capitalie()
 - lower()
