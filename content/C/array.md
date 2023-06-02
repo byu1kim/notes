@@ -66,6 +66,8 @@ nameOfArray.GetLength(index)
 
 Simmilar to array but the size can be modified during run-time
 
+C# Day 5
+
 > #### Declare, Assign
 
 ```c#
@@ -137,3 +139,9 @@ Dictionary<string, int> pair = new Dictionary<string, int>();
 > #### ContainsKey(key)
 
 > #### TryGetValue(key, value)
+
+---
+
+## Generics
+
+C# Day 5

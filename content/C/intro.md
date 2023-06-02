@@ -21,17 +21,3 @@ Microsoft Visual Studio is an Integrated Development Environment (IDE).
 ## Quick Start
 
 Open Visual Studio > Create a new project > Console App (.NET Framework)
-
-## Basic Code Structure
-
-## Coding Conventions
-
-## Syntax
-
-## The Code Editor
-
-## Debugging
-
-## Data Types
-
-## Error Handling

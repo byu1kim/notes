@@ -115,6 +115,8 @@ text.IndexOf("a") // index number
 list.LastOrDefault();
 ```
 
+---
+
 ## DateTime
 
 ```c#
@@ -128,3 +130,15 @@ now.AddDays(5);
 now.AddHours(48);
 now.AddSeconds(11);
 ```
+
+---
+
+## File Reading
+
+C# Day 3
+
+---
+
+## Regular Expression
+
+C# Day 3

@@ -13,3 +13,8 @@ pre = "<i class='fas fa-book-open'></i> &nbsp"
 
 - [intro](/c/intro)
 - [code](/c/code)
+- [Basic](/c/basic)
+- [Array](/c/array)
+- [Method](/c/method)
+- [String](/c/string)
+- [Linq](/c/linq)

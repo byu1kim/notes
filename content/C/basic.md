@@ -214,3 +214,13 @@ do {
 }
 while (i < 6);
 ```
+
+---
+
+## Log Data
+
+Refer C# Day1
+
+## .NET Memory Management
+
+C# Day3
