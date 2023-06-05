@@ -14,13 +14,22 @@ https://learn.netlify.app/en/shortcodes/
 
 1. Install Hugo
 
-Window
+#### Window
 
-Prebuilt Binary and add PATH environment Variable
+https://gohugo.io/installation/windows/
+
+- Download Prebuilt Binary
+- Add PATH environment Variable
+
+```
+System > Advanced system settings > Advanced > Environment Variables
+'Path' under the both User variables and System variables
+```
 
 2. Install Hugo Learn Theme
 
 - simply download the zip and paste into the theme folder
+- egaeg
 
 # Heading
 
