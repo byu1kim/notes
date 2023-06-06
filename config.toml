@@ -20,5 +20,3 @@ home = [ "HTML", "RSS", "JSON"]
 
   # Set this to true to disable copy-to-clipboard button for inline code.
   disableInlineCopyToClipBoard = true
-
- 

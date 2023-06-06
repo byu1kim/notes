@@ -9,7 +9,8 @@ pre = "* "
 - Node : download it from the official website
 - Git : from website
 - Hugo
-- MS Server
+- MS Server Studio
+- MS Sql server
 - Visual Studio
 - VSC
   - github login

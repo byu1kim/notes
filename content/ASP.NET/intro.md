@@ -18,6 +18,20 @@ Table = Class
 
 #### Create your database
 
+#### Connect the DB and .NET App
+
+1. Create a `Console App (.NET Framework)`
+
+2. Tools > NuGEt Package Manager > Manage NuGet Packages for solution : Download `EntityFramework`
+
+3. Right clcik the project node and select : Add > New Item > Show All Items > ADO .NET Entity Data Model > Add
+
+4. EF Designer from database > New Connection > Microsoft SQL Server > Continue
+
+5. Type your servername where you can get from SQL server, select the db.
+
+6. Check Save connection settings in App.Config as: and **next**
+
 #### DbContext
 
 - Class
