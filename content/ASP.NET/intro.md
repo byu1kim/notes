@@ -22,7 +22,7 @@ Table = Class
 
 1. Create a `Console App (.NET Framework)`
 
-2. Tools > NuGEt Package Manager > Manage NuGet Packages for solution : Download `EntityFramework`
+2. Tools > NuGet Package Manager > Manage NuGet Packages for solution : Download `EntityFramework`
 
 3. Right clcik the project node and select : Add > New Item > Show All Templates > ADO .NET Entity Data Model > Add
 
@@ -335,8 +335,6 @@ var is used for type inference when declaring variables, allowing the compiler t
 
 - IEnumerable?
 - @Model ?
-
-- how to refresh after db updates? (like new table added...)
 
 # Work
 
