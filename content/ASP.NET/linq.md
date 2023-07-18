@@ -1,6 +1,6 @@
 +++
 title = "Linq"
-weight = 3
+weight = 4
 pre = "<i class='fas fa-pen'></i> &nbsp"
 +++
 
