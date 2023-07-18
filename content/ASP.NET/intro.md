@@ -1,9 +1,3 @@
-+++
-title = "Intro"
-weight = 1
-pre = "<i class='fas fa-pen'></i> &nbsp"
-+++
-
 ## Entity Framework
 
 : Automates all database related activities

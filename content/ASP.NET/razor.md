@@ -1,9 +1,3 @@
-+++
-title = "Razor"
-weight = 1
-pre = "<i class='fas fa-pen'></i> &nbsp"
-+++
-
 #### Anchor
 
 ```
