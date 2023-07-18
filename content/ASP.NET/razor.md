@@ -1,10 +1,10 @@
 #### Anchor
 
 ```
-<a asp-action="Link" asp-route-id="id?">Haha</a>
+<a asp-controller="RetailSalesOrder" asp-action="Link" asp-route-id="id?">Haha</a>
 ```
 
-#### Drop down menu
+#### Drop down menu (Selection)
 
 ```c#
 ViewData["AAA"] = new SeletList(db.Table, "AAA", "AAA")
