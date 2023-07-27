@@ -1,8 +1,39 @@
 +++
 title = "Work"
-weight = 1
+weight = 5
 pre = "<i class='fas fa-pen'></i> &nbsp"
 +++
+
+- `Interface` :
+
+- `IActionResult` : An interface that represents the result of an action method in an MVC. Actually **return type** for action methods
+
+- `action method` is a public method within a controller class that is responsible for handling a specific HTTP request and producing a response.
+
+- IQueryable ?
+
+IQueryable is an interface in the .NET framework that represents a queryable data source. It is primarily used in LINQ (Language-Integrated Query) to perform query operations on data.
+
+IQueryable extends the IEnumerable interface and provides additional functionality for querying and manipulating data before executing the query.
+
+The key advantage of using IQueryable is that it provides deferred execution. This means that the query is not executed immediately when it is defined. Instead, the query is translated into an appropriate query language (such as SQL for a database) and executed when the data is needed, such as when iterating over the query results or explicitly calling a terminal operation like ToList() or FirstOrDefault().
+
+var is used for type inference when declaring variables, allowing the compiler to determine the type based on the assigned value. IQueryable, on the other hand, is an interface used for building and executing queries against queryable data sources, primarily in conjunction with LINQ.
+
+- IEnumerable?
+- @Model ?
+
+# Work
+
+You need to import right model to use asp-for and htmlhiddenfor.
+
+`asp-for` should be inside the form
+
+search this in the project and figure out what it's doing
+
+```c#
+@HtmlhiddenFor
+```
 
 ## Project Sturcture
 
