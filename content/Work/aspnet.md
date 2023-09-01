@@ -237,3 +237,74 @@ what is includes T_T
 2. create iservice interface
 3. create class
 4. import the iservice in controller
+
+## Controller Structure
+
+```c#
+[HttpPut]
+[Route("fullfilled-status")]
+public dynamic UpdateFullfilledStatus([FromBody] SalesOrderFullfilledApiModel model) // if you have one property, don't need to use FromBody. usually Frombody used with Post request (get request is used with params in url)
+{
+    string errorMessage;
+
+    if (!ModelState.IsValid)
+    {
+        errorMessage = "Model is invalid";
+        goto Error;
+    }
+
+    var res = SalesOrderService.UpdateFullfilledStatus(model.SalesOrderId);
+
+    if (!res.Success)
+    {
+        errorMessage = res.Errors.ToString();
+        goto Error;
+    }
+    return CustomJson(res.Object.Status, null, null, AlertType.Success);
+
+Error:
+    return CustomJson(null, null, new List<string> { errorMessage }, AlertType.Error);
+}
+
+```
+
+- only return necessary data. if you return entire object which includes uncessary data, it is exposing too much data to the browser
+
+## DB (Service) Structure
+
+```c#
+public ServiceResult<SalesOrder> UpdateFullfilledStatus(int id)
+{
+    var res = new ServiceResult<SalesOrder>();
+    var dbSalesOrder = Get(id);
+    if (dbSalesOrder == null)
+    {
+        goto Error;
+    }
+
+    dbSalesOrder.Status = SalesOrderStatusType.FoodFullfilled;
+
+    try
+    {
+        Context.SaveChanges();
+    }
+    catch (DbUpdateException e)
+    {
+        res.AddError("Error", e.InnerException.ToString());
+        goto Error;
+    }
+
+    res.Success = true;
+    res.Object = dbSalesOrder;
+
+    return res;
+
+Error:
+    res.Success = false;
+    return res;
+}
+```
+
+## Javascript Debouncer?
+
+Prevent multi submit (even though user clicks the button multiple times, only a few request will be submited.)
