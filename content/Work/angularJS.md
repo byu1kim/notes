@@ -91,6 +91,19 @@ $scope.submitFunction = function () {
 };
 ```
 
+#### Sending single item
+
+```js
+...
+data: variable
+...
+
+```
+
+```c#
+public dynamic UpdateFullfilledStatus([FromBody] int salesOrderId)
+```
+
 ## Modal
 
 https://angular-ui.github.io/bootstrap/#!#modal
@@ -185,3 +198,15 @@ angular
 
 Service - complex logics (do not get confused with IServices)
 Controller - set of functions/ services
+
+## RESTful
+
+// needs validation of unique options
+POST (add)
+/api/cart/{cartid}/items
+
+// no need to validate unique options
+PUT (edit item)
+/api/cart/{cartid}/items/{itemId}
+
+-- just updating the qty

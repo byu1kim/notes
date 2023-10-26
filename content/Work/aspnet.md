@@ -86,7 +86,7 @@ public enum ExternalOrderType
 
 Add-migration / update-database : only with creating or updating table not seeding data
 
-ex) when you change the default value, you don't need to do a migration ( do not migrate often)
+ex) when you change the default value, you don't need to do a migration (do not migrate often)
 
 Make sure everything is correct before migrating and updating database!
 
@@ -103,7 +103,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time#time_value_
 ## COMPONENT
 
 Build as component as possible...
-when you call multiple component is faster than calling multiple controllers (if there are multiple controllers in one page, controllers will be called one by one..-lazy loading). When you use component, you can use async/await and call multiple components at the same time. (reduing the loading time)
+when you call multiple component is faster than calling multiple controllers (if there are multiple controllers in one page, controllers will be called one by one..(lazy loading). When you use component, you can use async/await and call multiple components at the same time. (reduing the loading time)
 
 ## NOTE
 
@@ -243,7 +243,7 @@ what is includes T_T
 ```c#
 [HttpPut]
 [Route("fullfilled-status")]
-public dynamic UpdateFullfilledStatus([FromBody] SalesOrderFullfilledApiModel model) // if you have one property, don't need to use FromBody. usually Frombody used with Post request (get request is used with params in url)
+public dynamic ([FromBody] SalesOrderFullfilledApiModel model) // if you have one property, don't need to use FromBody. usually Frombody used with Post request (get request is used with params in url)
 {
     string errorMessage;
 
@@ -308,3 +308,44 @@ Error:
 ## Javascript Debouncer?
 
 Prevent multi submit (even though user clicks the button multiple times, only a few request will be submited.)
+
+## Auto Mapper
+
+do not assign the value to entity. for example inside detailpage.
+Use Auto Mapper
+
+```c#
+this.Mapper.
+```
+
+## Form
+
+```
+<form asp-action="test">
+<input asp-for="name"/>
+</form>
+```
+
+asp-for="name" goes to the form
+
+## Error
+
+An unhandled exception occurred while processing the request.
+InvalidOperationException: A circular dependency was detected for the service of type 'Services.ISalesOrderService'.
+Services.IReportService(Services.ReportService) -> Services.ISalesOrderService(Services.SalesOrderService) -> Services.ICartService(Services.CartService) -> Services.ISalesOrderService
+
+So when compiling your first project, the compiler will run into CustomClass1 definition, it knows it lays into Project2.dll and therefore will compile Project2 before, in order to be able to add that reference in your first project.
+
+That's what a dependency is, it's hierarchical, there must be a starting point.
+
+## Code order (refactor)
+
+- Db structure
+- Service layer
+- Controller
+- View
+- JS
+
+## TDD : Test Driven Development
+
+- Test Service layer and Api at the same time!

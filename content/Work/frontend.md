@@ -18,3 +18,7 @@ if (result.data == 104) {
   toggleCheck.prop("checked", false);
 }
 ```
+
+## HTML
+
+Follow the basic bootstrap structure like `container`, `container-fluid`
