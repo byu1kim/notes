@@ -348,4 +348,94 @@ That's what a dependency is, it's hierarchical, there must be a starting point.
 
 ## TDD : Test Driven Development
 
+- Tdd file refers test file
 - Test Service layer and Api at the same time!
+
+## Unit Test
+
+xUnit (Test Libraray) is already included in the heymate project
+
+Create tests for Data, Test, and Controller (at each folder)
+
+#### Test for Files in Servies
+
+1. Create a method inside test class
+
+One test method for one method in services/data class
+
+2. Structure
+
+   - Arrange : Setup data for executing, use memory database whids is temporary
+   - Act : Calling the method
+   - Assert : Check the result
+
+3. Execute test : Test > Test Explorer > Find your test file > Right click > Run
+
+```c#
+[Fact]
+public void CreateUpdate_ValidNewEntity_ShouldCreateNewCart() // Name should be unique
+{
+    // Arrange
+    var databaseName = "CartServiceTestCreateUpdateValidNewEntityShouldCreateNewCart";
+    var context = DbUtility.GetContext(databaseName); // memory database
+
+    var client = new Client
+    {
+        Name = "Owner",
+        TimeZone = "Pacific Standard Time"
+    };
+
+    context.Add(client);
+
+    var store = new Store
+    {
+        Name = "Bubble Waffle"
+    };
+
+    context.Add(store);
+
+    var table = new RestaurantTable
+    {
+        MaximumQuantity = 1,
+        Store = store,
+        Client = client,
+        Status = SynicTools.EntityStatus.Active
+    };
+
+    context.Add(table);
+    context.SaveChanges();
+
+    var voucherService = new VoucherService(DbUtility.GetContext(databaseName), new Mock<IStoreModel>().Object);
+
+    var service = new RestaurantCartService(DbUtility.GetContext(databaseName),
+        new Mock<ISalesOrderService>().Object,
+        new Mock<IUserService>().Object,
+        new Mock<IStoreModel>().Object,
+        new Mock<IStoreService>().Object,
+        new Mock<IProductComboService>().Object,
+        new Mock<IOptionItemService>().Object,
+        voucherService);
+
+
+    // Act
+    var result = service.CreateUpdate(new RestaurantCart
+    {
+        CustomerPhoneNumber = "123",
+        Status = SynicTools.EntityStatus.Active,
+        StoreID = store.ID, // no foriegn key in the test, so you have to write down eveyrthing
+        Guid = Guid.NewGuid(),
+        RestaurantTableID = table.ID,
+        InternalType = SalesOrderTypeInternal.TableOrder
+    });
+
+    // Assert
+    result.Should().NotBeNull();
+    result.Success.Should().BeTrue();
+    result.Object.CustomerPhoneNumber.Should().Be("123");
+    result.Object.Status.Should().Be(SynicTools.EntityStatus.Active);
+    result.Object.StoreID.Should().Be(store.ID);
+    result.Object.RestaurantTableID.Should().Be(table.ID);
+    result.Object.InternalType.Should().Be(SalesOrderTypeInternal.TableOrder);
+}
+
+```
