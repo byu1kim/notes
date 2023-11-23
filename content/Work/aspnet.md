@@ -439,3 +439,62 @@ public void CreateUpdate_ValidNewEntity_ShouldCreateNewCart() // Name should be 
 }
 
 ```
+
+## ?
+
+```c#
+
+        // 2. product with option (reuse code.....)
+        public ServiceResult<List<RestaurantProductOption>> CreateUpdateProductOption(RestaurantProduct entity)
+        {
+            if (entity.IsCreate)
+                return this._CreateProductOptions(entity.ProductOptions);
+            return this._UpdateProductOption(entity.ProductOptions);
+        }
+
+        private ServiceResult<List<RestaurantProductOption>> _CreateProductOptions(List<RestaurantProductOption> entity)
+        {
+            var res = new ServiceResult<List<RestaurantProductOption>>();
+
+            // 1) create product option
+            this.Context.RestaurantProductOptions.AddRange(entity);
+
+            // 2) create product option items
+            foreach (var option in entity)
+            {
+                this.Context.RestaurantOptionItems.AddRange(option.OptionItems);
+            }
+
+            // 3) save db
+            try
+            {
+                Context.SaveChanges();
+                res.Success = true;
+                res.Object = entity;
+            }
+            catch (DbUpdateException e)
+            {
+                res.AddError("Error", e.InnerException.ToString());
+                res.Success = false;
+            }
+
+            return res;
+        }
+
+        private ServiceResult<List<RestaurantProductOption>> _UpdateProductOption(List<RestaurantProductOption> entity)
+        {
+            var res = new ServiceResult<List<RestaurantProductOption>>();
+            return res;
+        }
+
+
+```
+
+## Create a subPage (side menu)
+
+to create subpage, you have to update MenuSubItemMappingHelper class file first (and create new enum too!)
+
+1. [2:10 PM] Create new value on SubPageType enum
+2. Update MenuSubItemMappingHelper class file
+3. Add new row in SubPages table in db (mapping menu - submenu)
+4. Sign-out and Sign-in account again

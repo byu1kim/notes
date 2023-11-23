@@ -23,7 +23,9 @@ pre = "<i class='fas fa-pen'></i> &nbsp"
 
 7. If everything is okay, update-database
 
-## Roll Back Migration
+## Roll Back Migration / When you want to pull from dev branch
+
+0. Change the connection string to local DB
 
 1. Update whatever you need
 
@@ -33,3 +35,5 @@ pre = "<i class='fas fa-pen'></i> &nbsp"
 3. remove-migration
 
 4. add-migration name
+
+// CleanUpOrderFlow
