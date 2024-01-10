@@ -495,6 +495,56 @@ public void CreateUpdate_ValidNewEntity_ShouldCreateNewCart() // Name should be 
 to create subpage, you have to update MenuSubItemMappingHelper class file first (and create new enum too!)
 
 1. [2:10 PM] Create new value on SubPageType enum
-2. Update MenuSubItemMappingHelper class file
+2. Update MenuSubItemMappingHelper class file (not MenuItemMapping)
 3. Add new row in SubPages table in db (mapping menu - submenu)
 4. Sign-out and Sign-in account again
+
+## Sorting Table
+
+#### HTML
+
+```html
+   <th class="sort-column" onclick="setSort('Customer', '@((Int16)Model.SortDirection)', @((Int16)OrderByDirection.Asc), this)">
+                        <div class="d-flex fw-bold">
+                            Customer
+                            <div class="sort-icon-wrapper @(SortIconHelper.GetSortIconStatusClass(Model.SortColumn, "Customer", Model.SortDirection))">
+                                <i class="hm-sort-icon sort-icon"></i>
+                            </div>
+                        </div>
+                    </th>
+```
+
+The sort column will go to SortColumn and SortDirection due to setSort function in javascript
+
+#### Controller
+
+```c#
+model.Items = ...Get()....OrderByProperty(model.SortColumn, model.SortDirection)
+```
+
+#### Model
+
+set a default value
+
+```c#
+   public class SalesTableFilterViewModel
+    {
+...
+        public SalesTableFilterViewModel()
+        {
+            base.SortColumn = nameof(RestaurantSalesOrder.Placed);
+            //base.SortDirection = Helpers.OrderByDirection.Decending; // find helpers!!
+        }
+    }
+
+```
+
+## Problem Solving
+
+Try to see the details when debuging !
+What function, What arguments, Api calls,.....
+Observe what is happening in both server side and client side (browser) and then debug
+
+## Auto mapper
+
+auto mapper => define in web profile and then use
