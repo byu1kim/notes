@@ -548,3 +548,53 @@ Observe what is happening in both server side and client side (browser) and then
 ## Auto mapper
 
 auto mapper => define in web profile and then use
+
+## Service
+
+BaseCoreService is where basic CRUD services are
+
+## Abstract vs Virtual
+
+In ASP.NET and C#, the terms "abstract" and "virtual" are related to object-oriented programming concepts, specifically in the context of classes and methods.
+
+Abstract (Keyword):
+
+In C#, the abstract keyword is used to define abstract classes or abstract methods.
+An abstract class cannot be instantiated on its own; it serves as a blueprint for other classes.
+An abstract method is a method declared in an abstract class that has no implementation in the abstract class. The derived classes must provide an implementation for abstract methods.
+Example of an abstract class with an abstract method:
+
+csharp
+Copy code
+public abstract class Shape
+{
+public abstract void Draw();
+}
+Virtual (Keyword):
+
+The virtual keyword is used to declare methods, properties, or indexers that can be overridden by derived classes.
+When a method is marked as virtual, it means that the method can be overridden in a derived class using the override keyword.
+Example of a virtual method:
+
+csharp
+Copy code
+public class BaseClass
+{
+public virtual void SomeMethod()
+{
+Console.WriteLine("BaseClass.SomeMethod");
+}
+}
+
+public class DerivedClass : BaseClass
+{
+public override void SomeMethod()
+{
+Console.WriteLine("DerivedClass.SomeMethod");
+}
+}
+In this example, the SomeMethod in BaseClass is marked as virtual, and the DerivedClass provides its implementation using the override keyword.
+
+In the context of ASP.NET, these concepts are often used when creating and extending classes, especially in scenarios like creating custom controllers, models, or other components. Abstract classes and virtual methods provide a way to define a common structure and allow for customization in derived classes.
+
+In summary, while both abstract and virtual methods provide ways to allow derived classes to provide their own implementations, the key difference is that abstract methods have no implementation in the base class, and derived classes must provide their own, while virtual methods have a default implementation in the base class that can be optionally overridden in derived classes. Abstract classes can have both abstract and virtual members.
