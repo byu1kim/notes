@@ -1,7 +1,7 @@
 +++
 title = "AWS"
 date = 2023-04-12T02:13:09-07:00
-weight = 7
+weight = 1
 chapter = true
 pre = "<i class='fas fa-book-open'></i> &nbsp"
 +++

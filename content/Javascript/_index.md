@@ -1,6 +1,6 @@
 +++
 title = "Javascript"
-weight = 2
+weight = 7
 chapter = true
 pre = "<i class='fas fa-book-open'></i> &nbsp"
 +++
