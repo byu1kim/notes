@@ -29,7 +29,41 @@ System > Advanced system settings > Advanced > Environment Variables
 2. Install Hugo Learn Theme
 
 - simply download the zip and paste into the theme folder
-- egaeg
+
+#### MAC
+
+---
+
+#### Create new project
+
+```
+hugo new site <new_project>
+```
+
+#### Apply the learn them
+
+https://learn.netlify.app/en/basics/installation/
+
+Download the zip file and paste to the theme folder
+
+Modify the configuration file `config.toml`
+
+```
+# Change the default theme to be use when building the site with Hugo
+theme = "hugo-theme-learn"
+
+# For search functionality
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+```
+
+#### Start the project
+
+```
+hugo server
+```
+
+---
 
 # Heading
 

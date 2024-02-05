@@ -2,6 +2,7 @@
 title = "Basics"
 weight = 2
 pre = "<i class='fas fa-pen'></i> &nbsp"
+date = Aug 30, 2023
 +++
 
 - [Variables](#variables)
