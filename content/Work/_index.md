@@ -1,10 +1,9 @@
 +++
 title = "Work"
-weight = 1
+weight = 9
 pre = "<i class='fas fa-book-open'></i> &nbsp"
 
 +++
-
 
 // pre = "<i class='fas fa-pen'></i> &nbsp"
 
@@ -24,6 +23,6 @@ Feature differences: While both Less and Sass provide similar core features like
 
 Choosing between Less and Sass often comes down to personal preference or project requirements. If you're already familiar with one of them, it may make sense to stick with that choice. However, if you're starting a new project, you might consider factors such as community support, integration with existing tools, and the ecosystem around each preprocessor to make an informed decision.
 
-
 ## Trust the IIS Express SSL certificate
+
 ?? What the heck

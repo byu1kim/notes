@@ -1,6 +1,6 @@
 +++
 title = "Database"
-weight = 8
+weight = 5
 chapter = true
 pre = "<i class='fas fa-book-open'></i> &nbsp"
 +++

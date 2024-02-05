@@ -1,6 +1,6 @@
 +++
 title = "LeetCode"
-weight = 10
+weight = 1
 chapter = true
 pre = "<i class='fas fa-book-open'></i> &nbsp"
 +++
