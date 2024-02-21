@@ -549,6 +549,10 @@ Observe what is happening in both server side and client side (browser) and then
 
 auto mapper => define in web profile and then use
 
+```c#
+CreateMap<EditGroupOptionProductViewModel, RestaurantGroupOptionProduct>();CreateMap<RestaurantGroupOptionProduct, EditGroupOptionProductViewModel>();
+```
+
 ## Service
 
 BaseCoreService is where basic CRUD services are
