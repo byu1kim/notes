@@ -40,6 +40,12 @@ System > Advanced system settings > Advanced > Environment Variables
 hugo new site <new_project>
 ```
 
+#### Start the app
+
+```
+hugo serve
+```
+
 #### Apply the learn them
 
 https://learn.netlify.app/en/basics/installation/
