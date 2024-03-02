@@ -4,8 +4,6 @@ weight = 1
 pre = "<i class='fas fa-pen'></i> &nbsp"
 +++
 
-## Angular
-
 ## What is Angular
 
 Angular is an open-source front end development framework maintained by Google.
