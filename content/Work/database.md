@@ -76,3 +76,16 @@ modelBuilder.Entity<RestaurantGroupOptionProduct>()
 ```
 
 and then migration
+
+## Setting up Local DB
+
+1. find your local db name
+   Open the Start menu, and enter services.
+
+2. Change the connection string in your project (Visual studio)
+
+3. When there is new migration ? : Check EFMigration history just in case
+
+- Pull from master branch
+- Check the migration
+- update-database (Make sure you are using local connection string)
