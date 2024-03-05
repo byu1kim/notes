@@ -1,7 +1,7 @@
 +++
 title = "Day2"
 weight = 2
-pre = "<i class='fas fa-pen'></i> &nbsp"
+pre = "- "
 +++
 
 ## Angular Pipes

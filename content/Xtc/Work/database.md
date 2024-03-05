@@ -1,6 +1,7 @@
 +++
 title = "Database"
-pre = "<i class='fas fa-pen'></i> &nbsp"
+weight = 3
+pre = "- "
 +++
 
 ## Db Update

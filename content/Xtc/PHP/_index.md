@@ -2,7 +2,7 @@
 title = "PHP"
 weight = 10
 chapter = true
-pre = "<i class='fas fa-book-open'></i> &nbsp"
+pre = "<i class='fas fa-pen'></i> &nbsp"
 +++
 
 ### Full-stack

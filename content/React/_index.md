@@ -1,6 +1,6 @@
 +++
 title = "React"
-weight = 2
+weight = 3
 chapter = true
 pre = "<i class='fas fa-book-open'></i> &nbsp"
 +++

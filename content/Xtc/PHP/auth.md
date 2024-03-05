@@ -1,7 +1,7 @@
 +++
 title = "Auth"
 weight = 5
-pre = "<i class='fas fa-pen'></i> &nbsp"
+pre = "- "
 +++
 
 ## User Registration Form

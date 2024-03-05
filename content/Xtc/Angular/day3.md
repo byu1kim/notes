@@ -1,7 +1,7 @@
 +++
 title = "Day3"
 weight = 3
-pre = "<i class='fas fa-pen'></i> &nbsp"
+pre = "- "
 +++
 
 ## Creating a Project Detail Component

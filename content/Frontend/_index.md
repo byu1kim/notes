@@ -1,6 +1,6 @@
 +++
 title = "Frontend"
-weight = 10
+weight = 15
 chapter = true
 pre = "<i class='fas fa-book-open'></i> &nbsp"
 +++

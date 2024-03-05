@@ -1,7 +1,7 @@
 +++
 title = "Angular JS"
 weight = 2
-pre = "<i class='fas fa-pen'></i> &nbsp"
+pre = "- "
 +++
 
 ## Angular JS
@@ -47,12 +47,7 @@ Folder : [wwwroot/js/components]
   });
 
   componentNameController.$inject = [];
-  function componentNameController(
-    SocialMediaLinksService,
-    constants,
-    UtilsService,
-    $scope
-  ) {
+  function componentNameController(SocialMediaLinksService, constants, UtilsService, $scope) {
     var $ctrl = this;
   }
 })();
@@ -126,9 +121,7 @@ https://angular-ui.github.io/bootstrap/#!#modal
   </div>
 </script>
 
-<button type="button" class="btn btn-default" ng-click="testOpen()">
-  Open me!
-</button>
+<button type="button" class="btn btn-default" ng-click="testOpen()">Open me!</button>
 ```
 
 ### 2. Javascript
@@ -172,24 +165,19 @@ $scope.openModal = function () {
 > #### Controller
 
 ```js
-angular
-  .module("synicApp")
-  .controller(
-    "AddDiscountModalCtrl",
-    function ($scope, $uibModalInstance, items) {
-      console.log("ITEM: ", items);
+angular.module("synicApp").controller("AddDiscountModalCtrl", function ($scope, $uibModalInstance, items) {
+  console.log("ITEM: ", items);
 
-      // When click Ok button
-      $scope.ok = function () {
-        $uibModalInstance.close("RETURN HOHO");
-      };
+  // When click Ok button
+  $scope.ok = function () {
+    $uibModalInstance.close("RETURN HOHO");
+  };
 
-      // When click Cancel button
-      $scope.cancel = function () {
-        $uibModalInstance.dismiss("cancel");
-      };
-    }
-  );
+  // When click Cancel button
+  $scope.cancel = function () {
+    $uibModalInstance.dismiss("cancel");
+  };
+});
 ```
 
 ### 3. CSS

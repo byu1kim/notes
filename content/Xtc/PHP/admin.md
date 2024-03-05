@@ -1,7 +1,7 @@
 +++
 title = "Admin"
 weight = 6
-pre = "<i class='fas fa-pen'></i> &nbsp"
+pre = "- "
 +++
 
 ## Create Project Form

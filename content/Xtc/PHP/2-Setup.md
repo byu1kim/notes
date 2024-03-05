@@ -2,7 +2,7 @@
 title = "Software setup for Laravel"
 menuTitle = "Setup"
 weight = 2
-pre = "<i class='fas fa-pen'></i> &nbsp"
+pre = "- "
 +++
 
 # Windows

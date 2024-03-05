@@ -1,11 +1,9 @@
 +++
 title = "Work"
-weight = 9
-pre = "<i class='fas fa-book-open'></i> &nbsp"
+weight = 15
+pre = "<i class='fas fa-pen'></i> &nbsp"
 
 +++
-
-// pre = "<i class='fas fa-pen'></i> &nbsp"
 
 ## Less file
 

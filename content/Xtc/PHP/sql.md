@@ -1,7 +1,7 @@
 +++
 title = "MySQL Migration"
 weight = 3
-pre = "<i class='fas fa-pen'></i> &nbsp"
+pre = "- "
 +++
 
 ## Database Setup and Configuration

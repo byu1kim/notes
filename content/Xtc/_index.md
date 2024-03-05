@@ -3,50 +3,53 @@ title = "ETC"
 date = 2023-04-12T02:13:09-07:00
 weight = 30
 chapter = true
-pre = "*"
+pre = ""
 +++
 
-### Link
+## Theme Link
 
 https://learn.netlify.app/en/shortcodes/
 
-# Install
+## Install Hugo
 
-1. Install Hugo
+#### Windows
 
-#### Window
+1. Download Prebuilt Binary
 
 https://gohugo.io/installation/windows/
 
-- Download Prebuilt Binary
-- Add PATH environment Variable
+Download windows-amd-64.zip
+
+2. Add PATH environment Variable
 
 ```
 System > Advanced system settings > Advanced > Environment Variables
 'Path' under the both User variables and System variables
 ```
 
-2. Install Hugo Learn Theme
+3. Install Hugo Learn Theme
 
-- simply download the zip and paste into the theme folder
+Download the zip and paste into the theme folder
 
-#### MAC
+https://learn.netlify.app/en/basics/installation/
 
 ---
 
-#### Create new project
+#### MAC
+
+1. Create new project
 
 ```
 hugo new site <new_project>
 ```
 
-#### Start the app
+2. Start the app
 
 ```
-hugo serve
+hugo server
 ```
 
-#### Apply the learn them
+3. Apply the learn them
 
 https://learn.netlify.app/en/basics/installation/
 
