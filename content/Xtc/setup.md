@@ -1,7 +1,7 @@
 +++
 title = "Setup"
-weight = 30
-pre = "* "
+weight = 2
+pre = "<i class='fas fa-pen'></i> &nbsp"
 +++
 
 ## New computer setup
