@@ -1,5 +1,6 @@
 +++
 title = "Route"
+weight = 2
 pre = "<i class='fas fa-pen'></i> &nbsp"
 +++
 
@@ -17,7 +18,7 @@ https://github.com/reactjs/react-tabs
 
 ```js
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import "react-tabs/style/react-tabs.css;
+import "react-tabs/style/react-tabs.css";
 
 <Tabs>
   <TabList>
@@ -31,8 +32,10 @@ import "react-tabs/style/react-tabs.css;
   <TabPanel>
     <h2>Any content 2</h2>
   </TabPanel>
-</Tabs>
+</Tabs>;
 ```
+
+---
 
 ## Router
 
@@ -44,20 +47,49 @@ https://reactrouter.com
 npm install react-router-dom
 ```
 
+### Basic Route Example
+
+```js
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import HomePage from "./home/HomePage";
+import AboutPage from "./about/AboutPage";
+import Header from "./common/Header";
+import PageNotFound from "./PageNotFound";
+
+function App() {
+  return (
+    <div className="container-fluid">
+      <Header />
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/courses" component={CoursesPage} />
+        <Route component={PageNotFound} />
+      </Switch>
+    </div>
+  );
+}
+
+export default App;
+```
+
 ### Browser Router
 
 ```js
-import { BrowserRouter, Routes, Route } from “react-router-com”;
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function AppRouter () {
 	return (
 		<BrowserRouter>
 		    <Nav />
 			<Routes>
-				<Route path=“/“ exact element={App />} />
-				<Route path=“/*” element={<PageNotFound />
+				<Route path="/" exact element={App />} />
+				<Route path="/*" element={<PageNotFound />} />
 			</Routes>
-		</BrowserRouter>} />); }
+		</BrowserRouter>
+  );
+}
 
 export default AppRouter;
 ```
@@ -90,7 +122,7 @@ function App() {
 
 ##### Nav.js
 
-```
+```js
 import { Outlet } from 'react-router-dom';
 ....
 return ( <><nav></nav><Outlet /></> )
@@ -125,20 +157,20 @@ element: <AuthRoute>
 
 It enables to style :active for navigation bar menu
 
-```
+```js
 import { NavLink } from “react-router-dom”;
 
-<NavLink to=“PATH”> HOME </NavLink>
+<NavLink to="PATH"> HOME </NavLink>
 ```
 
 ### Link
 
 Internal link in the app, use Link
 
-```
+```js
 import { Link } from “react-router-dom”;
 
-<Link to=“PATH”> HOME </Link>
+<Link to="PATH"> HOME </Link>
 ```
 
 {{% notice info %}}
