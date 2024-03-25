@@ -128,3 +128,5 @@ export default Nav;
 #### JSX
 
 Javascript syntax for writing HTML in Javascript
+
+#### Components
