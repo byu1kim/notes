@@ -9,8 +9,9 @@ pre = "<i class='fas fa-pen'></i> &nbsp"
 - Node : download it from the official website
 - Git : from website
 - Hugo
-- MS Server Studio
 - MS Sql server
+- MS Server Studio
+
 - Visual Studio
 - VSC
   - github login
@@ -18,6 +19,11 @@ pre = "<i class='fas fa-pen'></i> &nbsp"
   - wakatime
   - prettier
   - emmet
+  - ESLint
+
+- chrome
+- slack
+
 
 ## Path Environment Variables
 
