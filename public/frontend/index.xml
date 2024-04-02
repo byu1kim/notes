@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Frontend on Byul Notes</title>
+    <link>http://localhost:1313/frontend/</link>
+    <description>Recent content in Frontend on Byul Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/frontend/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTML</title>
+      <link>http://localhost:1313/frontend/html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/frontend/html/</guid>
+      <description>Form Form Data Flow User filles the inputs User submits the form User inputs are validate Data from the form is sent to a processing script(JS or PHP) Form data is processed (client side or server side) Processor(JS) returns a status and response data Visual feedback given to the user (option) Form Element Attributes action: URL of the form processing endpoint (file) method : GET, POST name : sent to the processor Form Methods GET Data is sent to the query parameters in the URL (Don’t send sensitive info) GET URL can be bookmarked POST Data is transmitted as part of the HTTP request body.</description>
+    </item>
+    <item>
+      <title>Sass</title>
+      <link>http://localhost:1313/frontend/sass/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/frontend/sass/</guid>
+      <description>Sass </description>
+    </item>
+    <item>
+      <title>Bootstrap</title>
+      <link>http://localhost:1313/frontend/bootstrap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/frontend/bootstrap/</guid>
+      <description>Bootstrap </description>
+    </item>
+    <item>
+      <title>Tailwind</title>
+      <link>http://localhost:1313/frontend/tailwind/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/frontend/tailwind/</guid>
+      <description>Setup in React Install Tailwind CSS npm install -D tailwindcss&#xD;npx tailwindcss init Configure your template paths tailwind.config.js&#xA;content: [&amp;#34;./src/**/*.{html,js,jsx,tsx}&amp;#34;], Add the Tailwind directives to the index.css @tailwind base;&#xD;@tailwind components;&#xD;@tailwind utilities; JSX (vite) npm install -D tailwindcss postcss autoprefixer&#xD;npx tailwindcss init -p content: [&#xD;&amp;#34;./index.html&amp;#34;,&#xD;&amp;#34;./src/**/*.{js,ts,jsx,tsx}&amp;#34;,&#xD;], @tailwind base;&#xD;@tailwind components;&#xD;@tailwind utilities; </description>
+    </item>
+  </channel>
+</rss>

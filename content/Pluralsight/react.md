@@ -16,6 +16,8 @@ redux : react state management library
 
 ### Dev environment
 
+---
+
 - Compile JSX
 - Transpile JS
 - Linting
@@ -391,6 +393,44 @@ How Do I Enforce Immutability?
 ---
 
 # Connecting React to Redux
+
+## Container vs Presentational Components
+
+| Container                | Presentational            |
+| ------------------------ | ------------------------- |
+| Focus on how things work | Focus on how things look  |
+| Aware of Redux           | Unaware of Redux          |
+| Subscribe to Redux State | Read data from props      |
+| Dispatch Redux actions   | Invoke callbacks on props |
+
+## React-Redux Introduction
+
+> ### React-Redux
+
+React-redux ties your React Components together to Redux. It consists with Provider component and the Connect function.
+
+> ### Provider
+>
+> It is utilized at your app's route. It wraps your entire application.
+
+```js
+<Provider store={this.props.store}>
+  <App />
+<Provider>
+```
+
+Connect function
+A function provided by React Redux. It connects your React components to the Redux store.
+
+```js
+export default connect(mapStateToProps, mapDispatchToProps)(AuthorPage);
+```
+
+## mapStateToProps
+
+## mapDispatchToProps
+
+## A Chat with Redux
 
 ---
 

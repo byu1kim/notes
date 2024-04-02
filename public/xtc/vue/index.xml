@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vue.js on Byul Notes</title>
+    <link>http://localhost:1313/xtc/vue/</link>
+    <description>Recent content in Vue.js on Byul Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/xtc/vue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Day1</title>
+      <link>http://localhost:1313/xtc/vue/day1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/vue/day1/</guid>
+      <description>What is Vue.js Vue.js is also an open-source front-end JavaScript framework.&#xA;Vue.js was built by Evan You as a side project after working for Google and encountering the limitations of working with AngularJS. He built it with the aim of being as powerful as Angular, but lighter and easier to learn and use.&#xA;According to Evan You:&#xA;Vue.js is a more flexible, less opinionated solution. It’s only an interface layer so you can use it as a light feature in pages instead of a full-blown SPA.</description>
+    </item>
+  </channel>
+</rss>

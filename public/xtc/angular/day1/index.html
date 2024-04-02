@@ -1,0 +1,4397 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.124.1">
+    <meta name="description" content="Coding Notes for Byul">
+<meta name="author" content="Byul Kim">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title>Day1 :: Byul Notes</title>
+
+    
+    <link href="/css/nucleus.css?1712035893" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1712035893" rel="stylesheet">
+    <link href="/css/hybrid.css?1712035893" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1712035893" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1712035893" rel="stylesheet">
+    <link href="/css/auto-complete.css?1712035893" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1712035893" rel="stylesheet">
+    <link href="/css/theme.css?1712035893" rel="stylesheet">
+    <link href="/css/tabs.css?1712035893" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1712035893" rel="stylesheet">
+    
+    <link href="/css/theme-blue.css?1712035893" rel="stylesheet">
+    
+    <link href="/css/style.css?1712035893" rel="stylesheet">
+
+    <script src="/js/jquery-3.3.1.min.js?1712035893"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+  rel="stylesheet"
+/>
+
+  </head>
+  <body class="" data-url="/xtc/angular/day1/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <div class="logo">Byul's Notes</div>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1712035893"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1712035893"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1712035893"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/leetcode/" title="LeetCode" class="dd-item
+        
+        
+        
+        ">
+      <a href="/leetcode/">
+          <i class='fas fa-book-open'></i> &nbspLeetCode
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/leetcode/theory/" title="Theory" class="dd-item ">
+        <a href="/leetcode/theory/">
+        <i class='fas fa-pen'></i> &nbspTheory
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/leetcode/easy/" title="Easy" class="dd-item ">
+        <a href="/leetcode/easy/">
+        <i class='fas fa-pen'></i> &nbspEasy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/leetcode/medium/" title="Medium" class="dd-item ">
+        <a href="/leetcode/medium/">
+        <i class='fas fa-pen'></i> &nbspMedium
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pluralsight/" title="Pluralsight" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pluralsight/">
+          <i class='fas fa-book-open'></i> &nbspPluralsight
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pluralsight/react/" title="React" class="dd-item ">
+        <a href="/pluralsight/react/">
+        <i class='fas fa-pen'></i> &nbspReact
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pluralsight/unittest/" title="Unit Test" class="dd-item ">
+        <a href="/pluralsight/unittest/">
+        <i class='fas fa-pen'></i> &nbspUnit Test
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/python/" title="Python" class="dd-item
+        
+        
+        
+        ">
+      <a href="/python/">
+          <i class='fas fa-book-open'></i> &nbspPython
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/intro/" title="Introduction" class="dd-item ">
+        <a href="/python/intro/">
+        <i class='fas fa-pen'></i> &nbspIntroduction
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/basic/" title="Basics" class="dd-item ">
+        <a href="/python/basic/">
+        <i class='fas fa-pen'></i> &nbspBasics
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/string/" title="String" class="dd-item ">
+        <a href="/python/string/">
+        <i class='fas fa-pen'></i> &nbspString
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/list/" title="Data Structure" class="dd-item ">
+        <a href="/python/list/">
+        <i class='fas fa-pen'></i> &nbspList, Tuple, Set, Dict
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/file/" title="Files" class="dd-item ">
+        <a href="/python/file/">
+        <i class='fas fa-pen'></i> &nbspFiles
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/regex/" title="Regular Expression" class="dd-item ">
+        <a href="/python/regex/">
+        <i class='fas fa-pen'></i> &nbspRegex
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/bs/" title="Beautiful Soup" class="dd-item ">
+        <a href="/python/bs/">
+        <i class='fas fa-pen'></i> &nbspBeautiful Soup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/flask/" title="Flask" class="dd-item ">
+        <a href="/python/flask/">
+        <i class='fas fa-pen'></i> &nbspFlask
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/selenium/" title="Selenium" class="dd-item ">
+        <a href="/python/selenium/">
+        <i class='fas fa-pen'></i> &nbspSelenium
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/react/" title="React" class="dd-item
+        
+        
+        
+        ">
+      <a href="/react/">
+          <i class='fas fa-book-open'></i> &nbspReact
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/1-intro/" title="Intro" class="dd-item ">
+        <a href="/react/1-intro/">
+        <i class='fas fa-pen'></i> &nbspIntro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/2-route/" title="Route" class="dd-item ">
+        <a href="/react/2-route/">
+        <i class='fas fa-pen'></i> &nbspRoute
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/deploy/" title="Deploy" class="dd-item ">
+        <a href="/react/deploy/">
+        <i class='fas fa-pen'></i> &nbspDeploy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/fetch/" title="Data Fetching" class="dd-item ">
+        <a href="/react/fetch/">
+        <i class='fas fa-pen'></i> &nbspData Fetching
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/pagination/" title="Pagination" class="dd-item ">
+        <a href="/react/pagination/">
+        <i class='fas fa-pen'></i> &nbspPagination
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/react/" title="react" class="dd-item ">
+        <a href="/react/react/">
+        <i class='fas fa-pen'></i> &nbspreact
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/3-state/" title="Statement Management" class="dd-item ">
+        <a href="/react/3-state/">
+        <i class='fas fa-pen'></i> &nbspStatement
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/table/" title="Table" class="dd-item ">
+        <a href="/react/table/">
+        <i class='fas fa-pen'></i> &nbspTable
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/useeffect/" title="Use Effect" class="dd-item ">
+        <a href="/react/useeffect/">
+        <i class='fas fa-pen'></i> &nbspUse Effect
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/aws/" title="AWS" class="dd-item
+        
+        
+        
+        ">
+      <a href="/aws/">
+          <i class='fas fa-book-open'></i> &nbspAWS
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/ec2/" title="EC2" class="dd-item ">
+        <a href="/aws/ec2/">
+        <i class='fas fa-pen'></i> &nbspEC2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/s3/" title="S3" class="dd-item ">
+        <a href="/aws/s3/">
+        <i class='fas fa-pen'></i> &nbspS3
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/jwt/" title="JWT" class="dd-item ">
+        <a href="/aws/jwt/">
+        <i class='fas fa-pen'></i> &nbspJWT
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/cognito/" title="Cognito" class="dd-item ">
+        <a href="/aws/cognito/">
+        <i class='fas fa-pen'></i> &nbspCognito
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/aws/5-lambda/" title="Lambda Function" class="dd-item
+        
+        
+        
+        ">
+      <a href="/aws/5-lambda/">
+          <i class='fas fa-pen'></i> &nbspLambda
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/5-lambda/lambda-function/" title="Lambda Function" class="dd-item ">
+        <a href="/aws/5-lambda/lambda-function/">
+        - &nbspLambda Function
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/5-lambda/lambda-.net/" title="Lambda in .NET" class="dd-item ">
+        <a href="/aws/5-lambda/lambda-.net/">
+        - &nbsp.NET
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/iac/" title="Infrastructure as Code" class="dd-item ">
+        <a href="/aws/iac/">
+        <i class='fas fa-pen'></i> &nbspIaC
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/sst/" title="SST" class="dd-item ">
+        <a href="/aws/sst/">
+        <i class='fas fa-pen'></i> &nbspSST
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/sst-auth/" title="SST &amp; Auth" class="dd-item ">
+        <a href="/aws/sst-auth/">
+        <i class='fas fa-pen'></i> &nbspSST &amp; Auth
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/database/" title="Database" class="dd-item
+        
+        
+        
+        ">
+      <a href="/database/">
+          <i class='fas fa-book-open'></i> &nbspDatabase
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/database/sql/" title="Database" class="dd-item ">
+        <a href="/database/sql/">
+        <i class='fas fa-pen'></i> &nbspDatabase
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/database/mssql/" title="MS SQL" class="dd-item ">
+        <a href="/database/mssql/">
+        <i class='fas fa-pen'></i> &nbspMS SQL
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/database/monbodb/" title="MongoDB" class="dd-item ">
+        <a href="/database/monbodb/">
+        <i class='fas fa-pen'></i> &nbspMongoDB
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/javascript/" title="Javascript" class="dd-item
+        
+        
+        
+        ">
+      <a href="/javascript/">
+          <i class='fas fa-book-open'></i> &nbspJavascript
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/javascript/scrap/" title="" class="dd-item ">
+        <a href="/javascript/scrap/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/c/" title="C#" class="dd-item
+        
+        
+        
+        ">
+      <a href="/c/">
+          <i class='fas fa-book-open'></i> &nbspC#
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/intro/" title="Intro" class="dd-item ">
+        <a href="/c/intro/">
+        <i class='fas fa-pen'></i> &nbspIntro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/basic/" title="Basic" class="dd-item ">
+        <a href="/c/basic/">
+        <i class='fas fa-pen'></i> &nbspBasic
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/array/" title="Array" class="dd-item ">
+        <a href="/c/array/">
+        <i class='fas fa-pen'></i> &nbspArray
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/method/" title="Method" class="dd-item ">
+        <a href="/c/method/">
+        <i class='fas fa-pen'></i> &nbspMethod
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/string/" title="String" class="dd-item ">
+        <a href="/c/string/">
+        <i class='fas fa-pen'></i> &nbspString
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/class/" title="Class" class="dd-item ">
+        <a href="/c/class/">
+        <i class='fas fa-pen'></i> &nbspClass
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/linq/" title="Linq" class="dd-item ">
+        <a href="/c/linq/">
+        <i class='fas fa-pen'></i> &nbspLinq
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/asp.net/" title="ASP.NET" class="dd-item
+        
+        
+        
+        ">
+      <a href="/asp.net/">
+          <i class='fas fa-book-open'></i> &nbspASP.NET
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/basic/" title="MVC Basics" class="dd-item ">
+        <a href="/asp.net/basic/">
+        <i class='fas fa-pen'></i> &nbspMVC Basics
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/db/" title="DB Connection" class="dd-item ">
+        <a href="/asp.net/db/">
+        <i class='fas fa-pen'></i> &nbspDB Connection
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/crud/" title="CRUD" class="dd-item ">
+        <a href="/asp.net/crud/">
+        <i class='fas fa-pen'></i> &nbspCRUD
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/linq/" title="Linq" class="dd-item ">
+        <a href="/asp.net/linq/">
+        <i class='fas fa-pen'></i> &nbspLinq
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/frontend/" title="Frontend" class="dd-item
+        
+        
+        
+        ">
+      <a href="/frontend/">
+          <i class='fas fa-book-open'></i> &nbspFrontend
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/html/" title="HTML" class="dd-item ">
+        <a href="/frontend/html/">
+        <i class='fas fa-pen'></i> &nbspHTML
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/frontend/css/" title="CSS" class="dd-item
+        
+        
+        
+        ">
+      <a href="/frontend/css/">
+          <i class='fas fa-pen'></i> &nbspCSS
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/flex/" title="Flexbox" class="dd-item ">
+        <a href="/frontend/css/flex/">
+        - &nbspFlexbox
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/grid/" title="Grid" class="dd-item ">
+        <a href="/frontend/css/grid/">
+        - &nbspGrid
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/trasnform/" title="Transform" class="dd-item ">
+        <a href="/frontend/css/trasnform/">
+        - &nbspTransform
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/etc/" title="" class="dd-item ">
+        <a href="/frontend/css/etc/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/sass/" title="Sass" class="dd-item ">
+        <a href="/frontend/sass/">
+        <i class='fas fa-pen'></i> &nbspSass
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/bootstrap/" title="Bootstrap" class="dd-item ">
+        <a href="/frontend/bootstrap/">
+        <i class='fas fa-pen'></i> &nbspBootstrap
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/tailwind/" title="Tailwind" class="dd-item ">
+        <a href="/frontend/tailwind/">
+        <i class='fas fa-pen'></i> &nbspTailwind
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/" title="ETC" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/xtc/">
+          ETC
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/1job.md/" title="Job Interview" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/1job.md/">
+          <i class='fas fa-pen'></i> &nbspJob Interview
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/setup/" title="Setup" class="dd-item ">
+        <a href="/xtc/setup/">
+        <i class='fas fa-pen'></i> &nbspSetup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/php/" title="PHP" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/php/">
+          <i class='fas fa-pen'></i> &nbspPHP
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/1-docker/" title="Docker" class="dd-item ">
+        <a href="/xtc/php/1-docker/">
+        - Docker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/2-setup/" title="Software setup for Laravel" class="dd-item ">
+        <a href="/xtc/php/2-setup/">
+        - Setup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/3-intro/" title="Laravel Intro" class="dd-item ">
+        <a href="/xtc/php/3-intro/">
+        - Laravel Intro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/sql/" title="MySQL Migration" class="dd-item ">
+        <a href="/xtc/php/sql/">
+        - MySQL Migration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/auth/" title="Auth" class="dd-item ">
+        <a href="/xtc/php/auth/">
+        - Auth
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/admin/" title="Admin" class="dd-item ">
+        <a href="/xtc/php/admin/">
+        - Admin
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/work/" title="Work" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/work/">
+          <i class='fas fa-pen'></i> &nbspWork
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/angularjs/" title="Angular JS" class="dd-item ">
+        <a href="/xtc/work/angularjs/">
+        - Angular JS
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/database/" title="Database" class="dd-item ">
+        <a href="/xtc/work/database/">
+        - Database
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/frontend/" title="Frontend" class="dd-item ">
+        <a href="/xtc/work/frontend/">
+        - Frontend
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/aspnet/" title="ASP .NET" class="dd-item ">
+        <a href="/xtc/work/aspnet/">
+        - ASP .NET
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/angular/" title="Angular.js" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/xtc/angular/">
+          <i class='fas fa-pen'></i> &nbspAngular.js
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/angular/day1/" title="Day1" class="dd-item active">
+        <a href="/xtc/angular/day1/">
+        - Day1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/angular/day2/" title="Day2" class="dd-item ">
+        <a href="/xtc/angular/day2/">
+        - Day2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/angular/day3/" title="Day3" class="dd-item ">
+        <a href="/xtc/angular/day3/">
+        - Day3
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/vue/" title="Vue.js" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/vue/">
+          <i class='fas fa-pen'></i> &nbspVue.js
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/vue/day1/" title="Day1" class="dd-item ">
+        <a href="/xtc/vue/day1/">
+        - Day1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/josh/" title="" class="dd-item ">
+        <a href="/xtc/josh/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/xtc/'>ETC</a> > <a href='/xtc/angular/'>Angular.js</a> > Day1
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-angular">What is Angular</a></li>
+    <li><a href="#advantabes-and-disadvantages-of-angular">Advantabes and Disadvantages of Angular</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#what-is-typescript">What is TypeScript</a></li>
+    <li><a href="#angular-setup">Angular Setup</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#hello-angular">Hello Angular</a></li>
+    <li><a href="#key-angular-files">Key Angular Files</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#key-angular-concepts-and-terminology">Key Angular Concepts and Terminology</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#adding-a-class-to-our-component">Adding a Class to our Component</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#two-way-data-binding---ngmodel-directive">Two Way Data Binding - [(ngModel)] Directive</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#event-handling-with-ngmodelchange">Event Handling with (ngModelChange)</a></li>
+    <li><a href="#loops-with-ngfor">Loops with *ngFor</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#inline-styling-of-elements">Inline Styling of Elements</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#event-handling---click-directive">Event Handling - (click) Directive</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#styling-elements-with-ngstyle">Styling Elements with [ngStyle]</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#css-and-sass-with-angular">CSS and SASS with Angular</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#dynamically-setting-classes">Dynamically Setting Classes</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#assignment">Assignment</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Day1
+            </h1>
+          
+
+        
+
+
+<h2 id="what-is-angular">What is Angular</h2>
+<p>Angular is an open-source front end development framework maintained by Google.</p>
+<p>Built as a side project by Miko Hevery at Google, it was originally launched in 2010 as AngularJS. This original, AngularJS, was a JavaScript based framework with the aim of simplifying the process of building dynamic, single-page web applications via a reusable component architecture, two-way data binding, and a dependency injection system that made it easier to manage complex applications with components that rely on each other.</p>
+<p>AngularJS became very popular, very quickly, and was adopted by many large organizations including Google, HBO, Nike, Paypal, and Microsoft.</p>
+<p>With the rapid adoption of AngularJS, as well as the breakneck pace at which web development needs evolved in the mobile-explosion years, several performance and scalability limitations became apparent.</p>
+<p>To address those limitations, the Angular team rewrote it from the ground up with a focus on providing a more modular, scalable, and performant framework using TypeScript as the primary language. It was released in 2016 simply as Angular and remains one of the most widely used front-end frameworks with a huge and active developer community.</p>
+<p><a href="https://angular.io/">https://angular.io/</a></p>
+<h2 id="advantabes-and-disadvantages-of-angular">Advantabes and Disadvantages of Angular</h2>
+<h4 id="advantages">Advantages</h4>
+<ul>
+<li>Excellent separation of presentation and logic for data driven applications</li>
+<li>Great support for single page application development</li>
+<li>Convenient two-way data binding and validation</li>
+<li>Excellent browser compatibility</li>
+<li>Support by Google</li>
+<li>Huge global developer community.</li>
+</ul>
+<h4 id="disadvantages">Disadvantages</h4>
+<ul>
+<li>Steep learning curve</li>
+<li>Incompatibilities between versions</li>
+<li>Overly sophisticated for smaller applications</li>
+<li>Limited SEO capabilities</li>
+<li>Decreasing popularity in recent years</li>
+</ul>
+<p><a href="https://insights.stackoverflow.com/trends?tags=reactjs%2Cangular">https://insights.stackoverflow.com/trends?tags=reactjs%2Cangular</a></p>
+<p><img src="https://learn.bcit.ca/content/enforced/868291-32660.202230/File_cf86e09855134664a7a20b6d22950a37_image.png?_&amp;d2lSessionVal=mjk0WZvC3Kn5gY2H5nCjiYUGQ&amp;ou=868291" alt="image"></p>
+<h2 id="what-is-typescript">What is TypeScript</h2>
+<p>TypeScript is a strict, syntactic superset of JavaScript developed and maintained by Microsoft.</p>
+<p>Essentially, it is a language extension for JavaScript that provides static typing through type annotations which allows us to do type checking at compile time.</p>
+<p>What that means is we can be specific with the data types that our code uses, including variables as well as the parameters and values returned from functions, and we can catch data type errors BEFORE they happen.</p>
+<p>We develop in TypeScript and then when deploying or launching an app in dev mode it gets compiled down to regular JavaScript which is what the browser works with.</p>
+<p><a href="https://www.typescriptlang.org/">https://www.typescriptlang.org/</a></p>
+<p>Though I will help you work through any TypeScript issues while we&rsquo;re working through our Angular / Vue module, I strongly urge you to get familiar with Typescript on your own time.</p>
+<p><a href="https://www.typescriptlang.org/docs/">https://www.typescriptlang.org/docs/</a></p>
+<h2 id="angular-setup">Angular Setup</h2>
+<p>The only software prerequisites for getting started with local development of Angular applications are having an LTS version of Node.js and NPM installed.</p>
+<h4 id="installing-the-angular-cli">Installing the Angular CLI</h4>
+<p>For Windows users we will need to set the Execution Policy to RemoteSigned in order to install the Angular CLI globally.</p>
+<p>Open a PowerShell terminal and run the following:</p>
+<pre tabindex="0"><code>Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+</code></pre><p>Then, run the following to install the CLI</p>
+<pre tabindex="0"><code>npm install -g @angular/cli
+</code></pre><h4 id="angular-dev-tools">Angular Dev Tools</h4>
+<p><a href="https://angular.io/guide/devtools">https://angular.io/guide/devtools</a></p>
+<p>That&rsquo;s it. We&rsquo;re ready to create our first Angular app.</p>
+<h2 id="hello-angular">Hello Angular</h2>
+<p>In VSCode, in a regular (non-WSL) terminal, navigate to the folder where you want to build your Hello Angular app.</p>
+<p>Run the following CLI command:</p>
+<pre tabindex="0"><code>ng new hello-angular
+</code></pre><p>Accept the defaults for the prompts by pressing enter.</p>
+<p>It may take a while as the packages are installed and the application is initialized.</p>
+<p>The utility will also initialize a local Git repository for us.</p>
+<p>Running Hello Angular
+Navigate into the newly created folder.</p>
+<pre tabindex="0"><code>cd hello-angular
+</code></pre><p>Launch the application.</p>
+<pre tabindex="0"><code>ng serve --open
+</code></pre><p>This too may take a while the first time it runs, but upon completion it should open a browser to http://localhost:4200</p>
+<h2 id="key-angular-files">Key Angular Files</h2>
+<p>Here are some key points in the directory and file structure of an Angular application.</p>
+<p><img src="https://learn.bcit.ca/content/enforced/868291-32660.202230/File_642c660651924668808bf7132bb9d0e2_image.png?_&amp;d2lSessionVal=mjk0WZvC3Kn5gY2H5nCjiYUGQ&amp;ou=868291" alt="img"></p>
+<h5 id="srcmaints">src/main.ts</h5>
+<p>This is the main entry point to the application. It compiles the application and loads AppModule to run in the browser. You generally do not need to edit this.</p>
+<p><img src="https://learn.bcit.ca/content/enforced/868291-32660.202230/File_28ee047347c14e0dbcf2b684a6ded70d_image.png?_&amp;d2lSessionVal=mjk0WZvC3Kn5gY2H5nCjiYUGQ&amp;ou=868291" alt="img"></p>
+<h5 id="srcappappmodulets">src/app/app.module.ts</h5>
+<p>Angular uses modules to group components and directives into libraries. Every application must have at least one module.</p>
+<p>The root module tells the application what to load and how to load it.</p>
+<p>In this case our root module is named AppModule and it is telling Angular to load and bootstrap AppComponent.</p>
+<p><img src="https://learn.bcit.ca/content/enforced/868291-32660.202230/File_ae5c1b72d93844d1a8223fab8244d301_image.png?_&amp;d2lSessionVal=mjk0WZvC3Kn5gY2H5nCjiYUGQ&amp;ou=868291" alt="img"></p>
+<h5 id="srcappappcomponentts">src/app/app.component.ts</h5>
+<p>This is the root component for our boilerplate application.</p>
+<p>In the @Component decorator area we have:</p>
+<ul>
+<li>selector
+<ul>
+<li>This defines a custom element which is what we use to include the component in any HTML view</li>
+</ul>
+</li>
+<li>templateUrl
+<ul>
+<li>This defines the path to the HTML view</li>
+</ul>
+</li>
+<li>styleUrls
+<ul>
+<li>This is an array of stylesheets that the component uses</li>
+</ul>
+</li>
+</ul>
+<p>Below that is the class definition which is where the data and functions to support our component will be defined. In this case the class stores a property (called a model, in Angular) named title.</p>
+<p><img src="https://learn.bcit.ca/content/enforced/868291-32660.202230/File_545119beab9b40e8a4fca32990aa1dcf_image.png?_&amp;d2lSessionVal=mjk0WZvC3Kn5gY2H5nCjiYUGQ&amp;ou=868291" alt="im"></p>
+<h5 id="srcappappcomponenthtml">src/app/app.component.html</h5>
+<p>This contains the HTML template for the view.</p>
+<p>As the exciting comment suggests, let&rsquo;s delete the placeholder content and just output an h1 tag containing the title.</p>
+<pre tabindex="0"><code>&lt;h1&gt;Welcome to {{ title }}!&lt;/h1&gt;
+</code></pre><p>As soon as the file is saved the browser will reload. The angular server is watching for changes and handling hot reloading.</p>
+<p><img src="https://learn.bcit.ca/content/enforced/868291-32660.202230/File_bc7a58086df74536bb04d0c8af2e343e_image.png?_&amp;d2lSessionVal=mjk0WZvC3Kn5gY2H5nCjiYUGQ&amp;ou=868291" alt="img"></p>
+<h5 id="srcindexhtml">src/index.html</h5>
+<p>This contains the parent view for our single page application.</p>
+<p>A couple of key things to note:</p>
+<p>It contains the <!-- raw HTML omitted --><!-- raw HTML omitted --> selector that was defined in the component.</p>
+<p>There is an absence of JavaScript references in this file. All of the JavaScript references are inserted into the application when it is transpiled, just before it runs in the browser.</p>
+<p><img src="https://learn.bcit.ca/content/enforced/868291-32660.202230/File_4c926c8a1db24caf8895f51b257479a2_image.png?_&amp;d2lSessionVal=mjk0WZvC3Kn5gY2H5nCjiYUGQ&amp;ou=868291" alt="img"></p>
+<h2 id="key-angular-concepts-and-terminology">Key Angular Concepts and Terminology</h2>
+<h4 id="components">Components</h4>
+<p>Components are the basic building blocks of an Angular application.</p>
+<p>Components define views which are the sets of screen elements that Angular displays according to our program logic and data.</p>
+<p>A component&rsquo;s job is to enable the user experience by presenting properties and methods for data binding that mediate between the view and the application logic.</p>
+<h4 id="modules">Modules</h4>
+<p>Modules collect blocks of code into single purpose units that are exportable and can be imported into other modules.</p>
+<p>An Angular application is defined by a set of NgModules classes that group components, services, pipes, and other functionality into organized units.</p>
+<h4 id="services">Services</h4>
+<p>Services are injectable classes that don&rsquo;t directly involve the view or application logic.</p>
+<p>Services are good for tasks such as fetching data, validating user input, logging and error handling.</p>
+<h4 id="decorators">Decorators</h4>
+<p>Decorators are used to attach metadata to classes and properties so Angular can know what the given class or property is as well as how it should work. Modules, components, and services are all classes that use decorators to mark their type and provide the needed information to allow Angular to use them.</p>
+<p>For instance, the metadata for a component class defines the selector, template, and stylesheets used by the component.</p>
+<h4 id="templates">Templates</h4>
+<p>Templates are where we combine HTML with Angular markup to control what is displayed to the user.</p>
+<p>In templates we have directives which provide program logic and binding markup which allows us to both interpolate property values into our HTML (Property Binding) and also to respond to user input and interaction by updating the application data (Event Binding).</p>
+<h4 id="pipes">Pipes</h4>
+<p>Pipes are used to format, filter, and manipulate data before it is displayed to the user.</p>
+<h4 id="directives">Directives</h4>
+<p>Directives are special HTML attributes that modify the behavior of elements in the template.</p>
+<h4 id="dependency-injection">Dependency Injection</h4>
+<p>Dependency Injection is a design pattern that facilitates the interaction between parts of a application by defining what other parts of the application any given part needs access to in order to function. It is made up of two main roles: dependency consumers and dependency providers.</p>
+<p>For more information on terms and concepts, refer to:</p>
+<p>The Angular glossary: <a href="https://angular.io/guide/glossary">https://angular.io/guide/glossary</a></p>
+<p>The Angular guide: <a href="https://angular.io/guide/understanding-angular-overview">https://angular.io/guide/understanding-angular-overview</a></p>
+<h2 id="adding-a-class-to-our-component">Adding a Class to our Component</h2>
+<p>Let&rsquo;s add a TimeOfDay class to our component to explore things a bit further.</p>
+<p>Near the top of app.component.ts, after the import but before the @Component decorator, add the following code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TimeOfDay</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">hour</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">number</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">meridiem</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">string</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;AM&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">constructor</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">date</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">hours</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">date</span>.<span style="color:#a6e22e">getHours</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">ampm</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">hours</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">12</span> <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;PM&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;AM&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">hours</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">hours</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">12</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">hours</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">hours</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">hours</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">12</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> { <span style="color:#a6e22e">hour</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">hours</span>, <span style="color:#a6e22e">meridiem</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">ampm</span> };
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Next, within the AppComponent class definition let&rsquo;s add in a name property and also use our TimeOfDay class to add a public property named timeOfDay.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AppComponent</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">title</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hello-angular&#39;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Josh&#39;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">timeOfDay</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">TimeOfDay</span>();
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Update our template to use the name and timeOfDay properties:</p>
+<h4 id="appcomponenthtml">app.component.html</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h1</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Welcome</span> <span style="color:#a6e22e">to</span> {{ <span style="color:#a6e22e">title</span> }}<span style="color:#f92672">!&lt;</span><span style="color:#960050;background-color:#1e0010">/h1&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h2</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Hello</span>, {{ <span style="color:#a6e22e">name</span> }}.<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/h2&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h3</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">It</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">currently</span> {{ <span style="color:#a6e22e">timeOfDay</span>.<span style="color:#a6e22e">hour</span> }} {{ <span style="color:#a6e22e">timeOfDay</span>.<span style="color:#a6e22e">meridiem</span> }}<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/h3&gt;</span>
+</span></span></code></pre></div><h4 id="conditional-output-with-ngif">Conditional Output with *ngIf</h4>
+<p>With Angular we can use the *ngIf directive to conditionally output an element in our template.</p>
+<p>In its simplest form we just add *ngIf=&ldquo;expression&rdquo; and if the expression returns a truthy value the element is output.</p>
+<h5 id="appcomponenthtml-1">app.component.html</h5>
+<pre tabindex="0"><code>&lt;h1 *ngIf=&#34;title&#34;&gt;Welcome to {{ title }}!&lt;/h1&gt;
+</code></pre><p>Test it out.</p>
+<p>Try changing the title property in your appComponent to an empty string.</p>
+<h4 id="complex-expressions">Complex Expressions</h4>
+<p>We can also use more complex expressions with *ngIf, such as checking if a property has a specific value as well as instructing Angular to output something else if the expression returns a falsy value.</p>
+<p>Here&rsquo;s an updated template that conditionally outputs a morning or afternoon greeting.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h1</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">ngIf</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;title&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Welcome</span> <span style="color:#a6e22e">to</span> {{ <span style="color:#a6e22e">title</span> }}<span style="color:#f92672">!&lt;</span><span style="color:#960050;background-color:#1e0010">/h1&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h2</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">ng</span><span style="color:#f92672">-</span><span style="color:#a6e22e">container</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">ngIf</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;timeOfDay.meridiem === &#39;AM&#39;; else afternoonGreeting&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Good</span> <span style="color:#a6e22e">morning</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/ng-container</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&gt;</span>, {{ <span style="color:#a6e22e">name</span> }}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/h2&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h3</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">It</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">currently</span> {{ <span style="color:#a6e22e">timeOfDay</span>.<span style="color:#a6e22e">hour</span> }} {{ <span style="color:#a6e22e">timeOfDay</span>.<span style="color:#a6e22e">meridiem</span> }}<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/h3&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">ng</span><span style="color:#f92672">-</span><span style="color:#a6e22e">template</span> <span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">afternoonGreeting</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">ng</span><span style="color:#f92672">-</span><span style="color:#a6e22e">container</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Good</span> <span style="color:#a6e22e">afternoon</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/ng-container&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/ng-template&gt;</span>
+</span></span></code></pre></div><p>In this example I am outputting a fallback ng-template named afternoonGreeting if the meridiem is not AM.</p>
+<p>I am also utilizing <!-- raw HTML omitted --> which allows us to use structural directives (such as *ngIf) without adding any extra elements to the DOM.</p>
+<p>In the AppComponent class, test out specific property values for hour and meridiem.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AppComponent</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">title</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hello-angular&#39;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Josh&#39;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// public timeOfDay = new TimeOfDay();
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">timeOfDay</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">TimeOfDay</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">hour</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">meridiem</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;AM&#39;</span>,
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="two-way-data-binding---ngmodel-directive">Two Way Data Binding - [(ngModel)] Directive</h2>
+<p>So far we&rsquo;ve output the properties values of a component into the DOM, and we&rsquo;ve also added in some conditional logic, but with two way data binding we can also allow the property values to be modified by user interactions via the ngModel directive and HTML inputs.</p>
+<h4 id="angular-core-modules">Angular Core Modules</h4>
+<p>Angular includes an assortment of core modules that provide predefined directives, services, classes, and pipes to facilitate building our applications.</p>
+<p>We&rsquo;ll explore other core modules later on, but for now we&rsquo;ll need to import the FormsModule so that we can set up our two-way data binding between form inputs and and our component properties</p>
+<h4 id="importing-the-angular-formsmodule">Importing the Angular FormsModule</h4>
+<p>Revise app.module.ts as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">NgModule</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;@angular/core&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">BrowserModule</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;@angular/platform-browser&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">FormsModule</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;@angular/forms&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">AppComponent</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./app.component&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">NgModule</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">declarations</span><span style="color:#f92672">:</span> [<span style="color:#a6e22e">AppComponent</span>],
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">imports</span><span style="color:#f92672">:</span> [<span style="color:#a6e22e">BrowserModule</span>, <span style="color:#a6e22e">FormsModule</span>],
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">providers</span><span style="color:#f92672">:</span> [],
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">bootstrap</span><span style="color:#f92672">:</span> [<span style="color:#a6e22e">AppComponent</span>],
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AppModule</span> {}
+</span></span></code></pre></div><p>On line 3 we&rsquo;re importing the the FormsModule from the @angular/ namespace (which is typically where we&rsquo;ll find core modules), and then on line 8 we&rsquo;re adding FormsModule to the imports array in the @NgModule decorator which is how we define this modules dependencies.</p>
+<h4 id="binding-an-input-to-a-model">Binding an Input to a Model</h4>
+<p>Add the following to our template in app.component.html</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">label</span> <span style="color:#66d9ef">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;name&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Name</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/label</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&lt;</span><span style="color:#a6e22e">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;name&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;name&#34;</span> [(<span style="color:#a6e22e">ngModel</span>)]<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;name&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span></code></pre></div><p>Edit the value in the name input and you&rsquo;ll see the greeting text in the DOM update instantly. Also note that the initial value of the input was set equal to the name property set in our component.</p>
+<p>Side note: There isn&rsquo;t actually a value attribute on the input. Take a look in DevTools and you&rsquo;ll see what I mean.</p>
+<p><img src="https://learn.bcit.ca/content/enforced/868291-32660.202230/File_29e4ee9ab58a4d13bb5c3b2027193679_image.png?_&amp;d2lSessionVal=mjk0WZvC3Kn5gY2H5nCjiYUGQ&amp;ou=868291" alt="img"></p>
+<h4 id="practice-exercise">Practice Exercise</h4>
+<p>Add two more inputs into the template and bind them to the hour and meridiem properties of our timeOfDay object.</p>
+<p>Tips:</p>
+<ul>
+<li>The hour input should be type number
+<ul>
+<li>Set min and max attributes (go with 1 and 24, for now)</li>
+<li>Bind it to timeofDay.hours</li>
+</ul>
+</li>
+<li>AM / PM should be a select with options of AM and PM
+<ul>
+<li>The binding should be on the select element, not the options</li>
+</ul>
+</li>
+</ul>
+<h2 id="event-handling-with-ngmodelchange">Event Handling with (ngModelChange)</h2>
+<p>We&rsquo;ve bound our inputs to their corresponding models (properties), but at this point the hour and meridiem handling via the inputs are are independent of each other and when we reach the max value for hour we&rsquo;d need to manually change the value back to 1 rather than have it loop back automatically.</p>
+<p>To handle this, it would be useful to have a function that is run whenever the hour changes such that:</p>
+<ul>
+<li>If the hour input is set to a value greater than 12 the hour property is set back to 1 (which, due to the two-way binding will also set the input to 1)</li>
+<li>Meridiem automatically changes from AM to PM accordingly.</li>
+</ul>
+<p>I&rsquo;ll let you work out the body of the function yourself, but the event handling setup will look like this:</p>
+<ul>
+<li>Add a function within the AppComponent class</li>
+</ul>
+<pre tabindex="0"><code>export class AppComponent {
+  title = &#39;hello-angular&#39;;
+  name = &#39;Josh&#39;;
+  // public timeOfDay = new TimeOfDay();
+  public timeOfDay: TimeOfDay = {
+    hour: 10,
+    meridiem: &#39;AM&#39;,
+  };
+  handleHourChange() {
+    console.log(this.timeOfDay.hour);
+    // fill in the rest of this to simulate clock behaviour
+  }
+}
+</code></pre><ul>
+<li>On the &ldquo;hour&rdquo; input, bind the ngModelChange event to the function above:</li>
+</ul>
+<pre tabindex="0"><code>&lt;input
+  type=&#34;number&#34;
+  name=&#34;hour&#34;
+  id=&#34;hour&#34;
+  size=&#34;2&#34;
+  min=&#34;1&#34;
+  max=&#34;24&#34;
+  style=&#34;width: 3em&#34;
+  [(ngModel)]=&#34;timeOfDay.hour&#34;
+  (ngModelChange)=&#34;handleHourChange()&#34;
+/&gt;
+</code></pre><p>Note: In the example above we are listening for the ngModelChange event. This works because we have already bound the input to timeOfDay.hour via [(ngModel)]. If we wanted to listen for change events on an input that isn&rsquo;t bound to a model, we could do so by listening for (change) instead of (ngModelChange). You&rsquo;ll see the equivalent of that when we set up click event listening in a couple of sllides.</p>
+<p>My version of the handleHourChange is below, in white:</p>
+<dl>
+<dt>handleHourChange() {</dt>
+<dt>if (this.timeOfDay.hour &gt; 12) {</dt>
+<dt>this.timeOfDay.hour = 1;</dt>
+<dt>}</dt>
+<dt>if (this.timeOfDay.hour === 12) {</dt>
+<dt>this.timeOfDay.meridiem === &lsquo;AM&rsquo;</dt>
+<dt>? (this.timeOfDay.meridiem = &lsquo;PM&rsquo;)</dt>
+<dd>(this.timeOfDay.meridiem = &lsquo;AM&rsquo;);
+}
+}</dd>
+</dl>
+<h2 id="loops-with-ngfor">Loops with *ngFor</h2>
+<p>We can use the *ngFor directive to loop through a collection of items.</p>
+<p>Let&rsquo;s put together a set of colour swatches.</p>
+<h4 id="define-a-colourswatch-class">Define a ColourSwatch Class</h4>
+<p>Above our TimeOfDay class in app.component.ts , define a ColourSwatch class with two string properties hexCode and name.</p>
+<pre tabindex="0"><code>export class ColourSwatch {
+  hexCode: string;
+  name: string;
+}
+</code></pre><h4 id="typescript-micro-tangent">TypeScript Micro-Tangent</h4>
+<p>Uh oh. You should be seeing some red squiggles under the property names!</p>
+<p><img src="https://learn.bcit.ca/content/enforced/868291-32660.202230/File_5636fbc2ebf143ba935138fce2bf9970_image.png?_&amp;d2lSessionVal=mjk0WZvC3Kn5gY2H5nCjiYUGQ&amp;ou=868291" alt="g"></p>
+<p>That&rsquo;s because even though we&rsquo;ve specified the data types for the properties we don&rsquo;t have a constructor that for this class that initialized the values to the expected type.</p>
+<p>There are a few ways we could handle this, and I don&rsquo;t want to go on too far a tangent, so let me just introduce you to the definite assignment assertion operator, !.</p>
+<p>By appending ! to each of those properties we are telling TypeScript that we will definitely initialize their values appropriately.</p>
+<pre tabindex="0"><code>export class ColourSwatch {
+  hexCode!: string;
+  name!: string;
+}
+</code></pre><p>Error be gone. Let&rsquo;s carry on.</p>
+<h4 id="initialize-an-array-of-colourswatch">Initialize an array of ColourSwatch</h4>
+<p>Just below our class definition add:</p>
+<pre tabindex="0"><code>const SWATCHES: ColourSwatch[] = [
+  { hexCode: &#39;#000000&#39;, name: &#39;Black&#39; },
+  { hexCode: &#39;#FFFFFF&#39;, name: &#39;White&#39; },
+  { hexCode: &#39;#BE3455&#39;, name: &#39;Viva Magenta&#39; },
+  { hexCode: &#39;#6667AB&#39;, name: &#39;Very Peri&#39; },
+];
+</code></pre><h4 id="set-them-as-a-property-of-the-appcomponent">Set them as a property of the AppComponent</h4>
+<p>Above the handleHourChange method, add:</p>
+<pre tabindex="0"><code>public swatches = SWATCHES;
+</code></pre><h4 id="output-a-div-containing-the-name-for-each-swatch-in-the-template">Output a div containing the name for each Swatch in the Template</h4>
+<p>In app.component.html</p>
+<pre tabindex="0"><code>&lt;div *ngFor=&#34;let swatch of swatches&#34;&gt;{{swatch.name}}&lt;/div&gt;
+</code></pre><h4 id="accessing-the-index-while-looping">Accessing the Index While Looping</h4>
+<p>Purely for demonstration purposes, let&rsquo;s also number our colour swatches based on its index in the array.</p>
+<p>We can do so by adding referencing the index as follows:</p>
+<pre tabindex="0"><code>&lt;div *ngFor=&#34;let swatch of swatches; let i = index&#34;&gt;
+  {{ i + 1 }}. {{ swatch.name }}
+&lt;/div&gt;
+</code></pre><p>Notes:
+*ngFor works with collections. With it, you can&rsquo;t directly loop between a range of numbers as you might elsewhere in JavaScript. If you do want to use *ngFor loop over a range of numbers, create an array of the numbers first then iterate through that.</p>
+<p>There also isn&rsquo;t an ngWhile directive. If you really want to repeatedly output a block you could use a combination of *ngIf and *ngFor directives, but&hellip; you also need to keep in mind that only one structural directive is allowed per element.</p>
+<p>There is, of course, far more to *ngFor.</p>
+<p><a href="https://angular.io/api/common/NgFor">https://angular.io/api/common/NgFor</a></p>
+<h2 id="inline-styling-of-elements">Inline Styling of Elements</h2>
+<p>We can apply inline styles to elements with the usual style=&quot;&quot; attributes, and we can directly echo out or use expressions to set style values as well.</p>
+<h4 id="colouring-our-swatches">Colouring our Swatches</h4>
+<pre tabindex="0"><code>&lt;div
+  *ngFor=&#34;let swatch of swatches; let i = index&#34;
+  style=&#34;background-color: {{ swatch.hexCode }};
+  color: {{ swatch.name === &#39;Black&#39; ? &#39;white&#39; : &#39;black&#39; }}&#34;
+&gt;
+  {{ i + 1 }}. {{ swatch.name }}
+&lt;/div&gt;
+</code></pre><p>The above will work, but is likely to cause warnings in your editor. The values are also only indirectly bound to the properties (via the *ngFor).</p>
+<p>To bind our styles and clean up the syntax, we could rewrite the above as:</p>
+<pre tabindex="0"><code>&lt;div
+  *ngFor=&#34;let swatch of swatches; let i = index&#34;
+  [style.backgroundColor]=&#34;swatch.hexCode&#34;
+  [style.color]=&#34;swatch.name === &#39;Black&#39; ? &#39;white&#39; : &#39;black&#39;&#34;
+&gt;
+  {{ i + 1 }}. {{ swatch.name }}
+&lt;/div&gt;
+</code></pre><p>The thing to understand here is that the value in double quotes to the right of the equals is an expression.</p>
+<p>Let&rsquo;s add a couple more styles to control the padding and width of our swatches before moving on.</p>
+<h4 id="style-binding-with-string-expressions">Style Binding with String Expressions</h4>
+<pre tabindex="0"><code>[style.width]=&#34;&#39;200px&#39;&#34;
+</code></pre><h4 id="style-binding-with-units">Style Binding with Units</h4>
+<pre tabindex="0"><code>[style.padding.rem]=&#34;1&#34;
+</code></pre><h2 id="event-handling---click-directive">Event Handling - (click) Directive</h2>
+<p>Let&rsquo;s make our colour swatches clickable.</p>
+<p>The process is very much the same as how we handled change events.</p>
+<p>First, let&rsquo;s add a selectedColourSwatch property to our component.</p>
+<p>The catch is, I don&rsquo;t want to specify a selected colour swatch initially. To handle this without running afoul of TypeScript rules, I can use the Union datatype to specify that the property will either be a ColourSwatch or undefined.</p>
+<h5 id="appcomponentts">app.component.ts</h5>
+<pre tabindex="0"><code>selectedColourSwatch: ColourSwatch | undefined;
+</code></pre><h4 id="add-an-event-handler-method">Add an Event Handler Method</h4>
+<p>Still in our AppComponent, add:</p>
+<pre tabindex="0"><code>  handleColourChange(swatch: ColourSwatch) {
+    this.selectedColourSwatch = swatch;
+  }
+</code></pre><h4 id="registering-the-event-listener">Registering the Event Listener</h4>
+<p>While we&rsquo;re looping through the swatches in out template, we can add the event listener with:</p>
+<pre tabindex="0"><code>  (click)=&#34;handleColourChange(swatch)&#34;
+</code></pre><p>To verify that our click handling is working, open the Angular Dev Tools in your browser and select the app-root component.</p>
+<p>Initially, you won&rsquo;t see a selectedColourSwatch property.</p>
+<p><img src="https://learn.bcit.ca/content/enforced/868291-32660.202230/File_b05d0db0b84145908289e543f64168e4_image.png?_&amp;d2lSessionVal=mjk0WZvC3Kn5gY2H5nCjiYUGQ&amp;ou=868291" alt="img"></p>
+<p>After clicking on a swatch, however, you should see it in the property list.</p>
+<p><img src="https://learn.bcit.ca/content/enforced/868291-32660.202230/File_ebc2d470e2c941919dc57d2323c9e2b6_image.png?_&amp;d2lSessionVal=mjk0WZvC3Kn5gY2H5nCjiYUGQ&amp;ou=868291" alt="a"></p>
+<h2 id="styling-elements-with-ngstyle">Styling Elements with [ngStyle]</h2>
+<p>Let&rsquo;s conditionally output a div showing the currently selected colour swatch and explore one more way of binding styles to it: [ngStyle]</p>
+<h5 id="appcomponenthtml-2">app.component.html</h5>
+<pre tabindex="0"><code>&lt;div
+  *ngIf=&#34;selectedColourSwatch&#34;
+  [ngStyle]=&#34;{
+    &#39;background-color&#39;: selectedColourSwatch.hexCode,
+    padding: &#39;1rem&#39;
+  }&#34;
+&gt;
+  &lt;h2 [style.color]=&#34;selectedColourSwatch.name === &#39;Black&#39; ? &#39;white&#39; : &#39;black&#39;&#34;&gt;
+    You Selected {{ selectedColourSwatch.name }}.
+  &lt;/h2&gt;
+&lt;/div&gt;
+</code></pre><p>As you can see, there are many ways to apply styles to an element in Angular.</p>
+<p>The biggest difference between [style.property] and [ngStyle] is that with the former we set a single property at a time whereas with [ngStyle] we pass in an object that can contain multiple properties.</p>
+<p>Though there are slight differences in how they work behind the scenes, which you use will depend on the situation and your personal preference.</p>
+<h2 id="css-and-sass-with-angular">CSS and SASS with Angular</h2>
+<p>If you look at the @Component decorator in app.component.ts you will see that it defines three things:</p>
+<ul>
+<li>selector</li>
+<li>templateUrl</li>
+<li>styleUrls</li>
+</ul>
+<pre tabindex="0"><code>@Component({
+  selector: &#39;app-root&#39;,
+  templateUrl: &#39;./app.component.html&#39;,
+  styleUrls: [&#39;./app.component.css&#39;],
+})
+</code></pre><p>We can write plain-old CSS in here and it will both work as expected AND be scoped to this specific component.</p>
+<p>Let&rsquo;s add a very simple hover effect for our colour swatches.</p>
+<h5 id="appcomponentcss">app.component.css</h5>
+<pre tabindex="0"><code>*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+div:hover {
+  margin-left: 0.3rem;
+}
+</code></pre><p>Since we&rsquo;re working with the Angular CLI we can also use Sass with no additional setup.</p>
+<h4 id="angular-sass">Angular Sass</h4>
+<p>For demonstration purposes let&rsquo;s create a app.swatches.scss file, move our hover styling into it, and add the app.swatches.scss file to the styleUrls array.</p>
+<h5 id="appswatchesscss">app.swatches.scss</h5>
+<pre tabindex="0"><code>div {
+  margin: 0;
+  &amp;:hover {
+    margin-left: 0.3rem;
+  }
+}
+</code></pre><h5 id="appcomponentts-1">app.component.ts</h5>
+<pre tabindex="0"><code>@Component({
+  selector: &#39;app-root&#39;,
+  templateUrl: &#39;./app.component.html&#39;,
+  styleUrls: [&#39;./app.component.css&#39;, &#39;./app.swatches.scss&#39;],
+})
+</code></pre><h2 id="dynamically-setting-classes">Dynamically Setting Classes</h2>
+<p>Now that we have CSS in play, let&rsquo;s start adding classes to our template elements.</p>
+<p>The simplest form of this is with class binding, which allows us to conditionally add a single class to an element based on the result of an expression.</p>
+<h4 id="class-binding">Class Binding</h4>
+<p>Let&rsquo;s add a selected class to the selected colour swatch.</p>
+<p>First, in app.swatches.scss add a rule for div.selected:</p>
+<pre tabindex="0"><code>div {
+  margin: 0;
+  &amp;:hover {
+    margin-left: 0.3rem;
+  }
+  &amp;.selected {
+    font-size: 1.2rem;
+    font-weight: bold;
+    &amp;::before {
+      content: &#34;\00BB&#34;;
+    }
+  }
+}
+</code></pre><p>Now, in app.component.html, in our *ngFor loop, add the following:</p>
+<pre tabindex="0"><code>[class.selected]=&#34;swatch == selectedColourSwatch&#34;
+</code></pre><h4 id="setting-multiple-classes-with-ngclass">Setting Multiple Classes with [ngClass]</h4>
+<p>First, let&rsquo;s add three classes to app.component.css (or .scss)</p>
+<pre tabindex="0"><code>.rounded {
+  border-radius: 2rem;
+}
+
+.bordered {
+  border: 2px solid
+black;
+}
+
+.text-centered {
+  text-align: center;
+}
+</code></pre><p>There are several ways that we can set multiple classes on an element using the [ngClass] directive.</p>
+<p>Our expression can return a space separated list of one or more classes as a string</p>
+<pre tabindex="0"><code>[ngClass]=&#34;&#39;rounded bordered text-centered&#39;&#34;
+</code></pre><p>It can return an array of strings</p>
+<pre tabindex="0"><code>[ngClass]=&#34;[&#39;rounded&#39;, &#39;bordered&#39;, &#39;text-centered&#39;]&#34;
+</code></pre><p>It can return an array, but we can conditionally control the items</p>
+<pre tabindex="0"><code>[ngClass]=&#34;[
+  &#39;rounded&#39;,
+  &#39;text-centered&#39;,
+  selectedColourSwatch.name === &#39;White&#39; ? &#39;bordered&#39; : &#39;&#39;
+]&#34;
+</code></pre><p>Or, we can return an object where each property whose value is truthy is added</p>
+<pre tabindex="0"><code>[ngClass]=&#34;{
+  rounded: true,
+  centered: true,
+  bordered: selectedColourSwatch.name === &#39;White&#39;
+}&#34;
+</code></pre><h2 id="assignment">Assignment</h2>
+<pre tabindex="0"><code>export class Category {
+  id!: number;
+  name!: string;
+  slug!: string;
+}
+
+export class Tag {
+  id!: number;
+  name!: string;
+  slug!: string;
+  pivot?: any;
+}
+
+export class Project {
+  &#39;id&#39;: number;
+  &#39;title&#39;: string;
+  &#39;slug&#39;: string;
+  &#39;excerpt&#39;: string;
+  &#39;body&#39;: string;
+  &#39;url&#39;: string | null;
+  &#39;published_date&#39;: string | null;
+  &#39;image&#39;: string | null;
+  &#39;thumb&#39;: string | null;
+  &#39;category_id&#39;: number | null;
+  &#39;created_at&#39;: string;
+  &#39;updated_at&#39;: string;
+  &#39;category&#39;: Category | null;
+  &#39;tags&#39;: Tag[] | undefined;
+}
+</code></pre>
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/xtc/angular/" title="Angular.js"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/xtc/angular/day2/" title="Day2" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1712035893"></script>
+    <script src="/js/perfect-scrollbar.min.js?1712035893"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1712035893"></script>
+    <script src="/js/jquery.sticky.js?1712035893"></script>
+    <script src="/js/featherlight.min.js?1712035893"></script>
+    <script src="/js/highlight.pack.js?1712035893"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1712035893"></script>
+    <script src="/js/learn.js?1712035893"></script>
+    <script src="/js/hugo-learn.js?1712035893"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1712035893"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

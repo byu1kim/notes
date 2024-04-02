@@ -1,0 +1,4223 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.124.1">
+    <meta name="description" content="Coding Notes for Byul">
+<meta name="author" content="Byul Kim">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title>React :: Byul Notes</title>
+
+    
+    <link href="/css/nucleus.css?1712066948" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1712066948" rel="stylesheet">
+    <link href="/css/hybrid.css?1712066948" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1712066948" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1712066948" rel="stylesheet">
+    <link href="/css/auto-complete.css?1712066948" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1712066948" rel="stylesheet">
+    <link href="/css/theme.css?1712066948" rel="stylesheet">
+    <link href="/css/tabs.css?1712066948" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1712066948" rel="stylesheet">
+    
+    <link href="/css/theme-blue.css?1712066948" rel="stylesheet">
+    
+    <link href="/css/style.css?1712066948" rel="stylesheet">
+
+    <script src="/js/jquery-3.3.1.min.js?1712066948"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+  rel="stylesheet"
+/>
+
+  </head>
+  <body class="" data-url="/pluralsight/react/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <div class="logo">Byul's Notes</div>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1712066948"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1712066948"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1712066948"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/leetcode/" title="LeetCode" class="dd-item
+        
+        
+        
+        ">
+      <a href="/leetcode/">
+          <i class='fas fa-book-open'></i> &nbspLeetCode
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/leetcode/theory/" title="Theory" class="dd-item ">
+        <a href="/leetcode/theory/">
+        <i class='fas fa-pen'></i> &nbspTheory
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/leetcode/easy/" title="Easy" class="dd-item ">
+        <a href="/leetcode/easy/">
+        <i class='fas fa-pen'></i> &nbspEasy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/leetcode/medium/" title="Medium" class="dd-item ">
+        <a href="/leetcode/medium/">
+        <i class='fas fa-pen'></i> &nbspMedium
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pluralsight/" title="Pluralsight" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/pluralsight/">
+          <i class='fas fa-book-open'></i> &nbspPluralsight
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pluralsight/react/" title="React" class="dd-item active">
+        <a href="/pluralsight/react/">
+        <i class='fas fa-pen'></i> &nbspReact
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pluralsight/unittest/" title="Unit Test" class="dd-item ">
+        <a href="/pluralsight/unittest/">
+        <i class='fas fa-pen'></i> &nbspUnit Test
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/python/" title="Python" class="dd-item
+        
+        
+        
+        ">
+      <a href="/python/">
+          <i class='fas fa-book-open'></i> &nbspPython
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/intro/" title="Introduction" class="dd-item ">
+        <a href="/python/intro/">
+        <i class='fas fa-pen'></i> &nbspIntroduction
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/basic/" title="Basics" class="dd-item ">
+        <a href="/python/basic/">
+        <i class='fas fa-pen'></i> &nbspBasics
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/string/" title="String" class="dd-item ">
+        <a href="/python/string/">
+        <i class='fas fa-pen'></i> &nbspString
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/list/" title="Data Structure" class="dd-item ">
+        <a href="/python/list/">
+        <i class='fas fa-pen'></i> &nbspList, Tuple, Set, Dict
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/file/" title="Files" class="dd-item ">
+        <a href="/python/file/">
+        <i class='fas fa-pen'></i> &nbspFiles
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/regex/" title="Regular Expression" class="dd-item ">
+        <a href="/python/regex/">
+        <i class='fas fa-pen'></i> &nbspRegex
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/bs/" title="Beautiful Soup" class="dd-item ">
+        <a href="/python/bs/">
+        <i class='fas fa-pen'></i> &nbspBeautiful Soup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/flask/" title="Flask" class="dd-item ">
+        <a href="/python/flask/">
+        <i class='fas fa-pen'></i> &nbspFlask
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/selenium/" title="Selenium" class="dd-item ">
+        <a href="/python/selenium/">
+        <i class='fas fa-pen'></i> &nbspSelenium
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/react/" title="React" class="dd-item
+        
+        
+        
+        ">
+      <a href="/react/">
+          <i class='fas fa-book-open'></i> &nbspReact
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/1-intro/" title="Intro" class="dd-item ">
+        <a href="/react/1-intro/">
+        <i class='fas fa-pen'></i> &nbspIntro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/2-route/" title="Route" class="dd-item ">
+        <a href="/react/2-route/">
+        <i class='fas fa-pen'></i> &nbspRoute
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/deploy/" title="Deploy" class="dd-item ">
+        <a href="/react/deploy/">
+        <i class='fas fa-pen'></i> &nbspDeploy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/fetch/" title="Data Fetching" class="dd-item ">
+        <a href="/react/fetch/">
+        <i class='fas fa-pen'></i> &nbspData Fetching
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/pagination/" title="Pagination" class="dd-item ">
+        <a href="/react/pagination/">
+        <i class='fas fa-pen'></i> &nbspPagination
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/react/" title="react" class="dd-item ">
+        <a href="/react/react/">
+        <i class='fas fa-pen'></i> &nbspreact
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/3-state/" title="Statement Management" class="dd-item ">
+        <a href="/react/3-state/">
+        <i class='fas fa-pen'></i> &nbspStatement
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/table/" title="Table" class="dd-item ">
+        <a href="/react/table/">
+        <i class='fas fa-pen'></i> &nbspTable
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/useeffect/" title="Use Effect" class="dd-item ">
+        <a href="/react/useeffect/">
+        <i class='fas fa-pen'></i> &nbspUse Effect
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/aws/" title="AWS" class="dd-item
+        
+        
+        
+        ">
+      <a href="/aws/">
+          <i class='fas fa-book-open'></i> &nbspAWS
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/ec2/" title="EC2" class="dd-item ">
+        <a href="/aws/ec2/">
+        <i class='fas fa-pen'></i> &nbspEC2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/s3/" title="S3" class="dd-item ">
+        <a href="/aws/s3/">
+        <i class='fas fa-pen'></i> &nbspS3
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/jwt/" title="JWT" class="dd-item ">
+        <a href="/aws/jwt/">
+        <i class='fas fa-pen'></i> &nbspJWT
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/cognito/" title="Cognito" class="dd-item ">
+        <a href="/aws/cognito/">
+        <i class='fas fa-pen'></i> &nbspCognito
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/aws/5-lambda/" title="Lambda Function" class="dd-item
+        
+        
+        
+        ">
+      <a href="/aws/5-lambda/">
+          <i class='fas fa-pen'></i> &nbspLambda
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/5-lambda/lambda-function/" title="Lambda Function" class="dd-item ">
+        <a href="/aws/5-lambda/lambda-function/">
+        - &nbspLambda Function
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/5-lambda/lambda-.net/" title="Lambda in .NET" class="dd-item ">
+        <a href="/aws/5-lambda/lambda-.net/">
+        - &nbsp.NET
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/iac/" title="Infrastructure as Code" class="dd-item ">
+        <a href="/aws/iac/">
+        <i class='fas fa-pen'></i> &nbspIaC
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/sst/" title="SST" class="dd-item ">
+        <a href="/aws/sst/">
+        <i class='fas fa-pen'></i> &nbspSST
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/sst-auth/" title="SST &amp; Auth" class="dd-item ">
+        <a href="/aws/sst-auth/">
+        <i class='fas fa-pen'></i> &nbspSST &amp; Auth
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/database/" title="Database" class="dd-item
+        
+        
+        
+        ">
+      <a href="/database/">
+          <i class='fas fa-book-open'></i> &nbspDatabase
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/database/sql/" title="Database" class="dd-item ">
+        <a href="/database/sql/">
+        <i class='fas fa-pen'></i> &nbspDatabase
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/database/mssql/" title="MS SQL" class="dd-item ">
+        <a href="/database/mssql/">
+        <i class='fas fa-pen'></i> &nbspMS SQL
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/database/monbodb/" title="MongoDB" class="dd-item ">
+        <a href="/database/monbodb/">
+        <i class='fas fa-pen'></i> &nbspMongoDB
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/javascript/" title="Javascript" class="dd-item
+        
+        
+        
+        ">
+      <a href="/javascript/">
+          <i class='fas fa-book-open'></i> &nbspJavascript
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/javascript/scrap/" title="" class="dd-item ">
+        <a href="/javascript/scrap/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/c/" title="C#" class="dd-item
+        
+        
+        
+        ">
+      <a href="/c/">
+          <i class='fas fa-book-open'></i> &nbspC#
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/intro/" title="Intro" class="dd-item ">
+        <a href="/c/intro/">
+        <i class='fas fa-pen'></i> &nbspIntro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/basic/" title="Basic" class="dd-item ">
+        <a href="/c/basic/">
+        <i class='fas fa-pen'></i> &nbspBasic
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/array/" title="Array" class="dd-item ">
+        <a href="/c/array/">
+        <i class='fas fa-pen'></i> &nbspArray
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/method/" title="Method" class="dd-item ">
+        <a href="/c/method/">
+        <i class='fas fa-pen'></i> &nbspMethod
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/string/" title="String" class="dd-item ">
+        <a href="/c/string/">
+        <i class='fas fa-pen'></i> &nbspString
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/class/" title="Class" class="dd-item ">
+        <a href="/c/class/">
+        <i class='fas fa-pen'></i> &nbspClass
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/linq/" title="Linq" class="dd-item ">
+        <a href="/c/linq/">
+        <i class='fas fa-pen'></i> &nbspLinq
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/asp.net/" title="ASP.NET" class="dd-item
+        
+        
+        
+        ">
+      <a href="/asp.net/">
+          <i class='fas fa-book-open'></i> &nbspASP.NET
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/basic/" title="MVC Basics" class="dd-item ">
+        <a href="/asp.net/basic/">
+        <i class='fas fa-pen'></i> &nbspMVC Basics
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/db/" title="DB Connection" class="dd-item ">
+        <a href="/asp.net/db/">
+        <i class='fas fa-pen'></i> &nbspDB Connection
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/crud/" title="CRUD" class="dd-item ">
+        <a href="/asp.net/crud/">
+        <i class='fas fa-pen'></i> &nbspCRUD
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/linq/" title="Linq" class="dd-item ">
+        <a href="/asp.net/linq/">
+        <i class='fas fa-pen'></i> &nbspLinq
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/frontend/" title="Frontend" class="dd-item
+        
+        
+        
+        ">
+      <a href="/frontend/">
+          <i class='fas fa-book-open'></i> &nbspFrontend
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/html/" title="HTML" class="dd-item ">
+        <a href="/frontend/html/">
+        <i class='fas fa-pen'></i> &nbspHTML
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/frontend/css/" title="CSS" class="dd-item
+        
+        
+        
+        ">
+      <a href="/frontend/css/">
+          <i class='fas fa-pen'></i> &nbspCSS
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/flex/" title="Flexbox" class="dd-item ">
+        <a href="/frontend/css/flex/">
+        - &nbspFlexbox
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/grid/" title="Grid" class="dd-item ">
+        <a href="/frontend/css/grid/">
+        - &nbspGrid
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/trasnform/" title="Transform" class="dd-item ">
+        <a href="/frontend/css/trasnform/">
+        - &nbspTransform
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/etc/" title="" class="dd-item ">
+        <a href="/frontend/css/etc/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/sass/" title="Sass" class="dd-item ">
+        <a href="/frontend/sass/">
+        <i class='fas fa-pen'></i> &nbspSass
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/bootstrap/" title="Bootstrap" class="dd-item ">
+        <a href="/frontend/bootstrap/">
+        <i class='fas fa-pen'></i> &nbspBootstrap
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/tailwind/" title="Tailwind" class="dd-item ">
+        <a href="/frontend/tailwind/">
+        <i class='fas fa-pen'></i> &nbspTailwind
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/" title="ETC" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/">
+          ETC
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/1job.md/" title="Job Interview" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/1job.md/">
+          <i class='fas fa-pen'></i> &nbspJob Interview
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/setup/" title="Setup" class="dd-item ">
+        <a href="/xtc/setup/">
+        <i class='fas fa-pen'></i> &nbspSetup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/php/" title="PHP" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/php/">
+          <i class='fas fa-pen'></i> &nbspPHP
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/1-docker/" title="Docker" class="dd-item ">
+        <a href="/xtc/php/1-docker/">
+        - Docker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/2-setup/" title="Software setup for Laravel" class="dd-item ">
+        <a href="/xtc/php/2-setup/">
+        - Setup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/3-intro/" title="Laravel Intro" class="dd-item ">
+        <a href="/xtc/php/3-intro/">
+        - Laravel Intro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/sql/" title="MySQL Migration" class="dd-item ">
+        <a href="/xtc/php/sql/">
+        - MySQL Migration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/auth/" title="Auth" class="dd-item ">
+        <a href="/xtc/php/auth/">
+        - Auth
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/admin/" title="Admin" class="dd-item ">
+        <a href="/xtc/php/admin/">
+        - Admin
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/work/" title="Work" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/work/">
+          <i class='fas fa-pen'></i> &nbspWork
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/angularjs/" title="Angular JS" class="dd-item ">
+        <a href="/xtc/work/angularjs/">
+        - Angular JS
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/database/" title="Database" class="dd-item ">
+        <a href="/xtc/work/database/">
+        - Database
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/frontend/" title="Frontend" class="dd-item ">
+        <a href="/xtc/work/frontend/">
+        - Frontend
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/aspnet/" title="ASP .NET" class="dd-item ">
+        <a href="/xtc/work/aspnet/">
+        - ASP .NET
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/angular/" title="Angular.js" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/angular/">
+          <i class='fas fa-pen'></i> &nbspAngular.js
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/angular/day1/" title="Day1" class="dd-item ">
+        <a href="/xtc/angular/day1/">
+        - Day1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/angular/day2/" title="Day2" class="dd-item ">
+        <a href="/xtc/angular/day2/">
+        - Day2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/angular/day3/" title="Day3" class="dd-item ">
+        <a href="/xtc/angular/day3/">
+        - Day3
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/vue/" title="Vue.js" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/vue/">
+          <i class='fas fa-pen'></i> &nbspVue.js
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/vue/day1/" title="Day1" class="dd-item ">
+        <a href="/xtc/vue/day1/">
+        - Day1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/josh/" title="" class="dd-item ">
+        <a href="/xtc/josh/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/pluralsight/'>Pluralsight</a> > React
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#dev-environment">Dev environment</a></li>
+        <li><a href="#webpack">Webpack</a></li>
+        <li><a href="#babel">Babel</a></li>
+        <li><a href="#npm">NPM</a></li>
+        <li><a href="#debugging">Debugging</a></li>
+        <li><a href="#eslint">ESLint</a></li>
+      </ul>
+    </li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#create-react-components">Create React Components</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#container-vs-presentation">Container vs Presentation</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#state">State</a>
+      <ul>
+        <li><a href="#state-management">State Management</a></li>
+        <li><a href="#redux-vs-context-api">Redux vs. Context API</a></li>
+      </ul>
+    </li>
+    <li><a href="#redux">Redux</a>
+      <ul>
+        <li><a href="#why-redux">Why Redux</a></li>
+        <li><a href="#3-core-redux-principles">3 Core Redux Principles</a></li>
+        <li><a href="#redux-flow">Redux Flow</a></li>
+      </ul>
+    </li>
+    <li><a href="#immutability">Immutability</a>
+      <ul>
+        <li><a href="#immutability-1">Immutability?</a></li>
+        <li><a href="#handlilng-immutable-state">Handlilng Immutable State</a></li>
+        <li><a href="#why-immutability">Why Immutability?</a></li>
+        <li><a href="#handling-immutablility">Handling Immutablility</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#container-vs-presentational-components">Container vs Presentational Components</a></li>
+    <li><a href="#react-redux-introduction">React-Redux Introduction</a>
+      <ul>
+        <li><a href="#react-redux">React-Redux</a></li>
+        <li><a href="#provider">Provider</a></li>
+      </ul>
+    </li>
+    <li><a href="#mapstatetoprops">mapStateToProps</a></li>
+    <li><a href="#mapdispatchtoprops">mapDispatchToProps</a></li>
+    <li><a href="#a-chat-with-redux">A Chat with Redux</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              React
+            </h1>
+          
+
+        
+
+
+<p>redux : react state management library</p>
+<h1 id="version">Version</h1>
+<ul>
+<li>React 17</li>
+<li>Redux 4</li>
+<li>React Router 5</li>
+</ul>
+<h1 id="environment-build">Environment Build</h1>
+<h3 id="dev-environment">Dev environment</h3>
+<hr>
+<ul>
+<li>Compile JSX</li>
+<li>Transpile JS</li>
+<li>Linting</li>
+<li>Generate index.html</li>
+<li>Reload on save
+=&gt; one command (npm)
+with
+Node, Webpack, Babel, ESLint, npm Scripts</li>
+</ul>
+<h3 id="webpack">Webpack</h3>
+<ul>
+<li>webpack.config.dev.js file</li>
+</ul>
+<h3 id="babel">Babel</h3>
+<ul>
+<li>Transpile modern JS : Tell Babel what browsers you need to support</li>
+<li>Compile JSX to JS : So the browser understand the code</li>
+</ul>
+<h4 id="configure-babel">Configure Babel</h4>
+<ul>
+<li>Go to <code>package.json</code> and add below</li>
+</ul>
+<pre tabindex="0"><code>  &#34;babel&#34;: {
+    &#34;presets&#34;: [
+      &#34;babel-preset-react-app&#34;
+    ]
+  },
+</code></pre><h3 id="npm">NPM</h3>
+<ul>
+<li><code>package.json</code></li>
+</ul>
+<pre tabindex="0"><code>  &#34;scripts&#34;: {
+    &#34;start&#34;: &#34;webpack serve --config webpack.config.dev.js --port 3000&#34;
+  },
+</code></pre><p>npm start to run</p>
+<h3 id="debugging">Debugging</h3>
+<p>put debugger; inside the app</p>
+<h3 id="eslint">ESLint</h3>
+<p>ESLint will alert us when we make mistakes</p>
+<h2 id="summary">Summary</h2>
+<p>Webpack</p>
+<ul>
+<li>Babel</li>
+<li>ESLint</li>
+</ul>
+<h1 id="react-component-approaches">React Component Approaches</h1>
+<h2 id="create-react-components">Create React Components</h2>
+<p>There are 4 Ways to Create React Components</p>
+<h4 id="1-createclass-component">1. createClass Component</h4>
+<p>The original way to create a React component</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">HellowWorld</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">React</span>.<span style="color:#a6e22e">createClass</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">render</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h1</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Hello</span> <span style="color:#a6e22e">World</span><span style="color:#f92672">!&lt;</span><span style="color:#960050;background-color:#1e0010">/h1&gt;;</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><h4 id="2-js-class-component">2. JS Class Component</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HelloWorld</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">React</span>.<span style="color:#a6e22e">Component</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">props</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">super</span>(<span style="color:#a6e22e">props</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">render</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h1</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Hello</span> <span style="color:#a6e22e">World</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/h1&gt;;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h4 id="3-function-component">3. Function Component</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">HelloWorld</span>(<span style="color:#a6e22e">props</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h1</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Hello</span> <span style="color:#a6e22e">World</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/h1&gt;;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h4 id="4-arrow-function-component">4. Arrow Function Component</h4>
+<p>const HelloWorld = (props) =&gt; <!-- raw HTML omitted -->Hello World<!-- raw HTML omitted --></p>
+<h4 id="heading"></h4>
+<ul>
+<li>Class Component vs Function Component</li>
+<li>React Life Cycle</li>
+<li>React Hool (useEffect, useRef,&hellip;)</li>
+</ul>
+<h2 id="container-vs-presentation">Container vs Presentation</h2>
+<h4 id="container-stateful-controller-view">Container (Stateful, Controller View)</h4>
+<ul>
+<li>Have little or no markup</li>
+<li>ex) Backend for the frontend</li>
+<li>Mainly passing data and actions down to child components.</li>
+<li>Knows about Redux</li>
+<li>Often statueful</li>
+</ul>
+<h4 id="presentation-stateless-view">Presentation (Stateless, View)</h4>
+<ul>
+<li>Nearly all markup</li>
+<li>Receipt data and actions via props</li>
+<li>Doesn&rsquo;t know about Redux</li>
+<li>Often no state</li>
+</ul>
+<hr>
+<h1 id="initial-app-structure">Initial App Structure</h1>
+<hr>
+<h1 id="intro-to-redux">Intro to Redux</h1>
+<h2 id="state">State</h2>
+<p>The state is a built-in React object that is used to contain data or information about the component.
+A component&rsquo;s state can change over time. Whenever it changes, the component re-renders.</p>
+<blockquote>
+<h3 id="state-management">State Management</h3>
+</blockquote>
+<ol>
+<li>Lift State (Parent to Child Component)</li>
+</ol>
+<ul>
+<li>Lifted to common ancestor of two components</li>
+<li>Pass down to children : Prop drilling</li>
+<li>Good for small app</li>
+</ul>
+<ol start="2">
+<li>React Context</li>
+</ol>
+<ul>
+<li>You can use global data</li>
+<li>Import the context and consume the context in your component</li>
+<li>Provider : In your top level component</li>
+<li>Consumer : Use Consumer where you use global data.</li>
+</ul>
+<ol start="3">
+<li>Redux</li>
+</ol>
+<ul>
+<li>Has one separte Store to store global data</li>
+<li>Any components can <code>dispatch an action</code> (ex. createUser) -&gt; Redux Store update to the new data</li>
+<li>Any connected components receieved this new data from the Redux store =&gt; It rerender!</li>
+</ul>
+<blockquote>
+<h3 id="redux-vs-context-api">Redux vs. Context API</h3>
+</blockquote>
+<p>Redux는 Flux 아키텍처 패턴을 구현한 라이브러리로, 전역 상태 관리를 위해 사용된다. Redux는 애플리케이션의 상태를 중앙 집중적으로 관리하고, 상태 변경을 예측 가능하도록 만든다. 이를 위해 Redux는 불변성을 유지하고, 상태 변경을 위한 액션(Action)을 사용하며, 이 액션들을 통해 상태를 변경하는 리듀서(Reducer)를 작성한다.</p>
+<p>반면, Context API는 React v16.3에서 소개된 기능으로, 컴포넌트 트리에서 전역 데이터를 공유하기 위한 방법이다. Context API는 Provider와 Consumer를 사용하여 상위 컴포넌트에서 하위 컴포넌트로 데이터를 전달한다. 이를 통해 Redux와 같은 전역 상태 관리가 가능하지만, Redux보다는 간단하고 쉽게 구현할 수 있다.</p>
+<h2 id="redux">Redux</h2>
+<p>Redux is a predictable state container designed to help you write JavaScript apps that behave consistently across client, server, and native environments</p>
+<blockquote>
+<h3 id="why-redux">Why Redux</h3>
+</blockquote>
+<ul>
+<li>One Store : Redux centralized all of your application state in a single store, avoid storing the same data more than once</li>
+<li>Recuced Bolilerplate (less boilerplate than Flux)</li>
+<li>Isomorphic/Universal Friendly : Architecture is friendly to server rendering your React components</li>
+<li>Immutable Store</li>
+<li>Hot Reloading</li>
+<li>Time-travel debugging : step foward and backward through state</li>
+<li>Small (2k)</li>
+</ul>
+<blockquote>
+<h3 id="3-core-redux-principles">3 Core Redux Principles</h3>
+</blockquote>
+<h4 id="1-one-immutable-store">1. One immutable store</h4>
+<p>Your application state is placed in a single <code>immutable store</code></p>
+<h4 id="2-actions-trigger-changes">2. Actions trigger changes</h4>
+<p>The only way to change state in Redux is to emit an action</p>
+<h4 id="3-reducers-update-state-reducers-return-updated-state">3. Reducers update state (Reducers return updated state)</h4>
+<p>State changes are handled by pure functions which are called <code>reducers</code></p>
+<blockquote>
+<h3 id="redux-flow">Redux Flow</h3>
+</blockquote>
+<p>Store, Action, Reducer</p>
+<h4 id="store">Store</h4>
+<p>Store is where storing global state.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// Create Store
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">store</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">createStore</span>(<span style="color:#a6e22e">reducer</span>);
+</span></span></code></pre></div><p><code>store.dispatch(action)</code> The store can dispatch an action</p>
+<p><code>store.subscribe(listener)</code> can subscribe to a listener</p>
+<p><code>store.getState()</code> return its current state</p>
+<p><code>replaceReducer(nextReducer)</code> replace a reducer, for hot reloading</p>
+
+
+<div class="vbox blue" >
+v changing state is only by dispatching the action. <br>
+v actions are handled by reducers
+</div>
+
+<h4 id="action">Action</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>{<span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">RATE_COURSE</span>, <span style="color:#a6e22e">rating</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5</span>}
+</span></span></code></pre></div><p>The events happening in the application are called actions. Actions are plain objects containing a description of an event. An action <strong>must have a type property</strong>. It describes a user&rsquo;s intent.</p>
+<p>It can be simple number, boolean, any value that is serializable. No functions or promises.</p>
+<p>Actions typically created by &lsquo;Action creators&rsquo;. Typically the action creator has the same name as the action&rsquo;s type.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// Action Creator
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">rateCourse</span>(<span style="color:#a6e22e">rating</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> { <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">RATE_COURSE</span>, <span style="color:#a6e22e">rating</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">rating</span> } <span style="color:#75715e">// returing action
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><h4 id="reducer">Reducer</h4>
+<p>Reducer is a function that takes state in and action and returns new state to change(update) the store. Usually contains a switch statement</p>
+<p>When the new state is returned from the Reducer, the store is updated.</p>
+<p>React re-renders any components that are utilizing the data using React-Redux.</p>
+<p>Reducer</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">myReducer</span>(<span style="color:#a6e22e">state</span>, <span style="color:#a6e22e">action</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">switch</span> (<span style="color:#a6e22e">action</span>.<span style="color:#a6e22e">type</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;INCREMENT_COUNTER&#34;</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">counter</span><span style="color:#f92672">++</span>; <span style="color:#75715e">// state is immutable, can&#39;t change like this.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">state</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">state</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Reducer example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">myReducer</span>(<span style="color:#a6e22e">state</span>, <span style="color:#a6e22e">action</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">switch</span> (<span style="color:#a6e22e">action</span>.<span style="color:#a6e22e">type</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;INCREMENT_COUNTER&#34;</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> { ...<span style="color:#a6e22e">state</span>, <span style="color:#a6e22e">counter</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">counter</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> }; <span style="color:#75715e">// right way to update the state.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">state</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ol>
+<li>Copy the object : &hellip;state</li>
+<li>Update the counter property from copied obejct : counter: state.counter + 1</li>
+</ol>
+<p><code>Reducers must be pure</code>.</p>
+<p>They should produce no side effects</p>
+<h4 id="forbidden-in-reducers">Forbidden in Reducers</h4>
+<ul>
+<li>Mutate arguments</li>
+<li>Perform side effects : like API calls or routing transitions</li>
+<li>Call non-pure functions</li>
+</ul>
+<p>A reducer&rsquo;s return value should depend solely on the values of its parameters</p>
+<p>It should call no other non-pure funtions like date.now or math.random</p>
+<p>Instead of mutating state,
+<code>Reducers should return an updated copy of state. Redux will use that copy to update the store</code></p>
+<p>All Reducers are called on each dispatch : That is why all reducers should return the untoched state as the default</p>
+<p>Each reducer only handles its slice of state.</p>
+<h4 id="subscription">Subscription</h4>
+<p>Store에 보관된 State를 가져옴</p>
+<hr>
+<h2 id="immutability">Immutability</h2>
+<p>Redux store is immutable.</p>
+<h3 id="immutability-1">Immutability?</h3>
+<p>To change state, return a new object.
+Immutable state : instead of changing your state object, you must return a new object that represents your application&rsquo;s new state.</p>
+<p>Mutating is updating the state</p>
+<p>Immutable already</p>
+<ul>
+<li>Number</li>
+<li>String</li>
+<li>Boolean</li>
+<li>Undefined</li>
+<li>Null</li>
+</ul>
+<p>=&gt; every time you change the value of these, a new copy is created.</p>
+<p>Mutable</p>
+<ul>
+<li>Objects</li>
+<li>Arrays</li>
+<li>Functions</li>
+</ul>
+<h3 id="handlilng-immutable-state">Handlilng Immutable State</h3>
+<h4 id="native-js">Native JS</h4>
+<ul>
+<li>Object.assign</li>
+<li>Spread operator</li>
+<li>Map, filter, reduce</li>
+</ul>
+<h4 id="libraries">Libraries</h4>
+<ul>
+<li>Immer</li>
+<li>seamless-immutable</li>
+<li>react-addons-update</li>
+<li>Immutable.js</li>
+</ul>
+<h3 id="why-immutability">Why Immutability?</h3>
+<p>Each time you need to change your store&rsquo;s state, you must return an updated copy.</p>
+<p>Why? 3 reasons.</p>
+<ol>
+<li>Clarity</li>
+</ol>
+<ul>
+<li>It is clear to know what file you have to open to see the state changing.</li>
+</ul>
+<ol start="2">
+<li>Performance</li>
+</ol>
+<ul>
+<li>Imporve performance</li>
+<li>It doesn&rsquo;t have to check if the property in the state has changed or not (because it is immutable). Instead, it checks the reference in the memory to see if the state has changed or not.</li>
+</ul>
+<ol start="3">
+<li>Awesome Sauce</li>
+</ol>
+<ul>
+<li>Time-travel debugging</li>
+<li>Undo/Redo</li>
+<li>Turn off individual actions</li>
+<li>Play interations back</li>
+</ul>
+<h3 id="handling-immutablility">Handling Immutablility</h3>
+<p>How Do I Enforce Immutability?</p>
+<ul>
+<li>use library like immer, immutable.js, seamless-immutable,,,,</li>
+</ul>
+<hr>
+<h1 id="connecting-react-to-redux">Connecting React to Redux</h1>
+<h2 id="container-vs-presentational-components">Container vs Presentational Components</h2>
+<table>
+<thead>
+<tr>
+<th>Container</th>
+<th>Presentational</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Focus on how things work</td>
+<td>Focus on how things look</td>
+</tr>
+<tr>
+<td>Aware of Redux</td>
+<td>Unaware of Redux</td>
+</tr>
+<tr>
+<td>Subscribe to Redux State</td>
+<td>Read data from props</td>
+</tr>
+<tr>
+<td>Dispatch Redux actions</td>
+<td>Invoke callbacks on props</td>
+</tr>
+</tbody>
+</table>
+<h2 id="react-redux-introduction">React-Redux Introduction</h2>
+<blockquote>
+<h3 id="react-redux">React-Redux</h3>
+</blockquote>
+<p>React-redux ties your React Components together to Redux. It consists with Provider component and the Connect function.</p>
+<blockquote>
+<h3 id="provider">Provider</h3>
+<p>It is utilized at your app&rsquo;s route. It wraps your entire application.</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Provider</span> <span style="color:#a6e22e">store</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">store</span>}<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">App</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Provider</span><span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><p>Connect function
+A function provided by React Redux. It connects your React components to the Redux store.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">connect</span>(<span style="color:#a6e22e">mapStateToProps</span>, <span style="color:#a6e22e">mapDispatchToProps</span>)(<span style="color:#a6e22e">AuthorPage</span>);
+</span></span></code></pre></div><h2 id="mapstatetoprops">mapStateToProps</h2>
+<h2 id="mapdispatchtoprops">mapDispatchToProps</h2>
+<h2 id="a-chat-with-redux">A Chat with Redux</h2>
+<hr>
+<h1 id="redux-flow-1">Redux Flow</h1>
+<hr>
+<p>&hellip;</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/pluralsight/" title="Pluralsight"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/pluralsight/unittest/" title="Unit Test" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1712066948"></script>
+    <script src="/js/perfect-scrollbar.min.js?1712066948"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1712066948"></script>
+    <script src="/js/jquery.sticky.js?1712066948"></script>
+    <script src="/js/featherlight.min.js?1712066948"></script>
+    <script src="/js/highlight.pack.js?1712066948"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1712066948"></script>
+    <script src="/js/learn.js?1712066948"></script>
+    <script src="/js/hugo-learn.js?1712066948"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1712066948"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C# on Byul Notes</title>
+    <link>http://localhost:1313/c/</link>
+    <description>Recent content in C# on Byul Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intro</title>
+      <link>http://localhost:1313/c/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/c/intro/</guid>
+      <description>C# C# is a simple and powerful object-oriented programming language created by Microsoft.&#xA;.NET Development Platform A platform that can create websites, services, desktop.&#xA;.NET consists of the Common Lnguage Runtime (CLR) and the .NET Framework class library. CLR is a runtime layer between the application and the operation system. It manages code at execution time, providing memory management while enforcing code accuracy.&#xA;Visual Studio Microsoft Visual Studio is an Integrated Development Environment (IDE).</description>
+    </item>
+    <item>
+      <title>Basic</title>
+      <link>http://localhost:1313/c/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/c/basic/</guid>
+      <description>Console.ReadLine(); Console.WriteLine(&amp;#34;Hi&amp;#34;); Console.Write(&amp;#34;Hi &amp;#34;); F5 -&amp;gt; Run Ctrl(Command) + B -&amp;gt; build&#xA;Basic Code Structures Namespace Namespaces are used to organize classes into logical groups. They are also referred to as libraries. Referencing the namespace with a using statement. It allows you to access its classes within the file.&#xA;using Name; namespace ConsoleApp1 { ... } Access Modifier The Access Modifier controls how a class or its components can be used by other code.</description>
+    </item>
+    <item>
+      <title>Array</title>
+      <link>http://localhost:1313/c/array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/c/array/</guid>
+      <description>Enumeration ///&#xA;Array Array class stores a fixed length sequentail collection of elements of the same type&#xA;Declare // 1. string[] nameOfArray = new string[2]; nameOfArray[0] = &amp;#34;aa&amp;#34;; nameOfArray[1] = &amp;#34;bb&amp;#34;; // 2. string[] nameOfArray = new string[] { &amp;#34;aa&amp;#34;, &amp;#34;bb&amp;#34; } Type of Array console let user knows the type of array, not the item of array. if you want to print the specific item, refer the index of the item.</description>
+    </item>
+    <item>
+      <title>Method</title>
+      <link>http://localhost:1313/c/method/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/c/method/</guid>
+      <description>Methods public static void Name(string[] args){ } Method Overloading Same method name, different function/parameter&#xA;Parameter By Value : Copy of the variable. Doesn&amp;rsquo;t affect the variable By Reference : address of the variable value. Affect the varaible </description>
+    </item>
+    <item>
+      <title>String</title>
+      <link>http://localhost:1313/c/string/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/c/string/</guid>
+      <description>String Manipulation Escape string Double Quote \&amp;quot; New Line \n Back Slash \\ Tab \t Verbatim Verbatim &amp;ldquo;@&amp;rdquo; allows you to write a string with backslash and newline without using escape characters&#xA;var message = @&amp;#34;Hi, Hello&amp;#34; Format var name = &amp;#34;aaa&amp;#34;; var message = String.Format(&amp;#34;{0} {1}&amp;#34;, name, &amp;#34;hello&amp;#34;) F Floating-Point, D Decimal, G General, N Number, E Exponential, C Currency&#xA;$&amp;#34;{val:F}&amp;#34; Interpolation var a = $&amp;#34;I have {var}&amp;#34;; String Methods Get substring of string text.</description>
+    </item>
+    <item>
+      <title>Class</title>
+      <link>http://localhost:1313/c/class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/c/class/</guid>
+      <description>Class c#1 Day4</description>
+    </item>
+    <item>
+      <title>Linq</title>
+      <link>http://localhost:1313/c/linq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/c/linq/</guid>
+      <description> Day 6, 7, MVC Day1&#xA;Entity Framework, Linq&#xA;IQueryable&amp;lt;Class&amp;gt; query = from p in db.TableName select p; </description>
+    </item>
+  </channel>
+</rss>

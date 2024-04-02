@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Angular.js on Byul Notes</title>
+    <link>http://localhost:1313/xtc/angular/</link>
+    <description>Recent content in Angular.js on Byul Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/xtc/angular/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Day1</title>
+      <link>http://localhost:1313/xtc/angular/day1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/angular/day1/</guid>
+      <description>What is Angular Angular is an open-source front end development framework maintained by Google.&#xA;Built as a side project by Miko Hevery at Google, it was originally launched in 2010 as AngularJS. This original, AngularJS, was a JavaScript based framework with the aim of simplifying the process of building dynamic, single-page web applications via a reusable component architecture, two-way data binding, and a dependency injection system that made it easier to manage complex applications with components that rely on each other.</description>
+    </item>
+    <item>
+      <title>Day2</title>
+      <link>http://localhost:1313/xtc/angular/day2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/angular/day2/</guid>
+      <description>Angular Pipes Pipes allow us to easily and consistently format values and/or transform data.&#xA;Angular provides a set of built-in pipes that we can use, as needed, right away.&#xA;For instance, if we want to display the title for each of our projects in uppercase, we can use the UpperCasePipe to do so right in our template.&#xA;app.component.html &amp;lt;h2&amp;gt;{{ project.title | uppercase }}&amp;lt;/h2&amp;gt; To see a full list of the built in pipes, check the API docs:</description>
+    </item>
+    <item>
+      <title>Day3</title>
+      <link>http://localhost:1313/xtc/angular/day3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/angular/day3/</guid>
+      <description>Creating a Project Detail Component ng generate component project-detail In the newly created component we need to:&#xA;Import the Project model Add Input to the import from @angular/core Add a project property decorated with @Input import { Component, Input } from &amp;#39;@angular/core&amp;#39;; import { Project } from &amp;#39;../model/project&amp;#39;; @Component({ selector: &amp;#39;app-project-detail&amp;#39;, templateUrl: &amp;#39;./project-detail.component.html&amp;#39;, styleUrls: [&amp;#39;./project-detail.component.scss&amp;#39;], }) export class ProjectDetailComponent { @Input() project?: Project; } Show the Project Detail Component, Conditionally For now we are going to set things up such that display of the project detail is contingent on a project having been passed a project from the projects component.</description>
+    </item>
+  </channel>
+</rss>

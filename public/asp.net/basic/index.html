@@ -1,0 +1,4000 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.124.1">
+    <meta name="description" content="Coding Notes for Byul">
+<meta name="author" content="Byul Kim">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title>MVC Basics :: Byul Notes</title>
+
+    
+    <link href="/css/nucleus.css?1712035893" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1712035893" rel="stylesheet">
+    <link href="/css/hybrid.css?1712035893" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1712035893" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1712035893" rel="stylesheet">
+    <link href="/css/auto-complete.css?1712035893" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1712035893" rel="stylesheet">
+    <link href="/css/theme.css?1712035893" rel="stylesheet">
+    <link href="/css/tabs.css?1712035893" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1712035893" rel="stylesheet">
+    
+    <link href="/css/theme-blue.css?1712035893" rel="stylesheet">
+    
+    <link href="/css/style.css?1712035893" rel="stylesheet">
+
+    <script src="/js/jquery-3.3.1.min.js?1712035893"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+  rel="stylesheet"
+/>
+
+  </head>
+  <body class="" data-url="/asp.net/basic/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <div class="logo">Byul's Notes</div>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1712035893"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1712035893"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1712035893"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/leetcode/" title="LeetCode" class="dd-item
+        
+        
+        
+        ">
+      <a href="/leetcode/">
+          <i class='fas fa-book-open'></i> &nbspLeetCode
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/leetcode/theory/" title="Theory" class="dd-item ">
+        <a href="/leetcode/theory/">
+        <i class='fas fa-pen'></i> &nbspTheory
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/leetcode/easy/" title="Easy" class="dd-item ">
+        <a href="/leetcode/easy/">
+        <i class='fas fa-pen'></i> &nbspEasy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/leetcode/medium/" title="Medium" class="dd-item ">
+        <a href="/leetcode/medium/">
+        <i class='fas fa-pen'></i> &nbspMedium
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pluralsight/" title="Pluralsight" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pluralsight/">
+          <i class='fas fa-book-open'></i> &nbspPluralsight
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pluralsight/react/" title="React" class="dd-item ">
+        <a href="/pluralsight/react/">
+        <i class='fas fa-pen'></i> &nbspReact
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pluralsight/unittest/" title="Unit Test" class="dd-item ">
+        <a href="/pluralsight/unittest/">
+        <i class='fas fa-pen'></i> &nbspUnit Test
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/python/" title="Python" class="dd-item
+        
+        
+        
+        ">
+      <a href="/python/">
+          <i class='fas fa-book-open'></i> &nbspPython
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/intro/" title="Introduction" class="dd-item ">
+        <a href="/python/intro/">
+        <i class='fas fa-pen'></i> &nbspIntroduction
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/basic/" title="Basics" class="dd-item ">
+        <a href="/python/basic/">
+        <i class='fas fa-pen'></i> &nbspBasics
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/string/" title="String" class="dd-item ">
+        <a href="/python/string/">
+        <i class='fas fa-pen'></i> &nbspString
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/list/" title="Data Structure" class="dd-item ">
+        <a href="/python/list/">
+        <i class='fas fa-pen'></i> &nbspList, Tuple, Set, Dict
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/file/" title="Files" class="dd-item ">
+        <a href="/python/file/">
+        <i class='fas fa-pen'></i> &nbspFiles
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/regex/" title="Regular Expression" class="dd-item ">
+        <a href="/python/regex/">
+        <i class='fas fa-pen'></i> &nbspRegex
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/bs/" title="Beautiful Soup" class="dd-item ">
+        <a href="/python/bs/">
+        <i class='fas fa-pen'></i> &nbspBeautiful Soup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/flask/" title="Flask" class="dd-item ">
+        <a href="/python/flask/">
+        <i class='fas fa-pen'></i> &nbspFlask
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/selenium/" title="Selenium" class="dd-item ">
+        <a href="/python/selenium/">
+        <i class='fas fa-pen'></i> &nbspSelenium
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/react/" title="React" class="dd-item
+        
+        
+        
+        ">
+      <a href="/react/">
+          <i class='fas fa-book-open'></i> &nbspReact
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/1-intro/" title="Intro" class="dd-item ">
+        <a href="/react/1-intro/">
+        <i class='fas fa-pen'></i> &nbspIntro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/2-route/" title="Route" class="dd-item ">
+        <a href="/react/2-route/">
+        <i class='fas fa-pen'></i> &nbspRoute
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/deploy/" title="Deploy" class="dd-item ">
+        <a href="/react/deploy/">
+        <i class='fas fa-pen'></i> &nbspDeploy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/fetch/" title="Data Fetching" class="dd-item ">
+        <a href="/react/fetch/">
+        <i class='fas fa-pen'></i> &nbspData Fetching
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/pagination/" title="Pagination" class="dd-item ">
+        <a href="/react/pagination/">
+        <i class='fas fa-pen'></i> &nbspPagination
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/react/" title="react" class="dd-item ">
+        <a href="/react/react/">
+        <i class='fas fa-pen'></i> &nbspreact
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/3-state/" title="Statement Management" class="dd-item ">
+        <a href="/react/3-state/">
+        <i class='fas fa-pen'></i> &nbspStatement
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/table/" title="Table" class="dd-item ">
+        <a href="/react/table/">
+        <i class='fas fa-pen'></i> &nbspTable
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/useeffect/" title="Use Effect" class="dd-item ">
+        <a href="/react/useeffect/">
+        <i class='fas fa-pen'></i> &nbspUse Effect
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/aws/" title="AWS" class="dd-item
+        
+        
+        
+        ">
+      <a href="/aws/">
+          <i class='fas fa-book-open'></i> &nbspAWS
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/ec2/" title="EC2" class="dd-item ">
+        <a href="/aws/ec2/">
+        <i class='fas fa-pen'></i> &nbspEC2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/s3/" title="S3" class="dd-item ">
+        <a href="/aws/s3/">
+        <i class='fas fa-pen'></i> &nbspS3
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/jwt/" title="JWT" class="dd-item ">
+        <a href="/aws/jwt/">
+        <i class='fas fa-pen'></i> &nbspJWT
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/cognito/" title="Cognito" class="dd-item ">
+        <a href="/aws/cognito/">
+        <i class='fas fa-pen'></i> &nbspCognito
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/aws/5-lambda/" title="Lambda Function" class="dd-item
+        
+        
+        
+        ">
+      <a href="/aws/5-lambda/">
+          <i class='fas fa-pen'></i> &nbspLambda
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/5-lambda/lambda-function/" title="Lambda Function" class="dd-item ">
+        <a href="/aws/5-lambda/lambda-function/">
+        - &nbspLambda Function
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/5-lambda/lambda-.net/" title="Lambda in .NET" class="dd-item ">
+        <a href="/aws/5-lambda/lambda-.net/">
+        - &nbsp.NET
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/iac/" title="Infrastructure as Code" class="dd-item ">
+        <a href="/aws/iac/">
+        <i class='fas fa-pen'></i> &nbspIaC
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/sst/" title="SST" class="dd-item ">
+        <a href="/aws/sst/">
+        <i class='fas fa-pen'></i> &nbspSST
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/sst-auth/" title="SST &amp; Auth" class="dd-item ">
+        <a href="/aws/sst-auth/">
+        <i class='fas fa-pen'></i> &nbspSST &amp; Auth
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/database/" title="Database" class="dd-item
+        
+        
+        
+        ">
+      <a href="/database/">
+          <i class='fas fa-book-open'></i> &nbspDatabase
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/database/sql/" title="Database" class="dd-item ">
+        <a href="/database/sql/">
+        <i class='fas fa-pen'></i> &nbspDatabase
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/database/mssql/" title="MS SQL" class="dd-item ">
+        <a href="/database/mssql/">
+        <i class='fas fa-pen'></i> &nbspMS SQL
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/database/monbodb/" title="MongoDB" class="dd-item ">
+        <a href="/database/monbodb/">
+        <i class='fas fa-pen'></i> &nbspMongoDB
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/javascript/" title="Javascript" class="dd-item
+        
+        
+        
+        ">
+      <a href="/javascript/">
+          <i class='fas fa-book-open'></i> &nbspJavascript
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/javascript/scrap/" title="" class="dd-item ">
+        <a href="/javascript/scrap/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/c/" title="C#" class="dd-item
+        
+        
+        
+        ">
+      <a href="/c/">
+          <i class='fas fa-book-open'></i> &nbspC#
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/intro/" title="Intro" class="dd-item ">
+        <a href="/c/intro/">
+        <i class='fas fa-pen'></i> &nbspIntro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/basic/" title="Basic" class="dd-item ">
+        <a href="/c/basic/">
+        <i class='fas fa-pen'></i> &nbspBasic
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/array/" title="Array" class="dd-item ">
+        <a href="/c/array/">
+        <i class='fas fa-pen'></i> &nbspArray
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/method/" title="Method" class="dd-item ">
+        <a href="/c/method/">
+        <i class='fas fa-pen'></i> &nbspMethod
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/string/" title="String" class="dd-item ">
+        <a href="/c/string/">
+        <i class='fas fa-pen'></i> &nbspString
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/class/" title="Class" class="dd-item ">
+        <a href="/c/class/">
+        <i class='fas fa-pen'></i> &nbspClass
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/linq/" title="Linq" class="dd-item ">
+        <a href="/c/linq/">
+        <i class='fas fa-pen'></i> &nbspLinq
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/asp.net/" title="ASP.NET" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/asp.net/">
+          <i class='fas fa-book-open'></i> &nbspASP.NET
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/basic/" title="MVC Basics" class="dd-item active">
+        <a href="/asp.net/basic/">
+        <i class='fas fa-pen'></i> &nbspMVC Basics
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/db/" title="DB Connection" class="dd-item ">
+        <a href="/asp.net/db/">
+        <i class='fas fa-pen'></i> &nbspDB Connection
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/crud/" title="CRUD" class="dd-item ">
+        <a href="/asp.net/crud/">
+        <i class='fas fa-pen'></i> &nbspCRUD
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/linq/" title="Linq" class="dd-item ">
+        <a href="/asp.net/linq/">
+        <i class='fas fa-pen'></i> &nbspLinq
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/frontend/" title="Frontend" class="dd-item
+        
+        
+        
+        ">
+      <a href="/frontend/">
+          <i class='fas fa-book-open'></i> &nbspFrontend
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/html/" title="HTML" class="dd-item ">
+        <a href="/frontend/html/">
+        <i class='fas fa-pen'></i> &nbspHTML
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/frontend/css/" title="CSS" class="dd-item
+        
+        
+        
+        ">
+      <a href="/frontend/css/">
+          <i class='fas fa-pen'></i> &nbspCSS
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/flex/" title="Flexbox" class="dd-item ">
+        <a href="/frontend/css/flex/">
+        - &nbspFlexbox
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/grid/" title="Grid" class="dd-item ">
+        <a href="/frontend/css/grid/">
+        - &nbspGrid
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/trasnform/" title="Transform" class="dd-item ">
+        <a href="/frontend/css/trasnform/">
+        - &nbspTransform
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/etc/" title="" class="dd-item ">
+        <a href="/frontend/css/etc/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/sass/" title="Sass" class="dd-item ">
+        <a href="/frontend/sass/">
+        <i class='fas fa-pen'></i> &nbspSass
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/bootstrap/" title="Bootstrap" class="dd-item ">
+        <a href="/frontend/bootstrap/">
+        <i class='fas fa-pen'></i> &nbspBootstrap
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/tailwind/" title="Tailwind" class="dd-item ">
+        <a href="/frontend/tailwind/">
+        <i class='fas fa-pen'></i> &nbspTailwind
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/" title="ETC" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/">
+          ETC
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/1job.md/" title="Job Interview" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/1job.md/">
+          <i class='fas fa-pen'></i> &nbspJob Interview
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/setup/" title="Setup" class="dd-item ">
+        <a href="/xtc/setup/">
+        <i class='fas fa-pen'></i> &nbspSetup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/php/" title="PHP" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/php/">
+          <i class='fas fa-pen'></i> &nbspPHP
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/1-docker/" title="Docker" class="dd-item ">
+        <a href="/xtc/php/1-docker/">
+        - Docker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/2-setup/" title="Software setup for Laravel" class="dd-item ">
+        <a href="/xtc/php/2-setup/">
+        - Setup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/3-intro/" title="Laravel Intro" class="dd-item ">
+        <a href="/xtc/php/3-intro/">
+        - Laravel Intro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/sql/" title="MySQL Migration" class="dd-item ">
+        <a href="/xtc/php/sql/">
+        - MySQL Migration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/auth/" title="Auth" class="dd-item ">
+        <a href="/xtc/php/auth/">
+        - Auth
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/admin/" title="Admin" class="dd-item ">
+        <a href="/xtc/php/admin/">
+        - Admin
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/work/" title="Work" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/work/">
+          <i class='fas fa-pen'></i> &nbspWork
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/angularjs/" title="Angular JS" class="dd-item ">
+        <a href="/xtc/work/angularjs/">
+        - Angular JS
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/database/" title="Database" class="dd-item ">
+        <a href="/xtc/work/database/">
+        - Database
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/frontend/" title="Frontend" class="dd-item ">
+        <a href="/xtc/work/frontend/">
+        - Frontend
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/aspnet/" title="ASP .NET" class="dd-item ">
+        <a href="/xtc/work/aspnet/">
+        - ASP .NET
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/angular/" title="Angular.js" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/angular/">
+          <i class='fas fa-pen'></i> &nbspAngular.js
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/angular/day1/" title="Day1" class="dd-item ">
+        <a href="/xtc/angular/day1/">
+        - Day1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/angular/day2/" title="Day2" class="dd-item ">
+        <a href="/xtc/angular/day2/">
+        - Day2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/angular/day3/" title="Day3" class="dd-item ">
+        <a href="/xtc/angular/day3/">
+        - Day3
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/vue/" title="Vue.js" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/vue/">
+          <i class='fas fa-pen'></i> &nbspVue.js
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/vue/day1/" title="Day1" class="dd-item ">
+        <a href="/xtc/vue/day1/">
+        - Day1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/josh/" title="" class="dd-item ">
+        <a href="/xtc/josh/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/asp.net/'>ASP.NET</a> > MVC Basics
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#mvc">MVC</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#entity-framwork">Entity Framwork</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#identity-framework">Identity Framework</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              MVC Basics
+            </h1>
+          
+
+        
+
+
+<h2 id="mvc">MVC</h2>
+<ul>
+<li>Model : Database Logic</li>
+<li>View : Razor markup (HTML embedded C# code)</li>
+<li>Controller : User interacts</li>
+</ul>
+
+
+<div class="vbox blue" >
+Why MVC? For the rapid application development and maintenance
+</div>
+
+<h4 id="dbcontext">DbContext</h4>
+<ul>
+<li>Class</li>
+<li>The link between the db and the c#</li>
+<li>It contains database connection and schema</li>
+</ul>
+<hr>
+<h2 id="entity-framwork">Entity Framwork</h2>
+<p>Automate database related activities with .NET</p>
+<ol>
+<li>Open a connection to the db</li>
+<li>Create dataset</li>
+<li>Convert data from the dataset (ApplicationDbContext)</li>
+</ol>
+<h4 id="create-entity-framework">Create Entity Framework</h4>
+<ol>
+<li>Create ASP .Net Core Web App (Model-View-Controller)</li>
+<li>Check <code>Place solution and project in the same directory</code></li>
+<li>Framework: <code>.NET 6.0 (Lng-term support)</code>, Authentication type: <code>None</code></li>
+<li>Check <code>Check Configure for HTTPS</code></li>
+</ol>
+<h4 id="entry-point">Entry Point</h4>
+<p>program.cs &amp; appsettings.json</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c#" data-lang="c#"><span style="display:flex;"><span>app.MapControllerRoute(
+</span></span><span style="display:flex;"><span>    name: <span style="color:#e6db74">&#34;default&#34;</span>,
+</span></span><span style="display:flex;"><span>    pattern: <span style="color:#e6db74">&#34;{controller=Home}/{action=Index}/{id?}&#34;</span>);
+</span></span></code></pre></div><ul>
+<li>MapControllerRoute() : defines where the processing flow will go first.</li>
+<li>app.Run() : Application start.</li>
+</ul>
+<h4 id="layout">Layout</h4>
+<p>Shared templates are in <code>Views&gt;Shared</code> folder.</p>
+<pre tabindex="0"><code>&lt;main role=&#34;main&#34; class=&#34;pb-3&#34;&gt;
+   @RenderBody()
+&lt;/main&gt;
+...
+@await RenderSectionAsync(&#34;Scripts&#34;, required: false)
+</code></pre><ul>
+<li>@RenderBody() : It is a placed where the current view is swapped int.</li>
+<li>@RenderSection() : JavaScript files that get pulled into this View.</li>
+<li><code>@</code> symbol indicates to the compiler that C# code is to follow.</li>
+</ul>
+<h4 id="connect-with-db">Connect with DB</h4>
+<p>Connect SQL Sever, Create DB</p>
+<p>Run script in Package Manager Console. Install the right version (Match with Framework Core version)</p>
+<pre tabindex="0"><code>Install-Package Microsoft.EntityFrameworkCore.Tools
+Install-Package Microsoft.EntityFrameworkCore.SqlServer
+Install-Package Microsoft.EntityFrameworkCore
+</code></pre><p>Then, Run script below (Initial Connection to DB)</p>
+<pre tabindex="0"><code>Scaffold-DbContext &#34;Server=[SERVERNAME];Database=[DBNAME];Trusted_Connection=True;&#34; Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+</code></pre><hr>
+<h2 id="identity-framework">Identity Framework</h2>
+<p>Manages authenticated users in your web application</p>
+<h4 id="create-identity-framework">Create Identity Framework</h4>
+<ol>
+<li>Create <strong>ASP .Net Core Web App (Model-View-Controller)</strong></li>
+<li>Check <code>Place solution and project in the same directory</code></li>
+<li>Framework: <code>.NET 6.0 (Lng-term support)</code></li>
+<li>Authentication type: <code>Individual Account</code></li>
+<li>Check <code>Check Configure for HTTPS</code></li>
+</ol>
+<blockquote>
+<h5 id="required-packeges-match-the-version-with-framwork-version">Required Packeges (Match the version with framwork version)</h5>
+</blockquote>
+<p>Entity Framework packages will be installed automatically.</p>
+<ul>
+<li>Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore</li>
+<li>Microsoft.AspNetCore.Identity.EntityFrameworkCore</li>
+<li>Microsoft.AspNetCore.Identity.UI</li>
+<li>Microsoft.EntityFrameworkCore</li>
+<li>Microsoft.EntityFrameworkCore.SqlServer</li>
+<li>Microsoft.EntityFrameworkCore.Tools</li>
+</ul>
+<h4 id="visible-the-identity-files">Visible the Identity Files</h4>
+<p>Pages relateted to Identity are not visible in the project. To make it visible,</p>
+<p><code>Right click Areas &gt; Add &gt; New Sacffold Item &gt; Identity &gt; Override all files</code></p>
+<p>And then, select the <code>ApplicationDbContext</code> file and add</p>
+
+<div class="notices warning" ><p>If you don&rsquo;t match the framework version and the packages, it causes the Scaffolding error.</p>
+</div>
+
+<h4 id="edit-identity-files">Edit Identity Files</h4>
+<p>Create an additional tables in the same database for Identity Information such as <code>RegisteredUser</code>. Modifying ASP Tables directly is not recommended. Create a class for RegisteredUser(Code First) and then come back here.</p>
+<p>To enable access to the code first data, the context should be accessed through dependency injection through the controller&rsquo;s constructor.</p>
+<blockquote>
+<h5 id="1-import-db-inside-identitycshtmlcs-file">1. Import DB inside identity.cshtml.cs file</h5>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c#" data-lang="c#"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">readonly</span> ApplicationDbContext _context;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> RegisterModel(..., ApplicationDbContext context)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    ...;
+</span></span><span style="display:flex;"><span>    _context= context;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><blockquote>
+<h5 id="2-save-to-db">2. Save to DB</h5>
+</blockquote>
+<p>After <code>if (result.Succeeded)</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c#" data-lang="c#"><span style="display:flex;"><span>MyRegisteredUser registerUser = <span style="color:#66d9ef">new</span> MyRegisteredUser()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    Email = Input.Email,
+</span></span><span style="display:flex;"><span>    FirstName = Input.FirstName
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>_context.MyRegisteredUsers.Add(registerUser);
+</span></span><span style="display:flex;"><span>_context.SaveChanges();
+</span></span></code></pre></div><blockquote>
+<h5 id="3-accessing-secured-areas">3. Accessing Secured Areas</h5>
+</blockquote>
+<p>In Identity framework, you can use <code>[Authorize]</code> annotation. Also, user name can be accessed to <code>User.Identity.Name</code></p>
+<p><strong>[HomeController.cs]</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c#" data-lang="c#"><span style="display:flex;"><span><span style="color:#75715e">// Dependency Injection</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">readonly</span> ApplicationDbContext _context; <span style="color:#75715e">// Import DB</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Add to Controller constructor</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> HomeController(ILogger&lt;HomeController&gt; logger, ApplicationDbContext context)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    _logger  = logger;
+</span></span><span style="display:flex;"><span>    _context = context;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Only logged in user can access to this controller</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">[Authorize]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> IActionResult SecureArea() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">string</span> userName = User.Identity.Name; <span style="color:#75715e">// User Info</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> registeredUser = _context.MyRegisteredUsers
+</span></span><span style="display:flex;"><span>                                 .Where(ru =&gt; ru.Email == userName)
+</span></span><span style="display:flex;"><span>                                 .FirstOrDefault(); <span style="color:#75715e">// DB logic</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> View(registeredUser); <span style="color:#75715e">// send the registeredUser model to the view</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>[View]</strong></p>
+<pre tabindex="0"><code>@model MvcWebAppDay3Exe.Models.MyRegisteredUser // import model
+or
+@using AppName.ViewModels
+@model IEnumerable&lt;practiceVM&gt; // passed from controller
+
+@{
+    ViewData[&#34;Title&#34;] = &#34;SecureArea&#34;;
+}
+
+&lt;h1&gt;SecureArea&lt;/h1&gt;
+
+&lt;div&gt;
+    &lt;h4&gt;MyRegisteredUser&lt;/h4&gt;
+    &lt;hr /&gt;
+    &lt;dl class=&#34;row&#34;&gt;
+        &lt;dt class = &#34;col-sm-2&#34;&gt;
+            @Html.DisplayNameFor(model =&gt; model.Email)
+        &lt;/dt&gt;
+        &lt;dd class = &#34;col-sm-10&#34;&gt;
+            @Html.DisplayFor(model =&gt; model.Email)
+        &lt;/dd&gt;
+        &lt;dt class = &#34;col-sm-2&#34;&gt;
+            @Html.DisplayNameFor(model =&gt; model.FirstName)
+        &lt;/dt&gt;
+        &lt;dd class = &#34;col-sm-10&#34;&gt;
+            @Html.DisplayFor(model =&gt; model.FirstName)
+        &lt;/dd&gt;
+    &lt;/dl&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;a asp-action=&#34;Edit&#34; asp-route-id=&#34;@Model?.Email&#34;&gt;Edit&lt;/a&gt; |
+    &lt;a asp-action=&#34;Index&#34;&gt;Back to List&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/asp.net/" title="ASP.NET"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/asp.net/db/" title="DB Connection" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1712035893"></script>
+    <script src="/js/perfect-scrollbar.min.js?1712035893"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1712035893"></script>
+    <script src="/js/jquery.sticky.js?1712035893"></script>
+    <script src="/js/featherlight.min.js?1712035893"></script>
+    <script src="/js/highlight.pack.js?1712035893"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1712035893"></script>
+    <script src="/js/learn.js?1712035893"></script>
+    <script src="/js/hugo-learn.js?1712035893"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1712035893"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

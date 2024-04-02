@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>React on Byul Notes</title>
+    <link>http://localhost:1313/react/</link>
+    <description>Recent content in React on Byul Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/react/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intro</title>
+      <link>http://localhost:1313/react/1-intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/react/1-intro/</guid>
+      <description>React Javascript library for web and native user interfaces&#xA;Environment Setup 1. Use Boilerplate Create React App npx create-react-app [name]&#xD;cd [name]&#xD;npm start Vite NPM Yarn npm create vite@latest yarn create vite 2. Manual Setup Compile JSX, Transpile JS : Babel Linting : ESLing Generate index.html : Webpack Reload on save : NPM Initial File Structure src components page folders App.js 404.js index.js Index.js import React from &amp;#34;react&amp;#34;; import { render } from &amp;#34;react-dom&amp;#34;; import { BrowserRouter as Router } from &amp;#34;react-router-dom&amp;#34;; import &amp;#34;bootstrap/dist/css/bootstrap.</description>
+    </item>
+    <item>
+      <title>Route</title>
+      <link>http://localhost:1313/react/2-route/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/react/2-route/</guid>
+      <description>Tab npm install --save react-tabs —save: development purpose and deployed&#xA;https://reactcommunity.org/react-tabs/&#xA;https://github.com/reactjs/react-tabs&#xA;import { Tab, Tabs, TabList, TabPanel } from &amp;#34;react-tabs&amp;#34;; import &amp;#34;react-tabs/style/react-tabs.css&amp;#34;; &amp;lt;Tabs&amp;gt; &amp;lt;TabList&amp;gt; &amp;lt;Tab&amp;gt;Title 1&amp;lt;/Tab&amp;gt; &amp;lt;Tab&amp;gt;Title 2&amp;lt;/Tab&amp;gt; &amp;lt;/TabList&amp;gt; &amp;lt;TabPanel&amp;gt; &amp;lt;h2&amp;gt;Any content 1&amp;lt;/h2&amp;gt; &amp;lt;/TabPanel&amp;gt; &amp;lt;TabPanel&amp;gt; &amp;lt;h2&amp;gt;Any content 2&amp;lt;/h2&amp;gt; &amp;lt;/TabPanel&amp;gt; &amp;lt;/Tabs&amp;gt;; Router Routing is what component to render when a user enters a new URL&#xA;https://reactrouter.com&#xA;npm install react-router-dom Basic Route Example import React from &amp;#34;react&amp;#34;; import { Route, Switch } from &amp;#34;react-router-dom&amp;#34;; import HomePage from &amp;#34;.</description>
+    </item>
+    <item>
+      <title>Deploy</title>
+      <link>http://localhost:1313/react/deploy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/react/deploy/</guid>
+      <description>Netlify Build command CI= npm run build or CI=false npm run build&#xA;Redirect Create file _redirects and put inside public folder.&#xA;_redirects&#xA;/* /index.html 200 Github Deploying to SiteGround - Domain Root The following command (run from the root folder of your project) will bundle up your app, into the build folder, ready to upload to your host.&#xA;npm run build In order to see the production code locally, you&amp;rsquo;ll need to do the following:</description>
+    </item>
+    <item>
+      <title>Data Fetching</title>
+      <link>http://localhost:1313/react/fetch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/react/fetch/</guid>
+      <description>Fetch Get await fetch(api, { method: &amp;#34;GET&amp;#34;, headers: { &amp;#34;Content-Type&amp;#34;: &amp;#34;application/json&amp;#34;, Authorization: token, }, body: JSON.stringify(dataObject), }).then((res) =&amp;gt; res.json()); Post/Put await fetch(api, { method: &amp;#34;POST&amp;#34;, //or PUT headers: { &amp;#34;Content-Type&amp;#34;: &amp;#34;application/json&amp;#34;, Authorization: token, }, body: JSON.stringify(dataObject), }).then((res) =&amp;gt; res.json()); Delete await fetch(api, { method: &amp;#34;DELETE&amp;#34;, headers: { &amp;#34;Content-Type&amp;#34;: &amp;#34;application/json&amp;#34;, Authorization: token, }, body: JSON.stringify(dataObject), }).then((res) =&amp;gt; res.json()); Axios Get await axios .get(api, { headers: { Authorization: token, }, params: { param1, }, }) .</description>
+    </item>
+    <item>
+      <title>Pagination</title>
+      <link>http://localhost:1313/react/pagination/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/react/pagination/</guid>
+      <description>Terms Total : Total length of data Limit (pageSize) : number of items per page Page : current page number Offset : index of first item of the page (offset = (page - 1) * limit) Pagination interacting with Backend states : page, pageSize(or limit), total&#xA;add offset only when you not with database side pagination&#xA;Data Fetching axios.get(api, { headers: { Authorization: token, }, params: { page: page, pageSize: pageSize, searchTerm: searchTerm, }, }); Backend const getData = async (event) =&amp;gt; { const { page, pageSize, searchTerm } = event.</description>
+    </item>
+    <item>
+      <title>react</title>
+      <link>http://localhost:1313/react/react/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/react/react/</guid>
+      <description>why dev mode render twice in react In React, the development mode by default renders components twice. This is done intentionally to detect any unintended side-effects or changes that might occur during the render process.&#xA;During the first render cycle, React builds a virtual representation of the component tree and compares it with the previous render cycle. If there are any differences, it updates the real DOM accordingly.&#xA;Then, during the second render cycle, React compares the new and old virtual trees again to check if there were any changes made during the update process.</description>
+    </item>
+    <item>
+      <title>Statement Management</title>
+      <link>http://localhost:1313/react/3-state/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/react/3-state/</guid>
+      <description>Passing data from child to parent component Context API Create Context import { createContext } from &amp;#34;react-router-dom&amp;#34;; const CounterContext = createContext(initialState); function CounterProvider({ children }) { return &amp;lt;CounterContext.Provider&amp;gt;{children}&amp;lt;/CounterContext.Provider&amp;gt;; } Index.js or App.js &amp;lt;CounterProvider value={(a, b)}&amp;gt; &amp;lt;App /&amp;gt; &amp;lt;/CounterProvider&amp;gt; Reading import { useContext } from ‘react’; import { CounterContext } from ‘..path’; const { a, b } = useContext(CounterContext); </description>
+    </item>
+    <item>
+      <title>Table</title>
+      <link>http://localhost:1313/react/table/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/react/table/</guid>
+      <description>import React from &amp;#34;react&amp;#34;; import { useTable, usePagination } from &amp;#34;react-table&amp;#34;; export default function Table({ rawColumns, rawData }) { // Memoize the props const columns = React.useMemo(() =&amp;gt; rawColumns, []); const data = React.useMemo(() =&amp;gt; rawData, [rawData]); // States const { getTableProps, getTableBodyProps, headerGroups, prepareRow, page, // Instead of using &amp;#39;rows&amp;#39;, we&amp;#39;ll use page, canPreviousPage, canNextPage, pageOptions, pageCount, gotoPage, nextPage, previousPage, setPageSize, state: { pageIndex, pageSize }, } = useTable( { columns, data, initialState: { pageIndex: 1, pageSize: 10 }, }, usePagination ); // Table + styles return ( &amp;lt;&amp;gt; {/* Table */} &amp;lt;table {.</description>
+    </item>
+    <item>
+      <title>Use Effect</title>
+      <link>http://localhost:1313/react/useeffect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/react/useeffect/</guid>
+      <description>React useEffect Hook 컴포넌트가 렌더링 될 때 특정 작업을 실행할 수 있도록 하는 react hook. useEffect handles side effect code to keep track of outside react code (Put side-effect code inside useEffect) Side-effect : Code outside React such as browser APIs, localStorage, native DOM Syntax : useEffect( call back function, dependency array ) Call back function It contains side-effect code (whatever you want to execute) Dependency array If the array is empty, useEffect will run once after initial render If props or state are passed as an array, it will run any time they changes Setting Document Title useEffect(() =&amp;gt; { document.</description>
+    </item>
+  </channel>
+</rss>

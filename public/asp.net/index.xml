@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ASP.NET on Byul Notes</title>
+    <link>http://localhost:1313/asp.net/</link>
+    <description>Recent content in ASP.NET on Byul Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/asp.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MVC Basics</title>
+      <link>http://localhost:1313/asp.net/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/asp.net/basic/</guid>
+      <description>MVC Model : Database Logic View : Razor markup (HTML embedded C# code) Controller : User interacts Why MVC? For the rapid application development and maintenance&#xD;DbContext Class The link between the db and the c# It contains database connection and schema Entity Framwork Automate database related activities with .NET&#xA;Open a connection to the db Create dataset Convert data from the dataset (ApplicationDbContext) Create Entity Framework Create ASP .Net Core Web App (Model-View-Controller) Check Place solution and project in the same directory Framework: .</description>
+    </item>
+    <item>
+      <title>DB Connection</title>
+      <link>http://localhost:1313/asp.net/db/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/asp.net/db/</guid>
+      <description>DB First MVC Entity framwork has NO connection string in appsettings.json&#xA;Install Packages&#xA;EntityFrameworkCore.Tools EntityFrameworkCore.SqlServer EntityFrameworkCore Connect to DB (Initial Connection) Run the command line&#xA;Scaffold-DbContext &amp;#34;Server=[serverName];Database=[dbName];Trusted_Connection=True;&amp;#34; Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models OutputDir Models : Create class inside Models folder Update DB Scaffold-DbContext &amp;#34;Server=[serverName];Database=[dbName];Trusted_Connection=True;&amp;#34; Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force Same as connection, but add -force at the end.&#xA;Database Context nameContext.cs file contains information about the schema and database connection&#xA;This inhertis from .</description>
+    </item>
+    <item>
+      <title>CRUD</title>
+      <link>http://localhost:1313/asp.net/crud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/asp.net/crud/</guid>
+      <description>Create Get Controller public IActionResult Create() { FoodStoreContext db = new FoodStoreContext(); ViewData[&amp;#34;Mfg&amp;#34;] = new SelectList(db.Table, &amp;#34;Mfg&amp;#34;, &amp;#34;Mfg&amp;#34;); return View(); } View Right click on View in Contrller and add Create template&#xA;Post Controller&#xA;[HttpPost] public IActionResult Create([Bind(&amp;#34;ProductId,Name,Mfg,Vendor,Price&amp;#34;)] Product product) { FoodStoreContext db = new FoodStoreContext(); // Ensure data is valid. if (ModelState.IsValid) { db.Add(product); db.SaveChanges(); // Commit changes to database. // Save is successful so show updated listing. return RedirectToAction(nameof(Index)); } // Data not valid so show form again with populated drop downs.</description>
+    </item>
+    <item>
+      <title>Linq</title>
+      <link>http://localhost:1313/asp.net/linq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/asp.net/linq/</guid>
+      <description>LINQ (Language-Integrated Query). Syntax to query the database in Entity Framework (belong to the System.Linq namespace)&#xA;Query Based Syntax Select Explicit&#xA;IQueryable&amp;lt;Invoice&amp;gt; query = from p in db.Invoices select p; Implicit (Using an anonymous type)&#xA;var query = from p in db.Products select new { p.name, p.vendor }; Filter from p in context.Products where p.price &amp;gt; 0.99m &amp;amp;&amp;amp; p.price &amp;lt; 2.00m select p; Filter with Contains, StartWith var query = from p in context.</description>
+    </item>
+  </channel>
+</rss>

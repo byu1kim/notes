@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lambda Function on Byul Notes</title>
+    <link>http://localhost:1313/aws/5-lambda/</link>
+    <description>Recent content in Lambda Function on Byul Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/aws/5-lambda/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lambda Function</title>
+      <link>http://localhost:1313/aws/5-lambda/lambda-function/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aws/5-lambda/lambda-function/</guid>
+      <description>Lambda function in VSC Install&#xA;npm i pg&#xD;npm init -y Add Module to package.json&#xA;&amp;#34;type&amp;#34; : &amp;#34;module&amp;#34; everything (node module, json files) has to be one file, same path as index.js&#xA;Configure index.js DB Setup in index.js connectionString will be added in environment setup on AWS&#xA;import pg from &amp;#34;pg&amp;#34;;&#xD;const { Pool } = pg;&#xD;let pool;&#xD;if (!pool) {&#xD;const connectionString = process.env.DATABASE_URL;&#xD;pool = new Pool({&#xD;connectionString,&#xD;application_name: &amp;#34;&amp;#34;,&#xD;max: 1,&#xD;});&#xD;} Handler event.</description>
+    </item>
+    <item>
+      <title>Lambda in .NET</title>
+      <link>http://localhost:1313/aws/5-lambda/lambda-.net/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aws/5-lambda/lambda-.net/</guid>
+      <description>Install the lambda template for .net&#xA;dotnet new -i Amazon.Lambda.Templates Create a function&#xA;dotnet new lambda.EmptyFunction --name MyFunction&#xD;Update the profile and region in aws-lambda-tools-defaults.json&#xD;...&#xD;&amp;#34;profile&amp;#34;: &amp;#34;default&amp;#34;,&#xD;&amp;#34;region&amp;#34;: &amp;#34;us-east-1&amp;#34;,&#xD;...&#xD;using Amazon.Lambda.RuntimeSupport;&#xD;var handler = (string input, ILambdaContext context) =&amp;gt;&#xD;{&#xD;context.Logger.LogInformation(&amp;#34;Get Request&amp;#34;);&#xD;context.Logger.LogInformation(input);&#xD;var response = new APIGatewayHttpApiV2ProxyResponse&#xD;{&#xD;StatusCode = (int)HttpStatusCode.OK,&#xD;Body = &amp;#34;Hello AWS Serverless&amp;#34;,&#xD;Headers = new Dictionary&amp;lt;string, string&amp;gt; { { &amp;#34;Content-Type&amp;#34;,&#xD;&amp;#34;text/plain&amp;#34; } }&#xD;};&#xD;return response;&#xD;};&#xD;await LambdaBootstrapBuilder.</description>
+    </item>
+  </channel>
+</rss>

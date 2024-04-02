@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Byul Notes</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Byul Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Database</title>
+      <link>http://localhost:1313/database/sql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/database/sql/</guid>
+      <description>Database INSERT INTO table (table) VALUES (1); Dynamic (Programmatic) SQL Dynamic SQL is referring to SQL statements that are constructed and executed at runtime.&#xA;Variable Declaration Variables are declared with the &amp;lsquo;DECLARE&amp;rsquo; construct Variable names are preceded with the @ symbol Assigning value SET : single value assignment SELECT : multiple value assignment SET Variale assignemnt DECLARE @max_students INTEGER; SET @max_student = 55; SELECT @max_student AS &amp;#39;Minimum Age&amp;#39;; aa SELECT * FROM words WHERE user_id = $1 AND name ILIKE $2 ORDER BY id LIMIT $3 OFFSET $4 Back const getWords = async (userId, searchTerm, limit, offset) =&amp;gt; {&#xD;// Construct the SQL query with placeholders for dynamic values&#xD;const query = `&#xD;SELECT *&#xD;FROM words&#xD;WHERE user_id = $1 AND name ILIKE $2&#xD;ORDER BY id&#xD;LIMIT $3&#xD;OFFSET $4&#xD;`;&#xD;// Execute the query with the provided parameters&#xD;const result = await client.</description>
+    </item>
+    <item>
+      <title>Day1</title>
+      <link>http://localhost:1313/xtc/angular/day1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/angular/day1/</guid>
+      <description>What is Angular Angular is an open-source front end development framework maintained by Google.&#xA;Built as a side project by Miko Hevery at Google, it was originally launched in 2010 as AngularJS. This original, AngularJS, was a JavaScript based framework with the aim of simplifying the process of building dynamic, single-page web applications via a reusable component architecture, two-way data binding, and a dependency injection system that made it easier to manage complex applications with components that rely on each other.</description>
+    </item>
+    <item>
+      <title>Day1</title>
+      <link>http://localhost:1313/xtc/vue/day1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/vue/day1/</guid>
+      <description>What is Vue.js Vue.js is also an open-source front-end JavaScript framework.&#xA;Vue.js was built by Evan You as a side project after working for Google and encountering the limitations of working with AngularJS. He built it with the aim of being as powerful as Angular, but lighter and easier to learn and use.&#xA;According to Evan You:&#xA;Vue.js is a more flexible, less opinionated solution. It’s only an interface layer so you can use it as a light feature in pages instead of a full-blown SPA.</description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>http://localhost:1313/xtc/php/1-docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/php/1-docker/</guid>
+      <description>Install https://www.docker.com/get-started/&#xA;Docker VSC Extension https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker&#xA;Window user needs WSL, Ubuntu&#xA;Install WSL Contianers, Hyper-V, Windows Subsystem for Linux Features enabled. Control pannel &amp;gt; uninstall program &amp;gt; turn windows features on/off Check Windows Subsstem for Linux Reboot WSL Setting in VSC Adding WSL in VSC : Ctrl+, &amp;gt; wsl &amp;gt; check integrated: use wsl profiles Install Ubuntu Ubuntu for WSL : Download Ubuntu 22.04.1 LTS from Microsoft apps PowerShell $ wsl &amp;ndash;install Verify : $ wsl -l -v Version set : $ wsl &amp;ndash;set-default-version 2 VSC Extensions : WSL, Remote Development Docker : Settings &amp;gt; General &amp;gt; WSL2 based engine | Resources &amp;gt; Ubuntu-22.</description>
+    </item>
+    <item>
+      <title>EC2</title>
+      <link>http://localhost:1313/aws/ec2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aws/ec2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flexbox</title>
+      <link>http://localhost:1313/frontend/css/flex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/frontend/css/flex/</guid>
+      <description>Flexbox Single dimension. Direct children become flex items&#xA;Parent .parent { display: flex; } Align center (Parent container) .parent { display: flex; justify-content: center // main axis align-items: center; // cross axis } Flex Parent Properties Flex Direction flex-direction: row; Values : column (vertical), row-reverse, column-revers Main axis : row (left to right), column (top to bottom) Flex Wrap Default&#xA;flex-wrap: nowrap; // 한 줄에 쭉 정렬하는거, 공간 없으면 shrink Values : wrap (다음 줄로 넘어감), wrap-reverse (새로운 아이템이 추가 되면 cross axis 거꾸로 추가)</description>
+    </item>
+    <item>
+      <title>HTML</title>
+      <link>http://localhost:1313/frontend/html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/frontend/html/</guid>
+      <description>Form Form Data Flow User filles the inputs User submits the form User inputs are validate Data from the form is sent to a processing script(JS or PHP) Form data is processed (client side or server side) Processor(JS) returns a status and response data Visual feedback given to the user (option) Form Element Attributes action: URL of the form processing endpoint (file) method : GET, POST name : sent to the processor Form Methods GET Data is sent to the query parameters in the URL (Don’t send sensitive info) GET URL can be bookmarked POST Data is transmitted as part of the HTTP request body.</description>
+    </item>
+    <item>
+      <title>Intro</title>
+      <link>http://localhost:1313/c/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/c/intro/</guid>
+      <description>C# C# is a simple and powerful object-oriented programming language created by Microsoft.&#xA;.NET Development Platform A platform that can create websites, services, desktop.&#xA;.NET consists of the Common Lnguage Runtime (CLR) and the .NET Framework class library. CLR is a runtime layer between the application and the operation system. It manages code at execution time, providing memory management while enforcing code accuracy.&#xA;Visual Studio Microsoft Visual Studio is an Integrated Development Environment (IDE).</description>
+    </item>
+    <item>
+      <title>Intro</title>
+      <link>http://localhost:1313/react/1-intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/react/1-intro/</guid>
+      <description>React Javascript library for web and native user interfaces&#xA;Environment Setup 1. Use Boilerplate Create React App npx create-react-app [name]&#xD;cd [name]&#xD;npm start Vite NPM Yarn npm create vite@latest yarn create vite 2. Manual Setup Compile JSX, Transpile JS : Babel Linting : ESLing Generate index.html : Webpack Reload on save : NPM Initial File Structure src components page folders App.js 404.js index.js Index.js import React from &amp;#34;react&amp;#34;; import { render } from &amp;#34;react-dom&amp;#34;; import { BrowserRouter as Router } from &amp;#34;react-router-dom&amp;#34;; import &amp;#34;bootstrap/dist/css/bootstrap.</description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost:1313/python/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/python/intro/</guid>
+      <description>Install Python Check Python version&#xA;python3 --version If Python doesn&amp;rsquo;t exist, install python here https://www.python.org/downloads/&#xA;brew install python3 Pipenv Pipenv is a packaging tool that provides all necessary means to create a virtual environment for the Python project.&#xA;Install Install python &amp;gt; Install pip &amp;gt; Install pipenv&#xA;pip install pipenv&#xD;pipenv --version Create a new project In the root of working directory&#xA;pipenv --python 3.11 Activate the virtual environment You have to activate to use virtual environment and use python command line</description>
+    </item>
+    <item>
+      <title>Lambda Function</title>
+      <link>http://localhost:1313/aws/5-lambda/lambda-function/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aws/5-lambda/lambda-function/</guid>
+      <description>Lambda function in VSC Install&#xA;npm i pg&#xD;npm init -y Add Module to package.json&#xA;&amp;#34;type&amp;#34; : &amp;#34;module&amp;#34; everything (node module, json files) has to be one file, same path as index.js&#xA;Configure index.js DB Setup in index.js connectionString will be added in environment setup on AWS&#xA;import pg from &amp;#34;pg&amp;#34;;&#xD;const { Pool } = pg;&#xD;let pool;&#xD;if (!pool) {&#xD;const connectionString = process.env.DATABASE_URL;&#xD;pool = new Pool({&#xD;connectionString,&#xD;application_name: &amp;#34;&amp;#34;,&#xD;max: 1,&#xD;});&#xD;} Handler event.</description>
+    </item>
+    <item>
+      <title>MS SQL</title>
+      <link>http://localhost:1313/database/mssql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/database/mssql/</guid>
+      <description>SQL Server : Relational Database Management System&#xA;RDMS&#xA;Data SEcurity Data Integrity Referential Integrity ERD (An Entity Relationship Diagram)&#xA;Entity : Tables Entity Properties : Columns Each table has a primary key&#xA;Primary key : Unique value on every table Foreign Key : Defines a relationship to another table Conventions Table Name : PascalCase Table Property (Column), Attribute : camelCase Row : Tuple Relation/Association Schema SQL SQL is Structured Query Language, is used to interact with the Database Engine.</description>
+    </item>
+    <item>
+      <title>MVC Basics</title>
+      <link>http://localhost:1313/asp.net/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/asp.net/basic/</guid>
+      <description>MVC Model : Database Logic View : Razor markup (HTML embedded C# code) Controller : User interacts Why MVC? For the rapid application development and maintenance&#xD;DbContext Class The link between the db and the c# It contains database connection and schema Entity Framwork Automate database related activities with .NET&#xA;Open a connection to the db Create dataset Convert data from the dataset (ApplicationDbContext) Create Entity Framework Create ASP .Net Core Web App (Model-View-Controller) Check Place solution and project in the same directory Framework: .</description>
+    </item>
+    <item>
+      <title>React</title>
+      <link>http://localhost:1313/pluralsight/react/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pluralsight/react/</guid>
+      <description>redux : react state management library&#xA;Version React 17 Redux 4 React Router 5 Environment Build Dev environment Compile JSX Transpile JS Linting Generate index.html Reload on save =&amp;gt; one command (npm) with Node, Webpack, Babel, ESLint, npm Scripts Webpack webpack.config.dev.js file Babel Transpile modern JS : Tell Babel what browsers you need to support Compile JSX to JS : So the browser understand the code Configure Babel Go to package.</description>
+    </item>
+    <item>
+      <title>Theory</title>
+      <link>http://localhost:1313/leetcode/theory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/leetcode/theory/</guid>
+      <description>Brute force A method of accomplishing something primarily by means of strength, without the use of great skill&#xA;Big O Big O, also known as Big O notation, represents an algorithm&amp;rsquo;s worst-case complexity. It uses algebraic terms to describe the complexity of an algorithm.&#xA;Big O defines the runtime required to execute an algorithm by identifying how the performance of your algorithm will change as the input size grows. But it does not tell you how fast your algorithm&amp;rsquo;s runtime is.</description>
+    </item>
+    <item>
+      <title>Unit Test</title>
+      <link>http://localhost:1313/pluralsight/unittest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pluralsight/unittest/</guid>
+      <description>Unit Testing an ASP.NET Core Web API Introduction to Unit Testing Project Structure Service Layer = Presentation or Out facing Business Data : wherecontext and entity(tables) are Tackling Basic Unit Testing Scenarios Setting Up Tests and Controlling Test Execution Working with Data-driven Tests Isolating Unit Tests with ASP.NET Core Techniques and Mocking Unit Testing ASP.NEt Core API Controllers Unit Testing ASP.NET Core Middleware, Filters and SErvice Registrations Integrating Unit Tests in Your Development and Release Flows Integration Testing ASP.</description>
+    </item>
+    <item>
+      <title>Angular JS</title>
+      <link>http://localhost:1313/xtc/work/angularjs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/work/angularjs/</guid>
+      <description>Angular JS Data Binding Data-binding is an automatic way of updating the view whenever the model changes, as well as updating the model whenever the view changes. This is awesome because it eliminates DOM manipulation from the list of things you have to worry about.&#xA;ng-if ng-switch ng-model ng-show ng-hide&#xA;$scope $parent.name&#xA;Controller Controllers are the behavior behind the DOM elements. AngularJS lets you express the behavior in a clean readable form without the usual boilerplate of updating the DOM, registering callbacks or watching model changes.</description>
+    </item>
+    <item>
+      <title>Basic</title>
+      <link>http://localhost:1313/c/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/c/basic/</guid>
+      <description>Console.ReadLine(); Console.WriteLine(&amp;#34;Hi&amp;#34;); Console.Write(&amp;#34;Hi &amp;#34;); F5 -&amp;gt; Run Ctrl(Command) + B -&amp;gt; build&#xA;Basic Code Structures Namespace Namespaces are used to organize classes into logical groups. They are also referred to as libraries. Referencing the namespace with a using statement. It allows you to access its classes within the file.&#xA;using Name; namespace ConsoleApp1 { ... } Access Modifier The Access Modifier controls how a class or its components can be used by other code.</description>
+    </item>
+    <item>
+      <title>Basics</title>
+      <link>http://localhost:1313/python/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/python/basic/</guid>
+      <description>Variables Operators Functions Module Flows : If, For, While Errors Variables Variable is a type of virtual box, created in the memory of the computer, which we can keep a value. A variable has name, data type, value.&#xA;Variables are volatile, they exist in the memory just while the program is running. they are erased when the program ends.&#xA;Python read codes from top to bottom. If variable has changed at the end, it will take the latest value.</description>
+    </item>
+    <item>
+      <title>Day2</title>
+      <link>http://localhost:1313/xtc/angular/day2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/angular/day2/</guid>
+      <description>Angular Pipes Pipes allow us to easily and consistently format values and/or transform data.&#xA;Angular provides a set of built-in pipes that we can use, as needed, right away.&#xA;For instance, if we want to display the title for each of our projects in uppercase, we can use the UpperCasePipe to do so right in our template.&#xA;app.component.html &amp;lt;h2&amp;gt;{{ project.title | uppercase }}&amp;lt;/h2&amp;gt; To see a full list of the built in pipes, check the API docs:</description>
+    </item>
+    <item>
+      <title>DB Connection</title>
+      <link>http://localhost:1313/asp.net/db/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/asp.net/db/</guid>
+      <description>DB First MVC Entity framwork has NO connection string in appsettings.json&#xA;Install Packages&#xA;EntityFrameworkCore.Tools EntityFrameworkCore.SqlServer EntityFrameworkCore Connect to DB (Initial Connection) Run the command line&#xA;Scaffold-DbContext &amp;#34;Server=[serverName];Database=[dbName];Trusted_Connection=True;&amp;#34; Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models OutputDir Models : Create class inside Models folder Update DB Scaffold-DbContext &amp;#34;Server=[serverName];Database=[dbName];Trusted_Connection=True;&amp;#34; Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force Same as connection, but add -force at the end.&#xA;Database Context nameContext.cs file contains information about the schema and database connection&#xA;This inhertis from .</description>
+    </item>
+    <item>
+      <title>Easy</title>
+      <link>http://localhost:1313/leetcode/easy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/leetcode/easy/</guid>
+      <description>Two Sum Solution Python C# Solution #1 : Brute Force&#xA;# Runtime: 9ms class Solution(object): def twoSum(self, nums, target): for i in range(len(nums)): for j in range(i+1, len(nums)): if nums[j] == target - nums[i]: return [i, j] Solution #2 : Two-pass Hash Table&#xA;# Runtime: 20ms class Solution(object): def twoSum(self, nums, target): map = {} for (i, num) in enumerate(nums): map[num]=i for (i, num) in enumerate(nums): x = target - num if(x in map and map[x]!</description>
+    </item>
+    <item>
+      <title>Grid</title>
+      <link>http://localhost:1313/frontend/css/grid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/frontend/css/grid/</guid>
+      <description>Length units for grid : px, ex(relative to parent), rem(relative to html), fr(fractional)&#xA;Grid Layouts .container { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr; } Shorthand&#xA;grid-template: rows / columns; Grid container won’t have any effect until the columns and rows are defined.&#xA;Repeat grid-template-columns: repeat(n, size); Auto Explicit grid : when you specify grid-template-columns, grid-template-rows together Implicit : auto generated. Grid-auto-rows: grid height is determined by the tallest item grid-auto-rows: 15rem; auto size for rows, repeat(2,1fr)은 row가 무수히 많을 때 의미가 없으므로 grid-auto-columns: n; grid-flow가 column 일 때 사용 grid-auto-flow: row or column; grid의 direction (=flex-direction) auto-fill; exact size(value) auto-fit; stretch(value) minmax() grid-auto-rows: minmax(minsize, maxsize) min-content max-content Responsive = repeat + auto + minmax grid-template-columns:repeat(auto-fit, minmax(10px, 1fr)); Gap Unit: px, rem, em, % (fr x), in Parent column-gap : 2px;&#xD;row-gap: 1rem;&#xD;gap: (column) (row); Start/End grid-column-start: 1&#xD;grid-column-end: 4 (= grid-column-end: span 3; or -1;)&#xD;grid-column : 1 / 4; (same as start + end)&#xD;grid-column: span 4 (grid item takes 3 spaces) Grid Template Areas (parent)</description>
+    </item>
+    <item>
+      <title>Route</title>
+      <link>http://localhost:1313/react/2-route/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/react/2-route/</guid>
+      <description>Tab npm install --save react-tabs —save: development purpose and deployed&#xA;https://reactcommunity.org/react-tabs/&#xA;https://github.com/reactjs/react-tabs&#xA;import { Tab, Tabs, TabList, TabPanel } from &amp;#34;react-tabs&amp;#34;; import &amp;#34;react-tabs/style/react-tabs.css&amp;#34;; &amp;lt;Tabs&amp;gt; &amp;lt;TabList&amp;gt; &amp;lt;Tab&amp;gt;Title 1&amp;lt;/Tab&amp;gt; &amp;lt;Tab&amp;gt;Title 2&amp;lt;/Tab&amp;gt; &amp;lt;/TabList&amp;gt; &amp;lt;TabPanel&amp;gt; &amp;lt;h2&amp;gt;Any content 1&amp;lt;/h2&amp;gt; &amp;lt;/TabPanel&amp;gt; &amp;lt;TabPanel&amp;gt; &amp;lt;h2&amp;gt;Any content 2&amp;lt;/h2&amp;gt; &amp;lt;/TabPanel&amp;gt; &amp;lt;/Tabs&amp;gt;; Router Routing is what component to render when a user enters a new URL&#xA;https://reactrouter.com&#xA;npm install react-router-dom Basic Route Example import React from &amp;#34;react&amp;#34;; import { Route, Switch } from &amp;#34;react-router-dom&amp;#34;; import HomePage from &amp;#34;.</description>
+    </item>
+    <item>
+      <title>S3</title>
+      <link>http://localhost:1313/aws/s3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aws/s3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sass</title>
+      <link>http://localhost:1313/frontend/sass/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/frontend/sass/</guid>
+      <description>Sass </description>
+    </item>
+    <item>
+      <title>Setup</title>
+      <link>http://localhost:1313/xtc/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/setup/</guid>
+      <description>New computer setup Node : download it from the official website&#xA;Git : from website&#xA;Hugo&#xA;MS Sql server&#xA;MS Server Studio&#xA;Visual Studio&#xA;VSC&#xA;github login format on save wakatime prettier emmet ESLint chrome&#xA;slack&#xA;Path Environment Variables System &amp;gt; Advanced system settings &amp;gt; Advanced &amp;gt; Environment Variables Add new path to &amp;lsquo;Path&amp;rsquo; under the bot User variables and System variables </description>
+    </item>
+    <item>
+      <title>Software setup for Laravel</title>
+      <link>http://localhost:1313/xtc/php/2-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/php/2-setup/</guid>
+      <description>Windows Docker Setup open Docker Desktop &amp;gt; Settings (gear icon) &amp;gt; General Make sure Use the WSL 2 based engine is checked&#xA;Docker Desktop &amp;gt; Settings &amp;gt; Resources &amp;gt; WSL Integration&#xA;Enable integration with the Linux Distro you just installed. Apply &amp;amp; restart WSL Ubuntu for WSL : Download Ubuntu 22.04.1 LTS from Microsoft apps VSC Extensions : WSL, Remote Development Adding WSL in VSC : Ctrl+, &amp;gt; wsl &amp;gt; check integrated: use wsl profiles Docker : Settings &amp;gt; General &amp;gt; WSL2 based engine | Resources &amp;gt; Ubuntu-22.</description>
+    </item>
+    <item>
+      <title>Array</title>
+      <link>http://localhost:1313/c/array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/c/array/</guid>
+      <description>Enumeration ///&#xA;Array Array class stores a fixed length sequentail collection of elements of the same type&#xA;Declare // 1. string[] nameOfArray = new string[2]; nameOfArray[0] = &amp;#34;aa&amp;#34;; nameOfArray[1] = &amp;#34;bb&amp;#34;; // 2. string[] nameOfArray = new string[] { &amp;#34;aa&amp;#34;, &amp;#34;bb&amp;#34; } Type of Array console let user knows the type of array, not the item of array. if you want to print the specific item, refer the index of the item.</description>
+    </item>
+    <item>
+      <title>Bootstrap</title>
+      <link>http://localhost:1313/frontend/bootstrap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/frontend/bootstrap/</guid>
+      <description>Bootstrap </description>
+    </item>
+    <item>
+      <title>CRUD</title>
+      <link>http://localhost:1313/asp.net/crud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/asp.net/crud/</guid>
+      <description>Create Get Controller public IActionResult Create() { FoodStoreContext db = new FoodStoreContext(); ViewData[&amp;#34;Mfg&amp;#34;] = new SelectList(db.Table, &amp;#34;Mfg&amp;#34;, &amp;#34;Mfg&amp;#34;); return View(); } View Right click on View in Contrller and add Create template&#xA;Post Controller&#xA;[HttpPost] public IActionResult Create([Bind(&amp;#34;ProductId,Name,Mfg,Vendor,Price&amp;#34;)] Product product) { FoodStoreContext db = new FoodStoreContext(); // Ensure data is valid. if (ModelState.IsValid) { db.Add(product); db.SaveChanges(); // Commit changes to database. // Save is successful so show updated listing. return RedirectToAction(nameof(Index)); } // Data not valid so show form again with populated drop downs.</description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>http://localhost:1313/xtc/work/database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/work/database/</guid>
+      <description>Db Update Update Data File&#xA;Update Context file&#xA;Add-Migration Name&#xA;if there are build errors, migration will fail. Check migration file : it only contains updates Up : for executing, Down : for roll back, both should match. (If drop in Up, add in Down) Check migration designer file&#xA;Check snapshot file : it contains entire db structure (Compare difference)&#xA;If everything is okay, update-database&#xA;Roll Back Migration / When you want to pull from dev branch Change the connection string to local DB</description>
+    </item>
+    <item>
+      <title>Day3</title>
+      <link>http://localhost:1313/xtc/angular/day3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/angular/day3/</guid>
+      <description>Creating a Project Detail Component ng generate component project-detail In the newly created component we need to:&#xA;Import the Project model Add Input to the import from @angular/core Add a project property decorated with @Input import { Component, Input } from &amp;#39;@angular/core&amp;#39;; import { Project } from &amp;#39;../model/project&amp;#39;; @Component({ selector: &amp;#39;app-project-detail&amp;#39;, templateUrl: &amp;#39;./project-detail.component.html&amp;#39;, styleUrls: [&amp;#39;./project-detail.component.scss&amp;#39;], }) export class ProjectDetailComponent { @Input() project?: Project; } Show the Project Detail Component, Conditionally For now we are going to set things up such that display of the project detail is contingent on a project having been passed a project from the projects component.</description>
+    </item>
+    <item>
+      <title>Frontend</title>
+      <link>http://localhost:1313/xtc/work/frontend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/work/frontend/</guid>
+      <description>CSS The z index of child elements is always the z index of the parent element.&#xA;(a child element is limited to the stacking context of its parent.)&#xA;https://www.freecodecamp.org/news/4-reasons-your-z-index-isnt-working-and-how-to-fix-it-coder-coder-6bc05f103e6c/&#xA;jQuery var toggleCheck = $(`#toggle-${id}`); // If the return is fullfilled, set the button to true if (result.data == 104) { toggleCheck.prop(&amp;#34;checked&amp;#34;, true); } else { toggleCheck.prop(&amp;#34;checked&amp;#34;, false); } HTML Follow the basic bootstrap structure like container, container-fluid</description>
+    </item>
+    <item>
+      <title>JWT</title>
+      <link>http://localhost:1313/aws/jwt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aws/jwt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lambda in .NET</title>
+      <link>http://localhost:1313/aws/5-lambda/lambda-.net/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aws/5-lambda/lambda-.net/</guid>
+      <description>Install the lambda template for .net&#xA;dotnet new -i Amazon.Lambda.Templates Create a function&#xA;dotnet new lambda.EmptyFunction --name MyFunction&#xD;Update the profile and region in aws-lambda-tools-defaults.json&#xD;...&#xD;&amp;#34;profile&amp;#34;: &amp;#34;default&amp;#34;,&#xD;&amp;#34;region&amp;#34;: &amp;#34;us-east-1&amp;#34;,&#xD;...&#xD;using Amazon.Lambda.RuntimeSupport;&#xD;var handler = (string input, ILambdaContext context) =&amp;gt;&#xD;{&#xD;context.Logger.LogInformation(&amp;#34;Get Request&amp;#34;);&#xD;context.Logger.LogInformation(input);&#xD;var response = new APIGatewayHttpApiV2ProxyResponse&#xD;{&#xD;StatusCode = (int)HttpStatusCode.OK,&#xD;Body = &amp;#34;Hello AWS Serverless&amp;#34;,&#xD;Headers = new Dictionary&amp;lt;string, string&amp;gt; { { &amp;#34;Content-Type&amp;#34;,&#xD;&amp;#34;text/plain&amp;#34; } }&#xD;};&#xD;return response;&#xD;};&#xD;await LambdaBootstrapBuilder.</description>
+    </item>
+    <item>
+      <title>Laravel Intro</title>
+      <link>http://localhost:1313/xtc/php/3-intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/php/3-intro/</guid>
+      <description>Laravel Laravel is a full stack web application managing a PHP framework&#xA;Laravel Sail Sail was created by the Laravel team as a tool to expedite and Dockerize Laravel development with an emphasis on modern development practices using the latest tools and technologies&#xA;Launching Laravel App Window : Open Ubuntu terminal in VSC Make sure Docker is running : empty containers, images In your working directory,&#xA;curl -s &amp;#34;https://laravel.build/[name]&amp;#34; | bash&#xD;cd [name]&#xD;.</description>
+    </item>
+    <item>
+      <title>Medium</title>
+      <link>http://localhost:1313/leetcode/medium/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/leetcode/medium/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MongoDB</title>
+      <link>http://localhost:1313/database/monbodb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/database/monbodb/</guid>
+      <description>Mongo DB is No SQL Databases that stores data as documents in a JSON-like format.&#xA;MongoDB SQL Database Database Tables Collections Columns Fields Rows Documents Install https://www.mongodb.com/nosql-explained/nosql-vs-sql&#xA;Local : MongoDB Community Server Cloud : MongoDB Atlas Commands in Local machine&#xA;show databases&#xD;use nameOfDatabase&#xD;insert : db.table.insertMany([ {}, {}, {} ])&#xD;list : db.table.find() MongoDB in Node Get connection string MongoDB &amp;gt; Database &amp;gt; Connect &amp;gt; Connect your application&#xA;Configuration npm install mongodb mongoose const { mongoose } = require(&amp;#34;mongoose&amp;#34;); const Profile = require(&amp;#34;.</description>
+    </item>
+    <item>
+      <title>MySQL Migration</title>
+      <link>http://localhost:1313/xtc/php/sql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/php/sql/</guid>
+      <description>Database Setup and Configuration Great news!&#xA;When we created our project via Sail, Laravel set up and configured our database, running in its own container, ready for us to use.&#xA;Laravel stores all sensitive and/or environment specific configuration, including key info for our database, using dotenv.&#xA;Open up the .env file in the root of your Laravel project and take a gander.&#xA;The default DB_USERNAME and DB_PASSWORD make me cringe, but let&amp;rsquo;s just work with it for now.</description>
+    </item>
+    <item>
+      <title>String</title>
+      <link>http://localhost:1313/python/string/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/python/string/</guid>
+      <description>A sequence of characters. String is immutable.&#xA;Usage Single line string : &amp;ldquo;~~&amp;rdquo; Multiple lines : &amp;lsquo;&amp;rsquo;&amp;rsquo;~~~&amp;rsquo;&amp;rsquo;&#39; Escape special characters print(&amp;#34;this is \&amp;#34;example\&amp;#34;&amp;#34;) # this is &amp;#34;example&amp;#34; String Concatenate con = &amp;#34;a&amp;#34; + &amp;#34;Python&amp;#34; con2 = f&amp;#34;Wow {con}&amp;#34; Repeat print(&amp;#34;ba&amp;#34; + &amp;#34;na&amp;#34;*2) # banana String Formatting a = 12.1 b = 22.32 c = 3.021 output = &amp;#34;a: %s b: %d c: %f c: %.2f&amp;#34; %(a, b, c, c) # a: 12.</description>
+    </item>
+    <item>
+      <title>Transform</title>
+      <link>http://localhost:1313/frontend/css/trasnform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/frontend/css/trasnform/</guid>
+      <description>Transforms Transforms work with box-model(display: block)&#xA;Translate Alters position horizontally or vertically&#xA;.box { transform: translate(x(가로) px, y(세로) px); } Rotate Rotate in a clockwise (positive value) or counter-clockwise(negative value)&#xA;{ transform: rotate(n deg); } Scale Size of an element&#xA;{ transform: scale(n); } or { transform: scaleX(n) scaleY(n); } Skew { transform: skewX(n deg) skewY(n deg); } Transform-origin It specify the point on the x, y axis (default: centre, 0 0 : top left)</description>
+    </item>
+    <item>
+      <title>Cognito</title>
+      <link>http://localhost:1313/aws/cognito/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aws/cognito/</guid>
+      <description>Cognito in AWS Authentication with Server-less. Auth zero is the most populate one that takes care of UI&#xA;AWS &gt; Cognito &gt; User pools &gt; Create User Pool&#xD;Step 1 Cognito user pool sign-in options : Username, email (Phone number gets complicated) User name requirement : Allow users to sign in with a preferred user name &amp;gt; Next Step 2 Password policy mode : Cognito defaults or Custom &amp;gt; select the options Multi-factor Authentication &amp;gt; No MFA User account Recovery : Enable self-service account recovery, Delivery method : Email only &amp;gt; Next Step 3 Self registration : enable Attribute verification : Allow Cognito to send a message, send email, verify email &amp;gt; Next Active attribute values when an update is pending (like identity stuff.</description>
+    </item>
+    <item>
+      <title>Linq</title>
+      <link>http://localhost:1313/asp.net/linq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/asp.net/linq/</guid>
+      <description>LINQ (Language-Integrated Query). Syntax to query the database in Entity Framework (belong to the System.Linq namespace)&#xA;Query Based Syntax Select Explicit&#xA;IQueryable&amp;lt;Invoice&amp;gt; query = from p in db.Invoices select p; Implicit (Using an anonymous type)&#xA;var query = from p in db.Products select new { p.name, p.vendor }; Filter from p in context.Products where p.price &amp;gt; 0.99m &amp;amp;&amp;amp; p.price &amp;lt; 2.00m select p; Filter with Contains, StartWith var query = from p in context.</description>
+    </item>
+    <item>
+      <title>Method</title>
+      <link>http://localhost:1313/c/method/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/c/method/</guid>
+      <description>Methods public static void Name(string[] args){ } Method Overloading Same method name, different function/parameter&#xA;Parameter By Value : Copy of the variable. Doesn&amp;rsquo;t affect the variable By Reference : address of the variable value. Affect the varaible </description>
+    </item>
+    <item>
+      <title>Tailwind</title>
+      <link>http://localhost:1313/frontend/tailwind/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/frontend/tailwind/</guid>
+      <description>Setup in React Install Tailwind CSS npm install -D tailwindcss&#xD;npx tailwindcss init Configure your template paths tailwind.config.js&#xA;content: [&amp;#34;./src/**/*.{html,js,jsx,tsx}&amp;#34;], Add the Tailwind directives to the index.css @tailwind base;&#xD;@tailwind components;&#xD;@tailwind utilities; JSX (vite) npm install -D tailwindcss postcss autoprefixer&#xD;npx tailwindcss init -p content: [&#xD;&amp;#34;./index.html&amp;#34;,&#xD;&amp;#34;./src/**/*.{js,ts,jsx,tsx}&amp;#34;,&#xD;], @tailwind base;&#xD;@tailwind components;&#xD;@tailwind utilities; </description>
+    </item>
+    <item>
+      <title>ASP .NET</title>
+      <link>http://localhost:1313/xtc/work/aspnet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/work/aspnet/</guid>
+      <description>Interface :&#xA;IActionResult : An interface that represents the result of an action method in an MVC. Actually return type for action methods&#xA;action method is a public method within a controller class that is responsible for handling a specific HTTP request and producing a response.&#xA;IQueryable ?&#xA;IQueryable is an interface in the .NET framework that represents a queryable data source. It is primarily used in LINQ (Language-Integrated Query) to perform query operations on data.</description>
+    </item>
+    <item>
+      <title>Auth</title>
+      <link>http://localhost:1313/xtc/php/auth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/php/auth/</guid>
+      <description>User Registration Form Let&amp;rsquo;s start by taking a look at the User Model and Table to get a sense of what our form will need to handle.&#xA;From the database we can see that name, email, and password columns are not nullable.&#xA;From the model we can see that these fields are also mass assignable aka fillable.&#xA;Form Setup To build out our registration functionality we&amp;rsquo;re going to need:&#xA;A Controller with a create method RegisterUserController create method A view to display the create form resources/views/register_user/create.</description>
+    </item>
+    <item>
+      <title>Data Structure</title>
+      <link>http://localhost:1313/python/list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/python/list/</guid>
+      <description>Lists Related data can be grouped together into a single variable Python list can have different type of values : array, string, number, etc.. List is mutable list_sample = [&amp;#39;a&amp;#39;,&amp;#39;b&amp;#39;,&amp;#39;c&amp;#39;] Mutate means change. You can modify something mutuable.&#xA;List Comprehensions A shorter way to create a new list, from another list, based upon conditions that you set.&#xA;fruits = [&amp;#34;apple&amp;#34;, &amp;#34;banana&amp;#34;, &amp;#34;cherry&amp;#34;, &amp;#34;kiwi&amp;#34;, &amp;#34;mango&amp;#34;] newlist = [] for x in fruits: if &amp;#34;a&amp;#34; in x: newlist.</description>
+    </item>
+    <item>
+      <title>String</title>
+      <link>http://localhost:1313/c/string/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/c/string/</guid>
+      <description>String Manipulation Escape string Double Quote \&amp;quot; New Line \n Back Slash \\ Tab \t Verbatim Verbatim &amp;ldquo;@&amp;rdquo; allows you to write a string with backslash and newline without using escape characters&#xA;var message = @&amp;#34;Hi, Hello&amp;#34; Format var name = &amp;#34;aaa&amp;#34;; var message = String.Format(&amp;#34;{0} {1}&amp;#34;, name, &amp;#34;hello&amp;#34;) F Floating-Point, D Decimal, G General, N Number, E Exponential, C Currency&#xA;$&amp;#34;{val:F}&amp;#34; Interpolation var a = $&amp;#34;I have {var}&amp;#34;; String Methods Get substring of string text.</description>
+    </item>
+    <item>
+      <title>Admin</title>
+      <link>http://localhost:1313/xtc/php/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/php/admin/</guid>
+      <description>Create Project Form Now that we have a secured admin area, let&amp;rsquo;s build our project creation UI.&#xA;Add Routes routes/web.php&#xA;Route::get(&amp;#39;/admin/projects/create&amp;#39;, [ProjectController::class, &amp;#39;create&amp;#39;]); Route::post(&amp;#39;/admin/projects/create&amp;#39;, [ProjectController::class, &amp;#39;store&amp;#39;]); Add A Create Method to ProjectController Since we will need a category dropdown in our form, make sure to import the Category model and send all categories to the view.&#xA;public function create() { return view(&amp;#39;admin.projects.create&amp;#39;) -&amp;gt;with(&amp;#39;categories&amp;#39;, Category::all()); } Build the Projects Create View resources/views/admin/projects/create.</description>
+    </item>
+    <item>
+      <title>Files</title>
+      <link>http://localhost:1313/python/file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/python/file/</guid>
+      <description>Secondary Memory Secondary memory is file. It is not erased when the power is turned off.&#xA;Open file file = open(&amp;#39;file_name.txt&amp;#39;, &amp;#39;r&amp;#39;) string = file.read() file.close() with open(&amp;#39;file.txt&amp;#39;, &amp;#39;r&amp;#39;) string = file.read() file.close() Always close a file you open. If you don&amp;rsquo;t close, you might have&#xA;a permanently-locked state(inaccessible for operations now) a corrupted file any writing may have gone uncommitted Reading and Writing f = open(&amp;#39;file.txt&amp;#39;, &amp;#39;w&amp;#39;) f.write(&amp;#39;text&amp;#39;) f.close() Appending f = open(&amp;#39;file.</description>
+    </item>
+    <item>
+      <title>Class</title>
+      <link>http://localhost:1313/c/class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/c/class/</guid>
+      <description>Class c#1 Day4</description>
+    </item>
+    <item>
+      <title>Regular Expression</title>
+      <link>http://localhost:1313/python/regex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/python/regex/</guid>
+      <description>Regular expressions are strings. Used for patter matching in other strings.&#xA;re Object import re string = &amp;#34;sample&amp;#34; matches = re.findall(&amp;#34;s&amp;#34;, string) re.match() re.search() re.split() re.sub() [] : A set of characters \ : https://regex101.com/</description>
+    </item>
+    <item>
+      <title>Beautiful Soup</title>
+      <link>http://localhost:1313/python/bs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/python/bs/</guid>
+      <description>Beautiful Soup is a Python library for pulling data out of HTML and XML files.&#xA;https://www.crummy.com/software/BeautifulSoup/bs4/doc/&#xA;* When the website is blocked a bot, you need to use Selenium.&#xA;* scrap for commercial purpose &amp;gt; follow the policy&#xA;Install pip install beautifulsoup4 Initializing from requests import get from bs4 import BeautifulSoup response = get(&amp;#34;url&amp;#34;) if response.status_code != 200: print(&amp;#34;Cant&amp;#39;request&amp;#34;) else: soup = BeautifulSoup(response.text, &amp;#34;html.parser&amp;#34;) # response.text : &amp;lt;tag&amp;gt;...&amp;lt;/tag&amp;gt; Methods Find all Scan the entire document looking for results as list</description>
+    </item>
+    <item>
+      <title>Deploy</title>
+      <link>http://localhost:1313/react/deploy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/react/deploy/</guid>
+      <description>Netlify Build command CI= npm run build or CI=false npm run build&#xA;Redirect Create file _redirects and put inside public folder.&#xA;_redirects&#xA;/* /index.html 200 Github Deploying to SiteGround - Domain Root The following command (run from the root folder of your project) will bundle up your app, into the build folder, ready to upload to your host.&#xA;npm run build In order to see the production code locally, you&amp;rsquo;ll need to do the following:</description>
+    </item>
+    <item>
+      <title>Infrastructure as Code</title>
+      <link>http://localhost:1313/aws/iac/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aws/iac/</guid>
+      <description>Infrastructure Infrastructure refers to the underlying components and resources required for the operation of systems, applications, or services.&#xA;It is all the behind-the-scenes stuff that allows us to use computers, access websites, and use apps on our phones.&#xA;Components and resources are below&#xA;Physical Components Servers, computers, network devicdes (routers, switches), storage devices (hard drives, solid-state drives), and cables.&#xA;Networking IP addresses, subnets, routing, firewalls, and load balancers. Networking infrastructure enables communication between devices and facilitates the transfer of data.</description>
+    </item>
+    <item>
+      <title>Linq</title>
+      <link>http://localhost:1313/c/linq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/c/linq/</guid>
+      <description> Day 6, 7, MVC Day1&#xA;Entity Framework, Linq&#xA;IQueryable&amp;lt;Class&amp;gt; query = from p in db.TableName select p; </description>
+    </item>
+    <item>
+      <title>Flask</title>
+      <link>http://localhost:1313/python/flask/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/python/flask/</guid>
+      <description>Install pip install Flask&#xA;Use from flask import Flask app = Flask(&amp;#34;Name&amp;#34;) @app.route(&amp;#34;/&amp;#34;) def home(): return &amp;#34;Home&amp;#34; app.run(&amp;#34;127.0.0.1&amp;#34;) HTML from flask import Flask, render_template app = Flask(&amp;#34;JobScrapper&amp;#34;) @app.route(&amp;#34;/&amp;#34;) def home(): return render_template(&amp;#34;home.html&amp;#34;, name=&amp;#34;hey&amp;#34;) You should create home.html file inside templates folder. Flask looks for the templates folder to get html files.&#xA;Use the variable from rendering&#xA;&amp;lt;h1&amp;gt;{{name}}&amp;lt;/h1&amp;gt; 1 + tap : bolierplate in html&#xA;Pico https://picocss.com/&#xA;Full code from flask import Flask, render_template, request, redirect, send_file from extractors.</description>
+    </item>
+    <item>
+      <title>SST</title>
+      <link>http://localhost:1313/aws/sst/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aws/sst/</guid>
+      <description>SST(Serverless Stack Toolkit) is an open-source framework for building serverless apps. SST converts your infrastructure code into a CloudFormation template.&#xA;https://sst.dev/&#xA;Initial Configuration Install npx create-sst@latest [name] Change ts file to js (config, stack, function)&#xA;Config File sst.config.ts By default, the app will be deployed to the us-east-1 AWS region.&#xA;sst.config.ts &amp;gt; sst.config.js and remove all red lines&#xA;import { API } from &amp;#34;./stacks/API&amp;#34;;&#xD;export default {&#xD;config(_input) {&#xD;//...&#xD;},&#xD;stacks(app) {&#xD;app.</description>
+    </item>
+    <item>
+      <title>Selenium</title>
+      <link>http://localhost:1313/python/selenium/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/python/selenium/</guid>
+      <description>https://www.selenium.dev/ https://selenium-python.readthedocs.io/&#xA;It is automates browsers. It will actually start the browser. so indeed think we are not a bot.&#xA;Install pip install selenium&#xD;pip install webdriver_manager https://pypi.org/project/webdriver-manager/&#xA;Initializing from selenium import webdriver from webdriver_manager.chrome import ChromeDriverManager browser = webdriver.Chrome(ChromeDriverManager().install()) browser.get(&amp;#39;http://google.com&amp;#39;) This works too&#xA;from selenium import webdriver driver = webdriver.Chrome() driver.get(&amp;#39;url&amp;#39;) # If only you want to prevent closing the browser automatically while (True): pass Detail&#xA;from selenium import webdriver from selenium.</description>
+    </item>
+    <item>
+      <title>SST &amp; Auth</title>
+      <link>http://localhost:1313/aws/sst-auth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aws/sst-auth/</guid>
+      <description>Backend Add Auth to both ApiStack and FrontendStack&#xA;ApiStack.js Add Cognito, auth, authorizers, default authorizer&#xA;Once it&amp;rsquo;s all set, you are not allowed to change any configs. (need to delete every stacks to re-do it)&#xA;import { Api, Cognito } from &amp;#34;sst/constructs&amp;#34;; export function ApiStack({ stack }) { // Create auth provider const auth = new Cognito(stack, &amp;#34;Auth&amp;#34;, { login: [&amp;#34;email&amp;#34;], // login: [&amp;#34;email&amp;#34;, &amp;#34;username&amp;#34;], }); // Adjust the API const api = new Api(stack, &amp;#34;Api&amp;#34;, { authorizers: { jwt: { type: &amp;#34;user_pool&amp;#34;, userPool: { id: auth.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/frontend/css/etc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/frontend/css/etc/</guid>
+      <description>Background Image background-image: url(&amp;#34;https://res.cloudinary.com/synicsoftware/image/upload/v1686090524/Group_237597_elwuut.svg&amp;#34;); background-position: center; background-size: contain; background-repeat: no-repeat; position: center, top, left, center, bottom size: contain, cover, or specific size&amp;hellip; </description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/javascript/scrap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javascript/scrap/</guid>
+      <description>https://velog.io/@mowinckel/%EC%9B%B9-%ED%81%AC%EB%A1%A4%EB%A7%81%EA%B3%BC-%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90&#xA;https://modulabs.co.kr/blog/crawling-tips/&#xA;https://toyou101.tistory.com/4&#xA;Check the website policy url/robots.txt</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/xtc/josh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/josh/</guid>
+      <description>React ✅ Course Overview SSD28-React-Course-Overview.dox Dev Setup Emmet for React&#xA;ES7+ React/Redux Snippets Extension&#xA;React Dev Tools for Chrome&#xA;Lesson Demos - Node Modules&#xA;Day 01 Day 01 Agenda&#xA;Intro to React&#xA;What is React Why Use React The React World View Create React App&#xA;Create React App Using Create React App Create React App Folder Structure Exercise 1a: Create &amp;ldquo;To Do List&amp;rdquo; App JSX&#xA;What is JSX JSX Syntax Rules and Best Practices Commenthing in JSX JSX Expressions Conditional Rendering in JSX Iteration in JSX - Working with Arrays Exercise 1b: Intro to JSX Events in React</description>
+    </item>
+    <item>
+      <title>Data Fetching</title>
+      <link>http://localhost:1313/react/fetch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/react/fetch/</guid>
+      <description>Fetch Get await fetch(api, { method: &amp;#34;GET&amp;#34;, headers: { &amp;#34;Content-Type&amp;#34;: &amp;#34;application/json&amp;#34;, Authorization: token, }, body: JSON.stringify(dataObject), }).then((res) =&amp;gt; res.json()); Post/Put await fetch(api, { method: &amp;#34;POST&amp;#34;, //or PUT headers: { &amp;#34;Content-Type&amp;#34;: &amp;#34;application/json&amp;#34;, Authorization: token, }, body: JSON.stringify(dataObject), }).then((res) =&amp;gt; res.json()); Delete await fetch(api, { method: &amp;#34;DELETE&amp;#34;, headers: { &amp;#34;Content-Type&amp;#34;: &amp;#34;application/json&amp;#34;, Authorization: token, }, body: JSON.stringify(dataObject), }).then((res) =&amp;gt; res.json()); Axios Get await axios .get(api, { headers: { Authorization: token, }, params: { param1, }, }) .</description>
+    </item>
+    <item>
+      <title>Pagination</title>
+      <link>http://localhost:1313/react/pagination/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/react/pagination/</guid>
+      <description>Terms Total : Total length of data Limit (pageSize) : number of items per page Page : current page number Offset : index of first item of the page (offset = (page - 1) * limit) Pagination interacting with Backend states : page, pageSize(or limit), total&#xA;add offset only when you not with database side pagination&#xA;Data Fetching axios.get(api, { headers: { Authorization: token, }, params: { page: page, pageSize: pageSize, searchTerm: searchTerm, }, }); Backend const getData = async (event) =&amp;gt; { const { page, pageSize, searchTerm } = event.</description>
+    </item>
+    <item>
+      <title>react</title>
+      <link>http://localhost:1313/react/react/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/react/react/</guid>
+      <description>why dev mode render twice in react In React, the development mode by default renders components twice. This is done intentionally to detect any unintended side-effects or changes that might occur during the render process.&#xA;During the first render cycle, React builds a virtual representation of the component tree and compares it with the previous render cycle. If there are any differences, it updates the real DOM accordingly.&#xA;Then, during the second render cycle, React compares the new and old virtual trees again to check if there were any changes made during the update process.</description>
+    </item>
+    <item>
+      <title>Statement Management</title>
+      <link>http://localhost:1313/react/3-state/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/react/3-state/</guid>
+      <description>Passing data from child to parent component Context API Create Context import { createContext } from &amp;#34;react-router-dom&amp;#34;; const CounterContext = createContext(initialState); function CounterProvider({ children }) { return &amp;lt;CounterContext.Provider&amp;gt;{children}&amp;lt;/CounterContext.Provider&amp;gt;; } Index.js or App.js &amp;lt;CounterProvider value={(a, b)}&amp;gt; &amp;lt;App /&amp;gt; &amp;lt;/CounterProvider&amp;gt; Reading import { useContext } from ‘react’; import { CounterContext } from ‘..path’; const { a, b } = useContext(CounterContext); </description>
+    </item>
+    <item>
+      <title>Table</title>
+      <link>http://localhost:1313/react/table/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/react/table/</guid>
+      <description>import React from &amp;#34;react&amp;#34;; import { useTable, usePagination } from &amp;#34;react-table&amp;#34;; export default function Table({ rawColumns, rawData }) { // Memoize the props const columns = React.useMemo(() =&amp;gt; rawColumns, []); const data = React.useMemo(() =&amp;gt; rawData, [rawData]); // States const { getTableProps, getTableBodyProps, headerGroups, prepareRow, page, // Instead of using &amp;#39;rows&amp;#39;, we&amp;#39;ll use page, canPreviousPage, canNextPage, pageOptions, pageCount, gotoPage, nextPage, previousPage, setPageSize, state: { pageIndex, pageSize }, } = useTable( { columns, data, initialState: { pageIndex: 1, pageSize: 10 }, }, usePagination ); // Table + styles return ( &amp;lt;&amp;gt; {/* Table */} &amp;lt;table {.</description>
+    </item>
+    <item>
+      <title>Use Effect</title>
+      <link>http://localhost:1313/react/useeffect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/react/useeffect/</guid>
+      <description>React useEffect Hook 컴포넌트가 렌더링 될 때 특정 작업을 실행할 수 있도록 하는 react hook. useEffect handles side effect code to keep track of outside react code (Put side-effect code inside useEffect) Side-effect : Code outside React such as browser APIs, localStorage, native DOM Syntax : useEffect( call back function, dependency array ) Call back function It contains side-effect code (whatever you want to execute) Dependency array If the array is empty, useEffect will run once after initial render If props or state are passed as an array, it will run any time they changes Setting Document Title useEffect(() =&amp;gt; { document.</description>
+    </item>
+  </channel>
+</rss>

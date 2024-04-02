@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AWS on Byul Notes</title>
+    <link>http://localhost:1313/aws/</link>
+    <description>Recent content in AWS on Byul Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EC2</title>
+      <link>http://localhost:1313/aws/ec2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aws/ec2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>S3</title>
+      <link>http://localhost:1313/aws/s3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aws/s3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JWT</title>
+      <link>http://localhost:1313/aws/jwt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aws/jwt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cognito</title>
+      <link>http://localhost:1313/aws/cognito/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aws/cognito/</guid>
+      <description>Cognito in AWS Authentication with Server-less. Auth zero is the most populate one that takes care of UI&#xA;AWS &gt; Cognito &gt; User pools &gt; Create User Pool&#xD;Step 1 Cognito user pool sign-in options : Username, email (Phone number gets complicated) User name requirement : Allow users to sign in with a preferred user name &amp;gt; Next Step 2 Password policy mode : Cognito defaults or Custom &amp;gt; select the options Multi-factor Authentication &amp;gt; No MFA User account Recovery : Enable self-service account recovery, Delivery method : Email only &amp;gt; Next Step 3 Self registration : enable Attribute verification : Allow Cognito to send a message, send email, verify email &amp;gt; Next Active attribute values when an update is pending (like identity stuff.</description>
+    </item>
+    <item>
+      <title>Infrastructure as Code</title>
+      <link>http://localhost:1313/aws/iac/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aws/iac/</guid>
+      <description>Infrastructure Infrastructure refers to the underlying components and resources required for the operation of systems, applications, or services.&#xA;It is all the behind-the-scenes stuff that allows us to use computers, access websites, and use apps on our phones.&#xA;Components and resources are below&#xA;Physical Components Servers, computers, network devicdes (routers, switches), storage devices (hard drives, solid-state drives), and cables.&#xA;Networking IP addresses, subnets, routing, firewalls, and load balancers. Networking infrastructure enables communication between devices and facilitates the transfer of data.</description>
+    </item>
+    <item>
+      <title>SST</title>
+      <link>http://localhost:1313/aws/sst/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aws/sst/</guid>
+      <description>SST(Serverless Stack Toolkit) is an open-source framework for building serverless apps. SST converts your infrastructure code into a CloudFormation template.&#xA;https://sst.dev/&#xA;Initial Configuration Install npx create-sst@latest [name] Change ts file to js (config, stack, function)&#xA;Config File sst.config.ts By default, the app will be deployed to the us-east-1 AWS region.&#xA;sst.config.ts &amp;gt; sst.config.js and remove all red lines&#xA;import { API } from &amp;#34;./stacks/API&amp;#34;;&#xD;export default {&#xD;config(_input) {&#xD;//...&#xD;},&#xD;stacks(app) {&#xD;app.</description>
+    </item>
+    <item>
+      <title>SST &amp; Auth</title>
+      <link>http://localhost:1313/aws/sst-auth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aws/sst-auth/</guid>
+      <description>Backend Add Auth to both ApiStack and FrontendStack&#xA;ApiStack.js Add Cognito, auth, authorizers, default authorizer&#xA;Once it&amp;rsquo;s all set, you are not allowed to change any configs. (need to delete every stacks to re-do it)&#xA;import { Api, Cognito } from &amp;#34;sst/constructs&amp;#34;; export function ApiStack({ stack }) { // Create auth provider const auth = new Cognito(stack, &amp;#34;Auth&amp;#34;, { login: [&amp;#34;email&amp;#34;], // login: [&amp;#34;email&amp;#34;, &amp;#34;username&amp;#34;], }); // Adjust the API const api = new Api(stack, &amp;#34;Api&amp;#34;, { authorizers: { jwt: { type: &amp;#34;user_pool&amp;#34;, userPool: { id: auth.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,4450 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.124.1">
+    <meta name="description" content="Coding Notes for Byul">
+<meta name="author" content="Byul Kim">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title>Day1 :: Byul Notes</title>
+
+    
+    <link href="/css/nucleus.css?1712035893" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1712035893" rel="stylesheet">
+    <link href="/css/hybrid.css?1712035893" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1712035893" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1712035893" rel="stylesheet">
+    <link href="/css/auto-complete.css?1712035893" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1712035893" rel="stylesheet">
+    <link href="/css/theme.css?1712035893" rel="stylesheet">
+    <link href="/css/tabs.css?1712035893" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1712035893" rel="stylesheet">
+    
+    <link href="/css/theme-blue.css?1712035893" rel="stylesheet">
+    
+    <link href="/css/style.css?1712035893" rel="stylesheet">
+
+    <script src="/js/jquery-3.3.1.min.js?1712035893"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+  rel="stylesheet"
+/>
+
+  </head>
+  <body class="" data-url="/xtc/vue/day1/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <div class="logo">Byul's Notes</div>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1712035893"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1712035893"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1712035893"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/leetcode/" title="LeetCode" class="dd-item
+        
+        
+        
+        ">
+      <a href="/leetcode/">
+          <i class='fas fa-book-open'></i> &nbspLeetCode
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/leetcode/theory/" title="Theory" class="dd-item ">
+        <a href="/leetcode/theory/">
+        <i class='fas fa-pen'></i> &nbspTheory
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/leetcode/easy/" title="Easy" class="dd-item ">
+        <a href="/leetcode/easy/">
+        <i class='fas fa-pen'></i> &nbspEasy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/leetcode/medium/" title="Medium" class="dd-item ">
+        <a href="/leetcode/medium/">
+        <i class='fas fa-pen'></i> &nbspMedium
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pluralsight/" title="Pluralsight" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pluralsight/">
+          <i class='fas fa-book-open'></i> &nbspPluralsight
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pluralsight/react/" title="React" class="dd-item ">
+        <a href="/pluralsight/react/">
+        <i class='fas fa-pen'></i> &nbspReact
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pluralsight/unittest/" title="Unit Test" class="dd-item ">
+        <a href="/pluralsight/unittest/">
+        <i class='fas fa-pen'></i> &nbspUnit Test
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/python/" title="Python" class="dd-item
+        
+        
+        
+        ">
+      <a href="/python/">
+          <i class='fas fa-book-open'></i> &nbspPython
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/intro/" title="Introduction" class="dd-item ">
+        <a href="/python/intro/">
+        <i class='fas fa-pen'></i> &nbspIntroduction
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/basic/" title="Basics" class="dd-item ">
+        <a href="/python/basic/">
+        <i class='fas fa-pen'></i> &nbspBasics
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/string/" title="String" class="dd-item ">
+        <a href="/python/string/">
+        <i class='fas fa-pen'></i> &nbspString
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/list/" title="Data Structure" class="dd-item ">
+        <a href="/python/list/">
+        <i class='fas fa-pen'></i> &nbspList, Tuple, Set, Dict
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/file/" title="Files" class="dd-item ">
+        <a href="/python/file/">
+        <i class='fas fa-pen'></i> &nbspFiles
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/regex/" title="Regular Expression" class="dd-item ">
+        <a href="/python/regex/">
+        <i class='fas fa-pen'></i> &nbspRegex
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/bs/" title="Beautiful Soup" class="dd-item ">
+        <a href="/python/bs/">
+        <i class='fas fa-pen'></i> &nbspBeautiful Soup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/flask/" title="Flask" class="dd-item ">
+        <a href="/python/flask/">
+        <i class='fas fa-pen'></i> &nbspFlask
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/selenium/" title="Selenium" class="dd-item ">
+        <a href="/python/selenium/">
+        <i class='fas fa-pen'></i> &nbspSelenium
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/react/" title="React" class="dd-item
+        
+        
+        
+        ">
+      <a href="/react/">
+          <i class='fas fa-book-open'></i> &nbspReact
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/1-intro/" title="Intro" class="dd-item ">
+        <a href="/react/1-intro/">
+        <i class='fas fa-pen'></i> &nbspIntro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/2-route/" title="Route" class="dd-item ">
+        <a href="/react/2-route/">
+        <i class='fas fa-pen'></i> &nbspRoute
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/deploy/" title="Deploy" class="dd-item ">
+        <a href="/react/deploy/">
+        <i class='fas fa-pen'></i> &nbspDeploy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/fetch/" title="Data Fetching" class="dd-item ">
+        <a href="/react/fetch/">
+        <i class='fas fa-pen'></i> &nbspData Fetching
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/pagination/" title="Pagination" class="dd-item ">
+        <a href="/react/pagination/">
+        <i class='fas fa-pen'></i> &nbspPagination
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/react/" title="react" class="dd-item ">
+        <a href="/react/react/">
+        <i class='fas fa-pen'></i> &nbspreact
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/3-state/" title="Statement Management" class="dd-item ">
+        <a href="/react/3-state/">
+        <i class='fas fa-pen'></i> &nbspStatement
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/table/" title="Table" class="dd-item ">
+        <a href="/react/table/">
+        <i class='fas fa-pen'></i> &nbspTable
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/useeffect/" title="Use Effect" class="dd-item ">
+        <a href="/react/useeffect/">
+        <i class='fas fa-pen'></i> &nbspUse Effect
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/aws/" title="AWS" class="dd-item
+        
+        
+        
+        ">
+      <a href="/aws/">
+          <i class='fas fa-book-open'></i> &nbspAWS
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/ec2/" title="EC2" class="dd-item ">
+        <a href="/aws/ec2/">
+        <i class='fas fa-pen'></i> &nbspEC2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/s3/" title="S3" class="dd-item ">
+        <a href="/aws/s3/">
+        <i class='fas fa-pen'></i> &nbspS3
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/jwt/" title="JWT" class="dd-item ">
+        <a href="/aws/jwt/">
+        <i class='fas fa-pen'></i> &nbspJWT
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/cognito/" title="Cognito" class="dd-item ">
+        <a href="/aws/cognito/">
+        <i class='fas fa-pen'></i> &nbspCognito
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/aws/5-lambda/" title="Lambda Function" class="dd-item
+        
+        
+        
+        ">
+      <a href="/aws/5-lambda/">
+          <i class='fas fa-pen'></i> &nbspLambda
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/5-lambda/lambda-function/" title="Lambda Function" class="dd-item ">
+        <a href="/aws/5-lambda/lambda-function/">
+        - &nbspLambda Function
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/5-lambda/lambda-.net/" title="Lambda in .NET" class="dd-item ">
+        <a href="/aws/5-lambda/lambda-.net/">
+        - &nbsp.NET
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/iac/" title="Infrastructure as Code" class="dd-item ">
+        <a href="/aws/iac/">
+        <i class='fas fa-pen'></i> &nbspIaC
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/sst/" title="SST" class="dd-item ">
+        <a href="/aws/sst/">
+        <i class='fas fa-pen'></i> &nbspSST
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/sst-auth/" title="SST &amp; Auth" class="dd-item ">
+        <a href="/aws/sst-auth/">
+        <i class='fas fa-pen'></i> &nbspSST &amp; Auth
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/database/" title="Database" class="dd-item
+        
+        
+        
+        ">
+      <a href="/database/">
+          <i class='fas fa-book-open'></i> &nbspDatabase
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/database/sql/" title="Database" class="dd-item ">
+        <a href="/database/sql/">
+        <i class='fas fa-pen'></i> &nbspDatabase
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/database/mssql/" title="MS SQL" class="dd-item ">
+        <a href="/database/mssql/">
+        <i class='fas fa-pen'></i> &nbspMS SQL
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/database/monbodb/" title="MongoDB" class="dd-item ">
+        <a href="/database/monbodb/">
+        <i class='fas fa-pen'></i> &nbspMongoDB
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/javascript/" title="Javascript" class="dd-item
+        
+        
+        
+        ">
+      <a href="/javascript/">
+          <i class='fas fa-book-open'></i> &nbspJavascript
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/javascript/scrap/" title="" class="dd-item ">
+        <a href="/javascript/scrap/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/c/" title="C#" class="dd-item
+        
+        
+        
+        ">
+      <a href="/c/">
+          <i class='fas fa-book-open'></i> &nbspC#
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/intro/" title="Intro" class="dd-item ">
+        <a href="/c/intro/">
+        <i class='fas fa-pen'></i> &nbspIntro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/basic/" title="Basic" class="dd-item ">
+        <a href="/c/basic/">
+        <i class='fas fa-pen'></i> &nbspBasic
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/array/" title="Array" class="dd-item ">
+        <a href="/c/array/">
+        <i class='fas fa-pen'></i> &nbspArray
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/method/" title="Method" class="dd-item ">
+        <a href="/c/method/">
+        <i class='fas fa-pen'></i> &nbspMethod
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/string/" title="String" class="dd-item ">
+        <a href="/c/string/">
+        <i class='fas fa-pen'></i> &nbspString
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/class/" title="Class" class="dd-item ">
+        <a href="/c/class/">
+        <i class='fas fa-pen'></i> &nbspClass
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/linq/" title="Linq" class="dd-item ">
+        <a href="/c/linq/">
+        <i class='fas fa-pen'></i> &nbspLinq
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/asp.net/" title="ASP.NET" class="dd-item
+        
+        
+        
+        ">
+      <a href="/asp.net/">
+          <i class='fas fa-book-open'></i> &nbspASP.NET
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/basic/" title="MVC Basics" class="dd-item ">
+        <a href="/asp.net/basic/">
+        <i class='fas fa-pen'></i> &nbspMVC Basics
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/db/" title="DB Connection" class="dd-item ">
+        <a href="/asp.net/db/">
+        <i class='fas fa-pen'></i> &nbspDB Connection
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/crud/" title="CRUD" class="dd-item ">
+        <a href="/asp.net/crud/">
+        <i class='fas fa-pen'></i> &nbspCRUD
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/linq/" title="Linq" class="dd-item ">
+        <a href="/asp.net/linq/">
+        <i class='fas fa-pen'></i> &nbspLinq
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/frontend/" title="Frontend" class="dd-item
+        
+        
+        
+        ">
+      <a href="/frontend/">
+          <i class='fas fa-book-open'></i> &nbspFrontend
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/html/" title="HTML" class="dd-item ">
+        <a href="/frontend/html/">
+        <i class='fas fa-pen'></i> &nbspHTML
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/frontend/css/" title="CSS" class="dd-item
+        
+        
+        
+        ">
+      <a href="/frontend/css/">
+          <i class='fas fa-pen'></i> &nbspCSS
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/flex/" title="Flexbox" class="dd-item ">
+        <a href="/frontend/css/flex/">
+        - &nbspFlexbox
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/grid/" title="Grid" class="dd-item ">
+        <a href="/frontend/css/grid/">
+        - &nbspGrid
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/trasnform/" title="Transform" class="dd-item ">
+        <a href="/frontend/css/trasnform/">
+        - &nbspTransform
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/etc/" title="" class="dd-item ">
+        <a href="/frontend/css/etc/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/sass/" title="Sass" class="dd-item ">
+        <a href="/frontend/sass/">
+        <i class='fas fa-pen'></i> &nbspSass
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/bootstrap/" title="Bootstrap" class="dd-item ">
+        <a href="/frontend/bootstrap/">
+        <i class='fas fa-pen'></i> &nbspBootstrap
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/tailwind/" title="Tailwind" class="dd-item ">
+        <a href="/frontend/tailwind/">
+        <i class='fas fa-pen'></i> &nbspTailwind
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/" title="ETC" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/xtc/">
+          ETC
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/1job.md/" title="Job Interview" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/1job.md/">
+          <i class='fas fa-pen'></i> &nbspJob Interview
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/setup/" title="Setup" class="dd-item ">
+        <a href="/xtc/setup/">
+        <i class='fas fa-pen'></i> &nbspSetup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/php/" title="PHP" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/php/">
+          <i class='fas fa-pen'></i> &nbspPHP
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/1-docker/" title="Docker" class="dd-item ">
+        <a href="/xtc/php/1-docker/">
+        - Docker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/2-setup/" title="Software setup for Laravel" class="dd-item ">
+        <a href="/xtc/php/2-setup/">
+        - Setup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/3-intro/" title="Laravel Intro" class="dd-item ">
+        <a href="/xtc/php/3-intro/">
+        - Laravel Intro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/sql/" title="MySQL Migration" class="dd-item ">
+        <a href="/xtc/php/sql/">
+        - MySQL Migration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/auth/" title="Auth" class="dd-item ">
+        <a href="/xtc/php/auth/">
+        - Auth
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/admin/" title="Admin" class="dd-item ">
+        <a href="/xtc/php/admin/">
+        - Admin
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/work/" title="Work" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/work/">
+          <i class='fas fa-pen'></i> &nbspWork
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/angularjs/" title="Angular JS" class="dd-item ">
+        <a href="/xtc/work/angularjs/">
+        - Angular JS
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/database/" title="Database" class="dd-item ">
+        <a href="/xtc/work/database/">
+        - Database
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/frontend/" title="Frontend" class="dd-item ">
+        <a href="/xtc/work/frontend/">
+        - Frontend
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/aspnet/" title="ASP .NET" class="dd-item ">
+        <a href="/xtc/work/aspnet/">
+        - ASP .NET
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/angular/" title="Angular.js" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/angular/">
+          <i class='fas fa-pen'></i> &nbspAngular.js
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/angular/day1/" title="Day1" class="dd-item ">
+        <a href="/xtc/angular/day1/">
+        - Day1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/angular/day2/" title="Day2" class="dd-item ">
+        <a href="/xtc/angular/day2/">
+        - Day2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/angular/day3/" title="Day3" class="dd-item ">
+        <a href="/xtc/angular/day3/">
+        - Day3
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/vue/" title="Vue.js" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/xtc/vue/">
+          <i class='fas fa-pen'></i> &nbspVue.js
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/vue/day1/" title="Day1" class="dd-item active">
+        <a href="/xtc/vue/day1/">
+        - Day1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/josh/" title="" class="dd-item ">
+        <a href="/xtc/josh/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/xtc/'>ETC</a> > <a href='/xtc/vue/'>Vue.js</a> > Day1
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-vuejs">What is Vue.js</a></li>
+    <li><a href="#advantages-and-disadvantages-of-vue">Advantages and Disadvantages of Vue</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#vue-extensions-and-devtools">Vue Extensions and DevTools</a></li>
+    <li><a href="#vue-setup">Vue Setup</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#hello-vue-app">Hello Vue App</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#options-and-composition-apis">Options and Composition APIs</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#template-interpolation">Template Interpolation</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#attribute-binding-with-v-bind">Attribute binding with v-bind</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#event-handling-with-v-on">Event Handling with v-on</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#form-input-two-way-binding">Form Input Two-Way Binding</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#conditional-rendering">Conditional Rendering</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#loops-with-v-for">Loops with v-for</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#computed-properties">Computed Properties</a></li>
+    <li><a href="#child-components">Child Components</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#emitting-events-from-child-components">Emitting Events from Child Components</a></li>
+    <li><a href="#mutating-state">Mutating State!</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Day1
+            </h1>
+          
+
+        
+
+
+<h2 id="what-is-vuejs">What is Vue.js</h2>
+<p>Vue.js is also an open-source front-end JavaScript framework.</p>
+<p>Vue.js was built by Evan You as a side project after working for Google and encountering the limitations of working with AngularJS. He built it with the aim of being as powerful as Angular, but lighter and easier to learn and use.</p>
+<p>According to Evan You:</p>
+<p>Vue.js is a more flexible, less opinionated solution. It’s only an interface layer so you can use it as a light feature in pages instead of a full-blown SPA.”</p>
+<h2 id="advantages-and-disadvantages-of-vue">Advantages and Disadvantages of Vue</h2>
+<h4 id="advantages">Advantages</h4>
+<ul>
+<li>Simplicity and ease of use
+<ul>
+<li>It&rsquo;s an ideal choice for small to medium sized projects</li>
+</ul>
+</li>
+<li>Learning curve
+<ul>
+<li>Vue syntax has a more flexible architecture and intuitive templating system than either React and Angular.</li>
+</ul>
+</li>
+<li>Size
+<ul>
+<li>The Vue.js downloadable only around 18 KB.</li>
+</ul>
+</li>
+<li>Performance
+<ul>
+<li>Due to its lightweight nature and streamlined architecture, Vue outperforms React and Angular.</li>
+<li>Like React, Vue makes use of the Virtual DOM which makes UI updates blazing fast.</li>
+</ul>
+</li>
+<li>Readability
+<ul>
+<li>Vue.js uses a single-file-component architecture. Everything is a component and components contain all of the HTML, CSS, and JavaScript in one file.</li>
+</ul>
+</li>
+<li>Growth
+<ul>
+<li>Though still smaller than the React or Angular, the Vue.js community is growing.</li>
+</ul>
+</li>
+</ul>
+<h4 id="disadvantages">Disadvantages</h4>
+<ul>
+<li>Lack of scalability</li>
+<li>Smaller overall community
+<ul>
+<li>Fewer learning resources</li>
+<li>Fewer plugins and libraries available</li>
+</ul>
+</li>
+<li>Excessive flexibility
+<ul>
+<li>The unopinionated nature of Vue.js can lead to poorly structured code.</li>
+</ul>
+</li>
+<li>Less mature tooling</li>
+<li>Less enterprise adoption</li>
+<li>Learning curve for advanced features
+<ul>
+<li>Despite the simplicity and ease of use that makes Vue.js easy to get started with, more advanced features can be challenging to implement, particularly since the overall ecosystem has less to offer by way of ready-to-use plugins and libraries.</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://survey.stackoverflow.co/2022/#section-most-popular-technologies-web-frameworks-and-technologies">https://survey.stackoverflow.co/2022/#section-most-popular-technologies-web-frameworks-and-technologies</a></p>
+<p><a href="https://2022.stateofjs.com/en-US/libraries/front-end-frameworks/">https://2022.stateofjs.com/en-US/libraries/front-end-frameworks/</a></p>
+<h2 id="vue-extensions-and-devtools">Vue Extensions and DevTools</h2>
+<p>Browser DevTools</p>
+<p><a href="https://devtools.vuejs.org/guide/installation.html">https://devtools.vuejs.org/guide/installation.html</a></p>
+<p>VSCode Extension : Volar</p>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=MisterJ.vue-volar-extention-pack">https://marketplace.visualstudio.com/items?itemName=MisterJ.vue-volar-extention-pack</a></p>
+<h2 id="vue-setup">Vue Setup</h2>
+<h4 id="loading-vuejs-via-cdn">Loading Vue.js Via CDN</h4>
+<p>Given how lightweight Vue.js is, if you are working on a relatively small project and/or wanting to quickly prototype components, it is entirely possible and reasonable to simply load Vue.js from a CDN, add a bit of script to our HTML, mount the app and go!</p>
+<p><strong>index.html</strong></p>
+<pre tabindex="0"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&#34;UTF-8&#34; /&gt;
+    &lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;IE=edge&#34; /&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34; /&gt;
+    &lt;title&gt;Hello Vue from CDN&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1 id=&#34;app&#34;&gt;{greeting}&lt;/h1&gt;
+
+    &lt;script src=&#34;https://unpkg.com/vue@3/dist/vue.global.js&#34;&gt;&lt;/script&gt;
+    &lt;script&gt;
+      const { createApp } = Vue;
+      createApp({
+        data() {
+          return {
+            greeting: &#34;Hello Vue World!&#34;,
+          };
+        },
+      }).mount(&#34;#app&#34;);
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h4 id="creating-a-vue-application-via-cli-with-build-step">Creating a Vue Application via CLI (with build step)</h4>
+<p>This is the way to go for more complex applications.</p>
+<p>The process is very much like initializing a React or Angular app.</p>
+<p>The only requirement is Node.js version 16 or higher.</p>
+<p>In your terminal, navigate to the parent folder of where you want your Vue app to live, then run:</p>
+<pre tabindex="0"><code>npm init vue@latest
+</code></pre><p>If it isn&rsquo;t already installed, this will install create-vue (think create-react-app) for you, and then it will show a set of prompts walking you through the project config.</p>
+<p>Hint: When you get the Project name: prompt, just start typing your project name.</p>
+<p>Go ahead and accept the defaults for the rest of the prompts:</p>
+<h2 id="hello-vue-app">Hello Vue App</h2>
+<p>In the last step we initialized a Vue project.</p>
+<p>The (now familiar) next steps are:</p>
+<ul>
+<li>cd hello-vue-app</li>
+<li>npm install</li>
+<li>npm run dev</li>
+<li>open your browser to http://localhost:5173/</li>
+</ul>
+<h4 id="quick-tour-of-the-boilerplate-project">Quick Tour of the Boilerplate Project</h4>
+<ul>
+<li>index.html
+<ul>
+<li>Has a div with id=&ldquo;app&rdquo; which is where our app will mount</li>
+<li>Loads /src/main.js as a module</li>
+</ul>
+</li>
+<li>main.js
+<ul>
+<li>imports { createApp } from vue</li>
+<li>Imports the App component from ./App.vue</li>
+<li>imports ./assets/main.css</li>
+<li>mounts the App component in the #app div</li>
+</ul>
+</li>
+<li>App.vue
+<ul>
+<li>This is our root Vue component</li>
+<li>It is a Single-File Component (SFC) and encapsulates all of the component&rsquo;s logic, template, and styles, neatly split out into <code>&lt;script&gt;, &lt;template&gt;, and &lt;style&gt; tags.</code></li>
+</ul>
+</li>
+</ul>
+<p>There are two ways that Vue components can be authored:</p>
+<ul>
+<li>Options API</li>
+<li>Composition API</li>
+</ul>
+<p>This boilerplate code is using the Composition API. We&rsquo;ll compare the two in the next slide.</p>
+<h2 id="options-and-composition-apis">Options and Composition APIs</h2>
+<p>There are two styles for authoring Vue components: the Options API and the Composition API. They both achieve the same result, and are largely interchangeable, but they differ in how we write our code.</p>
+<h4 id="options-api">Options API</h4>
+<p>Using the Options API we explicitly export an object that contains a set of options properties such as data, methods, and mounted. These options properties are then available by referencing this on the component instance.</p>
+<pre tabindex="0"><code>&lt;script&gt;
+export default {
+  // Properties returned from data() become reactive state
+  // and will be exposed on `this`.
+  data() {
+    return {
+      count: 0
+    }
+  },
+
+  // Methods are functions that mutate state and trigger updates.
+  // They can be bound as event listeners in templates.
+  methods: {
+    increment() {
+      this.count++
+    }
+  },
+
+  // Lifecycle hooks are called at different stages
+  // of a component&#39;s lifecycle.
+  // This function will be called when the component is mounted.
+  mounted() {
+    console.log(`The initial count is ${this.count}.`)
+  }
+}
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;button @click=&#34;increment&#34;&gt;Count is: {{ count }}&lt;/button&gt;
+&lt;/template&gt;
+</code></pre><h4 id="composition-api">Composition API</h4>
+<p>With the Composition API, instead of having an options object we define the component&rsquo;s logic using imported API functions.</p>
+<p>There&rsquo;s more going on behind the scenes and as such this approach requires a broader knowledge of the Vue.js architecture, but allows us to write less boilerplate code since more things are handled at compile time.</p>
+<p>Here&rsquo;s the same component as above, but using the Composition API.</p>
+<pre tabindex="0"><code>&lt;script setup&gt;
+import { ref, onMounted } from &#39;vue&#39;
+
+// reactive state
+const count = ref(0)
+
+// functions that mutate state and trigger updates
+function increment() {
+  count.value++
+}
+
+// lifecycle hooks
+onMounted(() =&gt; {
+  console.log(`The initial count is ${count.value}.`)
+})
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;button @click=&#34;increment&#34;&gt;Count is: {{ count }}&lt;/button&gt;
+&lt;/template&gt;
+</code></pre><p>For the remainder of today&rsquo;s lesson I&rsquo;ll work with the Options API since it keeps things closer to the surface.</p>
+<h2 id="template-interpolation">Template Interpolation</h2>
+<p>We can reactively output any data that we&rsquo;ve set on a component using the mustaches syntax in our template.</p>
+<p>Continuing with the counter example example we have a single property for count declared as part of the data option.</p>
+<pre tabindex="0"><code>&lt;script&gt;
+export default {
+  // Properties returned from data() become reactive state
+  // and will be exposed on `this`.
+  data() {
+    return {
+      count: 0,
+    };
+  },
+</code></pre><p>We&rsquo;re dynamically outputting the value of count in the template here:</p>
+<pre tabindex="0"><code>&lt;template&gt;
+  &lt;button @click=&#34;increment&#34;&gt;Count is: {{ count }}&lt;/button&gt;
+&lt;/template&gt;
+</code></pre><h4 id="practice">Practice</h4>
+<p>Add greeting and name properties to the component data and output them in an h1 above the button.</p>
+<p>Note: The content inside the mustaches can be any valid JavaScript expression, but cannot be statements. As in React, this means you&rsquo;ll find extensive use of ternary and logical operators in those interpolation blocks.</p>
+<h4 id="more-practice">More Practice</h4>
+<p>Change the h1 content such that if the count is 0 it outputs the greeting, but otherwise it outputs an encouraging message to the user.</p>
+<h2 id="attribute-binding-with-v-bind">Attribute binding with v-bind</h2>
+<p>We can use mustache interpolation to dynamically output content within elements, but mustaches cannot be used to set HTML attributes.</p>
+<p>Instead, when we want to set an element&rsquo;s attribute to a property of the component we use the v-bind directive.</p>
+<p>The basic syntax for v-bind is:</p>
+<pre tabindex="0"><code>v-bind:attribute=&#34;property&#34;
+</code></pre><p>Let&rsquo;s explore this by:</p>
+<p>Adding a style classes for .winning and .losing that set text color to green and red respectively.</p>
+<pre tabindex="0"><code>&lt;style scoped&gt;
+h1 {
+  width: 100%;
+}
+.winning {
+  color:
+green;
+}
+.losing {
+  color:
+red;
+}
+&lt;/style&gt;
+</code></pre><p>Adding a gameStatus property to our component data</p>
+<pre tabindex="0"><code>data() {
+    return {
+      count: 0,
+      greeting: &#34;Hello again&#34;,
+      name: &#34;Josh&#34;,
+      gameStatus: null,
+    };
+  },
+</code></pre><p>Add a setGameStatus method that sets this.gameStatus to winning if count is greater than 0, losing if less than 0, or or null.</p>
+<p>Add a decrement method that decrements the count</p>
+<p>Have both increment() and decrement() call this.setgameStatus</p>
+<p>Bind the class attribute of the h1 element to the value of gameStatus</p>
+<pre tabindex="0"><code>  &lt;h1 v-bind:class=&#34;gameStatus&#34;&gt;
+    {{ count === 0 ? greeting : &#34;Keep going&#34; }}, {{ name }}
+  &lt;/h1&gt;
+</code></pre><p>With that in place, we are dynamically setting the class attribute on our h1 to the value of gameStatus.</p>
+<h4 id="shorthand-for-v-bind">Shorthand for v-bind</h4>
+<p>Since v-bind is so ubiquitous, there is a special shorthand syntax where we just start our binding with a :</p>
+<pre tabindex="0"><code>  &lt;h1 :class=&#34;gameStatus&#34;&gt;
+    {{ count === 0 ? greeting : &#34;Keep going&#34; }}, {{ name }}
+  &lt;/h1&gt;
+</code></pre><p>It looks weird at first, but you&rsquo;ll get used to it quickly.</p>
+<h2 id="event-handling-with-v-on">Event Handling with v-on</h2>
+<p>To listen for events we can either use the v-on directive or the shorthand @ symbol.</p>
+<p>Regardless of which syntax is used, we can either call a method defined on the component or provide an inline handler.</p>
+<h4 id="shorthand-syntax-w-method-handler">Shorthand Syntax w/ Method Handler</h4>
+<p>This will listen for clicks and call either the increment or decrement method, both of which are defined in the methods property of our options object.</p>
+<pre tabindex="0"><code>  &lt;button @click=&#34;increment&#34;&gt;Increment&lt;/button&gt;
+  &lt;button @click=&#34;decrement&#34;&gt;Decrement&lt;/button&gt;
+</code></pre><h4 id="v-on-syntax-w-method-handler">v-on Syntax w/ Method Handler</h4>
+<pre tabindex="0"><code>  &lt;button v-on:click=&#34;jackpot&#34;&gt;Jackpot!&lt;/button&gt;
+</code></pre><h4 id="inline-handler">Inline Handler</h4>
+<pre tabindex="0"><code>  &lt;button
+    @click=&#34;() =&gt;
+      {
+        this.count = 0;
+        this.setGameStatus();
+      }
+    &#34;
+  &gt;
+    Reset
+  &lt;/button&gt;
+</code></pre><h4 id="receiving-the-event-object">Receiving the Event Object</h4>
+<p>When an event is thrown we can pass the native event object into our handler method (or an inline function) using the automatically populated $event variable or using the usual event syntax with an inline arrow function.</p>
+<pre tabindex="0"><code>  &lt;button @click=&#34;scorePoints($event)&#34;&gt;5&lt;/button&gt;
+  &lt;button @click=&#34;(event) =&gt; scorePoints(event)&#34;&gt;10&lt;/button&gt;
+</code></pre><pre tabindex="0"><code>    scorePoints(e) {
+      const points = Number(e.target.textContent);
+      this.count += points;
+      this.setGameStatus();
+    },
+</code></pre><p>The above works for all of the usual native DOM events, such as:</p>
+<ul>
+<li>keyup, keydown</li>
+<li>focus, blur</li>
+<li>change, submit</li>
+<li>etc.</li>
+</ul>
+<p>Shortly, we&rsquo;ll be setting up custom events as well, and the syntax/pattern for handling those will be the same.</p>
+<h2 id="form-input-two-way-binding">Form Input Two-Way Binding</h2>
+<p>To implement two-way binding between properties and form inputs we can use a combination of v-bind and v-on, or we can use the more concise v-model directive to accomplish both at once.</p>
+<h4 id="using-v-bind--and-v-on-">Using v-bind (:) and v-on (@)</h4>
+<pre tabindex="0"><code>  &lt;div&gt;
+    &lt;label for=&#34;greeting&#34;&gt;Greeting:&lt;/label&gt;
+    &lt;input
+      type=&#34;text&#34;
+      id=&#34;greeting&#34;
+      :value=&#34;greeting&#34;
+      @input=&#34;
+        (e) =&gt; {
+          this.greeting = e.target.value;
+        }
+      &#34;
+    /&gt;
+  &lt;/div&gt;
+</code></pre><h4 id="using-v-model">Using v-model</h4>
+<pre tabindex="0"><code>  &lt;div&gt;
+    &lt;label for=&#34;name&#34;&gt;Name:&lt;/label
+    &gt;&lt;input type=&#34;text&#34; id=&#34;name&#34; v-model=&#34;name&#34; /&gt;
+  &lt;/div&gt;
+</code></pre><p>These work for more than just text inputs.</p>
+<p>For more info see the Form Input Bindings guide: <a href="https://vuejs.org/guide/essentials/forms.html#text">https://vuejs.org/guide/essentials/forms.html#text</a></p>
+<h2 id="conditional-rendering">Conditional Rendering</h2>
+<p>Vue.js provides a set of directives for handling conditional rendering of elements.</p>
+<h4 id="v-if">v-if</h4>
+<p>If we only want to render an element when an expression is true, we can use the v-if directive.</p>
+<pre tabindex="0"><code>&lt;h1 v-if=&#34;count &gt;= 50&#34;&gt;You Win!&lt;/h1&gt;
+</code></pre><h4 id="v-else-if">v-else-if</h4>
+<p>If we want to have a secondary conditional we can use v-else-if.</p>
+<pre tabindex="0"><code>  &lt;h1 v-if=&#34;count &gt;= 50&#34;&gt;You Won!&lt;/h1&gt;
+  &lt;h1 v-else-if=&#34;count &lt;= -5&#34;&gt;You Lost!&lt;/h1&gt;
+</code></pre><h4 id="v-else">v-else</h4>
+<p>Lastly, we have v-else.</p>
+<pre tabindex="0"><code>  &lt;h1 v-if=&#34;count &gt;= 50&#34;&gt;You Won!&lt;/h1&gt;
+  &lt;h1 v-else-if=&#34;count &lt;= -5&#34;&gt;You Lost!&lt;/h1&gt;
+  &lt;div v-else&gt;Keep on clickin&#39;...&lt;/div&gt;
+</code></pre><p>Once again, it may take some getting used to the syntax for these since there is no clear connection between the v-if, v-else-if, and v-else, ESPECIALLY if you have complex templating, but&hellip;</p>
+<ul>
+<li>a) With practice it becomes natural</li>
+<li>b) If you find yourself with overly complex templates that may be a clue that you should break things up into smaller components.</li>
+</ul>
+<h4 id="v-show">v-show</h4>
+<p>Vue provides another directive for conditionally displaying an element, v-show .</p>
+<p>The syntax is the same as v-if, but it always renders the element to the DOM and then toggles the CSS display property to control visibility.</p>
+<pre tabindex="0"><code>  &lt;div v-show=&#34;count &gt;= 50 || count &lt;= -5&#34;&gt;
+    &lt;button @click=&#34;reset&#34;&gt;Play Again?&lt;/button&gt;
+  &lt;/div&gt;
+</code></pre><h4 id="containers-for-grouped-conditional-rendering">Containers for Grouped Conditional Rendering</h4>
+<p>If (and when) you have a multiple elements that you want to conditionally render based on the same expression, you can wrap them in a container element OR if you don&rsquo;t want to clutter up your DOM you can wrap them in a <code>&lt;template&gt;</code> tag.</p>
+<pre tabindex="0"><code>  &lt;template v-if=&#34;count &lt; 50 &amp;&amp; count &gt; -5&#34;&gt;
+    &lt;button @click=&#34;increment&#34;&gt;Increment&lt;/button&gt;
+    &lt;button @click=&#34;decrement&#34;&gt;Decrement&lt;/button&gt;
+    &lt;button @click=&#34;scorePoints($event)&#34;&gt;5&lt;/button&gt;
+    &lt;button @click=&#34;scorePoints($event)&#34;&gt;10&lt;/button&gt;
+    &lt;button v-on:click=&#34;jackpot&#34;&gt;Jackpot!&lt;/button&gt;
+    &lt;button @click=&#34;reset&#34;&gt;Reset&lt;/button&gt;
+  &lt;/template&gt;
+</code></pre><h2 id="loops-with-v-for">Loops with v-for</h2>
+<p>Where conditionals go, loops tend to follow.</p>
+<p>For most of our looping needs in Vue we use variations of the v-for directive.</p>
+<p>I&rsquo;ve added an array of task objects to the component data, and outside the component I declared a let variable so that we can easily increment ids:</p>
+<pre tabindex="0"><code>&lt;script&gt;
+let id = 0;
+
+export default {
+  // Properties returned from data() become reactive state
+  // and will be exposed on `this`.
+  data() {
+    return {
+      count: 0,
+      greeting: &#34;Hello again&#34;,
+      name: &#34;Josh&#34;,
+      gameStatus: null,
+      tasks: [
+        { id: id++, text: &#34;Learn React&#34;, done: true },
+        { id: id++, text: &#34;Learn Angular&#34;, done: true },
+        { id: id++, text: &#34;Learn Vue&#34;, done: false },
+      ],
+</code></pre><h4 id="v-for-with-an-array">v-for with an Array</h4>
+<pre tabindex="0"><code>  &lt;h2&gt;Task List&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li v-for=&#34;task in tasks&#34; :key=&#34;task.id&#34;&gt;
+      &lt;input type=&#34;checkbox&#34; v-model=&#34;task.done&#34; /&gt;
+      &lt;span :class=&#34;{ done: task.done }&#34;&gt;{{ task.text }}&lt;/span&gt;
+      &lt;button @click=&#34;deleteTask(task)&#34;&gt;X&lt;/button&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+</code></pre><p>Although Vue is more flexible than React about each item in a list needing a unique key attribute, it is still a good idea to bind one - particularly if you&rsquo;ll potentially be mutating the array.</p>
+<p>If necessary you we can also access the index of each item in an array with:</p>
+<pre tabindex="0"><code>  &lt;h2&gt;Task List&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li v-for=&#34;(task, index) in tasks&#34; :key=&#34;index&#34;&gt;
+      &lt;input type=&#34;checkbox&#34; v-model=&#34;task.done&#34; /&gt;
+      &lt;span :class=&#34;{ done: task.done }&#34;&gt;{{ task.text }}&lt;/span&gt;
+      &lt;button @click=&#34;deleteTask(task)&#34;&gt;X&lt;/button&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+</code></pre><h4 id="v-for-with-a-range">v-for with a Range</h4>
+<p>v-for can also be used to loop through integers, though this is truly an odd duck.</p>
+<pre tabindex="0"><code>&lt;span v-for=&#34;n in 10&#34;&gt;{{ n }}&lt;/span&gt;
+</code></pre><p>The mind-boggling quirk here is that n has an initial value of 1.<br>
+I do not know why!</p>
+<h2 id="computed-properties">Computed Properties</h2>
+<p>Computed properties are a mechanism for tracking, updating, and caching state when dependencies change.</p>
+<p>They are declared as another property of the options object (distinct from data, methods, lifecycle hooks etc.) but are then used in templates as though they were any other data property.</p>
+<p>This example declared filteredTasks as a computed property that depends on tasks and hideCompleted.</p>
+<pre tabindex="0"><code>export default {
+  // Properties returned from data() become reactive state
+  // and will be exposed on `this`.
+  data() {
+    return {
+...
+      tasks: [
+        { id: id++, text: &#34;Learn React&#34;, done: true },
+        { id: id++, text: &#34;Learn Angular&#34;, done: true },
+        { id: id++, text: &#34;Learn Vue&#34;, done: false },
+      ],
+      hideCompleted: false,
+    };
+  },
+
+  // Computed Properties are a mechanism for automatically updated state when dependencies change
+  computed: {
+    filteredTasks() {
+      return this.hideCompleted
+        ? this.tasks.filter((t) =&gt; !t.done)
+        : this.tasks;
+    },
+  },
+
+  ...
+</code></pre><p>The template, including a button for toggling the value of hideCompleted, would then be:</p>
+<pre tabindex="0"><code>  &lt;h2&gt;Task List&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li v-for=&#34;task in filteredTasks&#34; :key=&#34;task.id&#34;&gt;
+      &lt;input type=&#34;checkbox&#34; v-model=&#34;task.done&#34; /&gt;
+      &lt;span :class=&#34;{ done: task.done }&#34;&gt;{{ task.text }}&lt;/span&gt;
+      &lt;button @click=&#34;deleteTask(task)&#34;&gt;X&lt;/button&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;button @click=&#34;hideCompleted = !hideCompleted&#34;&gt;
+    {{ hideCompleted ? &#34;Show All&#34; : &#34;Hide Completed&#34; }}
+  &lt;/button&gt;
+</code></pre><h2 id="child-components">Child Components</h2>
+<p>Naturally, Vue applications are usually composed of a hierarchy of nested components and provide mechanisms for passing and manipulating data through relationships.</p>
+<p>Let&rsquo;s handle individual tasks in the task list as child components.</p>
+<h4 id="passing-props-to-a-child-component">Passing Props to a Child Component</h4>
+<p>First, let&rsquo;s create a new SFC named Task.vue in the components directory and set it to receive an Object to be stored in props as task. We can also move the .done class styling.</p>
+<p><strong>src/components/Task.vue</strong></p>
+<pre tabindex="0"><code>&lt;script&gt;
+export default {
+  props: {
+    task: Object,
+  },
+};
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;input type=&#34;checkbox&#34; v-model=&#34;task.done&#34; /&gt;
+  &lt;span :class=&#34;{ done: task.done }&#34;&gt;{{ task.text }}&lt;/span&gt;
+  &lt;button @click=&#34;deleteTask(task)&#34;&gt;X&lt;/button&gt;
+&lt;/template&gt;
+
+&lt;style scoped&gt;
+.done {
+  text-decoration: line-through;
+}
+&lt;/style&gt;
+</code></pre><p>Then, in App.vue we need to:</p>
+<ul>
+<li>Import the Task component</li>
+<li>Declare it in the components property of our the App options</li>
+<li>Render the Task component in our template, using v-bind to bind the individual task object to the corresponding prop in the child component.</li>
+</ul>
+<pre tabindex="0"><code>&lt;script&gt;
+import Task from &#34;./components/Task.vue&#34;;
+
+let id = 0;
+
+export default {
+  components: {
+    Task,
+  },
+
+  ...
+
+&lt;/script&gt;
+</code></pre><pre tabindex="0"><code>  &lt;h2&gt;Task List&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li v-for=&#34;task in filteredTasks&#34; :key=&#34;task.id&#34;&gt;
+      &lt;Task :task=&#34;task&#34; /&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+</code></pre><h2 id="emitting-events-from-child-components">Emitting Events from Child Components</h2>
+<p>To pass data from a child component to a parent we can emit custom events, including a payload, from the child and then use a v-on listener in the parent to respond accordingly.</p>
+<p>To accomplish this, in the Task component we&rsquo;ll:</p>
+<ul>
+<li>Add an emits property with the name of the custom event we will emit</li>
+<li>Add a methods object containing the local deleteTask which then
+<ul>
+<li>emits the custom event</li>
+<li>attached the task itself as a second argument</li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code>&lt;script&gt;
+export default {
+  props: {
+    task: Object,
+  },
+  emits: [&#34;taskDelete&#34;],
+  methods: {
+    deleteTask(task) {
+      this.$emit(&#34;taskDelete&#34;, task);
+    },
+  },
+};
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;input type=&#34;checkbox&#34; v-model=&#34;task.done&#34; /&gt;
+  &lt;span :class=&#34;{ done: task.done }&#34;&gt;{{ task.text }}&lt;/span&gt;
+  &lt;button @click=&#34;deleteTask(task)&#34;&gt;X&lt;/button&gt;
+&lt;/template&gt;
+
+&lt;style scoped&gt;
+.done {
+  text-decoration: line-through;
+}
+&lt;/style&gt;
+</code></pre><p>In the parent component we then just listen for the taskDelete event and pass the payload on to the deleteTask method.</p>
+<pre tabindex="0"><code>  &lt;h2&gt;Task List&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li v-for=&#34;task in filteredTasks&#34; :key=&#34;task.id&#34;&gt;
+      &lt;Task :task=&#34;task&#34; @taskDelete=&#34;(task) =&gt; deleteTask(task)&#34; /&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+</code></pre><h2 id="mutating-state">Mutating State!</h2>
+<p>We can now mark tasks as done and delete them, so let&rsquo;s add support for adding tasks to our list.</p>
+<p>To accomplish this we will:</p>
+<ul>
+<li>Add a newTask property, initialized to an empty string</li>
+<li>Add an addTask() method that pushes a new task onto the tasks array, using the value of newTask for the task text.</li>
+<li>Add a form to our template that listens for submit events, prevents default form behaviour, and then calls addTask</li>
+<li>Within the form, add an input that is bound to the newTask property</li>
+</ul>
+<pre tabindex="0"><code>  data() {
+    return {
+      count: 0,
+      greeting: &#34;Hello again&#34;,
+      name: &#34;Josh&#34;,
+      gameStatus: null,
+      newTask: &#34;&#34;,
+      tasks: [
+        { id: id++, text: &#34;Learn React&#34;, done: true },
+        { id: id++, text: &#34;Learn Angular&#34;, done: true },
+        { id: id++, text: &#34;Learn Vue&#34;, done: false },
+      ],
+</code></pre><pre tabindex="0"><code>    addTask() {
+      this.tasks.push({ id: id++, text: this.newTask, done: false });
+      this.newTask = &#34;&#34;;
+    },
+</code></pre><pre tabindex="0"><code>  &lt;h2&gt;Task List&lt;/h2&gt;
+  &lt;form @submit.prevent=&#34;addTask&#34;&gt;
+    &lt;input v-model=&#34;newTask&#34; /&gt;
+    &lt;button&gt;Add Task&lt;/button&gt;
+  &lt;/form&gt;
+</code></pre>
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/xtc/vue/" title="Vue.js"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/xtc/josh/" title="" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1712035893"></script>
+    <script src="/js/perfect-scrollbar.min.js?1712035893"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1712035893"></script>
+    <script src="/js/jquery.sticky.js?1712035893"></script>
+    <script src="/js/featherlight.min.js?1712035893"></script>
+    <script src="/js/highlight.pack.js?1712035893"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1712035893"></script>
+    <script src="/js/learn.js?1712035893"></script>
+    <script src="/js/hugo-learn.js?1712035893"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1712035893"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

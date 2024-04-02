@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Database on Byul Notes</title>
+    <link>http://localhost:1313/database/</link>
+    <description>Recent content in Database on Byul Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/database/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Database</title>
+      <link>http://localhost:1313/database/sql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/database/sql/</guid>
+      <description>Database INSERT INTO table (table) VALUES (1); Dynamic (Programmatic) SQL Dynamic SQL is referring to SQL statements that are constructed and executed at runtime.&#xA;Variable Declaration Variables are declared with the &amp;lsquo;DECLARE&amp;rsquo; construct Variable names are preceded with the @ symbol Assigning value SET : single value assignment SELECT : multiple value assignment SET Variale assignemnt DECLARE @max_students INTEGER; SET @max_student = 55; SELECT @max_student AS &amp;#39;Minimum Age&amp;#39;; aa SELECT * FROM words WHERE user_id = $1 AND name ILIKE $2 ORDER BY id LIMIT $3 OFFSET $4 Back const getWords = async (userId, searchTerm, limit, offset) =&amp;gt; {&#xD;// Construct the SQL query with placeholders for dynamic values&#xD;const query = `&#xD;SELECT *&#xD;FROM words&#xD;WHERE user_id = $1 AND name ILIKE $2&#xD;ORDER BY id&#xD;LIMIT $3&#xD;OFFSET $4&#xD;`;&#xD;// Execute the query with the provided parameters&#xD;const result = await client.</description>
+    </item>
+    <item>
+      <title>MS SQL</title>
+      <link>http://localhost:1313/database/mssql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/database/mssql/</guid>
+      <description>SQL Server : Relational Database Management System&#xA;RDMS&#xA;Data SEcurity Data Integrity Referential Integrity ERD (An Entity Relationship Diagram)&#xA;Entity : Tables Entity Properties : Columns Each table has a primary key&#xA;Primary key : Unique value on every table Foreign Key : Defines a relationship to another table Conventions Table Name : PascalCase Table Property (Column), Attribute : camelCase Row : Tuple Relation/Association Schema SQL SQL is Structured Query Language, is used to interact with the Database Engine.</description>
+    </item>
+    <item>
+      <title>MongoDB</title>
+      <link>http://localhost:1313/database/monbodb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/database/monbodb/</guid>
+      <description>Mongo DB is No SQL Databases that stores data as documents in a JSON-like format.&#xA;MongoDB SQL Database Database Tables Collections Columns Fields Rows Documents Install https://www.mongodb.com/nosql-explained/nosql-vs-sql&#xA;Local : MongoDB Community Server Cloud : MongoDB Atlas Commands in Local machine&#xA;show databases&#xD;use nameOfDatabase&#xD;insert : db.table.insertMany([ {}, {}, {} ])&#xD;list : db.table.find() MongoDB in Node Get connection string MongoDB &amp;gt; Database &amp;gt; Connect &amp;gt; Connect your application&#xA;Configuration npm install mongodb mongoose const { mongoose } = require(&amp;#34;mongoose&amp;#34;); const Profile = require(&amp;#34;.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CSS on Byul Notes</title>
+    <link>http://localhost:1313/frontend/css/</link>
+    <description>Recent content in CSS on Byul Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/frontend/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flexbox</title>
+      <link>http://localhost:1313/frontend/css/flex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/frontend/css/flex/</guid>
+      <description>Flexbox Single dimension. Direct children become flex items&#xA;Parent .parent { display: flex; } Align center (Parent container) .parent { display: flex; justify-content: center // main axis align-items: center; // cross axis } Flex Parent Properties Flex Direction flex-direction: row; Values : column (vertical), row-reverse, column-revers Main axis : row (left to right), column (top to bottom) Flex Wrap Default&#xA;flex-wrap: nowrap; // 한 줄에 쭉 정렬하는거, 공간 없으면 shrink Values : wrap (다음 줄로 넘어감), wrap-reverse (새로운 아이템이 추가 되면 cross axis 거꾸로 추가)</description>
+    </item>
+    <item>
+      <title>Grid</title>
+      <link>http://localhost:1313/frontend/css/grid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/frontend/css/grid/</guid>
+      <description>Length units for grid : px, ex(relative to parent), rem(relative to html), fr(fractional)&#xA;Grid Layouts .container { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr; } Shorthand&#xA;grid-template: rows / columns; Grid container won’t have any effect until the columns and rows are defined.&#xA;Repeat grid-template-columns: repeat(n, size); Auto Explicit grid : when you specify grid-template-columns, grid-template-rows together Implicit : auto generated. Grid-auto-rows: grid height is determined by the tallest item grid-auto-rows: 15rem; auto size for rows, repeat(2,1fr)은 row가 무수히 많을 때 의미가 없으므로 grid-auto-columns: n; grid-flow가 column 일 때 사용 grid-auto-flow: row or column; grid의 direction (=flex-direction) auto-fill; exact size(value) auto-fit; stretch(value) minmax() grid-auto-rows: minmax(minsize, maxsize) min-content max-content Responsive = repeat + auto + minmax grid-template-columns:repeat(auto-fit, minmax(10px, 1fr)); Gap Unit: px, rem, em, % (fr x), in Parent column-gap : 2px;&#xD;row-gap: 1rem;&#xD;gap: (column) (row); Start/End grid-column-start: 1&#xD;grid-column-end: 4 (= grid-column-end: span 3; or -1;)&#xD;grid-column : 1 / 4; (same as start + end)&#xD;grid-column: span 4 (grid item takes 3 spaces) Grid Template Areas (parent)</description>
+    </item>
+    <item>
+      <title>Transform</title>
+      <link>http://localhost:1313/frontend/css/trasnform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/frontend/css/trasnform/</guid>
+      <description>Transforms Transforms work with box-model(display: block)&#xA;Translate Alters position horizontally or vertically&#xA;.box { transform: translate(x(가로) px, y(세로) px); } Rotate Rotate in a clockwise (positive value) or counter-clockwise(negative value)&#xA;{ transform: rotate(n deg); } Scale Size of an element&#xA;{ transform: scale(n); } or { transform: scaleX(n) scaleY(n); } Skew { transform: skewX(n deg) skewY(n deg); } Transform-origin It specify the point on the x, y axis (default: centre, 0 0 : top left)</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/frontend/css/etc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/frontend/css/etc/</guid>
+      <description>Background Image background-image: url(&amp;#34;https://res.cloudinary.com/synicsoftware/image/upload/v1686090524/Group_237597_elwuut.svg&amp;#34;); background-position: center; background-size: contain; background-repeat: no-repeat; position: center, top, left, center, bottom size: contain, cover, or specific size&amp;hellip; </description>
+    </item>
+  </channel>
+</rss>

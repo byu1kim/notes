@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PHP on Byul Notes</title>
+    <link>http://localhost:1313/xtc/php/</link>
+    <description>Recent content in PHP on Byul Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/xtc/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker</title>
+      <link>http://localhost:1313/xtc/php/1-docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/php/1-docker/</guid>
+      <description>Install https://www.docker.com/get-started/&#xA;Docker VSC Extension https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker&#xA;Window user needs WSL, Ubuntu&#xA;Install WSL Contianers, Hyper-V, Windows Subsystem for Linux Features enabled. Control pannel &amp;gt; uninstall program &amp;gt; turn windows features on/off Check Windows Subsstem for Linux Reboot WSL Setting in VSC Adding WSL in VSC : Ctrl+, &amp;gt; wsl &amp;gt; check integrated: use wsl profiles Install Ubuntu Ubuntu for WSL : Download Ubuntu 22.04.1 LTS from Microsoft apps PowerShell $ wsl &amp;ndash;install Verify : $ wsl -l -v Version set : $ wsl &amp;ndash;set-default-version 2 VSC Extensions : WSL, Remote Development Docker : Settings &amp;gt; General &amp;gt; WSL2 based engine | Resources &amp;gt; Ubuntu-22.</description>
+    </item>
+    <item>
+      <title>Software setup for Laravel</title>
+      <link>http://localhost:1313/xtc/php/2-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/php/2-setup/</guid>
+      <description>Windows Docker Setup open Docker Desktop &amp;gt; Settings (gear icon) &amp;gt; General Make sure Use the WSL 2 based engine is checked&#xA;Docker Desktop &amp;gt; Settings &amp;gt; Resources &amp;gt; WSL Integration&#xA;Enable integration with the Linux Distro you just installed. Apply &amp;amp; restart WSL Ubuntu for WSL : Download Ubuntu 22.04.1 LTS from Microsoft apps VSC Extensions : WSL, Remote Development Adding WSL in VSC : Ctrl+, &amp;gt; wsl &amp;gt; check integrated: use wsl profiles Docker : Settings &amp;gt; General &amp;gt; WSL2 based engine | Resources &amp;gt; Ubuntu-22.</description>
+    </item>
+    <item>
+      <title>Laravel Intro</title>
+      <link>http://localhost:1313/xtc/php/3-intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/php/3-intro/</guid>
+      <description>Laravel Laravel is a full stack web application managing a PHP framework&#xA;Laravel Sail Sail was created by the Laravel team as a tool to expedite and Dockerize Laravel development with an emphasis on modern development practices using the latest tools and technologies&#xA;Launching Laravel App Window : Open Ubuntu terminal in VSC Make sure Docker is running : empty containers, images In your working directory,&#xA;curl -s &amp;#34;https://laravel.build/[name]&amp;#34; | bash&#xD;cd [name]&#xD;.</description>
+    </item>
+    <item>
+      <title>MySQL Migration</title>
+      <link>http://localhost:1313/xtc/php/sql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/php/sql/</guid>
+      <description>Database Setup and Configuration Great news!&#xA;When we created our project via Sail, Laravel set up and configured our database, running in its own container, ready for us to use.&#xA;Laravel stores all sensitive and/or environment specific configuration, including key info for our database, using dotenv.&#xA;Open up the .env file in the root of your Laravel project and take a gander.&#xA;The default DB_USERNAME and DB_PASSWORD make me cringe, but let&amp;rsquo;s just work with it for now.</description>
+    </item>
+    <item>
+      <title>Auth</title>
+      <link>http://localhost:1313/xtc/php/auth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/php/auth/</guid>
+      <description>User Registration Form Let&amp;rsquo;s start by taking a look at the User Model and Table to get a sense of what our form will need to handle.&#xA;From the database we can see that name, email, and password columns are not nullable.&#xA;From the model we can see that these fields are also mass assignable aka fillable.&#xA;Form Setup To build out our registration functionality we&amp;rsquo;re going to need:&#xA;A Controller with a create method RegisterUserController create method A view to display the create form resources/views/register_user/create.</description>
+    </item>
+    <item>
+      <title>Admin</title>
+      <link>http://localhost:1313/xtc/php/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/php/admin/</guid>
+      <description>Create Project Form Now that we have a secured admin area, let&amp;rsquo;s build our project creation UI.&#xA;Add Routes routes/web.php&#xA;Route::get(&amp;#39;/admin/projects/create&amp;#39;, [ProjectController::class, &amp;#39;create&amp;#39;]); Route::post(&amp;#39;/admin/projects/create&amp;#39;, [ProjectController::class, &amp;#39;store&amp;#39;]); Add A Create Method to ProjectController Since we will need a category dropdown in our form, make sure to import the Category model and send all categories to the view.&#xA;public function create() { return view(&amp;#39;admin.projects.create&amp;#39;) -&amp;gt;with(&amp;#39;categories&amp;#39;, Category::all()); } Build the Projects Create View resources/views/admin/projects/create.</description>
+    </item>
+  </channel>
+</rss>

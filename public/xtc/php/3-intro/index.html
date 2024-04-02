@@ -1,0 +1,4283 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.124.1">
+    <meta name="description" content="Coding Notes for Byul">
+<meta name="author" content="Byul Kim">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title>Laravel Intro :: Byul Notes</title>
+
+    
+    <link href="/css/nucleus.css?1712035893" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1712035893" rel="stylesheet">
+    <link href="/css/hybrid.css?1712035893" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1712035893" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1712035893" rel="stylesheet">
+    <link href="/css/auto-complete.css?1712035893" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1712035893" rel="stylesheet">
+    <link href="/css/theme.css?1712035893" rel="stylesheet">
+    <link href="/css/tabs.css?1712035893" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1712035893" rel="stylesheet">
+    
+    <link href="/css/theme-blue.css?1712035893" rel="stylesheet">
+    
+    <link href="/css/style.css?1712035893" rel="stylesheet">
+
+    <script src="/js/jquery-3.3.1.min.js?1712035893"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+  rel="stylesheet"
+/>
+
+  </head>
+  <body class="" data-url="/xtc/php/3-intro/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <div class="logo">Byul's Notes</div>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1712035893"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1712035893"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1712035893"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/leetcode/" title="LeetCode" class="dd-item
+        
+        
+        
+        ">
+      <a href="/leetcode/">
+          <i class='fas fa-book-open'></i> &nbspLeetCode
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/leetcode/theory/" title="Theory" class="dd-item ">
+        <a href="/leetcode/theory/">
+        <i class='fas fa-pen'></i> &nbspTheory
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/leetcode/easy/" title="Easy" class="dd-item ">
+        <a href="/leetcode/easy/">
+        <i class='fas fa-pen'></i> &nbspEasy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/leetcode/medium/" title="Medium" class="dd-item ">
+        <a href="/leetcode/medium/">
+        <i class='fas fa-pen'></i> &nbspMedium
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pluralsight/" title="Pluralsight" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pluralsight/">
+          <i class='fas fa-book-open'></i> &nbspPluralsight
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pluralsight/react/" title="React" class="dd-item ">
+        <a href="/pluralsight/react/">
+        <i class='fas fa-pen'></i> &nbspReact
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pluralsight/unittest/" title="Unit Test" class="dd-item ">
+        <a href="/pluralsight/unittest/">
+        <i class='fas fa-pen'></i> &nbspUnit Test
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/python/" title="Python" class="dd-item
+        
+        
+        
+        ">
+      <a href="/python/">
+          <i class='fas fa-book-open'></i> &nbspPython
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/intro/" title="Introduction" class="dd-item ">
+        <a href="/python/intro/">
+        <i class='fas fa-pen'></i> &nbspIntroduction
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/basic/" title="Basics" class="dd-item ">
+        <a href="/python/basic/">
+        <i class='fas fa-pen'></i> &nbspBasics
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/string/" title="String" class="dd-item ">
+        <a href="/python/string/">
+        <i class='fas fa-pen'></i> &nbspString
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/list/" title="Data Structure" class="dd-item ">
+        <a href="/python/list/">
+        <i class='fas fa-pen'></i> &nbspList, Tuple, Set, Dict
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/file/" title="Files" class="dd-item ">
+        <a href="/python/file/">
+        <i class='fas fa-pen'></i> &nbspFiles
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/regex/" title="Regular Expression" class="dd-item ">
+        <a href="/python/regex/">
+        <i class='fas fa-pen'></i> &nbspRegex
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/bs/" title="Beautiful Soup" class="dd-item ">
+        <a href="/python/bs/">
+        <i class='fas fa-pen'></i> &nbspBeautiful Soup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/flask/" title="Flask" class="dd-item ">
+        <a href="/python/flask/">
+        <i class='fas fa-pen'></i> &nbspFlask
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/selenium/" title="Selenium" class="dd-item ">
+        <a href="/python/selenium/">
+        <i class='fas fa-pen'></i> &nbspSelenium
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/react/" title="React" class="dd-item
+        
+        
+        
+        ">
+      <a href="/react/">
+          <i class='fas fa-book-open'></i> &nbspReact
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/1-intro/" title="Intro" class="dd-item ">
+        <a href="/react/1-intro/">
+        <i class='fas fa-pen'></i> &nbspIntro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/2-route/" title="Route" class="dd-item ">
+        <a href="/react/2-route/">
+        <i class='fas fa-pen'></i> &nbspRoute
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/deploy/" title="Deploy" class="dd-item ">
+        <a href="/react/deploy/">
+        <i class='fas fa-pen'></i> &nbspDeploy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/fetch/" title="Data Fetching" class="dd-item ">
+        <a href="/react/fetch/">
+        <i class='fas fa-pen'></i> &nbspData Fetching
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/pagination/" title="Pagination" class="dd-item ">
+        <a href="/react/pagination/">
+        <i class='fas fa-pen'></i> &nbspPagination
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/react/" title="react" class="dd-item ">
+        <a href="/react/react/">
+        <i class='fas fa-pen'></i> &nbspreact
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/3-state/" title="Statement Management" class="dd-item ">
+        <a href="/react/3-state/">
+        <i class='fas fa-pen'></i> &nbspStatement
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/table/" title="Table" class="dd-item ">
+        <a href="/react/table/">
+        <i class='fas fa-pen'></i> &nbspTable
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/useeffect/" title="Use Effect" class="dd-item ">
+        <a href="/react/useeffect/">
+        <i class='fas fa-pen'></i> &nbspUse Effect
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/aws/" title="AWS" class="dd-item
+        
+        
+        
+        ">
+      <a href="/aws/">
+          <i class='fas fa-book-open'></i> &nbspAWS
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/ec2/" title="EC2" class="dd-item ">
+        <a href="/aws/ec2/">
+        <i class='fas fa-pen'></i> &nbspEC2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/s3/" title="S3" class="dd-item ">
+        <a href="/aws/s3/">
+        <i class='fas fa-pen'></i> &nbspS3
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/jwt/" title="JWT" class="dd-item ">
+        <a href="/aws/jwt/">
+        <i class='fas fa-pen'></i> &nbspJWT
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/cognito/" title="Cognito" class="dd-item ">
+        <a href="/aws/cognito/">
+        <i class='fas fa-pen'></i> &nbspCognito
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/aws/5-lambda/" title="Lambda Function" class="dd-item
+        
+        
+        
+        ">
+      <a href="/aws/5-lambda/">
+          <i class='fas fa-pen'></i> &nbspLambda
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/5-lambda/lambda-function/" title="Lambda Function" class="dd-item ">
+        <a href="/aws/5-lambda/lambda-function/">
+        - &nbspLambda Function
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/5-lambda/lambda-.net/" title="Lambda in .NET" class="dd-item ">
+        <a href="/aws/5-lambda/lambda-.net/">
+        - &nbsp.NET
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/iac/" title="Infrastructure as Code" class="dd-item ">
+        <a href="/aws/iac/">
+        <i class='fas fa-pen'></i> &nbspIaC
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/sst/" title="SST" class="dd-item ">
+        <a href="/aws/sst/">
+        <i class='fas fa-pen'></i> &nbspSST
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/sst-auth/" title="SST &amp; Auth" class="dd-item ">
+        <a href="/aws/sst-auth/">
+        <i class='fas fa-pen'></i> &nbspSST &amp; Auth
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/database/" title="Database" class="dd-item
+        
+        
+        
+        ">
+      <a href="/database/">
+          <i class='fas fa-book-open'></i> &nbspDatabase
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/database/sql/" title="Database" class="dd-item ">
+        <a href="/database/sql/">
+        <i class='fas fa-pen'></i> &nbspDatabase
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/database/mssql/" title="MS SQL" class="dd-item ">
+        <a href="/database/mssql/">
+        <i class='fas fa-pen'></i> &nbspMS SQL
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/database/monbodb/" title="MongoDB" class="dd-item ">
+        <a href="/database/monbodb/">
+        <i class='fas fa-pen'></i> &nbspMongoDB
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/javascript/" title="Javascript" class="dd-item
+        
+        
+        
+        ">
+      <a href="/javascript/">
+          <i class='fas fa-book-open'></i> &nbspJavascript
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/javascript/scrap/" title="" class="dd-item ">
+        <a href="/javascript/scrap/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/c/" title="C#" class="dd-item
+        
+        
+        
+        ">
+      <a href="/c/">
+          <i class='fas fa-book-open'></i> &nbspC#
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/intro/" title="Intro" class="dd-item ">
+        <a href="/c/intro/">
+        <i class='fas fa-pen'></i> &nbspIntro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/basic/" title="Basic" class="dd-item ">
+        <a href="/c/basic/">
+        <i class='fas fa-pen'></i> &nbspBasic
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/array/" title="Array" class="dd-item ">
+        <a href="/c/array/">
+        <i class='fas fa-pen'></i> &nbspArray
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/method/" title="Method" class="dd-item ">
+        <a href="/c/method/">
+        <i class='fas fa-pen'></i> &nbspMethod
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/string/" title="String" class="dd-item ">
+        <a href="/c/string/">
+        <i class='fas fa-pen'></i> &nbspString
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/class/" title="Class" class="dd-item ">
+        <a href="/c/class/">
+        <i class='fas fa-pen'></i> &nbspClass
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/linq/" title="Linq" class="dd-item ">
+        <a href="/c/linq/">
+        <i class='fas fa-pen'></i> &nbspLinq
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/asp.net/" title="ASP.NET" class="dd-item
+        
+        
+        
+        ">
+      <a href="/asp.net/">
+          <i class='fas fa-book-open'></i> &nbspASP.NET
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/basic/" title="MVC Basics" class="dd-item ">
+        <a href="/asp.net/basic/">
+        <i class='fas fa-pen'></i> &nbspMVC Basics
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/db/" title="DB Connection" class="dd-item ">
+        <a href="/asp.net/db/">
+        <i class='fas fa-pen'></i> &nbspDB Connection
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/crud/" title="CRUD" class="dd-item ">
+        <a href="/asp.net/crud/">
+        <i class='fas fa-pen'></i> &nbspCRUD
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/linq/" title="Linq" class="dd-item ">
+        <a href="/asp.net/linq/">
+        <i class='fas fa-pen'></i> &nbspLinq
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/frontend/" title="Frontend" class="dd-item
+        
+        
+        
+        ">
+      <a href="/frontend/">
+          <i class='fas fa-book-open'></i> &nbspFrontend
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/html/" title="HTML" class="dd-item ">
+        <a href="/frontend/html/">
+        <i class='fas fa-pen'></i> &nbspHTML
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/frontend/css/" title="CSS" class="dd-item
+        
+        
+        
+        ">
+      <a href="/frontend/css/">
+          <i class='fas fa-pen'></i> &nbspCSS
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/flex/" title="Flexbox" class="dd-item ">
+        <a href="/frontend/css/flex/">
+        - &nbspFlexbox
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/grid/" title="Grid" class="dd-item ">
+        <a href="/frontend/css/grid/">
+        - &nbspGrid
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/trasnform/" title="Transform" class="dd-item ">
+        <a href="/frontend/css/trasnform/">
+        - &nbspTransform
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/etc/" title="" class="dd-item ">
+        <a href="/frontend/css/etc/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/sass/" title="Sass" class="dd-item ">
+        <a href="/frontend/sass/">
+        <i class='fas fa-pen'></i> &nbspSass
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/bootstrap/" title="Bootstrap" class="dd-item ">
+        <a href="/frontend/bootstrap/">
+        <i class='fas fa-pen'></i> &nbspBootstrap
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/tailwind/" title="Tailwind" class="dd-item ">
+        <a href="/frontend/tailwind/">
+        <i class='fas fa-pen'></i> &nbspTailwind
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/" title="ETC" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/xtc/">
+          ETC
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/1job.md/" title="Job Interview" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/1job.md/">
+          <i class='fas fa-pen'></i> &nbspJob Interview
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/setup/" title="Setup" class="dd-item ">
+        <a href="/xtc/setup/">
+        <i class='fas fa-pen'></i> &nbspSetup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/php/" title="PHP" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/xtc/php/">
+          <i class='fas fa-pen'></i> &nbspPHP
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/1-docker/" title="Docker" class="dd-item ">
+        <a href="/xtc/php/1-docker/">
+        - Docker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/2-setup/" title="Software setup for Laravel" class="dd-item ">
+        <a href="/xtc/php/2-setup/">
+        - Setup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/3-intro/" title="Laravel Intro" class="dd-item active">
+        <a href="/xtc/php/3-intro/">
+        - Laravel Intro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/sql/" title="MySQL Migration" class="dd-item ">
+        <a href="/xtc/php/sql/">
+        - MySQL Migration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/auth/" title="Auth" class="dd-item ">
+        <a href="/xtc/php/auth/">
+        - Auth
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/admin/" title="Admin" class="dd-item ">
+        <a href="/xtc/php/admin/">
+        - Admin
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/work/" title="Work" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/work/">
+          <i class='fas fa-pen'></i> &nbspWork
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/angularjs/" title="Angular JS" class="dd-item ">
+        <a href="/xtc/work/angularjs/">
+        - Angular JS
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/database/" title="Database" class="dd-item ">
+        <a href="/xtc/work/database/">
+        - Database
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/frontend/" title="Frontend" class="dd-item ">
+        <a href="/xtc/work/frontend/">
+        - Frontend
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/aspnet/" title="ASP .NET" class="dd-item ">
+        <a href="/xtc/work/aspnet/">
+        - ASP .NET
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/angular/" title="Angular.js" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/angular/">
+          <i class='fas fa-pen'></i> &nbspAngular.js
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/angular/day1/" title="Day1" class="dd-item ">
+        <a href="/xtc/angular/day1/">
+        - Day1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/angular/day2/" title="Day2" class="dd-item ">
+        <a href="/xtc/angular/day2/">
+        - Day2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/angular/day3/" title="Day3" class="dd-item ">
+        <a href="/xtc/angular/day3/">
+        - Day3
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/vue/" title="Vue.js" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/vue/">
+          <i class='fas fa-pen'></i> &nbspVue.js
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/vue/day1/" title="Day1" class="dd-item ">
+        <a href="/xtc/vue/day1/">
+        - Day1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/josh/" title="" class="dd-item ">
+        <a href="/xtc/josh/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/xtc/'>ETC</a> > <a href='/xtc/php/'>PHP</a> > Laravel Intro
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#laravel">Laravel</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#blade">Blade</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#routes">Routes</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#controller">Controller</a></li>
+    <li><a href="#blade-layout-options">Blade Layout Options</a></li>
+    <li><a href="#layouts-through-inheritance">Layouts through Inheritance</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#set-up-a-laravel-portfolio-app">Set up a Laravel Portfolio App</a></li>
+    <li><a href="#blade-components">Blade Components</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#project-controller-routes--views">Project Controller, Routes, &amp; Views</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#dummy-data">Dummy Data</a></li>
+    <li><a href="#blade-loops-and-conditionals">Blade Loops and Conditionals</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#tailwindcss-setup">TailwindCSS Setup</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#tailwind-styling-our-projects">Tailwind Styling our Projects</a></li>
+    <li><a href="#extracting-a-project-card-component">Extracting a Project Card Component</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#create-a-simple-header-nav">Create a Simple Header Nav</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Laravel Intro
+            </h1>
+          
+
+        
+
+
+<h2 id="laravel">Laravel</h2>
+<p>Laravel is a full stack web application managing a PHP framework</p>
+<h4 id="laravel-sail">Laravel Sail</h4>
+<p>Sail was created by the Laravel team as a tool to expedite and Dockerize Laravel development with an emphasis on modern development practices using the latest tools and technologies</p>
+<h4 id="launching-laravel-app">Launching Laravel App</h4>
+<ul>
+<li>Window : Open Ubuntu terminal in VSC</li>
+<li>Make sure Docker is running : empty containers, images</li>
+</ul>
+<p>In your working directory,</p>
+<pre tabindex="0"><code>curl -s &#34;https://laravel.build/[name]&#34; | bash
+cd [name]
+./vendor/bin/sail up -d   //start the container
+./vendor/bin/sail stop   //stop the container
+</code></pre><ul>
+<li>attached mode : output is being directed into the terminal</li>
+<li>detached mode : add -d after sail up (faster), after initial run with attached mode</li>
+</ul>
+<h4 id="setting-up-a-shell-alias-window">Setting up a Shell Alias (Window)</h4>
+<ul>
+<li>Check which shell is running : <code>$ ps -p $$</code></li>
+<li>Switch to home directory : <code>$ cd ~</code></li>
+<li>Verify .bashrc exists : <code>$ ls -alh</code></li>
+<li>Open .bashrc with vi : <code>$ vi .bashrc</code></li>
+<li>Insert mode : type i</li>
+<li>Paste in the following Alias definition (around line 100)</li>
+</ul>
+<pre tabindex="0"><code>alias sail=&#39;[ -f sail ] &amp;&amp; sh sail || sh vendor/bin/sail&#39;
+</code></pre><ul>
+<li>Save and close : <code>esc</code> &gt; <code>:wq</code> &gt; <code>enter</code></li>
+<li>Restart the shell to use the alias : ./vender/bin/sail up -&gt; <code>sail up</code></li>
+</ul>
+<h4 id="exploring-the-app">Exploring the App</h4>
+<ul>
+<li>docker-compose.yml : configuration for the group of images/containers</li>
+<li>composer.json : like package.json</li>
+<li>artisan : Artisan is the CLI included with Laravel.</li>
+</ul>
+<h2 id="blade">Blade</h2>
+<p>Blade is the templating engine that is included with Laravel.</p>
+<p>Blade is lightweight, relatively straightforward to use, compiles down into plain PHP (so you don&rsquo;t have to write the PHP yourself) and is cached until the template is modified which makes it fast.</p>
+<p>Blade templates are stored in the resources/views directory and have the extension .blade.php</p>
+<h4 id="display-data-from-routes">Display data from Routes</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;?php echo $name; ?&gt;</span>
+</span></span></code></pre></div><p>or</p>
+<pre tabindex="0"><code>{{ $name }}
+</code></pre><h4 id="default-variables-using--null-coalescing-operator">Default Variables using ?? (Null coalescing operator)</h4>
+<pre tabindex="0"><code>{{ $name ?? &#34;Default&#34; }}
+</code></pre><h2 id="routes">Routes</h2>
+<h4 id="routes-configure">Routes configure</h4>
+<p>app/Providers/RouteServiceProvider.php</p>
+<p>[ routes/web.php ]</p>
+<pre tabindex="0"><code>&lt;?php
+use Illuminate\Support\Facades\Route;
+Route::get(&#39;/&#39;, function () { return view(&#39;name-of-blade&#39;); }
+</code></pre><h4 id="passing-the-data">Passing the data</h4>
+<p>Passing Single Data</p>
+<pre tabindex="0"><code>Route::get(&#39;/&#39;, function () { return view(&#39;name-of-blade&#39;, [&#39;name&#39; =&gt; &#39;Byul&#39;]); }
+</code></pre><p>Passing Multiple Data</p>
+<pre tabindex="0"><code>view(&#39;welcome, [&#39;name&#39;=&gt;&#39;aa&#39;, &#39;sal&#39;=&gt;&#39;aa&#39;]) or
+view(&#39;welcome&#39;)-&gt;with(&#39;name&#39;,&#39;aa&#39;)-&gt;with(&#39;sal&#39;,&#39;aa&#39;)
+</code></pre><p>Route Parameters</p>
+<pre tabindex="0"><code>Route::get(&#39;/greetings/{name}&#39;, function ($name) {
+    return view(&#39;welcome&#39;)-&gt;with(&#39;name&#39;, $name) });
+</code></pre><p>Optional Route Parameters</p>
+<pre tabindex="0"><code>Route::get(&#39;/greetings/{name?}&#39;, function ($name=&#39;aa&#39;) {
+    return view(&#39;welcome&#39;)-&gt;with(&#39;name&#39;, $name) });
+</code></pre><ul>
+<li>name is an optional route parameter</li>
+<li>aa is a default value</li>
+</ul>
+<p>Fallback Routes : Unhandled requests (404 errors)</p>
+<pre tabindex="0"><code>Route::fallback(function() {
+    return view(&#39;404page-view&#39;) });
+</code></pre><h2 id="controller">Controller</h2>
+<p>Note:
+If for some reason you are working locally instead of via Sail, you would run:</p>
+<pre tabindex="0"><code>php artisan list
+</code></pre><p>You will encounter php artisan &hellip; in many online tutorials. Just replace php with sail if you&rsquo;re sailing along with containers.</p>
+<pre tabindex="0"><code>sail artisan make:controller GreetingController
+</code></pre><p><strong>app/Http/Conrollers/GreetingController.php</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GreetingController</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Controller</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">greet</span>($name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Earthling&#39;</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">view</span>(<span style="color:#e6db74">&#39;welcome&#39;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">with</span>(<span style="color:#e6db74">&#39;name&#39;</span>, $name)
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">with</span>(<span style="color:#e6db74">&#39;salutation&#39;</span>, <span style="color:#e6db74">&#39;Greetings&#39;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>routes/web.php</strong></p>
+<p>Let&rsquo;s change our /greetings/{name?} route to call the greet method in our controller:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#a6e22e">Route</span><span style="color:#f92672">::</span><span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/greetings/{name?}&#39;</span>, [<span style="color:#a6e22e">GreetingController</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>, <span style="color:#e6db74">&#39;greet&#39;</span>]);
+</span></span></code></pre></div><p>Note: We don&rsquo;t need to explicitly pass the route parameter to controller. It is passed automatically.</p>
+<p>We do, however, need to make our controller available for use.</p>
+<p>We can import the class by adding the following near the top of our file</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">App\Http\Controllers\GreetingController</span>;
+</span></span></code></pre></div><p>Or, to make things easier and avoid typos, we can use the PHP Namespace Resolver extension and simply place our cursor within GreetingController and press Ctrl-Alt-i to have the class imported for us.</p>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=MehediDracula.php-namespace-resolver">https://marketplace.visualstudio.com/items?itemName=MehediDracula.php-namespace-resolver</a></p>
+<h2 id="blade-layout-options">Blade Layout Options</h2>
+<p>In order to set up our layouts and have views within other views, there are several ways we can go.</p>
+<p>We can either:</p>
+<ul>
+<li>Template Inheritance
+<ul>
+<li>Use the @section directive to define sections of content</li>
+<li>Use the @yield directive to display the contents of a given section</li>
+<li>Use the @extends directive to specify which layout a child view should &ldquo;inherit&rdquo;.</li>
+</ul>
+</li>
+<li>Include views directly within other views using the @include directive
+<ul>
+<li>There are also conditional variants @includeIf, @includeWhen, @includeUnless, and @includeFirst</li>
+</ul>
+</li>
+<li>Use Blade components and slots.</li>
+</ul>
+<p>For brevity&rsquo;s sake and to minimize confusion, we&rsquo;ll focus mainly on components and slots, but first let&rsquo;s take a quick look at the older way of doing things.</p>
+<h2 id="layouts-through-inheritance">Layouts through Inheritance</h2>
+<h4 id="layouts-the-legacy-way">Layouts the Legacy Way</h4>
+<p>Let&rsquo;s begin by deconstructing welcome.blade.php.</p>
+<p>Create a new folder named layouts under resources/views/, and within that also create a folder named partials.</p>
+<p>In the layouts folder, create a file named app.blade.php</p>
+<p><strong>resources/views/layouts/app.blade.php</strong></p>
+<p>Copy the entire contents of welcome.blade.php into app.blade.php.</p>
+<p>Then, cut out the div that exists inside the body tag and replace it with:</p>
+<pre tabindex="0"><code>@yield(&#39;content&#39;)
+</code></pre><p>Go back to welcome.blade.php and replace the all of the code with just the div you cut out from the previous step.</p>
+<p>The @yield directive above is telling the Blade engine that we will be defining a section with the indicated name in the view file that extends this layout.</p>
+<p>At the top of the file add in @extends(&rsquo;layouts.app&rsquo;) and wrap the div with @section(&lsquo;content&rsquo;) and @endsection.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">@</span><span style="color:#66d9ef">extends</span>(<span style="color:#e6db74">&#39;layouts.app&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">@</span><span style="color:#a6e22e">section</span>(<span style="color:#e6db74">&#39;content&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>            {{ $salutation <span style="color:#f92672">??</span> <span style="color:#e6db74">&#39;Hello&#39;</span> }}, {{ $name <span style="color:#f92672">??</span> <span style="color:#e6db74">&#39;Laravel&#39;</span>}}<span style="color:#f92672">!</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">@</span><span style="color:#a6e22e">endsection</span>
+</span></span></code></pre></div><p>The @extends directive tells Blade which layout file to use and @section(&lsquo;content&rsquo;) and @endsection tells Blade what should be inserted when we @yield(&lsquo;content&rsquo;) in the layout.</p>
+<h4 id="partials-with-include">Partials with @include</h4>
+<p>Within the partials folder let&rsquo;s create a new file named _head.blade.php and extract the <code>&lt;head&gt;</code> element out of app.blade.php into _head.blade.php</p>
+<p>Note: By convention partial templates should begin with an underscore.</p>
+<p>The @include directive allows us to directly include a partial view within another view.</p>
+<p>Add the following code to app.blade.php where the HTML head should be.</p>
+<pre tabindex="0"><code>@include(&#39;layouts.partials._head&#39;)
+</code></pre><p>Some additional things to know about the @include directive:</p>
+<ul>
+<li>All variables available to the parent view are inherited by @included sub-views.</li>
+<li>We can also make additional data available to sub-views.
+<ul>
+<li>@include(&lsquo;view.name&rsquo;, [&lsquo;status&rsquo; =&gt; &lsquo;complete&rsquo;])</li>
+</ul>
+</li>
+<li>We can conditionally include a sub-view.
+<ul>
+<li>@includeWhen($boolean, &lsquo;view.name&rsquo;, [&lsquo;status&rsquo; =&gt; &lsquo;complete&rsquo;])</li>
+<li>@includeUnless($boolean, &lsquo;view.name&rsquo;, [&lsquo;status&rsquo; =&gt; &lsquo;complete&rsquo;])</li>
+</ul>
+</li>
+</ul>
+<h2 id="set-up-a-laravel-portfolio-app">Set up a Laravel Portfolio App</h2>
+<p>Let&rsquo;s start a new Laravel Project for your Portfolio Application</p>
+<ul>
+<li>Open your Ubuntu WSL terminal</li>
+<li>Stop any running sail containers
+<ul>
+<li>sail stop</li>
+</ul>
+</li>
+<li>Optionally, you can delete the containers from Docker Desktop</li>
+<li>Initialize a new project
+<ul>
+<li>curl -s <a href="https://laravel.build/jsolomon-showcase">https://laravel.build/jsolomon-showcase</a> | bash</li>
+<li>Provide your Ubuntu password when prompted</li>
+</ul>
+</li>
+<li>Launch the app in via Sail (Docker), detached
+<ul>
+<li>sail up -d</li>
+</ul>
+</li>
+<li>Verify in browser
+<ul>
+<li>http://localhost/</li>
+</ul>
+</li>
+<li>Initialize a local git repo for version control
+<ul>
+<li>git init</li>
+<li>add files and make your initial commit</li>
+</ul>
+</li>
+<li>Create and push to a github remote</li>
+</ul>
+<h2 id="blade-components">Blade Components</h2>
+<p>The alternative to using @include and @yield with @extends and @section/@endsection is to use Blade components.</p>
+<p>First, let&rsquo;s create a components folder directly under the views folder and within that, create layout.blade.php</p>
+<p>Note: Similar to how any file in the views folder is available as a view, anything in views/components is instantly available as a Blade component.</p>
+<p>Next, copy over the contents of welcome.blade.php and strip out the body html</p>
+<pre tabindex="0"><code>&lt;html lang=&#34;{{ str_replace(&#39;_&#39;, &#39;-&#39;, app()-&gt;getLocale())}}&#34;&gt;
+&lt;head&gt;&lt;/head&gt;
+&lt;body class=&#34;antialiased&#34;&gt;&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>Inside the body tag, rather than using @yield, let&rsquo;s echo out a content variable. Insert:</p>
+<pre tabindex="0"><code>{{ $content }}
+</code></pre><h4 id="projects-views">Projects Views</h4>
+<p>For our portfolio application we will be managing and displaying a collection of projects, so let&rsquo;s organize our views accordingly.</p>
+<p>Create a folder directly under resources/views/ named projects, and within that create index.blade.php and project.blade.php</p>
+<p>To reference a Blade component we use what looks like an HTML tag, but prefixed with x-</p>
+<p>In our case we want to use the layout component, so in index.blade.php let&rsquo;s add:</p>
+<pre tabindex="0"><code>&lt;x-layout&gt;
+
+&lt;/x-layout&gt;
+</code></pre><p>Since our layout component is expecting and echoing out a variable named $content, we need to provide it in one of two ways.</p>
+<p>We can either:</p>
+<ul>
+<li>Add it as an attribute in the component tag
+<code>&lt;x-layout content=&quot;Build a Portfolio&quot;&gt;</code></li>
+<li>Create a slot and set its name attribute
+<code>&lt;x-slot name=&quot;content&quot;&gt;Build a Portfolio&lt;/x-slot&gt;</code></li>
+</ul>
+<pre tabindex="0"><code>&lt;x-layout&gt;
+    &lt;x-slot name=&#34;content&#34;&gt;
+        &lt;div class=&#34;relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0&#34;&gt;
+            Display a list of projects.
+        &lt;/div&gt;
+    &lt;/x-slot&gt;
+&lt;/x-layout&gt;
+</code></pre><p>Also copy the contents of index.blade.php to project.blade.php and change the text.</p>
+<p>To test this out, let&rsquo;s create new routes for our project index and detail views.</p>
+<h4 id="routing-intro">Routing Intro</h4>
+<p>In routes/web.php add the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#a6e22e">Route</span><span style="color:#f92672">::</span><span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/projects&#39;</span>, <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">view</span>(<span style="color:#e6db74">&#39;projects.index&#39;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Route</span><span style="color:#f92672">::</span><span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/projects/project&#39;</span>, <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">view</span>(<span style="color:#e6db74">&#39;projects.project&#39;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><p>Navigate to http://localhost/projects and http://localhost/projects/project</p>
+<p>Note: Our layout Blade component is what is referred to as an anonymous component, which is to say it is just a view template without an associated class file. Later we&rsquo;ll be building components that are made up of both a class and a template.</p>
+<p>We also could have used artisan to make our component.</p>
+<p>For our anonymous component the artisan command would have been:</p>
+<pre tabindex="0"><code>sail artisan make:component layout --view
+</code></pre><h2 id="project-controller-routes--views">Project Controller, Routes, &amp; Views</h2>
+<p>Let&rsquo;s start out by creating our ProjectController</p>
+<p>In your Ubuntu terminal, run:</p>
+<pre tabindex="0"><code>sail artisan make:controller ProjectController
+</code></pre><p>That will create our controller file in app/Http/Controllers/</p>
+<p>In ProjectController.php, inside the class definition, add the following methods to return our views.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">index</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">view</span>(<span style="color:#e6db74">&#39;projects.index&#39;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">show</span>($project)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">view</span>(<span style="color:#e6db74">&#39;projects.project&#39;</span>, [<span style="color:#e6db74">&#39;project&#39;</span> <span style="color:#f92672">=&gt;</span> $project]);
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><h4 id="update-our-routes">Update our Routes</h4>
+<p>In routes/web.php let&rsquo;s set up the get routes to call the appropriate controller methods.</p>
+<p>First, add the following near the top to make our new controller available:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">App\Http\Controllers\ProjectController</span>;
+</span></span></code></pre></div><p>Then, refactor our projects routes, as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#a6e22e">Route</span><span style="color:#f92672">::</span><span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/projects&#39;</span>, [<span style="color:#a6e22e">ProjectController</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>, <span style="color:#e6db74">&#39;index&#39;</span>]);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Route</span><span style="color:#f92672">::</span><span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/projects/{project}&#39;</span>, [<span style="color:#a6e22e">ProjectController</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>, <span style="color:#e6db74">&#39;show&#39;</span>]);
+</span></span></code></pre></div><p>Note:</p>
+<p>If you have the PHP Namespace Resolver extension installed you can place your cursor within ProjectController, right-click, and choose Import Class. This can be helpful in avoiding typos.</p>
+<h4 id="route-parameter-intro">Route Parameter Intro</h4>
+<p>For the individual project view we&rsquo;re using a route parameter.</p>
+<p>Eventually we&rsquo;ll be extracting either a slug or an id and loading our data from the database accordingly, but for now just make sure that the show() function in ProductController receives $product and passes it to the view.</p>
+<p>To see the value, echo it out in the view with <code>&lt;h2&gt;Project: {{ $project }}&lt;/h2&gt;</code></p>
+<h2 id="dummy-data">Dummy Data</h2>
+<p>In order to take the next steps with our projects index and detail views, let&rsquo;s hard-code some dummy data in our ProjectController.</p>
+<p>Inside the index() method, before the return statement, add the following:</p>
+<pre tabindex="0"><code> $projects = [
+            [
+                &#39;id&#39; =&gt; 0,
+                &#39;title&#39; =&gt; &#39;Node.js Yearbook&#39;,
+                &#39;description&#39; =&gt; &#39;Details coming soon...&#39;,
+                &#39;is_published&#39; =&gt; false
+            ],
+            [
+                &#39;id&#39; =&gt; 1,
+                &#39;title&#39; =&gt; &#39;React Movie App&#39;,
+                &#39;description&#39; =&gt; &#39;...&#39;,
+                &#39;is_published&#39; =&gt; false
+            ],
+            [
+                &#39;id&#39; =&gt; 3,
+                &#39;title&#39; =&gt; &#39;Laravel Portfolio Back-End&#39;,
+                &#39;description&#39; =&gt; &#39;In progress.  Stay tuned.&#39;,
+                &#39;is_published&#39; =&gt; false
+            ]
+        ];
+</code></pre><p>Then, pass the dummy data to the index view:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">view</span>(<span style="color:#e6db74">&#39;projects.index&#39;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">with</span>(<span style="color:#e6db74">&#39;projects&#39;</span>, $projects);
+</span></span></code></pre></div><p>While we&rsquo;re here, let&rsquo;s also simulate passing a single todo to our singular todo view.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>         $project<span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;id&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">4</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;title&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;Vue.js Portfolio Front-End&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;description&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;...&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;is_published&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>        ];
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">view</span>(<span style="color:#e6db74">&#39;projects.project&#39;</span>, [<span style="color:#e6db74">&#39;project&#39;</span> <span style="color:#f92672">=&gt;</span> $project]);
+</span></span></code></pre></div><h2 id="blade-loops-and-conditionals">Blade Loops and Conditionals</h2>
+<p>In order to output our projects list in our index view, we&rsquo;re going to need some conditional logic as well as iteration. Fortunately, Blade provides simple directives to handle these.</p>
+<h4 id="if-statements">If Statements</h4>
+<p>We can create if statements using @if, @elseif, @else, and @endif directives.</p>
+<p>In index.blade.php add the following, above the div with our placeholder text, but within the x-slot named content:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">@</span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">count</span>($projects))
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>{{ <span style="color:#a6e22e">count</span>($projects) }} <span style="color:#a6e22e">projects</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">peep</span><span style="color:#f92672">.&lt;/</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">@</span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Nothing</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">showcase</span>, <span style="color:#a6e22e">yet</span><span style="color:#f92672">.&lt;/</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">@</span><span style="color:#66d9ef">endif</span>
+</span></span></code></pre></div><h4 id="loops">Loops</h4>
+<p>Blade also offers several looping directives.</p>
+<p>For our purposes we&rsquo;ll use a @foreach loop.</p>
+<p>Replace the placeholder content with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">@</span><span style="color:#66d9ef">foreach</span> ($projects <span style="color:#66d9ef">as</span> $project)
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/projects/{{ </span><span style="color:#e6db74">$project[&#39;id&#39;]</span><span style="color:#e6db74"> }}&#34;</span><span style="color:#f92672">&gt;</span>{{ $project[<span style="color:#e6db74">&#39;title&#39;</span>] }}<span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">a</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>{{ $project[<span style="color:#e6db74">&#39;description&#39;</span>] }}<span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">@</span><span style="color:#66d9ef">endforeach</span>
+</span></span></code></pre></div><p>Note: Since we are currently passing in the projects as an array of arrays we need to use square bracket syntax to access the values by their key.</p>
+<p>Once we are have a Project model we&rsquo;ll be working with objects and will be able to access their properties using $project-&gt;id.</p>
+<p>For more info on Blade directives, see the docs:</p>
+<p><a href="https://laravel.com/docs/9.x/blade#blade-directives">https://laravel.com/docs/9.x/blade#blade-directives</a></p>
+<h2 id="tailwindcss-setup">TailwindCSS Setup</h2>
+<p>Installation</p>
+<pre tabindex="0"><code>sail npm install -D tailwindcss postcss autoprefixer
+</code></pre><p>Initialization</p>
+<pre tabindex="0"><code>sail npx tailwindcss init -p
+</code></pre><h4 id="set-the-template-paths">Set the Template Paths</h4>
+<p>In tailwind.config.js</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#e6db74">/** @type {import(&#39;tailwindcss&#39;).Config} */</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">module</span><span style="color:#f92672">.</span><span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">content</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;./resources/**.*.blade.php&#34;</span>, <span style="color:#e6db74">&#34;./resources/**/*.js&#34;</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">theme</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">extend</span><span style="color:#f92672">:</span> {},
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">plugins</span><span style="color:#f92672">:</span> [],
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><h4 id="add-the-tailwind-directives-to-css">Add the Tailwind Directives to CSS</h4>
+<p>In resources/css/app.css</p>
+<pre tabindex="0"><code>@tailwind base;
+@tailwind components;
+@tailwind utilities;
+</code></pre><p>To fix the &ldquo;unknown @ rules warning in VSCode.</p>
+<p>Open Settings in VSCode (Ctrl + ,) then type &ldquo;files assoc&rdquo; in the search bar.</p>
+<p>Add an item to associate *.css with tailwindcss</p>
+<h4 id="add-the-tailwind-css-intellisense-extension-for-vscode">Add the Tailwind CSS Intellisense Extension for VSCode</h4>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss">https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss</a></p>
+<p>user &gt; tailwind CSS: Emmet Completions (check)</p>
+<h4 id="load-tailwind-from-cdn-into-main-layout-file">Load Tailwind from CDN into main layout file</h4>
+<p>In layout.blade.php, replace the first <code>&lt;style&gt;...&lt;/style&gt; </code> element with:</p>
+<p><code> &lt;script src=&quot;https://cdn.tailwindcss.com&quot;&gt;&lt;/script&gt;</code></p>
+<h4 id="start-styling-with-tailwindcss">Start Styling with TailwindCSS!</h4>
+<p>As an initial test, let&rsquo;s add some tailwind classes to the project count div at the top of index.blade.php</p>
+<pre tabindex="0"><code>&lt;div class=&#34;text-xl text-orange-700 bg-gray-100&#34;&gt;{{ count($projects) }} projects to peep.&lt;/div&gt;
+</code></pre><h2 id="tailwind-styling-our-projects">Tailwind Styling our Projects</h2>
+<pre tabindex="0"><code>&lt;div
+    class=&#34;relative flex justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0&#34;&gt;
+    &lt;div class=&#34;mt-6&#34;&gt;
+        &lt;section class=&#34;grid grid-cols-1 md:grid-cols-2 gap-2&#34;&gt;
+            @foreach ($projects as $project)
+            &lt;div class=&#34;p-6  bg-white overflow-hidden shadow sm:rounded-lg&#34;&gt;
+                &lt;div&gt;
+                    &lt;a href=&#34;/projects/{{ $project[&#39;id&#39;] }}&#34;&gt;{{ $project[&#39;title&#39;] }}&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div&gt;{{ $project[&#39;description&#39;] }}&lt;/div&gt;
+            &lt;/div&gt;
+            @endforeach
+        &lt;/section&gt;
+        @if (count($projects))
+        &lt;div class=&#34;text-xs w-full text-right&#34;&gt;{{ count($projects) }} projects to peep.&lt;/div&gt;
+        @else
+        &lt;div&gt;Nothing to showcase, yet.&lt;/div&gt;
+        @endif
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><h2 id="extracting-a-project-card-component">Extracting a Project Card Component</h2>
+<p>Create a projects folder under components and a project-card.blade.php inside that.</p>
+<p>Next, cut out the div that we had inside the projects loop in index.blade.php and paste it into the new project-card.blade.php component.</p>
+<pre tabindex="0"><code>&lt;div class=&#34;p-6  bg-white overflow-hidden shadow sm:rounded-lg&#34;&gt;
+    &lt;div&gt;
+        &lt;a href=&#34;/projects/{{ $project[&#39;id&#39;] }}&#34;&gt;{{ $project[&#39;title&#39;] }}&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;{{ $project[&#39;description&#39;] }}&lt;/div&gt;
+&lt;/div&gt;
+</code></pre><h4 id="passing-project-data-to-our-component">Passing Project Data to our Component</h4>
+<p>Back in index.blade.php we could include our component from inside the loop with:</p>
+<pre tabindex="0"><code>&lt;x.projects.project-card /&gt;
+</code></pre><p>But our component will complain that $project is undefined.</p>
+<p>If we wanted to pass a simple string to our component we could do so by adding an attribute i.e. &lt;x.projects.project-card title=&ldquo;Hello&rdquo;/&gt;, but to pass objects or arrays to a component we need to use props.</p>
+<pre tabindex="0"><code>&lt;x-projects.project-card :project=&#34;$project&#34; /&gt;
+</code></pre><p>Within our project-card component we can receive the prop by adding the following at the top of the file.</p>
+<pre tabindex="0"><code>@props([&#39;project&#39;])
+</code></pre><h2 id="create-a-simple-header-nav">Create a Simple Header Nav</h2>
+<p>In resources/views/components/layout.blade.php</p>
+<pre tabindex="0"><code>&lt;header class=&#34;px-6 py-8&#34;&gt;
+    &lt;nav class=&#34;md:flex md:justify-between md:items-center&#34;&gt;
+        &lt;div&gt;&lt;a href=&#34;/&#34; class=&#34;text-s font-bold uppercase&#34;&gt;Home&lt;/a&gt;&lt;/div&gt;
+        &lt;div class=&#34;mt-8 md:mt-0&#34;&gt;
+            &lt;a href=&#34;/register&#34; class=&#34;ml-3 text-xs font-bold uppercase&#34;&gt;Register&lt;/a&gt;
+            &lt;a href=&#34;/login&#34; class=&#34;ml-3 text-xs font-bold uppercase&#34;&gt;Log In&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+</code></pre>
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/xtc/php/2-setup/" title="Software setup for Laravel"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/xtc/php/sql/" title="MySQL Migration" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1712035893"></script>
+    <script src="/js/perfect-scrollbar.min.js?1712035893"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1712035893"></script>
+    <script src="/js/jquery.sticky.js?1712035893"></script>
+    <script src="/js/featherlight.min.js?1712035893"></script>
+    <script src="/js/highlight.pack.js?1712035893"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1712035893"></script>
+    <script src="/js/learn.js?1712035893"></script>
+    <script src="/js/hugo-learn.js?1712035893"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1712035893"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

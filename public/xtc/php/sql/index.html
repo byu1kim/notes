@@ -1,0 +1,4417 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.124.1">
+    <meta name="description" content="Coding Notes for Byul">
+<meta name="author" content="Byul Kim">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title>MySQL Migration :: Byul Notes</title>
+
+    
+    <link href="/css/nucleus.css?1712035893" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1712035893" rel="stylesheet">
+    <link href="/css/hybrid.css?1712035893" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1712035893" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1712035893" rel="stylesheet">
+    <link href="/css/auto-complete.css?1712035893" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1712035893" rel="stylesheet">
+    <link href="/css/theme.css?1712035893" rel="stylesheet">
+    <link href="/css/tabs.css?1712035893" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1712035893" rel="stylesheet">
+    
+    <link href="/css/theme-blue.css?1712035893" rel="stylesheet">
+    
+    <link href="/css/style.css?1712035893" rel="stylesheet">
+
+    <script src="/js/jquery-3.3.1.min.js?1712035893"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+  rel="stylesheet"
+/>
+
+  </head>
+  <body class="" data-url="/xtc/php/sql/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <div class="logo">Byul's Notes</div>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1712035893"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1712035893"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1712035893"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/leetcode/" title="LeetCode" class="dd-item
+        
+        
+        
+        ">
+      <a href="/leetcode/">
+          <i class='fas fa-book-open'></i> &nbspLeetCode
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/leetcode/theory/" title="Theory" class="dd-item ">
+        <a href="/leetcode/theory/">
+        <i class='fas fa-pen'></i> &nbspTheory
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/leetcode/easy/" title="Easy" class="dd-item ">
+        <a href="/leetcode/easy/">
+        <i class='fas fa-pen'></i> &nbspEasy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/leetcode/medium/" title="Medium" class="dd-item ">
+        <a href="/leetcode/medium/">
+        <i class='fas fa-pen'></i> &nbspMedium
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pluralsight/" title="Pluralsight" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pluralsight/">
+          <i class='fas fa-book-open'></i> &nbspPluralsight
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pluralsight/react/" title="React" class="dd-item ">
+        <a href="/pluralsight/react/">
+        <i class='fas fa-pen'></i> &nbspReact
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pluralsight/unittest/" title="Unit Test" class="dd-item ">
+        <a href="/pluralsight/unittest/">
+        <i class='fas fa-pen'></i> &nbspUnit Test
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/python/" title="Python" class="dd-item
+        
+        
+        
+        ">
+      <a href="/python/">
+          <i class='fas fa-book-open'></i> &nbspPython
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/intro/" title="Introduction" class="dd-item ">
+        <a href="/python/intro/">
+        <i class='fas fa-pen'></i> &nbspIntroduction
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/basic/" title="Basics" class="dd-item ">
+        <a href="/python/basic/">
+        <i class='fas fa-pen'></i> &nbspBasics
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/string/" title="String" class="dd-item ">
+        <a href="/python/string/">
+        <i class='fas fa-pen'></i> &nbspString
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/list/" title="Data Structure" class="dd-item ">
+        <a href="/python/list/">
+        <i class='fas fa-pen'></i> &nbspList, Tuple, Set, Dict
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/file/" title="Files" class="dd-item ">
+        <a href="/python/file/">
+        <i class='fas fa-pen'></i> &nbspFiles
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/regex/" title="Regular Expression" class="dd-item ">
+        <a href="/python/regex/">
+        <i class='fas fa-pen'></i> &nbspRegex
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/bs/" title="Beautiful Soup" class="dd-item ">
+        <a href="/python/bs/">
+        <i class='fas fa-pen'></i> &nbspBeautiful Soup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/flask/" title="Flask" class="dd-item ">
+        <a href="/python/flask/">
+        <i class='fas fa-pen'></i> &nbspFlask
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/selenium/" title="Selenium" class="dd-item ">
+        <a href="/python/selenium/">
+        <i class='fas fa-pen'></i> &nbspSelenium
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/react/" title="React" class="dd-item
+        
+        
+        
+        ">
+      <a href="/react/">
+          <i class='fas fa-book-open'></i> &nbspReact
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/1-intro/" title="Intro" class="dd-item ">
+        <a href="/react/1-intro/">
+        <i class='fas fa-pen'></i> &nbspIntro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/2-route/" title="Route" class="dd-item ">
+        <a href="/react/2-route/">
+        <i class='fas fa-pen'></i> &nbspRoute
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/deploy/" title="Deploy" class="dd-item ">
+        <a href="/react/deploy/">
+        <i class='fas fa-pen'></i> &nbspDeploy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/fetch/" title="Data Fetching" class="dd-item ">
+        <a href="/react/fetch/">
+        <i class='fas fa-pen'></i> &nbspData Fetching
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/pagination/" title="Pagination" class="dd-item ">
+        <a href="/react/pagination/">
+        <i class='fas fa-pen'></i> &nbspPagination
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/react/" title="react" class="dd-item ">
+        <a href="/react/react/">
+        <i class='fas fa-pen'></i> &nbspreact
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/3-state/" title="Statement Management" class="dd-item ">
+        <a href="/react/3-state/">
+        <i class='fas fa-pen'></i> &nbspStatement
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/table/" title="Table" class="dd-item ">
+        <a href="/react/table/">
+        <i class='fas fa-pen'></i> &nbspTable
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/useeffect/" title="Use Effect" class="dd-item ">
+        <a href="/react/useeffect/">
+        <i class='fas fa-pen'></i> &nbspUse Effect
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/aws/" title="AWS" class="dd-item
+        
+        
+        
+        ">
+      <a href="/aws/">
+          <i class='fas fa-book-open'></i> &nbspAWS
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/ec2/" title="EC2" class="dd-item ">
+        <a href="/aws/ec2/">
+        <i class='fas fa-pen'></i> &nbspEC2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/s3/" title="S3" class="dd-item ">
+        <a href="/aws/s3/">
+        <i class='fas fa-pen'></i> &nbspS3
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/jwt/" title="JWT" class="dd-item ">
+        <a href="/aws/jwt/">
+        <i class='fas fa-pen'></i> &nbspJWT
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/cognito/" title="Cognito" class="dd-item ">
+        <a href="/aws/cognito/">
+        <i class='fas fa-pen'></i> &nbspCognito
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/aws/5-lambda/" title="Lambda Function" class="dd-item
+        
+        
+        
+        ">
+      <a href="/aws/5-lambda/">
+          <i class='fas fa-pen'></i> &nbspLambda
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/5-lambda/lambda-function/" title="Lambda Function" class="dd-item ">
+        <a href="/aws/5-lambda/lambda-function/">
+        - &nbspLambda Function
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/5-lambda/lambda-.net/" title="Lambda in .NET" class="dd-item ">
+        <a href="/aws/5-lambda/lambda-.net/">
+        - &nbsp.NET
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/iac/" title="Infrastructure as Code" class="dd-item ">
+        <a href="/aws/iac/">
+        <i class='fas fa-pen'></i> &nbspIaC
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/sst/" title="SST" class="dd-item ">
+        <a href="/aws/sst/">
+        <i class='fas fa-pen'></i> &nbspSST
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/sst-auth/" title="SST &amp; Auth" class="dd-item ">
+        <a href="/aws/sst-auth/">
+        <i class='fas fa-pen'></i> &nbspSST &amp; Auth
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/database/" title="Database" class="dd-item
+        
+        
+        
+        ">
+      <a href="/database/">
+          <i class='fas fa-book-open'></i> &nbspDatabase
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/database/sql/" title="Database" class="dd-item ">
+        <a href="/database/sql/">
+        <i class='fas fa-pen'></i> &nbspDatabase
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/database/mssql/" title="MS SQL" class="dd-item ">
+        <a href="/database/mssql/">
+        <i class='fas fa-pen'></i> &nbspMS SQL
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/database/monbodb/" title="MongoDB" class="dd-item ">
+        <a href="/database/monbodb/">
+        <i class='fas fa-pen'></i> &nbspMongoDB
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/javascript/" title="Javascript" class="dd-item
+        
+        
+        
+        ">
+      <a href="/javascript/">
+          <i class='fas fa-book-open'></i> &nbspJavascript
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/javascript/scrap/" title="" class="dd-item ">
+        <a href="/javascript/scrap/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/c/" title="C#" class="dd-item
+        
+        
+        
+        ">
+      <a href="/c/">
+          <i class='fas fa-book-open'></i> &nbspC#
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/intro/" title="Intro" class="dd-item ">
+        <a href="/c/intro/">
+        <i class='fas fa-pen'></i> &nbspIntro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/basic/" title="Basic" class="dd-item ">
+        <a href="/c/basic/">
+        <i class='fas fa-pen'></i> &nbspBasic
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/array/" title="Array" class="dd-item ">
+        <a href="/c/array/">
+        <i class='fas fa-pen'></i> &nbspArray
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/method/" title="Method" class="dd-item ">
+        <a href="/c/method/">
+        <i class='fas fa-pen'></i> &nbspMethod
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/string/" title="String" class="dd-item ">
+        <a href="/c/string/">
+        <i class='fas fa-pen'></i> &nbspString
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/class/" title="Class" class="dd-item ">
+        <a href="/c/class/">
+        <i class='fas fa-pen'></i> &nbspClass
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/linq/" title="Linq" class="dd-item ">
+        <a href="/c/linq/">
+        <i class='fas fa-pen'></i> &nbspLinq
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/asp.net/" title="ASP.NET" class="dd-item
+        
+        
+        
+        ">
+      <a href="/asp.net/">
+          <i class='fas fa-book-open'></i> &nbspASP.NET
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/basic/" title="MVC Basics" class="dd-item ">
+        <a href="/asp.net/basic/">
+        <i class='fas fa-pen'></i> &nbspMVC Basics
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/db/" title="DB Connection" class="dd-item ">
+        <a href="/asp.net/db/">
+        <i class='fas fa-pen'></i> &nbspDB Connection
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/crud/" title="CRUD" class="dd-item ">
+        <a href="/asp.net/crud/">
+        <i class='fas fa-pen'></i> &nbspCRUD
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/linq/" title="Linq" class="dd-item ">
+        <a href="/asp.net/linq/">
+        <i class='fas fa-pen'></i> &nbspLinq
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/frontend/" title="Frontend" class="dd-item
+        
+        
+        
+        ">
+      <a href="/frontend/">
+          <i class='fas fa-book-open'></i> &nbspFrontend
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/html/" title="HTML" class="dd-item ">
+        <a href="/frontend/html/">
+        <i class='fas fa-pen'></i> &nbspHTML
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/frontend/css/" title="CSS" class="dd-item
+        
+        
+        
+        ">
+      <a href="/frontend/css/">
+          <i class='fas fa-pen'></i> &nbspCSS
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/flex/" title="Flexbox" class="dd-item ">
+        <a href="/frontend/css/flex/">
+        - &nbspFlexbox
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/grid/" title="Grid" class="dd-item ">
+        <a href="/frontend/css/grid/">
+        - &nbspGrid
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/trasnform/" title="Transform" class="dd-item ">
+        <a href="/frontend/css/trasnform/">
+        - &nbspTransform
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/etc/" title="" class="dd-item ">
+        <a href="/frontend/css/etc/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/sass/" title="Sass" class="dd-item ">
+        <a href="/frontend/sass/">
+        <i class='fas fa-pen'></i> &nbspSass
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/bootstrap/" title="Bootstrap" class="dd-item ">
+        <a href="/frontend/bootstrap/">
+        <i class='fas fa-pen'></i> &nbspBootstrap
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/tailwind/" title="Tailwind" class="dd-item ">
+        <a href="/frontend/tailwind/">
+        <i class='fas fa-pen'></i> &nbspTailwind
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/" title="ETC" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/xtc/">
+          ETC
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/1job.md/" title="Job Interview" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/1job.md/">
+          <i class='fas fa-pen'></i> &nbspJob Interview
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/setup/" title="Setup" class="dd-item ">
+        <a href="/xtc/setup/">
+        <i class='fas fa-pen'></i> &nbspSetup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/php/" title="PHP" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/xtc/php/">
+          <i class='fas fa-pen'></i> &nbspPHP
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/1-docker/" title="Docker" class="dd-item ">
+        <a href="/xtc/php/1-docker/">
+        - Docker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/2-setup/" title="Software setup for Laravel" class="dd-item ">
+        <a href="/xtc/php/2-setup/">
+        - Setup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/3-intro/" title="Laravel Intro" class="dd-item ">
+        <a href="/xtc/php/3-intro/">
+        - Laravel Intro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/sql/" title="MySQL Migration" class="dd-item active">
+        <a href="/xtc/php/sql/">
+        - MySQL Migration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/auth/" title="Auth" class="dd-item ">
+        <a href="/xtc/php/auth/">
+        - Auth
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/admin/" title="Admin" class="dd-item ">
+        <a href="/xtc/php/admin/">
+        - Admin
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/work/" title="Work" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/work/">
+          <i class='fas fa-pen'></i> &nbspWork
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/angularjs/" title="Angular JS" class="dd-item ">
+        <a href="/xtc/work/angularjs/">
+        - Angular JS
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/database/" title="Database" class="dd-item ">
+        <a href="/xtc/work/database/">
+        - Database
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/frontend/" title="Frontend" class="dd-item ">
+        <a href="/xtc/work/frontend/">
+        - Frontend
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/aspnet/" title="ASP .NET" class="dd-item ">
+        <a href="/xtc/work/aspnet/">
+        - ASP .NET
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/angular/" title="Angular.js" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/angular/">
+          <i class='fas fa-pen'></i> &nbspAngular.js
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/angular/day1/" title="Day1" class="dd-item ">
+        <a href="/xtc/angular/day1/">
+        - Day1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/angular/day2/" title="Day2" class="dd-item ">
+        <a href="/xtc/angular/day2/">
+        - Day2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/angular/day3/" title="Day3" class="dd-item ">
+        <a href="/xtc/angular/day3/">
+        - Day3
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/vue/" title="Vue.js" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/vue/">
+          <i class='fas fa-pen'></i> &nbspVue.js
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/vue/day1/" title="Day1" class="dd-item ">
+        <a href="/xtc/vue/day1/">
+        - Day1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/josh/" title="" class="dd-item ">
+        <a href="/xtc/josh/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/xtc/'>ETC</a> > <a href='/xtc/php/'>PHP</a> > MySQL Migration
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#database-setup-and-configuration">Database Setup and Configuration</a></li>
+    <li><a href="#connecting-mysql-workbench-to-the-container">Connecting MySQL Workbench to the Container</a></li>
+    <li><a href="#mysql-fundamentals">MySQL Fundamentals</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#migrations">Migrations</a></li>
+    <li><a href="#creating-a-migration-for-projects-table">Creating a Migration for Projects Table</a></li>
+    <li><a href="#re-defining-our-projects-table">Re-defining our Projects Table</a></li>
+    <li><a href="#practice---edit-the-projects-table">Practice - Edit the Projects Table</a></li>
+    <li><a href="#eloquent-models-and-tinker">Eloquent Models and Tinker</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#creating-a-project-model">Creating a Project Model</a></li>
+    <li><a href="#creating-a-project-factory">Creating a Project Factory</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#updating-project-controller-and-card-component">Updating Project Controller and Card Component</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#conditionally-outputting-the-body">Conditionally Outputting the Body</a></li>
+    <li><a href="#displaying-unescaped-html">Displaying Unescaped HTML</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#eloquent-relationships">Eloquent Relationships</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#adding-a-category-to-projects">Adding a Category to Projects</a></li>
+    <li><a href="#adding-a-projectseeder">Adding a ProjectSeeder</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#eloquently-outputting-categories">Eloquently Outputting Categories</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#listing-projects-by-category">Listing Projects by Category</a></li>
+    <li><a href="#category-slugs">Category Slugs</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              MySQL Migration
+            </h1>
+          
+
+        
+
+
+<h2 id="database-setup-and-configuration">Database Setup and Configuration</h2>
+<p>Great news!</p>
+<p>When we created our project via Sail, Laravel set up and configured our database, running in its own container, ready for us to use.</p>
+<p>Laravel stores all sensitive and/or environment specific configuration, including key info for our database, using dotenv.</p>
+<p>Open up the .env file in the root of your Laravel project and take a gander.</p>
+<p>The default DB_USERNAME and DB_PASSWORD make me cringe, but let&rsquo;s just work with it for now. I&rsquo;ve included notes in a separate slide on how to go about changing these&hellip; but for now just know that the username is sail and the password is password.</p>
+<p>Further details of the database configuration, including which database to use by default, are defined in config/database.php</p>
+<p>The default is mysql, which is what we want to work with.</p>
+<p>Note: The .env file is excluded from version control in the .gitignore that Laravel set up for us.</p>
+<h2 id="connecting-mysql-workbench-to-the-container">Connecting MySQL Workbench to the Container</h2>
+<p>If you don&rsquo;t already have it up and running, make sure:</p>
+<ul>
+<li>You have Docker Desktop running</li>
+<li>You have your project containers running too
+<ul>
+<li>Open your Ubuntu terminal in VSCode</li>
+<li>Make sure you are in the root of your project</li>
+<li>Launch your project in detached mode
+<ul>
+<li>sail up -d</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Open MySQL Workbench</p>
+<ul>
+<li>Click the + next to MySQL Connections</li>
+<li>Set an appropriate Connection Name</li>
+<li>Set the Username to sail (per the value found in .env)</li>
+</ul>
+<p>Click Test Connection to confirm.</p>
+<p>It will prompt you for the password, which (grrrrr) is set to password .</p>
+<p>You should get a connection success message with some additional details.</p>
+<p>Click OK to save the connection in the MySQL Workbench dashboard.</p>
+<p>From here, when you click on the connection it will connect to your MySQL server, running in the container, any time you have your container running.</p>
+<p>The next slide should hopefully be a recap of key MySQL commands.</p>
+<h2 id="mysql-fundamentals">MySQL Fundamentals</h2>
+<p>Open the MySQL connection that we made in the last step.</p>
+<h4 id="available-databases">Available Databases</h4>
+<p>We&rsquo;re connected to the MySQL server instance that is running in our Docker container, but are not yet set to work with the database that Laravel set up for our application itself.</p>
+<p>In the Query 1 panel, enter the following, then click the lightning bolt icon at the top of the panel to run it:</p>
+<pre tabindex="0"><code>SHOW databases;
+</code></pre><p>You should see a results grid displaying 4 rows.</p>
+<p>Three of these results are &ldquo;system&rdquo; databases:</p>
+<ul>
+<li>information_schema</li>
+<li>performance_schema</li>
+<li>testing</li>
+</ul>
+<p>The fourth database should match the name of your application, in snake_case. In my case, that&rsquo;s solomon_showcase.</p>
+<p>To specify which database we want to work with and list out all of the tables therein, type and run:</p>
+<pre tabindex="0"><code>USE solomon_showcase;
+SHOW tables;
+</code></pre><h4 id="running-our-initial-migration">Running our Initial Migration</h4>
+<pre tabindex="0"><code>sail artisan migrate
+</code></pre><p>Back in MySQL Workbench, place your cursor on the line with SHOW tables; and then click the lightning bolt icon with a cursor superimposed.</p>
+<pre tabindex="0"><code>SELECT * FROM users;
+</code></pre><pre tabindex="0"><code>DESCRIBE users;
+</code></pre><h2 id="migrations">Migrations</h2>
+<p>In the last step we ran sail artisan migrate and it created the following tables in the database for us:</p>
+<ul>
+<li>migrations</li>
+<li>users</li>
+<li>password_resets</li>
+<li>failed_jobs</li>
+<li>personal_access_tokens</li>
+</ul>
+<p>It did so by running the code located in the database/migrations/ directory.</p>
+<p>Open the file in that migrations folder that ends with _create_users_table.php</p>
+<p>There, you will see that it defines a new class which extends Migration, and within that class there are two key methods: up() and down().</p>
+<p>The up() method is used to add tables, columns, or indexes in our database and the down() method is used to reverse what was done in up().</p>
+<p>Deconstructing the *_create_users_table migration:</p>
+<p>It&rsquo;s calling the create() method of the Schema class with two arguments: the name of the table to be created and a closure in which the columns are defined (via a Blueprint object).</p>
+<p>Take a moment to familiarize yourself with (and bookmark) the documentation on creating tables as well as the column types available through migrations with Laravel&rsquo;s Schema Builder:</p>
+<p><a href="https://laravel.com/docs/9.x/migrations#creating-tables">https://laravel.com/docs/9.x/migrations#creating-tables</a></p>
+<p><a href="https://laravel.com/docs/9.x/migrations#available-column-types">https://laravel.com/docs/9.x/migrations#available-column-types</a></p>
+<h2 id="creating-a-migration-for-projects-table">Creating a Migration for Projects Table</h2>
+<p>In the Ubuntu WSL terminal, run the following:</p>
+<pre tabindex="0"><code>sail artisan make:migration create_projects_table
+</code></pre><p>Based on the migration name provided, Laravel determined that we wanted to create a table with the name projects.</p>
+<p>Open up the newly created migration and you&rsquo;ll see:</p>
+<p>Let&rsquo;s run that migration to see what it produces.</p>
+<pre tabindex="0"><code>sail artisan migrate
+</code></pre><p>$table-&gt;id(); created the id column as an auto-incrementing, unsigned big integer, not nullable, column with a primary key index on it.</p>
+<p>$table-&gt;timestamps(); created two, nullable, timestamp columns for us.</p>
+<p>Awesome, but we need more columns to manage our projects data.</p>
+<h2 id="re-defining-our-projects-table">Re-defining our Projects Table</h2>
+<p>Looking back at the dummy data that we set up in our ProjectController, in addition to the columns above our projects table will need at least the following columns added:</p>
+<ul>
+<li>title
+<ul>
+<li>Let&rsquo;s assume we want these to be a max of 50 characters and required.</li>
+</ul>
+</li>
+<li>description
+<ul>
+<li>This column should support long text</li>
+</ul>
+</li>
+<li>is_published
+<ul>
+<li>This should be a boolean that is not nullable and defaults to false</li>
+</ul>
+</li>
+</ul>
+<p>We could set up a migration to alter the existing table, but since we don&rsquo;t have any data in there yet, let&rsquo;s roll back our previous migration, update our column definitions, then run things forward again.</p>
+<p>To reverse the effects of our last sail artisan migrate command we can run:</p>
+<pre tabindex="0"><code>sail artisan migrate:rollback
+</code></pre><p>That ran the down() method in each of the migrations that were included in the last batch that were executed (just one migration in this case), and our todos table is no more.</p>
+<p>To see which migrations were included in the last batch, you can query the migrations table:</p>
+<pre tabindex="0"><code>SELECT * FROM migrations;
+</code></pre><p>If you don&rsquo;t want to roll back all of the migrations from the last batch, you can also explicitly specify how many steps to roll back:</p>
+<pre tabindex="0"><code>sail artisan migrate:rollback --step=1
+</code></pre><h2 id="practice---edit-the-projects-table">Practice - Edit the Projects Table</h2>
+<p>Now, I&rsquo;d like you to try to figure out how to redefine the projects table so that we have the following columns:</p>
+<ul>
+<li>id</li>
+<li>title</li>
+<li>excerpt</li>
+<li>body</li>
+<li>url</li>
+<li>published_date</li>
+<li>created_at</li>
+<li>updated_at</li>
+</ul>
+<p>Details:</p>
+<ul>
+<li>The url and published_date fields should be nullable.</li>
+<li>The excerpt and body fields should allow long text.</li>
+</ul>
+<p>Get cozy with the docs:
+<a href="https://laravel.com/docs/9.x/migrations#available-column-types">https://laravel.com/docs/9.x/migrations#available-column-types</a>
+<a href="https://laravel.com/docs/9.x/migrations#column-modifiers">https://laravel.com/docs/9.x/migrations#column-modifiers</a></p>
+<p>Roll back and migrate as needed.</p>
+<ul>
+<li>sail artisan migrate:rollback</li>
+<li>sail artisan migrate</li>
+</ul>
+<p>When you&rsquo;re ready to confirm, the solution is in white text below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">up</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Schema</span><span style="color:#f92672">::</span><span style="color:#a6e22e">create</span>(<span style="color:#e6db74">&#39;projects&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">Blueprint</span> $table) {
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">id</span>();
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">string</span>(<span style="color:#e6db74">&#39;title&#39;</span>);
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">text</span>(<span style="color:#e6db74">&#39;excerpt&#39;</span>);
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">text</span>(<span style="color:#e6db74">&#39;body&#39;</span>);
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">string</span>(<span style="color:#e6db74">&#39;url&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">nullable</span>(<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#39;published_date&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">nullable</span>(<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">timestamps</span>();
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>Next, we&rsquo;ll set up our Model.</p>
+<h2 id="eloquent-models-and-tinker">Eloquent Models and Tinker</h2>
+<p>Eloquent is Laravel&rsquo;s official ORM.</p>
+<p>Eloquent uses the Active Record Pattern which essentially means that a database table or view is wrapped in a class and each row (record) is handled in code as an object instance and manipulated via getter and setter methods.</p>
+<p>Models are stored in the app/Models/ directory.</p>
+<p>Out of the box our Laravel app has a User model, so let&rsquo;s explore that a bit before setting up our Project model.</p>
+<h4 id="tinkering-with-models">Tinkering with Models</h4>
+<p>Artisan provides a utility for working with models from the command line: tinker.</p>
+<p>Since we already have a User model, let&rsquo;s tinker with it to create, update, and delete a user record in our database.</p>
+<p>Tinker is a REPL for working with Laravel models.</p>
+<p>In your Ubuntu shell, run:</p>
+<pre tabindex="0"><code>sail artisan tinker
+</code></pre><p>Checking either the table definition or looking at the User model, you&rsquo;ll see we need to provide a name, email, and password in order to save a user to the database, so our process will be:</p>
+<ul>
+<li>Create a new instance of User</li>
+<li>Set the name, email, and password</li>
+<li>Save</li>
+</ul>
+<p>The password is a little bit more involved because we NEVER want to store passwords in clear text. Fortunately, Laravel comes with a package that will handle the encryption for us: bcrypt.</p>
+<pre tabindex="0"><code>$user-&gt;save();
+= true
+</code></pre><h4 id="factories">Factories</h4>
+<p>Factories are essentially a definition of how to instantiate Models, often with fake data via the Faker PHP library.</p>
+<p>If you open up the database folder (in the root of your application) you will see a factories folder with a UserFactory.php file inside.</p>
+<p>Let&rsquo;s create 3 fake users:</p>
+<p>User::factory()-&gt;count(3)-&gt;create();</p>
+<h4 id="more-tinkering">More Tinkering:</h4>
+<p>Select a User by id</p>
+<p>$user = User::find(2);</p>
+<p>Select a User by name</p>
+<p>$user = User::where(&rsquo;name&rsquo;,&lsquo;Josh&rsquo;)-&gt;first();</p>
+<p>Select all Users</p>
+<p>$users = User::all();</p>
+<p>Select all Users with J in their name</p>
+<p>$users = User::where(&rsquo;name&rsquo;, &lsquo;LIKE&rsquo;, &lsquo;%J%&rsquo;)-&gt;get();</p>
+<h4 id="collections">Collections</h4>
+<p>When the results may contain more than one record from the database, rather than returning a plain PHP array, we get an instance of the Collection class.</p>
+<p>The Collection class provides a fluent interface which allows us to chain on additional methods, of which there are many available, to refine and manipulate our results.</p>
+<p><strong>Select all Users, sorted by name, and return just their names</strong></p>
+<p><code>$users = User::all()-&gt;sortBy('name')-&gt;pluck('name');</code></p>
+<p><a href="https://laravel.com/docs/9.x/collections#available-methods">https://laravel.com/docs/9.x/collections#available-methods</a></p>
+<p>Enough tinkering, let&rsquo;s build our Project model!</p>
+<p>Ctrl-c to exit Tinker.</p>
+<h2 id="creating-a-project-model">Creating a Project Model</h2>
+<p>We&rsquo;re going to use Artisan again to make our Project model.</p>
+<pre tabindex="0"><code>sail artisan make:model Project
+</code></pre><p>Note: Model names should begin with an Uppercase letter and be singular.</p>
+<pre tabindex="0"><code>sail artisan tinker
+</code></pre><p>This time we need to be a bit more explicit in instructing tinker where to find our the model we want to work with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$project <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">App\Models\Project</span>;
+</span></span><span style="display:flex;"><span>$project<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">title</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Laravel Project Showcase&#39;</span>;
+</span></span><span style="display:flex;"><span>$project<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">excerpt</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;PHP Laravel back-end for portfolio website&#39;</span>;
+</span></span><span style="display:flex;"><span>$project<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">body</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Homebrew inheritance distributed systems fullstack lazy load protected behavior-driven CSV DAG module. Scalable OOP cache commit elixir minimum viable product configuration test-driven command-line Safari. Gradle ship it senior-engineer branch JSX presenter one-size-fits-all approach compression yarn module. Mutation observer scale Slack i website blog DAG. Emoji circle back Linux dynamic types document object model minification streams.&#39;</span>;
+</span></span><span style="display:flex;"><span>$project<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;http://localhost&#39;</span>;
+</span></span><span style="display:flex;"><span>$project<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">published_date</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#39;Y-m-d&#39;</span>);
+</span></span></code></pre></div><p>Note: If you make a mistake and want to remove a property from your object, you can do so with unset(). For example, if you typo&rsquo;d excerpt as excert:</p>
+<pre tabindex="0"><code>unset($project-&gt;excert);
+</code></pre><p>When you&rsquo;re ready, persist your object to the database.</p>
+<pre tabindex="0"><code>$project-&gt;save();
+</code></pre><h2 id="creating-a-project-factory">Creating a Project Factory</h2>
+<p>Rather than manually adding in our Project records, let&rsquo;s use Artisan to whip up a ProjectFactory.</p>
+<p>sail artisan make:factory ProjectFactory</p>
+<p>Look in database/factories/ProjectFactory.php and compare with UserFactory.php</p>
+<p>All we need to do is return an associative array of the data that we want generated.</p>
+<p>Since only the title, excerpt and body columns are not nullable in our table, that&rsquo;s all we need to return from the definition.</p>
+<p>We can use the FakerPHP library to generate the values for us:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">definition</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $bodyArray <span style="color:#f92672">=</span> <span style="color:#a6e22e">fake</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">paragraphs</span>(<span style="color:#ae81ff">3</span>);
+</span></span><span style="display:flex;"><span>        $body <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&lt;p&gt;&#39;</span> <span style="color:#f92672">.</span> <span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#39;&lt;/p&gt;&lt;/p&gt;&#39;</span>, $bodyArray ) <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;&lt;/p&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> [
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;title&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">fake</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">company</span>() <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39; &#39;</span> <span style="color:#f92672">.</span> <span style="color:#a6e22e">fake</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">companySuffix</span>(),
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;excerpt&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">fake</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">catchPhrase</span>(),
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;body&#39;</span> <span style="color:#f92672">=&gt;</span> $body
+</span></span><span style="display:flex;"><span>        ];
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>Info on available formatters for FakerPHP are here:</p>
+<p><a href="https://fakerphp.github.io/formatters/">https://fakerphp.github.io/formatters/</a></p>
+<h4 id="using-the-projectfactory">Using the ProjectFactory</h4>
+<p>Jump back into tinker and generate some fake projects</p>
+<pre tabindex="0"><code>sail artisan tinker
+
+use App\Models\Project;
+
+$projects = Project::factory()-&gt;count(4)-&gt;create();
+</code></pre><p>Verify in the DB.</p>
+<h2 id="updating-project-controller-and-card-component">Updating Project Controller and Card Component</h2>
+<h4 id="refactor-projectcontroller-to-use-the-project-model">Refactor ProjectController to use the Project Model</h4>
+<p>Open up your ProjectController</p>
+<p><strong>app/Http/Controllers/ProjectController.php</strong></p>
+<p>Set it to use the Project model.</p>
+<pre tabindex="0"><code>use App\Models\Project;
+</code></pre><p>Modify the index() function to now use the Project data from our DB via the Project Model instead of the hard-coded array.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">index</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">view</span>(<span style="color:#e6db74">&#39;projects.index&#39;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">with</span>(<span style="color:#e6db74">&#39;projects&#39;</span>, <span style="color:#a6e22e">Project</span><span style="color:#f92672">::</span><span style="color:#a6e22e">all</span>());
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>Modify the show() method too.<br>
+By specifying the argument being sent to show() as an instance of Project, we can leverage another Laravel feature called Route Model Binding. This will work automatically as long as we receive a valid id in the route parameter and are consistent with the naming.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">show</span>(<span style="color:#a6e22e">Project</span> $project)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">view</span>(<span style="color:#e6db74">&#39;projects.project&#39;</span>,[<span style="color:#e6db74">&#39;project&#39;</span> <span style="color:#f92672">=&gt;</span> $project]);
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><h4 id="refactoring-the-project-card-component">Refactoring the Project Card Component</h4>
+<p>Modify the project-card component to use the properties of the Project instances (instead of the array values that it was receiving previously).</p>
+<p><strong>resources/views/components/projects/project-card.blade.php</strong></p>
+<pre tabindex="0"><code>&lt;div class=&#34;p-6  bg-white overflow-hidden shadow sm:rounded-lg&#34;&gt;
+    &lt;div class=&#34;text-xl font-bold&#34;&gt;
+        &lt;a href=&#34;/projects/{{ $project-&gt;id }}&#34;&gt;{{ $project-&gt;title }}&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;{{ $project-&gt;excerpt }}&lt;/div&gt;
+    &lt;div&gt;{{ $project-&gt;body }}&lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>View the projects index at http://localhost/projects</p>
+<p>Next, click on any of the project titles (which we wrapped in anchor tags with the id interpolated above). That should take you to an individual project page.</p>
+<h2 id="conditionally-outputting-the-body">Conditionally Outputting the Body</h2>
+<p>It makes sense that on the index page we want to only show the title and excerpt of each Project.</p>
+<p>The easiest way to facilitate that will be to add a prop in our project-card Blade component, default its value to false, and then only output the body when it is true.</p>
+<p><strong>project-card.blade.php</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">@</span><span style="color:#a6e22e">props</span>([<span style="color:#e6db74">&#39;project&#39;</span>, <span style="color:#e6db74">&#39;showBody&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">false</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;p-6  bg-white overflow-hidden shadow sm:rounded-lg&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-xl font-bold&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/projects/{{ </span><span style="color:#e6db74">$project-&gt;id</span><span style="color:#e6db74"> }}&#34;</span><span style="color:#f92672">&gt;</span>{{ $project<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">title</span> }}<span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">a</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>{{ $project<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">excerpt</span> }}<span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">@</span><span style="color:#66d9ef">if</span> ($showBody)
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>{{ $project<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">body</span> }}<span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">@</span><span style="color:#66d9ef">endif</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><p>Setting the prop to true in /views/projects/project.blade.php</p>
+<pre tabindex="0"><code>&lt;x-projects.project-card :project=&#34;$project&#34; :showBody=&#34;true&#34;/&gt;
+</code></pre><h2 id="displaying-unescaped-html">Displaying Unescaped HTML</h2>
+<p>When we&rsquo;re using the double curly braces to echo out content in our application Laravel is automatically sending those strings through PHP&rsquo;s htmlspecialchars function to prevent against script injection and XSS attacks.</p>
+<p>That is why we see the HTML <code>&lt;p&gt;</code> tags in our output instead of having paragraph breaks.</p>
+<p>Normally that is very, very good thing - particularly when working with any sort of CMS which allows user input data to be displayed.</p>
+<p>In our case, however, since we&rsquo;ll be setting things up in such a way that ONLY trusted users (aka you) can enter data, it is relatively safe to circumvent this protection and display unescaped HTML.</p>
+<h4 id="the-workaround">The Workaround</h4>
+<p>Instead of using double curly braces, use single brace double exclamation marks.</p>
+<p>Let&rsquo;s allow that for both excerpt and body.</p>
+<pre tabindex="0"><code>{!! $project-&gt;excerpt!!}
+
+{!! $project-&gt;body !!}
+</code></pre><h2 id="eloquent-relationships">Eloquent Relationships</h2>
+<p>Ultimately, for our portfolios it would be great if we could &ldquo;tag&rdquo; Projects with the various underlying technologies. For example, as a starting point we might tag this Project with:</p>
+<ul>
+<li>OOP</li>
+<li>PHP</li>
+<li>Laravel</li>
+<li>MySQL</li>
+<li>Docker</li>
+<li>TailwindCSS</li>
+</ul>
+<p>Since Projects can have multiple Tags and any given Tag may be applied to multiple Projects, that will require implmenting a many-to-many relationship between Projects and Tags.</p>
+<p>Of course, many-to-many relationships are (a bit) harder to manage than one-to-many, so let&rsquo;s start out by adding project categories.</p>
+<h4 id="categorizing-projects">Categorizing Projects</h4>
+<p>For now, we&rsquo;re going to set things up so that each Project can be assigned to one Category, though multiple Projects can be assigned to the any given Category.</p>
+<p>To accomplish this we will need:</p>
+<ul>
+<li>A categories table
+<ul>
+<li>Migration</li>
+<li>Seeder
+<ul>
+<li>Rather than generating a set of random records with a Factory, we&rsquo;ll populate our categories table with a pre-defined set of data</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>A Category Model</li>
+<li>A CategoryController</li>
+<li>Methods to query for the Category that a Project belongs to as well as the projects that belong to a Category</li>
+</ul>
+<p>Lucky for us, we can use Artisan got get a head start on almost all of the above!</p>
+<h4 id="adding-a-category-model">Adding a Category Model</h4>
+<p>In your Ubuntu terminal, run the following:</p>
+<pre tabindex="0"><code>sail artisan help make:model
+</code></pre><p>This lists out the syntax as well as the various options available when using Artisan to make a Model.</p>
+<p>We want a model, migration, seeder and controller, so our Artisan command will be:</p>
+<pre tabindex="0"><code>sail artisan make:model Category -c -m -s
+</code></pre><p>Note: This might take a few moments - don&rsquo;t panic.</p>
+<h4 id="categories-migration">Categories Migration</h4>
+<p>Let&rsquo;s start by editing the Migration.</p>
+<p>For our categories table, let&rsquo;s say we want the following:</p>
+<ul>
+<li>id</li>
+<li>slug
+<ul>
+<li>string</li>
+<li>unique</li>
+</ul>
+</li>
+<li>name
+<ul>
+<li>string</li>
+<li>unique</li>
+</ul>
+</li>
+</ul>
+<p>Give it a try on your own, then compare with solution, en blanc, below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>        <span style="color:#a6e22e">Schema</span><span style="color:#f92672">::</span><span style="color:#a6e22e">create</span>(<span style="color:#e6db74">&#39;categories&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">Blueprint</span> $table) {
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">id</span>();
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">string</span>(<span style="color:#e6db74">&#39;slug&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">unique</span>();
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">string</span>(<span style="color:#e6db74">&#39;name&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">unique</span>();
+</span></span><span style="display:flex;"><span>        });
+</span></span></code></pre></div><p>Run the migration and compare your table with the following:</p>
+<pre tabindex="0"><code>sail artisan migrate
+</code></pre><p>Of course, our table is not populated (yet).</p>
+<h4 id="seeding-our-categories-table">Seeding our Categories Table</h4>
+<p>Take a look in the database/seeders directory.</p>
+<p>Laravel&rsquo;s Seeder class defines a method, run(), which is our opportunity to insert records into our DB.</p>
+<p>If you take a look in DatabaseSeeder.php you&rsquo;ll see some example usage inside the run() method.</p>
+<p>Open CategorySeeder.php , and at the top import our Category model so we can use it.</p>
+<pre tabindex="0"><code>use App\Models\Category;
+</code></pre><p>Then, within the run() method add:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>        <span style="color:#a6e22e">Category</span><span style="color:#f92672">::</span><span style="color:#a6e22e">create</span>([
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;name&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;Back End&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;slug&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;back-end&#39;</span>,
+</span></span><span style="display:flex;"><span>        ]);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Category</span><span style="color:#f92672">::</span><span style="color:#a6e22e">create</span>([
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;name&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;Front End&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;slug&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;front-end&#39;</span>,
+</span></span><span style="display:flex;"><span>        ]);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Category</span><span style="color:#f92672">::</span><span style="color:#a6e22e">create</span>([
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;name&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;Full Stack&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;slug&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;full-stack&#39;</span>,
+</span></span><span style="display:flex;"><span>        ]);
+</span></span></code></pre></div><h4 id="run-the-seeder">Run the Seeder</h4>
+<p>In your Ubuntu terminal, run:</p>
+<pre tabindex="0"><code>sail artisan db:seed --class=CategorySeeder
+</code></pre><p>We have an error because we the seeder expects there to be created_at and updated_at columns in our categories table.</p>
+<p>Easy fix: We just need to set $timestamps to false in our Category model.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Category</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Model</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">use</span> <span style="color:#a6e22e">HasFactory</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> $timestamps <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Run the seeder again.</p>
+<h2 id="adding-a-category-to-projects">Adding a Category to Projects</h2>
+<p>To add a foreign key relationship between our Projects and Categories we&rsquo;ll need to add a foreignId column pointing at category_id in our projects table.</p>
+<p>Open up the *_create_projects_table migration and edit the up() method as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">up</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Schema</span><span style="color:#f92672">::</span><span style="color:#a6e22e">create</span>(<span style="color:#e6db74">&#39;projects&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">Blueprint</span> $table) {
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">id</span>();
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">string</span>(<span style="color:#e6db74">&#39;title&#39;</span>);
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">text</span>(<span style="color:#e6db74">&#39;excerpt&#39;</span>);
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">text</span>(<span style="color:#e6db74">&#39;body&#39;</span>);
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">string</span>(<span style="color:#e6db74">&#39;url&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">nullable</span>(<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#39;published_date&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">nullable</span>(<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">foreignId</span>(<span style="color:#e6db74">&#39;category_id&#39;</span>);
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">timestamps</span>();
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>Next, let&rsquo;s refresh the database from the ground up:</p>
+<pre tabindex="0"><code>sail artisan migrate:fresh
+</code></pre><p>Note: You DEFINITELY would NOT want to run the above on production. It drops all of the tables and then runs each of migrations rebuilding things from scratch. We&rsquo;re still early in dev mode though, so it makes more sense to wipe and rebuild.</p>
+<p>Take a look at revised description of our projects table.</p>
+<p>This is close to what we want, but perhaps we should make that category_id column nullable so that we can still showcase projects even if they don&rsquo;t fall into one of categories.</p>
+<p>Edit the schema as follows and then run another migrate:fresh</p>
+<pre tabindex="0"><code>$table-&gt;foreignId(&#39;category_id&#39;)-&gt;nullable(true);
+</code></pre><p>Progress, but&hellip; we&rsquo;ve lost all of our projects and categories data!</p>
+<h2 id="adding-a-projectseeder">Adding a ProjectSeeder</h2>
+<h4 id="building-a-project-seeder">Building a Project Seeder</h4>
+<p>Rather than relying on our Project Factory to generate some random data for us, let&rsquo;s make a Project Seeder.</p>
+<p>Artisan has a command for this.</p>
+<pre tabindex="0"><code>sail artisan list
+
+sail artisan help make:seeder
+
+sail artisan make:seeder ProjectSeeder
+</code></pre><p>Now, open ProjectSeeder.php and add:</p>
+<pre tabindex="0"><code>use App\Models\Project
+</code></pre><p>Let&rsquo;s also define a protected function to wrap our fake paragraphs in <!-- raw HTML omitted --> tags.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>     <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fakeHTMLParagraphs</span>($count <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>) {
+</span></span><span style="display:flex;"><span>        $bodyArray <span style="color:#f92672">=</span> <span style="color:#a6e22e">fake</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">paragraphs</span>($count);
+</span></span><span style="display:flex;"><span>        $body <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&lt;p&gt;&#39;</span> <span style="color:#f92672">.</span> <span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#39;&lt;/p&gt;&lt;/p&gt;&#39;</span>, $bodyArray ) <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;&lt;/p&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> $body;
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>Then, within the run() method, create some projects:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">run</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Project</span><span style="color:#f92672">::</span><span style="color:#a6e22e">create</span>([
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;title&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;Portfolio Showcase&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;excerpt&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">fake</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">sentences</span>(<span style="color:#ae81ff">2</span>, <span style="color:#66d9ef">true</span>),
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;body&#39;</span> <span style="color:#f92672">=&gt;</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">fakeHTMLParagraphs</span>(<span style="color:#ae81ff">4</span>),
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;category_id&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>        ]);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Project</span><span style="color:#f92672">::</span><span style="color:#a6e22e">create</span>([
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;title&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;SSD Yearbook&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;excerpt&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">fake</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">sentences</span>(<span style="color:#ae81ff">2</span>, <span style="color:#66d9ef">true</span>),
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;body&#39;</span> <span style="color:#f92672">=&gt;</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">fakeHTMLParagraphs</span>(),
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;category_id&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>        ]);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Project</span><span style="color:#f92672">::</span><span style="color:#a6e22e">create</span>([
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;title&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;Movie Mania&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;excerpt&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">fake</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">sentences</span>(<span style="color:#ae81ff">2</span>, <span style="color:#66d9ef">true</span>),
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;body&#39;</span> <span style="color:#f92672">=&gt;</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">fakeHTMLParagraphs</span>(<span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>        ]);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Project</span><span style="color:#f92672">::</span><span style="color:#a6e22e">create</span>([
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;title&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;News Site Homepage&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;excerpt&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">fake</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">sentences</span>(<span style="color:#ae81ff">2</span>, <span style="color:#66d9ef">true</span>),
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;body&#39;</span> <span style="color:#f92672">=&gt;</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">fakeHTMLParagraphs</span>(),
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;category_id&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>        ]);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Project</span><span style="color:#f92672">::</span><span style="color:#a6e22e">create</span>([
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;title&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;JavaScript Game&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;excerpt&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">fake</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">sentences</span>(<span style="color:#ae81ff">2</span>, <span style="color:#66d9ef">true</span>),
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;body&#39;</span> <span style="color:#f92672">=&gt;</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">fakeHTMLParagraphs</span>(),
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;category_id&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>        ]);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Project</span><span style="color:#f92672">::</span><span style="color:#a6e22e">create</span>([
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;title&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;iOS App&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;excerpt&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">fake</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">sentences</span>(<span style="color:#ae81ff">2</span>, <span style="color:#66d9ef">true</span>),
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;body&#39;</span> <span style="color:#f92672">=&gt;</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">fakeHTMLParagraphs</span>()
+</span></span><span style="display:flex;"><span>        ]);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Project</span><span style="color:#f92672">::</span><span style="color:#a6e22e">create</span>([
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;title&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;Android App&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;excerpt&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">fake</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">sentences</span>(<span style="color:#ae81ff">2</span>, <span style="color:#66d9ef">true</span>),
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;body&#39;</span> <span style="color:#f92672">=&gt;</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">fakeHTMLParagraphs</span>()
+</span></span><span style="display:flex;"><span>        ]);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Project</span><span style="color:#f92672">::</span><span style="color:#a6e22e">create</span>([
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;title&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;Industry Project&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;excerpt&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">fake</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">sentences</span>(<span style="color:#ae81ff">2</span>, <span style="color:#66d9ef">true</span>),
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;body&#39;</span> <span style="color:#f92672">=&gt;</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">fakeHTMLParagraphs</span>(<span style="color:#ae81ff">6</span>),
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;category_id&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>        ]);
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>Now, run the CategorySeeder and then the ProjectSeeder:</p>
+<pre tabindex="0"><code>sail artisan db:seed --class=CategorySeeder
+sail artisan db:seed --class=ProjectSeeder
+</code></pre><p>Verify, both in the DB and browser.</p>
+<h4 id="running-seeders-when-we-migrate">Running Seeders when we Migrate</h4>
+<p>Open up the DatabaseSeeder class then replace it&rsquo;s run() method with the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">run</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// populate categories and projects table with seed data
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">call</span>([
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">CategorySeeder</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">ProjectSeeder</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>
+</span></span><span style="display:flex;"><span>        ]);
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>From here forward, any time we want to completely rebuild and repopulate our database tables we can do so in one easy artisan command:</p>
+<pre tabindex="0"><code>sail artisan migrate:fresh --seed
+</code></pre><p>Note: We don&rsquo;t need to import CategorySeeder or ProjectSeeder, but the order does matter.</p>
+<h2 id="eloquently-outputting-categories">Eloquently Outputting Categories</h2>
+<h4 id="displaying-the-category-name">Displaying the Category Name</h4>
+<p>We&rsquo;ve got a category_id column in our projects table, but we still have some work to do if we want to show what category a project belongs to.</p>
+<p>To handle this, let&rsquo;s add a getter method in our Project model.</p>
+<p>Open app/Models/Project.php and insert the following inside the Project class definition:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">category</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">belongsTo</span>(<span style="color:#a6e22e">Category</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>And, finally, let&rsquo;s add some conditional output in our project-card component:</p>
+<pre tabindex="0"><code>    &lt;footer&gt;
+        @if ($project-&gt;category)
+            &lt;span&gt;Category: {{ $project-&gt;category-&gt;name }}&lt;/span&gt;
+        @endif
+    &lt;/footer&gt;
+</code></pre><h2 id="listing-projects-by-category">Listing Projects by Category</h2>
+<p>We can output which Category a Project belongs to, but we don&rsquo;t yet have a way to list Projects by Category.</p>
+<p>Let&rsquo;s start by adding a method in our Category model for finding any Projects that have this Category:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">projects</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">hasMany</span>(<span style="color:#a6e22e">Project</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>Then, in ProjectController let&rsquo;s add method that receives a Category and returns the index view having passed in the results from above as the projects variable.</p>
+<p>Import the Category Model:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">App\Models\Category</span>;
+</span></span></code></pre></div><p>Add a listByCategory Method:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">listByCategory</span>(<span style="color:#a6e22e">Category</span> $category)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">view</span>(<span style="color:#e6db74">&#39;projects.index&#39;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">with</span>(<span style="color:#e6db74">&#39;projects&#39;</span>, $category<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">projects</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>Finally, let&rsquo;s add a Route with a category parameter that calls the appropriate method in our ProjectController</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#a6e22e">Route</span><span style="color:#f92672">::</span><span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/categories/{category}&#39;</span>, [<span style="color:#a6e22e">ProjectController</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>, <span style="color:#e6db74">&#39;listByCategory&#39;</span>]);
+</span></span></code></pre></div><p>Navigate to http://localhost/categories/2</p>
+<h2 id="category-slugs">Category Slugs</h2>
+<h4 id="using-slugs">Using Slugs</h4>
+<p>Currently we are using Route Model Binding via category-&gt;id to load our categories, but it would be better UX to use slugs and have links directly to the category list page.
+This is relatively straightforward:</p>
+<p>Update the Route parameter to use slug for the model binding</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#a6e22e">Route</span><span style="color:#f92672">::</span><span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/categories/{category:slug}&#39;</span>, [<span style="color:#a6e22e">ProjectController</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>, <span style="color:#e6db74">&#39;listByCategory&#39;</span>]);
+</span></span></code></pre></div><p>Note: This sort of Route-Model binding works with any unique field in the model.</p>
+<p>Wrap the category name output slug-based links</p>
+<pre tabindex="0"><code>&lt;a href=&#34;/categories/{{ $project-&gt;category-&gt;slug }}&#34;&gt;...&lt;/a&gt;
+</code></pre>
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/xtc/php/3-intro/" title="Laravel Intro"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/xtc/php/auth/" title="Auth" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1712035893"></script>
+    <script src="/js/perfect-scrollbar.min.js?1712035893"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1712035893"></script>
+    <script src="/js/jquery.sticky.js?1712035893"></script>
+    <script src="/js/featherlight.min.js?1712035893"></script>
+    <script src="/js/highlight.pack.js?1712035893"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1712035893"></script>
+    <script src="/js/learn.js?1712035893"></script>
+    <script src="/js/hugo-learn.js?1712035893"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1712035893"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

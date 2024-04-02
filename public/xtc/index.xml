@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ETC on Byul Notes</title>
+    <link>http://localhost:1313/xtc/</link>
+    <description>Recent content in ETC on Byul Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/xtc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup</title>
+      <link>http://localhost:1313/xtc/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/setup/</guid>
+      <description>New computer setup Node : download it from the official website&#xA;Git : from website&#xA;Hugo&#xA;MS Sql server&#xA;MS Server Studio&#xA;Visual Studio&#xA;VSC&#xA;github login format on save wakatime prettier emmet ESLint chrome&#xA;slack&#xA;Path Environment Variables System &amp;gt; Advanced system settings &amp;gt; Advanced &amp;gt; Environment Variables Add new path to &amp;lsquo;Path&amp;rsquo; under the bot User variables and System variables </description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/xtc/josh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/josh/</guid>
+      <description>React ✅ Course Overview SSD28-React-Course-Overview.dox Dev Setup Emmet for React&#xA;ES7+ React/Redux Snippets Extension&#xA;React Dev Tools for Chrome&#xA;Lesson Demos - Node Modules&#xA;Day 01 Day 01 Agenda&#xA;Intro to React&#xA;What is React Why Use React The React World View Create React App&#xA;Create React App Using Create React App Create React App Folder Structure Exercise 1a: Create &amp;ldquo;To Do List&amp;rdquo; App JSX&#xA;What is JSX JSX Syntax Rules and Best Practices Commenthing in JSX JSX Expressions Conditional Rendering in JSX Iteration in JSX - Working with Arrays Exercise 1b: Intro to JSX Events in React</description>
+    </item>
+  </channel>
+</rss>

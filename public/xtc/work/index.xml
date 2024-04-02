@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Work on Byul Notes</title>
+    <link>http://localhost:1313/xtc/work/</link>
+    <description>Recent content in Work on Byul Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/xtc/work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Angular JS</title>
+      <link>http://localhost:1313/xtc/work/angularjs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/work/angularjs/</guid>
+      <description>Angular JS Data Binding Data-binding is an automatic way of updating the view whenever the model changes, as well as updating the model whenever the view changes. This is awesome because it eliminates DOM manipulation from the list of things you have to worry about.&#xA;ng-if ng-switch ng-model ng-show ng-hide&#xA;$scope $parent.name&#xA;Controller Controllers are the behavior behind the DOM elements. AngularJS lets you express the behavior in a clean readable form without the usual boilerplate of updating the DOM, registering callbacks or watching model changes.</description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>http://localhost:1313/xtc/work/database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/work/database/</guid>
+      <description>Db Update Update Data File&#xA;Update Context file&#xA;Add-Migration Name&#xA;if there are build errors, migration will fail. Check migration file : it only contains updates Up : for executing, Down : for roll back, both should match. (If drop in Up, add in Down) Check migration designer file&#xA;Check snapshot file : it contains entire db structure (Compare difference)&#xA;If everything is okay, update-database&#xA;Roll Back Migration / When you want to pull from dev branch Change the connection string to local DB</description>
+    </item>
+    <item>
+      <title>Frontend</title>
+      <link>http://localhost:1313/xtc/work/frontend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/work/frontend/</guid>
+      <description>CSS The z index of child elements is always the z index of the parent element.&#xA;(a child element is limited to the stacking context of its parent.)&#xA;https://www.freecodecamp.org/news/4-reasons-your-z-index-isnt-working-and-how-to-fix-it-coder-coder-6bc05f103e6c/&#xA;jQuery var toggleCheck = $(`#toggle-${id}`); // If the return is fullfilled, set the button to true if (result.data == 104) { toggleCheck.prop(&amp;#34;checked&amp;#34;, true); } else { toggleCheck.prop(&amp;#34;checked&amp;#34;, false); } HTML Follow the basic bootstrap structure like container, container-fluid</description>
+    </item>
+    <item>
+      <title>ASP .NET</title>
+      <link>http://localhost:1313/xtc/work/aspnet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xtc/work/aspnet/</guid>
+      <description>Interface :&#xA;IActionResult : An interface that represents the result of an action method in an MVC. Actually return type for action methods&#xA;action method is a public method within a controller class that is responsible for handling a specific HTTP request and producing a response.&#xA;IQueryable ?&#xA;IQueryable is an interface in the .NET framework that represents a queryable data source. It is primarily used in LINQ (Language-Integrated Query) to perform query operations on data.</description>
+    </item>
+  </channel>
+</rss>

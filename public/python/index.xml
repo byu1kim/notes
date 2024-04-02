@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Byul Notes</title>
+    <link>http://localhost:1313/python/</link>
+    <description>Recent content in Python on Byul Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost:1313/python/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/python/intro/</guid>
+      <description>Install Python Check Python version&#xA;python3 --version If Python doesn&amp;rsquo;t exist, install python here https://www.python.org/downloads/&#xA;brew install python3 Pipenv Pipenv is a packaging tool that provides all necessary means to create a virtual environment for the Python project.&#xA;Install Install python &amp;gt; Install pip &amp;gt; Install pipenv&#xA;pip install pipenv&#xD;pipenv --version Create a new project In the root of working directory&#xA;pipenv --python 3.11 Activate the virtual environment You have to activate to use virtual environment and use python command line</description>
+    </item>
+    <item>
+      <title>Basics</title>
+      <link>http://localhost:1313/python/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/python/basic/</guid>
+      <description>Variables Operators Functions Module Flows : If, For, While Errors Variables Variable is a type of virtual box, created in the memory of the computer, which we can keep a value. A variable has name, data type, value.&#xA;Variables are volatile, they exist in the memory just while the program is running. they are erased when the program ends.&#xA;Python read codes from top to bottom. If variable has changed at the end, it will take the latest value.</description>
+    </item>
+    <item>
+      <title>String</title>
+      <link>http://localhost:1313/python/string/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/python/string/</guid>
+      <description>A sequence of characters. String is immutable.&#xA;Usage Single line string : &amp;ldquo;~~&amp;rdquo; Multiple lines : &amp;lsquo;&amp;rsquo;&amp;rsquo;~~~&amp;rsquo;&amp;rsquo;&#39; Escape special characters print(&amp;#34;this is \&amp;#34;example\&amp;#34;&amp;#34;) # this is &amp;#34;example&amp;#34; String Concatenate con = &amp;#34;a&amp;#34; + &amp;#34;Python&amp;#34; con2 = f&amp;#34;Wow {con}&amp;#34; Repeat print(&amp;#34;ba&amp;#34; + &amp;#34;na&amp;#34;*2) # banana String Formatting a = 12.1 b = 22.32 c = 3.021 output = &amp;#34;a: %s b: %d c: %f c: %.2f&amp;#34; %(a, b, c, c) # a: 12.</description>
+    </item>
+    <item>
+      <title>Data Structure</title>
+      <link>http://localhost:1313/python/list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/python/list/</guid>
+      <description>Lists Related data can be grouped together into a single variable Python list can have different type of values : array, string, number, etc.. List is mutable list_sample = [&amp;#39;a&amp;#39;,&amp;#39;b&amp;#39;,&amp;#39;c&amp;#39;] Mutate means change. You can modify something mutuable.&#xA;List Comprehensions A shorter way to create a new list, from another list, based upon conditions that you set.&#xA;fruits = [&amp;#34;apple&amp;#34;, &amp;#34;banana&amp;#34;, &amp;#34;cherry&amp;#34;, &amp;#34;kiwi&amp;#34;, &amp;#34;mango&amp;#34;] newlist = [] for x in fruits: if &amp;#34;a&amp;#34; in x: newlist.</description>
+    </item>
+    <item>
+      <title>Files</title>
+      <link>http://localhost:1313/python/file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/python/file/</guid>
+      <description>Secondary Memory Secondary memory is file. It is not erased when the power is turned off.&#xA;Open file file = open(&amp;#39;file_name.txt&amp;#39;, &amp;#39;r&amp;#39;) string = file.read() file.close() with open(&amp;#39;file.txt&amp;#39;, &amp;#39;r&amp;#39;) string = file.read() file.close() Always close a file you open. If you don&amp;rsquo;t close, you might have&#xA;a permanently-locked state(inaccessible for operations now) a corrupted file any writing may have gone uncommitted Reading and Writing f = open(&amp;#39;file.txt&amp;#39;, &amp;#39;w&amp;#39;) f.write(&amp;#39;text&amp;#39;) f.close() Appending f = open(&amp;#39;file.</description>
+    </item>
+    <item>
+      <title>Regular Expression</title>
+      <link>http://localhost:1313/python/regex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/python/regex/</guid>
+      <description>Regular expressions are strings. Used for patter matching in other strings.&#xA;re Object import re string = &amp;#34;sample&amp;#34; matches = re.findall(&amp;#34;s&amp;#34;, string) re.match() re.search() re.split() re.sub() [] : A set of characters \ : https://regex101.com/</description>
+    </item>
+    <item>
+      <title>Beautiful Soup</title>
+      <link>http://localhost:1313/python/bs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/python/bs/</guid>
+      <description>Beautiful Soup is a Python library for pulling data out of HTML and XML files.&#xA;https://www.crummy.com/software/BeautifulSoup/bs4/doc/&#xA;* When the website is blocked a bot, you need to use Selenium.&#xA;* scrap for commercial purpose &amp;gt; follow the policy&#xA;Install pip install beautifulsoup4 Initializing from requests import get from bs4 import BeautifulSoup response = get(&amp;#34;url&amp;#34;) if response.status_code != 200: print(&amp;#34;Cant&amp;#39;request&amp;#34;) else: soup = BeautifulSoup(response.text, &amp;#34;html.parser&amp;#34;) # response.text : &amp;lt;tag&amp;gt;...&amp;lt;/tag&amp;gt; Methods Find all Scan the entire document looking for results as list</description>
+    </item>
+    <item>
+      <title>Flask</title>
+      <link>http://localhost:1313/python/flask/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/python/flask/</guid>
+      <description>Install pip install Flask&#xA;Use from flask import Flask app = Flask(&amp;#34;Name&amp;#34;) @app.route(&amp;#34;/&amp;#34;) def home(): return &amp;#34;Home&amp;#34; app.run(&amp;#34;127.0.0.1&amp;#34;) HTML from flask import Flask, render_template app = Flask(&amp;#34;JobScrapper&amp;#34;) @app.route(&amp;#34;/&amp;#34;) def home(): return render_template(&amp;#34;home.html&amp;#34;, name=&amp;#34;hey&amp;#34;) You should create home.html file inside templates folder. Flask looks for the templates folder to get html files.&#xA;Use the variable from rendering&#xA;&amp;lt;h1&amp;gt;{{name}}&amp;lt;/h1&amp;gt; 1 + tap : bolierplate in html&#xA;Pico https://picocss.com/&#xA;Full code from flask import Flask, render_template, request, redirect, send_file from extractors.</description>
+    </item>
+    <item>
+      <title>Selenium</title>
+      <link>http://localhost:1313/python/selenium/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/python/selenium/</guid>
+      <description>https://www.selenium.dev/ https://selenium-python.readthedocs.io/&#xA;It is automates browsers. It will actually start the browser. so indeed think we are not a bot.&#xA;Install pip install selenium&#xD;pip install webdriver_manager https://pypi.org/project/webdriver-manager/&#xA;Initializing from selenium import webdriver from webdriver_manager.chrome import ChromeDriverManager browser = webdriver.Chrome(ChromeDriverManager().install()) browser.get(&amp;#39;http://google.com&amp;#39;) This works too&#xA;from selenium import webdriver driver = webdriver.Chrome() driver.get(&amp;#39;url&amp;#39;) # If only you want to prevent closing the browser automatically while (True): pass Detail&#xA;from selenium import webdriver from selenium.</description>
+    </item>
+  </channel>
+</rss>

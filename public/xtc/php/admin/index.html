@@ -1,0 +1,4281 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.124.1">
+    <meta name="description" content="Coding Notes for Byul">
+<meta name="author" content="Byul Kim">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title>Admin :: Byul Notes</title>
+
+    
+    <link href="/css/nucleus.css?1712035893" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1712035893" rel="stylesheet">
+    <link href="/css/hybrid.css?1712035893" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1712035893" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1712035893" rel="stylesheet">
+    <link href="/css/auto-complete.css?1712035893" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1712035893" rel="stylesheet">
+    <link href="/css/theme.css?1712035893" rel="stylesheet">
+    <link href="/css/tabs.css?1712035893" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1712035893" rel="stylesheet">
+    
+    <link href="/css/theme-blue.css?1712035893" rel="stylesheet">
+    
+    <link href="/css/style.css?1712035893" rel="stylesheet">
+
+    <script src="/js/jquery-3.3.1.min.js?1712035893"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+  rel="stylesheet"
+/>
+
+  </head>
+  <body class="" data-url="/xtc/php/admin/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <div class="logo">Byul's Notes</div>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1712035893"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1712035893"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1712035893"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/leetcode/" title="LeetCode" class="dd-item
+        
+        
+        
+        ">
+      <a href="/leetcode/">
+          <i class='fas fa-book-open'></i> &nbspLeetCode
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/leetcode/theory/" title="Theory" class="dd-item ">
+        <a href="/leetcode/theory/">
+        <i class='fas fa-pen'></i> &nbspTheory
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/leetcode/easy/" title="Easy" class="dd-item ">
+        <a href="/leetcode/easy/">
+        <i class='fas fa-pen'></i> &nbspEasy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/leetcode/medium/" title="Medium" class="dd-item ">
+        <a href="/leetcode/medium/">
+        <i class='fas fa-pen'></i> &nbspMedium
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pluralsight/" title="Pluralsight" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pluralsight/">
+          <i class='fas fa-book-open'></i> &nbspPluralsight
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pluralsight/react/" title="React" class="dd-item ">
+        <a href="/pluralsight/react/">
+        <i class='fas fa-pen'></i> &nbspReact
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pluralsight/unittest/" title="Unit Test" class="dd-item ">
+        <a href="/pluralsight/unittest/">
+        <i class='fas fa-pen'></i> &nbspUnit Test
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/python/" title="Python" class="dd-item
+        
+        
+        
+        ">
+      <a href="/python/">
+          <i class='fas fa-book-open'></i> &nbspPython
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/intro/" title="Introduction" class="dd-item ">
+        <a href="/python/intro/">
+        <i class='fas fa-pen'></i> &nbspIntroduction
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/basic/" title="Basics" class="dd-item ">
+        <a href="/python/basic/">
+        <i class='fas fa-pen'></i> &nbspBasics
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/string/" title="String" class="dd-item ">
+        <a href="/python/string/">
+        <i class='fas fa-pen'></i> &nbspString
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/list/" title="Data Structure" class="dd-item ">
+        <a href="/python/list/">
+        <i class='fas fa-pen'></i> &nbspList, Tuple, Set, Dict
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/file/" title="Files" class="dd-item ">
+        <a href="/python/file/">
+        <i class='fas fa-pen'></i> &nbspFiles
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/regex/" title="Regular Expression" class="dd-item ">
+        <a href="/python/regex/">
+        <i class='fas fa-pen'></i> &nbspRegex
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/bs/" title="Beautiful Soup" class="dd-item ">
+        <a href="/python/bs/">
+        <i class='fas fa-pen'></i> &nbspBeautiful Soup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/flask/" title="Flask" class="dd-item ">
+        <a href="/python/flask/">
+        <i class='fas fa-pen'></i> &nbspFlask
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/selenium/" title="Selenium" class="dd-item ">
+        <a href="/python/selenium/">
+        <i class='fas fa-pen'></i> &nbspSelenium
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/react/" title="React" class="dd-item
+        
+        
+        
+        ">
+      <a href="/react/">
+          <i class='fas fa-book-open'></i> &nbspReact
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/1-intro/" title="Intro" class="dd-item ">
+        <a href="/react/1-intro/">
+        <i class='fas fa-pen'></i> &nbspIntro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/2-route/" title="Route" class="dd-item ">
+        <a href="/react/2-route/">
+        <i class='fas fa-pen'></i> &nbspRoute
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/deploy/" title="Deploy" class="dd-item ">
+        <a href="/react/deploy/">
+        <i class='fas fa-pen'></i> &nbspDeploy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/fetch/" title="Data Fetching" class="dd-item ">
+        <a href="/react/fetch/">
+        <i class='fas fa-pen'></i> &nbspData Fetching
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/pagination/" title="Pagination" class="dd-item ">
+        <a href="/react/pagination/">
+        <i class='fas fa-pen'></i> &nbspPagination
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/react/" title="react" class="dd-item ">
+        <a href="/react/react/">
+        <i class='fas fa-pen'></i> &nbspreact
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/3-state/" title="Statement Management" class="dd-item ">
+        <a href="/react/3-state/">
+        <i class='fas fa-pen'></i> &nbspStatement
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/table/" title="Table" class="dd-item ">
+        <a href="/react/table/">
+        <i class='fas fa-pen'></i> &nbspTable
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/react/useeffect/" title="Use Effect" class="dd-item ">
+        <a href="/react/useeffect/">
+        <i class='fas fa-pen'></i> &nbspUse Effect
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/aws/" title="AWS" class="dd-item
+        
+        
+        
+        ">
+      <a href="/aws/">
+          <i class='fas fa-book-open'></i> &nbspAWS
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/ec2/" title="EC2" class="dd-item ">
+        <a href="/aws/ec2/">
+        <i class='fas fa-pen'></i> &nbspEC2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/s3/" title="S3" class="dd-item ">
+        <a href="/aws/s3/">
+        <i class='fas fa-pen'></i> &nbspS3
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/jwt/" title="JWT" class="dd-item ">
+        <a href="/aws/jwt/">
+        <i class='fas fa-pen'></i> &nbspJWT
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/cognito/" title="Cognito" class="dd-item ">
+        <a href="/aws/cognito/">
+        <i class='fas fa-pen'></i> &nbspCognito
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/aws/5-lambda/" title="Lambda Function" class="dd-item
+        
+        
+        
+        ">
+      <a href="/aws/5-lambda/">
+          <i class='fas fa-pen'></i> &nbspLambda
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/5-lambda/lambda-function/" title="Lambda Function" class="dd-item ">
+        <a href="/aws/5-lambda/lambda-function/">
+        - &nbspLambda Function
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/5-lambda/lambda-.net/" title="Lambda in .NET" class="dd-item ">
+        <a href="/aws/5-lambda/lambda-.net/">
+        - &nbsp.NET
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/iac/" title="Infrastructure as Code" class="dd-item ">
+        <a href="/aws/iac/">
+        <i class='fas fa-pen'></i> &nbspIaC
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/sst/" title="SST" class="dd-item ">
+        <a href="/aws/sst/">
+        <i class='fas fa-pen'></i> &nbspSST
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/sst-auth/" title="SST &amp; Auth" class="dd-item ">
+        <a href="/aws/sst-auth/">
+        <i class='fas fa-pen'></i> &nbspSST &amp; Auth
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/database/" title="Database" class="dd-item
+        
+        
+        
+        ">
+      <a href="/database/">
+          <i class='fas fa-book-open'></i> &nbspDatabase
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/database/sql/" title="Database" class="dd-item ">
+        <a href="/database/sql/">
+        <i class='fas fa-pen'></i> &nbspDatabase
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/database/mssql/" title="MS SQL" class="dd-item ">
+        <a href="/database/mssql/">
+        <i class='fas fa-pen'></i> &nbspMS SQL
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/database/monbodb/" title="MongoDB" class="dd-item ">
+        <a href="/database/monbodb/">
+        <i class='fas fa-pen'></i> &nbspMongoDB
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/javascript/" title="Javascript" class="dd-item
+        
+        
+        
+        ">
+      <a href="/javascript/">
+          <i class='fas fa-book-open'></i> &nbspJavascript
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/javascript/scrap/" title="" class="dd-item ">
+        <a href="/javascript/scrap/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/c/" title="C#" class="dd-item
+        
+        
+        
+        ">
+      <a href="/c/">
+          <i class='fas fa-book-open'></i> &nbspC#
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/intro/" title="Intro" class="dd-item ">
+        <a href="/c/intro/">
+        <i class='fas fa-pen'></i> &nbspIntro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/basic/" title="Basic" class="dd-item ">
+        <a href="/c/basic/">
+        <i class='fas fa-pen'></i> &nbspBasic
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/array/" title="Array" class="dd-item ">
+        <a href="/c/array/">
+        <i class='fas fa-pen'></i> &nbspArray
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/method/" title="Method" class="dd-item ">
+        <a href="/c/method/">
+        <i class='fas fa-pen'></i> &nbspMethod
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/string/" title="String" class="dd-item ">
+        <a href="/c/string/">
+        <i class='fas fa-pen'></i> &nbspString
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/class/" title="Class" class="dd-item ">
+        <a href="/c/class/">
+        <i class='fas fa-pen'></i> &nbspClass
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/linq/" title="Linq" class="dd-item ">
+        <a href="/c/linq/">
+        <i class='fas fa-pen'></i> &nbspLinq
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/asp.net/" title="ASP.NET" class="dd-item
+        
+        
+        
+        ">
+      <a href="/asp.net/">
+          <i class='fas fa-book-open'></i> &nbspASP.NET
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/basic/" title="MVC Basics" class="dd-item ">
+        <a href="/asp.net/basic/">
+        <i class='fas fa-pen'></i> &nbspMVC Basics
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/db/" title="DB Connection" class="dd-item ">
+        <a href="/asp.net/db/">
+        <i class='fas fa-pen'></i> &nbspDB Connection
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/crud/" title="CRUD" class="dd-item ">
+        <a href="/asp.net/crud/">
+        <i class='fas fa-pen'></i> &nbspCRUD
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/asp.net/linq/" title="Linq" class="dd-item ">
+        <a href="/asp.net/linq/">
+        <i class='fas fa-pen'></i> &nbspLinq
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/frontend/" title="Frontend" class="dd-item
+        
+        
+        
+        ">
+      <a href="/frontend/">
+          <i class='fas fa-book-open'></i> &nbspFrontend
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/html/" title="HTML" class="dd-item ">
+        <a href="/frontend/html/">
+        <i class='fas fa-pen'></i> &nbspHTML
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/frontend/css/" title="CSS" class="dd-item
+        
+        
+        
+        ">
+      <a href="/frontend/css/">
+          <i class='fas fa-pen'></i> &nbspCSS
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/flex/" title="Flexbox" class="dd-item ">
+        <a href="/frontend/css/flex/">
+        - &nbspFlexbox
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/grid/" title="Grid" class="dd-item ">
+        <a href="/frontend/css/grid/">
+        - &nbspGrid
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/trasnform/" title="Transform" class="dd-item ">
+        <a href="/frontend/css/trasnform/">
+        - &nbspTransform
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/css/etc/" title="" class="dd-item ">
+        <a href="/frontend/css/etc/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/sass/" title="Sass" class="dd-item ">
+        <a href="/frontend/sass/">
+        <i class='fas fa-pen'></i> &nbspSass
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/bootstrap/" title="Bootstrap" class="dd-item ">
+        <a href="/frontend/bootstrap/">
+        <i class='fas fa-pen'></i> &nbspBootstrap
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/frontend/tailwind/" title="Tailwind" class="dd-item ">
+        <a href="/frontend/tailwind/">
+        <i class='fas fa-pen'></i> &nbspTailwind
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/" title="ETC" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/xtc/">
+          ETC
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/1job.md/" title="Job Interview" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/1job.md/">
+          <i class='fas fa-pen'></i> &nbspJob Interview
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/setup/" title="Setup" class="dd-item ">
+        <a href="/xtc/setup/">
+        <i class='fas fa-pen'></i> &nbspSetup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/php/" title="PHP" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/xtc/php/">
+          <i class='fas fa-pen'></i> &nbspPHP
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/1-docker/" title="Docker" class="dd-item ">
+        <a href="/xtc/php/1-docker/">
+        - Docker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/2-setup/" title="Software setup for Laravel" class="dd-item ">
+        <a href="/xtc/php/2-setup/">
+        - Setup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/3-intro/" title="Laravel Intro" class="dd-item ">
+        <a href="/xtc/php/3-intro/">
+        - Laravel Intro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/sql/" title="MySQL Migration" class="dd-item ">
+        <a href="/xtc/php/sql/">
+        - MySQL Migration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/auth/" title="Auth" class="dd-item ">
+        <a href="/xtc/php/auth/">
+        - Auth
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/php/admin/" title="Admin" class="dd-item active">
+        <a href="/xtc/php/admin/">
+        - Admin
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/work/" title="Work" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/work/">
+          <i class='fas fa-pen'></i> &nbspWork
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/angularjs/" title="Angular JS" class="dd-item ">
+        <a href="/xtc/work/angularjs/">
+        - Angular JS
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/database/" title="Database" class="dd-item ">
+        <a href="/xtc/work/database/">
+        - Database
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/frontend/" title="Frontend" class="dd-item ">
+        <a href="/xtc/work/frontend/">
+        - Frontend
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/work/aspnet/" title="ASP .NET" class="dd-item ">
+        <a href="/xtc/work/aspnet/">
+        - ASP .NET
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/angular/" title="Angular.js" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/angular/">
+          <i class='fas fa-pen'></i> &nbspAngular.js
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/angular/day1/" title="Day1" class="dd-item ">
+        <a href="/xtc/angular/day1/">
+        - Day1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/angular/day2/" title="Day2" class="dd-item ">
+        <a href="/xtc/angular/day2/">
+        - Day2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/angular/day3/" title="Day3" class="dd-item ">
+        <a href="/xtc/angular/day3/">
+        - Day3
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xtc/vue/" title="Vue.js" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xtc/vue/">
+          <i class='fas fa-pen'></i> &nbspVue.js
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/vue/day1/" title="Day1" class="dd-item ">
+        <a href="/xtc/vue/day1/">
+        - Day1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/xtc/josh/" title="" class="dd-item ">
+        <a href="/xtc/josh/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/xtc/'>ETC</a> > <a href='/xtc/php/'>PHP</a> > Admin
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#create-project-form">Create Project Form</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#store-the-project">Store the Project</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#editing-projects">Editing Projects</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#deleting-projects">Deleting Projects</a></li>
+    <li><a href="#adding-project-thumbnails">Adding Project Thumbnails</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#pagination">Pagination</a></li>
+    <li><a href="#additional-pagination-notes">Additional Pagination Notes</a></li>
+    <li><a href="#many-to-many-relationships">Many to Many Relationships</a></li>
+    <li><a href="#project-tags">Project Tags</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#managing-many-to-many-relationships">Managing Many-To-Many Relationships</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#adding-tags-via-project-createedit-form">Adding Tags via Project Create/Edit Form</a></li>
+    <li><a href="#read-only-json-api">Read-only JSON API</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Admin
+            </h1>
+          
+
+        
+
+
+<h2 id="create-project-form">Create Project Form</h2>
+<p>Now that we have a secured admin area, let&rsquo;s build our project creation UI.</p>
+<h4 id="add-routes">Add Routes</h4>
+<p>routes/web.php</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#a6e22e">Route</span><span style="color:#f92672">::</span><span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/admin/projects/create&#39;</span>, [<span style="color:#a6e22e">ProjectController</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>, <span style="color:#e6db74">&#39;create&#39;</span>]);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Route</span><span style="color:#f92672">::</span><span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#39;/admin/projects/create&#39;</span>, [<span style="color:#a6e22e">ProjectController</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>, <span style="color:#e6db74">&#39;store&#39;</span>]);
+</span></span></code></pre></div><h4 id="add-a-create-method-to-projectcontroller">Add A Create Method to ProjectController</h4>
+<p>Since we will need a category dropdown in our form, make sure to import the Category model and send all categories to the view.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">create</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">view</span>(<span style="color:#e6db74">&#39;admin.projects.create&#39;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">with</span>(<span style="color:#e6db74">&#39;categories&#39;</span>, <span style="color:#a6e22e">Category</span><span style="color:#f92672">::</span><span style="color:#a6e22e">all</span>());
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><h4 id="build-the-projects-create-view">Build the Projects Create View</h4>
+<p>resources/views/admin/projects/create.blade.php</p>
+<p>Use the same x-layout and x-slot that we&rsquo;ve used for our other views.</p>
+<h4 id="construct-the-form">Construct the Form</h4>
+<p>Remember to add the @csrf directive</p>
+<h4 id="add-the-inputs">Add the Inputs</h4>
+<p>Refer to the create_projects_table migration for a reference to the needed inputs.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">string</span>(<span style="color:#e6db74">&#39;title&#39;</span>);
+</span></span><span style="display:flex;"><span>$table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">text</span>(<span style="color:#e6db74">&#39;excerpt&#39;</span>);
+</span></span><span style="display:flex;"><span>$table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">text</span>(<span style="color:#e6db74">&#39;body&#39;</span>);
+</span></span><span style="display:flex;"><span>$table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">string</span>(<span style="color:#e6db74">&#39;url&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">nullable</span>(<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>$table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#39;published_date&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">nullable</span>(<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>$table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">foreignId</span>(<span style="color:#e6db74">&#39;category_id&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">nullable</span>(<span style="color:#66d9ef">true</span>);
+</span></span></code></pre></div><p>Add inputs and labels accordingly, including conditional display of errors and display of old values, i.e.:</p>
+<pre tabindex="0"><code>&lt;div class=&#34;mb-6&#34;&gt;
+    &lt;label for=&#34;title&#34; class=&#34;block mb-2 uppercase font-bold text-xs text-gray-700&#34;&gt;Title&lt;/label&gt;
+    &lt;input type=&#34;text&#34; name=&#34;title&#34; id=&#34;title&#34; value=&#34;{{ old(&#39;title&#39;) }}&#34; required
+    class=&#34;border border-gray-400 rounded p2 w-full&#34;&gt;
+    @error(&#39;title&#39;)
+    &lt;p class=&#34;text-red-500 text-xs mt-1&#34;&gt;{{ $message }}&lt;/p&gt;
+    @enderror
+&lt;/div&gt;
+</code></pre><h4 id="adding-the-category-dropdown">Adding the Category Dropdown</h4>
+<p>For the category_id field we&rsquo;ll want to iterate through the available categories and create options for each as well as offer an option for None</p>
+<pre tabindex="0"><code>&lt;select name=&#34;category_id&#34; id=&#34;category_id&#34;&gt;
+    &lt;option value=&#34;&#34; selected disabled&gt;Select a Category&lt;/option&gt;
+    &lt;option value=&#34;&#34;&gt;None&lt;/option&gt;
+    @foreach ($categories as $category)
+        &lt;option value=&#34;{{ $category-&gt;id }}&#34; @if ($category-&gt;id == old(&#39;category_id&#39;)) selected @endif&gt;
+            {{ $category-&gt;name }}&lt;/option&gt;
+    @endforeach
+&lt;/select&gt;
+</code></pre><h2 id="store-the-project">Store the Project</h2>
+<h4 id="handle-form-request-data">Handle Form Request Data</h4>
+<p>Create the store method in ProjectController</p>
+<p>Let&rsquo;s start by dumping out the submitted data with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">store</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">ddd</span>(<span style="color:#a6e22e">request</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">all</span>());
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>Note: ddd is Die, Dump, Debug.</p>
+<h4 id="validate-the-request">Validate the Request</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$attributes <span style="color:#f92672">=</span> <span style="color:#a6e22e">request</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">validate</span>([
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;title&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;required&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;excerpt&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;required&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;body&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;required&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;url&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;nullable&#39;</span>,<span style="color:#e6db74">&#39;sometimes&#39;</span>,<span style="color:#e6db74">&#39;url&#39;</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;published_date&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;nullable&#39;</span>,<span style="color:#e6db74">&#39;sometimes&#39;</span>,<span style="color:#e6db74">&#39;date&#39;</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;category_id&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;nullable&#39;</span>,<span style="color:#e6db74">&#39;sometimes&#39;</span>,<span style="color:#e6db74">&#39;exists:categories,id&#39;</span>],
+</span></span><span style="display:flex;"><span>]);
+</span></span></code></pre></div><h4 id="if-we-pass-validation-generate-the-slug">If We Pass Validation, Generate the Slug</h4>
+<p>Import the Str class at the top of the file so we can use its slug method.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Illuminate\Support\Str</span>;
+</span></span></code></pre></div><p>Then after the validation:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>        <span style="color:#75715e">// Generate the slug from the title
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        $attributes[<span style="color:#e6db74">&#39;slug&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">Str</span><span style="color:#f92672">::</span><span style="color:#a6e22e">slug</span>($attributes[<span style="color:#e6db74">&#39;title&#39;</span>]);
+</span></span></code></pre></div><h4 id="create-the-project">Create the Project</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#a6e22e">Project</span><span style="color:#f92672">::</span><span style="color:#a6e22e">create</span>($attributes);
+</span></span></code></pre></div><h4 id="mass-assignment">Mass Assignment</h4>
+<p>Laravel Models have a set of properties which control which fields should, or should not, be eligible for mass assignment. In our case, we want title, excerpt, body, url, pubished_date, and category_id to be fillable, so, in our Project model we need to add:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * The attributes that are mass assignable.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     *
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @var array&lt;int, string&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> $fillable <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;title&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;slug&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;excerpt&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;body&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;url&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;published_date&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;category_id&#39;</span>
+</span></span><span style="display:flex;"><span>    ];
+</span></span></code></pre></div><h4 id="redirect-to-the-dashboard">Redirect to the Dashboard</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#75715e">// Set a flash message
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">session</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">flash</span>(<span style="color:#e6db74">&#39;success&#39;</span>,<span style="color:#e6db74">&#39;Project Created Successfully&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Redirect to the Admin Dashboard
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">return</span> <span style="color:#a6e22e">redirect</span>(<span style="color:#e6db74">&#39;/admin&#39;</span>);
+</span></span></code></pre></div><h2 id="editing-projects">Editing Projects</h2>
+<p>There are very few differences between creation and editing of records, particularly when it comes to the form, so let&rsquo;s see if we can reuse as much as possible.</p>
+<p>The first difference is that we&rsquo;ll need to send the original project data to the form view from our controller.</p>
+<p><strong>ProjectController.php</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">edit</span>(<span style="color:#a6e22e">Project</span> $project) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">view</span>(<span style="color:#e6db74">&#39;admin.projects.create&#39;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">with</span>(<span style="color:#e6db74">&#39;project&#39;</span>, $project)
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">with</span>(<span style="color:#e6db74">&#39;categories&#39;</span>, <span style="color:#a6e22e">Category</span><span style="color:#f92672">::</span><span style="color:#a6e22e">all</span>());
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><h4 id="updating-the-form">Updating the Form</h4>
+<p><strong>create.blade.php</strong></p>
+<p>Next, in our form we&rsquo;ll need to branch the form action.</p>
+<p>Let&rsquo;s also change the request type to &ldquo;PATCH&rdquo; and clearly display on screen whether this is a create or edit.</p>
+<p>Note: HTML form elements only allow GET or POST, but we can use Laravel @method directives to override this. When updating part or all of a resource the appropriate method is PATCH.</p>
+<pre tabindex="0"><code>@if ($project)
+&lt;h1 class=&#34;text-center font-bold text-xl mb-3&#34;&gt;Edit Project: {{ $project-&gt;title }}&lt;/h1&gt;
+&lt;form method=&#34;POST&#34; action=&#34;/admin/projects/{{ $project-&gt;id }}/edit&#34; enctype=&#34;multipart/form-data&#34;&gt;
+    @method(&#39;PATCH&#39;)
+@else
+    &lt;h1 class=&#34;text-center font-bold text-xl mb-3&#34;&gt;Create Project&lt;/h1&gt;
+    &lt;form method=&#34;POST&#34; action=&#34;/admin/projects/create&#34; enctype=&#34;multipart/form-data&#34;&gt;
+@endif
+</code></pre><h4 id="handling-both-old-and-original-values">Handling Both Old and Original Values</h4>
+<p>If validation fails we still want to re-display the last user-entered value, but when initially editing a project we want to display the original value.</p>
+<p>We can accomplish that with the nullish coalescing operator (??) to show either the old value or the original value, but also have to remember that if we are creating a new project there is no original project from which to echo out a value.</p>
+<p>All together, that will look like:</p>
+<p><code>&lt;input type=&quot;text&quot; name=&quot;title&quot; id=&quot;title&quot; value=&quot;{{ old('title') ?? $project?-&gt;title }}&quot; /&gt;</code></p>
+<p>You&rsquo;ll need to do that for each of the inputs, including determining which option in the category dropdown is selected.</p>
+<h4 id="edit-routes">Edit Routes</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#a6e22e">Route</span><span style="color:#f92672">::</span><span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/admin/projects/{project}/edit&#39;</span>, [<span style="color:#a6e22e">ProjectController</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>, <span style="color:#e6db74">&#39;edit&#39;</span>]);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Route</span><span style="color:#f92672">::</span><span style="color:#a6e22e">patch</span>(<span style="color:#e6db74">&#39;/admin/projects/{project}/edit&#39;</span>, [<span style="color:#a6e22e">ProjectController</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>, <span style="color:#e6db74">&#39;update&#39;</span>]);
+</span></span></code></pre></div><h4 id="validation">Validation</h4>
+<p>Most of our validation can remain the same, with one key exception - the uniqueness of the title (and indirectly, the slug).</p>
+<p>Lucky for us, the unique validator takes a this argument which is the id to ignore.</p>
+<pre><code>public function update(Project $project, Request $request) {
+</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$attributes <span style="color:#f92672">=</span> <span style="color:#a6e22e">request</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">validate</span>([
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;title&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;required&#39;</span>,<span style="color:#e6db74">&#39;unique:projects,title,&#39;</span><span style="color:#f92672">.</span>$project<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">id</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;excerpt&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;required&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;body&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;required&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;url&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;nullable&#39;</span>,<span style="color:#e6db74">&#39;sometimes&#39;</span>,<span style="color:#e6db74">&#39;url&#39;</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;published_date&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;nullable&#39;</span>,<span style="color:#e6db74">&#39;sometimes&#39;</span>,<span style="color:#e6db74">&#39;date&#39;</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;category_id&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;nullable&#39;</span>,<span style="color:#e6db74">&#39;sometimes&#39;</span>,<span style="color:#e6db74">&#39;exists:categories,id&#39;</span>],
+</span></span><span style="display:flex;"><span>]);
+</span></span></code></pre></div><p>After passing validation we call the update() method on the project instance.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#75715e">// Save updates to the DB
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>$project<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">update</span>($attributes);
+</span></span></code></pre></div><h2 id="deleting-projects">Deleting Projects</h2>
+<p>Last stop on our CRUD tour is deletion.</p>
+<p>Both the routing and controller method are quite straightforward.</p>
+<p><strong>routes/Web.php</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#a6e22e">Route</span><span style="color:#f92672">::</span><span style="color:#a6e22e">delete</span>(<span style="color:#e6db74">&#39;/admin/projects/{project}/delete&#39;</span>, [<span style="color:#a6e22e">ProjectController</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>, <span style="color:#e6db74">&#39;destroy&#39;</span>]);
+</span></span></code></pre></div><p><strong>ProjectController.php</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">destroy</span>(<span style="color:#a6e22e">Project</span> $project) {
+</span></span><span style="display:flex;"><span>        $project<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">delete</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Set a flash message
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">session</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">flash</span>(<span style="color:#e6db74">&#39;success&#39;</span>,<span style="color:#e6db74">&#39;Project Deleted Successfully&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Redirect to the Admin Dashboard
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">redirect</span>(<span style="color:#e6db74">&#39;/admin&#39;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>The only thing that may be slightly different than expected is that we want to use a form around the delete button in the in the dashboard so that we can set the HTTP method to delete.</p>
+<p><strong>views/admin/index.blade.php</strong></p>
+<pre tabindex="0"><code>            &lt;form method=&#34;POST&#34; action=&#34;/admin/projects/{{$project-&gt;id}}/delete&#34; class=&#34;inline&#34;&gt;
+                @csrf
+                @method(&#39;delete&#39;)
+                &lt;button type=&#34;submit&#34; class=&#34;text-red-600&#34;&gt;Delete
+                &lt;/button&gt;
+            &lt;/form&gt;
+</code></pre><h2 id="adding-project-thumbnails">Adding Project Thumbnails</h2>
+<p>Let&rsquo;s add support for each project to, optionally, have a featured image and a thumbnail.</p>
+<h4 id="migration">Migration</h4>
+<p>First we&rsquo;ll need a add a couple of columns our projects table.</p>
+<p>Rather than redefining the create_projects_table migration, let write a migration that just alters the table definition.</p>
+<pre tabindex="0"><code>sail artisan make:migration add_image_and_thumb_to_projects_table --table=projects
+</code></pre><p>Then define the up and down methods in the migration</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">up</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Schema</span><span style="color:#f92672">::</span><span style="color:#a6e22e">table</span>(<span style="color:#e6db74">&#39;projects&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">Blueprint</span> $table) {
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">string</span>(<span style="color:#e6db74">&#39;image&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">nullable</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">default</span>(<span style="color:#66d9ef">null</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">after</span>(<span style="color:#e6db74">&#39;published_date&#39;</span>);
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">string</span>(<span style="color:#e6db74">&#39;thumb&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">nullable</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">default</span>(<span style="color:#66d9ef">null</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">after</span>(<span style="color:#e6db74">&#39;image&#39;</span>);
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">down</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Schema</span><span style="color:#f92672">::</span><span style="color:#a6e22e">table</span>(<span style="color:#e6db74">&#39;projects&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">Blueprint</span> $table) {
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">dropColumn</span>(<span style="color:#e6db74">&#39;image&#39;</span>);
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">dropColumn</span>(<span style="color:#e6db74">&#39;thumb&#39;</span>);
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>Run the migration</p>
+<pre tabindex="0"><code>sail artisan migrate
+</code></pre><h4 id="update-the-model">Update the Model</h4>
+<p>Add the new columns as fillable fields in the Project model</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> $fillable <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;title&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;excerpt&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;body&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;url&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;published_date&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;image&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;thumb&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;category_id&#39;</span>
+</span></span><span style="display:flex;"><span>    ];
+</span></span></code></pre></div><h4 id="update-the-form">Update the Form</h4>
+<p>In order to send files along with the form data we need to set the enctype for the create/edit form to &ldquo;multipart/form-data&rdquo;.</p>
+<p>Add File Inputs</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mb-6&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">label</span> <span style="color:#66d9ef">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;thumb&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;block mb-2 uppercase font-bold text-xs text-gray-700&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Thumbnail</span><span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">label</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;file&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;thumb&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;thumb&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;{{ old(&#39;</span><span style="color:#a6e22e">thumb</span><span style="color:#e6db74">&#39;) ?? $project?-&gt;thumb }}&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border border-gray-400 rounded p2 w-full&#34;</span> <span style="color:#f92672">/</span> <span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">@</span><span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#39;thumb&#39;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-red-500 text-xs mt-1&#34;</span><span style="color:#f92672">&gt;</span>{{ $message }}<span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">p</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">@</span><span style="color:#a6e22e">enderror</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mb-6&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">label</span> <span style="color:#66d9ef">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;image&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;block mb-2 uppercase font-bold text-xs text-gray-700&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Image</span><span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">label</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;file&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;image&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;image&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ old(&#39;image&#39;) ?? </span><span style="color:#e6db74">$project</span><span style="color:#e6db74">?-&gt;image }}&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border border-gray-400 rounded p2 w-full&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">@</span><span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#39;image&#39;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-red-500 text-xs mt-1&#34;</span><span style="color:#f92672">&gt;</span>{{ $message }}<span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">p</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">@</span><span style="color:#a6e22e">enderror</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><h4 id="handle-file-uploads-in-projectcontroller">Handle file uploads in ProjectController</h4>
+<p>Add validation rules to both the store and update methods :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;image&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;nullable&#39;</span>,<span style="color:#e6db74">&#39;sometimes&#39;</span>,<span style="color:#e6db74">&#39;image&#39;</span>,<span style="color:#e6db74">&#39;mimes:jpg,png,jpeg,gif,svg&#39;</span>,<span style="color:#e6db74">&#39;max:2048&#39;</span>,<span style="color:#e6db74">&#39;dimensions:max_width=1200&#39;</span>],
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;thumb&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;nullable&#39;</span>,<span style="color:#e6db74">&#39;sometimes&#39;</span>,<span style="color:#e6db74">&#39;image&#39;</span>,<span style="color:#e6db74">&#39;mimes:jpg,png,jpeg,gif,svg&#39;</span>,<span style="color:#e6db74">&#39;max:1024&#39;</span>,<span style="color:#e6db74">&#39;dimensions:max_width=600&#39;</span>],
+</span></span></code></pre></div><p>Save the Upload Files into Public Storage</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#75715e">// Save upload in public storage and set path attributes
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>$image_path <span style="color:#f92672">=</span> $request<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">file</span>(<span style="color:#e6db74">&#39;image&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">storeAs</span>(<span style="color:#e6db74">&#39;images&#39;</span>,$request<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">image</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getClientOriginalName</span>(), <span style="color:#e6db74">&#39;public&#39;</span>);
+</span></span><span style="display:flex;"><span>$attributes[<span style="color:#e6db74">&#39;image&#39;</span>] <span style="color:#f92672">=</span> $image_path;
+</span></span><span style="display:flex;"><span>$thumb_path <span style="color:#f92672">=</span> $request<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">file</span>(<span style="color:#e6db74">&#39;thumb&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">storeAs</span>(<span style="color:#e6db74">&#39;images&#39;</span>, $request<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">thumb</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getClientOriginalName</span>(), <span style="color:#e6db74">&#39;public&#39;</span>);
+</span></span><span style="display:flex;"><span>$attributes[<span style="color:#e6db74">&#39;thumb&#39;</span>] <span style="color:#f92672">=</span> $thumb_path;
+</span></span></code></pre></div><h2 id="pagination">Pagination</h2>
+<p>Paginating records can be the stuff of nightmares, but with Laravel we can implement it for our index page by editing just 2 lines of code.</p>
+<p>Instead of</p>
+<p><strong>ProjectController.php</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">index</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">view</span>(<span style="color:#e6db74">&#39;projects.index&#39;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">with</span>(<span style="color:#e6db74">&#39;projects&#39;</span>, <span style="color:#a6e22e">Project</span><span style="color:#f92672">::</span><span style="color:#a6e22e">latest</span>(<span style="color:#e6db74">&#39;published_date&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">paginate</span>(<span style="color:#ae81ff">6</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">withQueryString</span>())
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">with</span>(<span style="color:#e6db74">&#39;categoryName&#39;</span>, <span style="color:#66d9ef">null</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">@</span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">count</span>($projects))
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-xs mt-4 w-full text-right&#34;</span><span style="color:#f92672">&gt;</span>{{ $projects<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">links</span>() }}<span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">@</span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Nothing</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">showcase</span>, <span style="color:#a6e22e">yet</span><span style="color:#f92672">.&lt;/</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">@</span><span style="color:#66d9ef">endif</span>
+</span></span></code></pre></div><h2 id="additional-pagination-notes">Additional Pagination Notes</h2>
+<p>As most of you encountered when adding pagination to the /projects/index.blade.php, Laravel throws an error when rendering the category specific list of projects because $projects-&gt;links() is undefined.</p>
+<p>The &ldquo;easy&rdquo; solution that I presented in class was to create a duplicate that index.blade.php and have a non-paginated version. While that does work and is easy, it means we&rsquo;ve added a significant amount of repetition in our codebase.</p>
+<p>A did a little further digging this evening and found a better solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>  <span style="color:#f92672">@</span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">count</span>($projects))
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-xs mt-4 w-full text-right&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">@</span><span style="color:#66d9ef">if</span>($projects <span style="color:#a6e22e">instanceof</span> <span style="color:#a6e22e">\Illuminate\Pagination\AbstractPaginator</span>)
+</span></span><span style="display:flex;"><span>              {{ $projects<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">links</span>() }}
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">@</span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">Found</span> {{ <span style="color:#a6e22e">count</span>($projects) }} <span style="color:#a6e22e">Projects</span> <span style="color:#a6e22e">in</span> {{ $categoryName }}
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">@</span><span style="color:#66d9ef">endif</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">@</span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Nothing</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">showcase</span>, <span style="color:#a6e22e">yet</span><span style="color:#f92672">.&lt;/</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">@</span><span style="color:#66d9ef">endif</span>
+</span></span></code></pre></div><p>Long story moderately short - a solid strategy when something is throwing errors is to find and implement a (reasonable) quick fix first, jot down a &ldquo;there must be a better solution to this&hellip;&rdquo; note somewhere, and then focus on the other things that still need to be completed. Our minds are remarkably good at divergent thinking when fed puzzles to work on in the background - especially when there&rsquo;s no &ldquo;it&rsquo;s broken&rdquo; anxiety attached to the task.</p>
+<h2 id="many-to-many-relationships">Many to Many Relationships</h2>
+<p>To implement our one-to-many relationship between categories and projects we:</p>
+<ul>
+<li>Created a categories table</li>
+<li>Added a category_id column to our projects table with a foreign key constraint</li>
+<li>In our Project model we added a category() method that used Eloquent&rsquo;s belongsTo(Category::class) to retrieve the category for a project</li>
+<li>In our Category model we added a projects() method that called hasMany(Project::class)</li>
+</ul>
+<p>Many-to-many relationships are a tiny bit more complicated, but Eloquent still makes them relatively easy to work with.</p>
+<p>What we&rsquo;ll need to set up in order to support many-to-many relationships between our projects and tags are:</p>
+<ul>
+<li>A tags table</li>
+<li>A projects_tags pivot table
+<ul>
+<li>this will have projects_id and tags_id columns and there will be one record for each association between project and tag</li>
+</ul>
+</li>
+<li>In each model (Project and Tag) we will then add a belongsToMany() method</li>
+</ul>
+<h2 id="project-tags">Project Tags</h2>
+<h4 id="create-the-tags-model-and-migration">Create the Tags Model and Migration</h4>
+<pre tabindex="0"><code>sail artisan make:model Tag -m
+</code></pre><p>In the migration:</p>
+<p>Add unique string columns for name and slug.</p>
+<p>Also, to follow convention make sure the table name is pluralized: tags.</p>
+<p>If removing the timestamps() from the migration, make sure to set the following in the model too:</p>
+<pre tabindex="0"><code>public $timestamps = false;
+</code></pre><h4 id="create-the-pivot-table-migration">Create the Pivot Table Migration</h4>
+<p>To create our pivot table we still use artisan&rsquo;s make:migration with the create_*_table syntax, but it&rsquo;s important that we list out the connected tables in alphabetical order.</p>
+<pre tabindex="0"><code>sail artisan make:migration create_projects_tags_table
+</code></pre><p>For this table we&rsquo;ll need an id() as well as the foreign key columns pointing at the id column in both the projects and tags tables and we&rsquo;ll also want the FK constraints to the cascade on delete.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">up</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Schema</span><span style="color:#f92672">::</span><span style="color:#a6e22e">create</span>(<span style="color:#e6db74">&#39;projects_tags&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">Blueprint</span> $table) {
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">id</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">unsignedBiginteger</span>(<span style="color:#e6db74">&#39;projects_id&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">unsigned</span>();
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">unsignedBiginteger</span>(<span style="color:#e6db74">&#39;tags_id&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">unsigned</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">foreign</span>(<span style="color:#e6db74">&#39;projects_id&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">references</span>(<span style="color:#e6db74">&#39;id&#39;</span>)
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;projects&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">onDelete</span>(<span style="color:#e6db74">&#39;cascade&#39;</span>);
+</span></span><span style="display:flex;"><span>            $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">foreign</span>(<span style="color:#e6db74">&#39;tags_id&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">references</span>(<span style="color:#e6db74">&#39;id&#39;</span>)
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;tags&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">onDelete</span>(<span style="color:#e6db74">&#39;cascade&#39;</span>);
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><h4 id="update-the-models">Update the Models</h4>
+<p><strong>Project.php</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#75715e">// Load the Tags for this Project
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">tags</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">belongsToMany</span>(<span style="color:#a6e22e">Tag</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>, <span style="color:#e6db74">&#39;projects_tags&#39;</span>, <span style="color:#e6db74">&#39;projects_id&#39;</span>, <span style="color:#e6db74">&#39;tags_id&#39;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p><strong>Tag.php</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">projects</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">belongsToMany</span>(<span style="color:#a6e22e">Project</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>, <span style="color:#e6db74">&#39;projects_tags&#39;</span>, <span style="color:#e6db74">&#39;tags_id&#39;</span>,<span style="color:#e6db74">&#39;projects_id&#39;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>Be aware that the order of the &rsquo;tags_id&rsquo; and &lsquo;projects_id&rsquo; argument is important here and reverses depending on whether we want the tags related to a project or the projects related to a tag.</p>
+<p>Most of the time you won&rsquo;t need to dig into the API documentation directly, but when there are multiple arguments involved and you&rsquo;re not getting expected results at first&hellip; dive into the details:</p>
+<p><a href="https://laravel.com/api/9.x/Illuminate/Database/Eloquent/Concerns/HasRelationships.html#method_belongsToMany">https://laravel.com/api/9.x/Illuminate/Database/Eloquent/Concerns/HasRelationships.html#method_belongsToMany</a></p>
+<h4 id="run-the-migrations-and-verify">Run the Migrations and Verify</h4>
+<pre tabindex="0"><code>sail artisan migrate
+</code></pre><h4 id="add-a-tag-seeder">Add a Tag Seeder</h4>
+<pre tabindex="0"><code>sail artisan make:seeder TagSeeder
+</code></pre><ul>
+<li>Import the Tag model</li>
+<li>Follow the same structure as the Category seeder, and prepopulate the DB with some tags (PHP, Laravel, Node.js&hellip; no need to be exhaustive, but give yourself a few to start working with).</li>
+<li>Add the TagSeeder to the DatabaseSeeder</li>
+<li>Run a fresh migration that includes the seeders
+<ul>
+<li>sail artisan migrate:fresh &ndash;seed</li>
+</ul>
+</li>
+</ul>
+<h4 id="prepopulate-project-tags-via-a-projectstagsseeder">Prepopulate Project Tags via a ProjectsTagsSeeder</h4>
+<ul>
+<li>Import the Project Model</li>
+<li>Assuming that you have added some projects and tags via the preceding seeders, you can now explicitly attach some tags to one or more projects.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">run</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Explicitly attach tags to projects
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        $portfolioProject <span style="color:#f92672">=</span> <span style="color:#a6e22e">Project</span><span style="color:#f92672">::</span><span style="color:#a6e22e">find</span>(<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>        $portfolioProject<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">tags</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">attach</span>([<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>]);
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><h2 id="managing-many-to-many-relationships">Managing Many-To-Many Relationships</h2>
+<p>There are three helper functions that we can use to manage our many-to-many relationship.</p>
+<p>Let&rsquo;s walk through them briefly, from the Project perspective, assuming that we have our Project instance in $project and tags with ids 1 through 5 in our DB.</p>
+<h4 id="attach">attach()</h4>
+<p>We can pass in an array of tag ids and one row will be created in projects_tags for each.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$project<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">tags</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">attach</span>([<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">5</span>]);
+</span></span></code></pre></div><p>This would most often be used in ProjectController store() method.</p>
+<h4 id="sync">sync()</h4>
+<p>We can pass in an array of tag ids and projects_tags will be updated to reflect only these pairings.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$project<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">tags</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">sync</span>([<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">4</span>]);
+</span></span></code></pre></div><p>This would most often be used in ProjectController update() method.</p>
+<h4 id="detach">detach()</h4>
+<p>This will remove all rows for this project from the projects_tags table.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$project<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">tags</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">detach</span>();
+</span></span></code></pre></div><p>This would most often be used in ProjectController destroy() method, although the cascading delete would remove the rows from the pivot table anyway.</p>
+<h2 id="adding-tags-via-project-createedit-form">Adding Tags via Project Create/Edit Form</h2>
+<p>Both the attach() and sync() helpers take arrays of ids.</p>
+<p>There are several ways that we could approach sending this from our form, the two most common being:</p>
+<ul>
+<li>A select with the multiple attribute</li>
+<li>A set of checkboxes, all with the same name attribute</li>
+</ul>
+<p>In either case, you&rsquo;ll want make sure that the name attribute has square brackets as a suffix or else you&rsquo;ll have to construct the array yourself from the posted data.</p>
+<p>Here&rsquo;s how I&rsquo;ve set this up, as a multi-select, pre-selecting the current set of tags attached to a project when the form first loads and then persisting the old() options if there were any validation errors on submit.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">label</span> <span style="color:#66d9ef">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;tags&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;block mb-2 uppercase font-bold text-xs text-gray-700&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Tags</span><span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">label</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">select</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;tags[]&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;tags&#34;</span> <span style="color:#a6e22e">multiple</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;multiple&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">@</span><span style="color:#66d9ef">foreach</span> ($tags <span style="color:#66d9ef">as</span> $tag)
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ </span><span style="color:#e6db74">$tag-&gt;id</span><span style="color:#e6db74"> }}&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">@</span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">old</span>(<span style="color:#e6db74">&#39;tags&#39;</span>) <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">in_array</span>($tag<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">id</span>, <span style="color:#a6e22e">old</span>(<span style="color:#e6db74">&#39;tags&#39;</span>)))
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">selected</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">@</span><span style="color:#66d9ef">elseif</span> ($project <span style="color:#f92672">&amp;&amp;</span> $project<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">tags</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">@</span><span style="color:#66d9ef">foreach</span> ($project<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">tags</span> <span style="color:#66d9ef">as</span> $projectTag)
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">@</span><span style="color:#66d9ef">if</span> ($tag<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">id</span> <span style="color:#f92672">==</span> $projectTag<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">id</span>)
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">selected</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">@</span><span style="color:#66d9ef">endif</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">@</span><span style="color:#66d9ef">endforeach</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">@</span><span style="color:#66d9ef">endif</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>        {{ $tag<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">name</span> }}<span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">option</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">@</span><span style="color:#66d9ef">endforeach</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">select</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">@</span><span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#39;tags&#39;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-red-500 text-xs mt-1&#34;</span><span style="color:#f92672">&gt;</span>{{ $message }}<span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">p</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">@</span><span style="color:#a6e22e">enderror</span>
+</span></span></code></pre></div><p>I&rsquo;ll leave it to you to implement the attach and synch in appropriate ProjectController methods, with just the hint that you should do it after creating or updating the project record itself.</p>
+<h2 id="read-only-json-api">Read-only JSON API</h2>
+<p>This is a quick and dirty approach to setting up read-only endpoints to return Project, Category, and Tags data as JSON, but it works.</p>
+<p>Rather than rendering views, we&rsquo;ll use the json() method of the Response class to return what we need.</p>
+<p><strong>ProjectController.php</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getProjectsJSON</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $projects <span style="color:#f92672">=</span> <span style="color:#a6e22e">Project</span><span style="color:#f92672">::</span><span style="color:#a6e22e">with</span>([<span style="color:#e6db74">&#39;category&#39;</span>,<span style="color:#e6db74">&#39;tags&#39;</span>])<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">get</span>();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">response</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">json</span>($projects);
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p><strong>CategoryController.php</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">App\Models\Category</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CategoryController</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Controller</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getCategoriesJSON</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $categories <span style="color:#f92672">=</span> <span style="color:#a6e22e">Category</span><span style="color:#f92672">::</span><span style="color:#a6e22e">all</span>();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">response</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">json</span>($categories);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>TagController.php</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">App\Models\Tag</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TagController</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Controller</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getTagsJSON</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $tags <span style="color:#f92672">=</span> <span style="color:#a6e22e">Tag</span><span style="color:#f92672">::</span><span style="color:#a6e22e">all</span>();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">response</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">json</span>($tags);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>Add Routes</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#a6e22e">Route</span><span style="color:#f92672">::</span><span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/api/projects&#39;</span>, [<span style="color:#a6e22e">ProjectController</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>, <span style="color:#e6db74">&#39;getProjectsJSON&#39;</span>]);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Route</span><span style="color:#f92672">::</span><span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/api/categories&#39;</span>, [<span style="color:#a6e22e">CategoryController</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>, <span style="color:#e6db74">&#39;getCategoriesJSON&#39;</span>]);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Route</span><span style="color:#f92672">::</span><span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/api/tags&#39;</span>, [<span style="color:#a6e22e">TagController</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>, <span style="color:#e6db74">&#39;getTagsJSON&#39;</span>]);
+</span></span></code></pre></div><p><a href="https://xqsit.github.io/laravel-coding-guidelines/docs/naming-conventions/">https://xqsit.github.io/laravel-coding-guidelines/docs/naming-conventions/</a></p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/xtc/php/auth/" title="Auth"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/xtc/work/" title="Work" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1712035893"></script>
+    <script src="/js/perfect-scrollbar.min.js?1712035893"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1712035893"></script>
+    <script src="/js/jquery.sticky.js?1712035893"></script>
+    <script src="/js/featherlight.min.js?1712035893"></script>
+    <script src="/js/highlight.pack.js?1712035893"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1712035893"></script>
+    <script src="/js/learn.js?1712035893"></script>
+    <script src="/js/hugo-learn.js?1712035893"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1712035893"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LeetCode on Byul Notes</title>
+    <link>http://localhost:1313/leetcode/</link>
+    <description>Recent content in LeetCode on Byul Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Theory</title>
+      <link>http://localhost:1313/leetcode/theory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/leetcode/theory/</guid>
+      <description>Brute force A method of accomplishing something primarily by means of strength, without the use of great skill&#xA;Big O Big O, also known as Big O notation, represents an algorithm&amp;rsquo;s worst-case complexity. It uses algebraic terms to describe the complexity of an algorithm.&#xA;Big O defines the runtime required to execute an algorithm by identifying how the performance of your algorithm will change as the input size grows. But it does not tell you how fast your algorithm&amp;rsquo;s runtime is.</description>
+    </item>
+    <item>
+      <title>Easy</title>
+      <link>http://localhost:1313/leetcode/easy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/leetcode/easy/</guid>
+      <description>Two Sum Solution Python C# Solution #1 : Brute Force&#xA;# Runtime: 9ms class Solution(object): def twoSum(self, nums, target): for i in range(len(nums)): for j in range(i+1, len(nums)): if nums[j] == target - nums[i]: return [i, j] Solution #2 : Two-pass Hash Table&#xA;# Runtime: 20ms class Solution(object): def twoSum(self, nums, target): map = {} for (i, num) in enumerate(nums): map[num]=i for (i, num) in enumerate(nums): x = target - num if(x in map and map[x]!</description>
+    </item>
+    <item>
+      <title>Medium</title>
+      <link>http://localhost:1313/leetcode/medium/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/leetcode/medium/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
