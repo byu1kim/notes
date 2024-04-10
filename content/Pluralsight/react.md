@@ -18,8 +18,6 @@ React state management library
 
 ### Dev environment
 
----
-
 - Compile JSX
 - Transpile JS
 - Linting
@@ -76,6 +74,8 @@ Webpack
 
 - Babel
 - ESLint
+
+---
 
 # React Component Approaches
 
