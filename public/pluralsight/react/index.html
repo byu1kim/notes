@@ -12,22 +12,22 @@
     <title>React :: Byul Notes</title>
 
     
-    <link href="/css/nucleus.css?1712066948" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1712066948" rel="stylesheet">
-    <link href="/css/hybrid.css?1712066948" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1712066948" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1712066948" rel="stylesheet">
-    <link href="/css/auto-complete.css?1712066948" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1712066948" rel="stylesheet">
-    <link href="/css/theme.css?1712066948" rel="stylesheet">
-    <link href="/css/tabs.css?1712066948" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1712066948" rel="stylesheet">
+    <link href="/css/nucleus.css?1712719388" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1712719388" rel="stylesheet">
+    <link href="/css/hybrid.css?1712719388" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1712719388" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1712719388" rel="stylesheet">
+    <link href="/css/auto-complete.css?1712719388" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1712719388" rel="stylesheet">
+    <link href="/css/theme.css?1712719388" rel="stylesheet">
+    <link href="/css/tabs.css?1712719388" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1712719388" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1712066948" rel="stylesheet">
+    <link href="/css/theme-blue.css?1712719388" rel="stylesheet">
     
-    <link href="/css/style.css?1712066948" rel="stylesheet">
+    <link href="/css/style.css?1712719388" rel="stylesheet">
 
-    <script src="/js/jquery-3.3.1.min.js?1712066948"></script>
+    <script src="/js/jquery-3.3.1.min.js?1712719388"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -64,14 +64,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1712066948"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1712066948"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1712719388"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1712719388"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1712066948"></script>
+<script type="text/javascript" src="/js/search.js?1712719388"></script>
 
     
   </div>
@@ -2266,6 +2266,10 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#version">Version</a></li>
+  </ul>
+
+  <ul>
     <li>
       <ul>
         <li><a href="#dev-environment">Dev environment</a></li>
@@ -2299,7 +2303,7 @@
         <li><a href="#redux-vs-context-api">Redux vs. Context API</a></li>
       </ul>
     </li>
-    <li><a href="#redux">Redux</a>
+    <li><a href="#redux-1">Redux</a>
       <ul>
         <li><a href="#why-redux">Why Redux</a></li>
         <li><a href="#3-core-redux-principles">3 Core Redux Principles</a></li>
@@ -2328,6 +2332,10 @@
     <li><a href="#mapdispatchtoprops">mapDispatchToProps</a></li>
     <li><a href="#a-chat-with-redux">A Chat with Redux</a></li>
   </ul>
+
+  <ul>
+    <li><a href="#리덕스-쓰는-이유">리덕스 쓰는 이유</a></li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -2351,8 +2359,9 @@
         
 
 
-<p>redux : react state management library</p>
-<h1 id="version">Version</h1>
+<h1 id="redux">Redux</h1>
+<p>React state management library</p>
+<h2 id="version">Version</h2>
 <ul>
 <li>React 17</li>
 <li>Redux 4</li>
@@ -2495,7 +2504,7 @@ A component&rsquo;s state can change over time. Whenever it changes, the compone
 </blockquote>
 <p>Redux는 Flux 아키텍처 패턴을 구현한 라이브러리로, 전역 상태 관리를 위해 사용된다. Redux는 애플리케이션의 상태를 중앙 집중적으로 관리하고, 상태 변경을 예측 가능하도록 만든다. 이를 위해 Redux는 불변성을 유지하고, 상태 변경을 위한 액션(Action)을 사용하며, 이 액션들을 통해 상태를 변경하는 리듀서(Reducer)를 작성한다.</p>
 <p>반면, Context API는 React v16.3에서 소개된 기능으로, 컴포넌트 트리에서 전역 데이터를 공유하기 위한 방법이다. Context API는 Provider와 Consumer를 사용하여 상위 컴포넌트에서 하위 컴포넌트로 데이터를 전달한다. 이를 통해 Redux와 같은 전역 상태 관리가 가능하지만, Redux보다는 간단하고 쉽게 구현할 수 있다.</p>
-<h2 id="redux">Redux</h2>
+<h2 id="redux-1">Redux</h2>
 <p>Redux is a predictable state container designed to help you write JavaScript apps that behave consistently across client, server, and native environments</p>
 <blockquote>
 <h3 id="why-redux">Why Redux</h3>
@@ -2699,13 +2708,82 @@ Immutable state : instead of changing your state object, you must return a new o
 </span></span></code></pre></div><p>Connect function
 A function provided by React Redux. It connects your React components to the Redux store.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">connect</span>(<span style="color:#a6e22e">mapStateToProps</span>, <span style="color:#a6e22e">mapDispatchToProps</span>)(<span style="color:#a6e22e">AuthorPage</span>);
-</span></span></code></pre></div><h2 id="mapstatetoprops">mapStateToProps</h2>
+</span></span></code></pre></div><p>mamState : what state you want to pass ?
+mapDispatchToProps : what action you want to pass ?
+both parameters are optional.</p>
+<h2 id="mapstatetoprops">mapStateToProps</h2>
+<p>What state should I expose as props?
+When you define connect function,
+The component will subscribe to the Redux store updates,
+and anytime it updates, mapStateToProps will be called.
+This function returns an object.</p>
 <h2 id="mapdispatchtoprops">mapDispatchToProps</h2>
 <h2 id="a-chat-with-redux">A Chat with Redux</h2>
 <hr>
 <h1 id="redux-flow-1">Redux Flow</h1>
 <hr>
+<h1 id="async-in-redux">Async in Redux</h1>
+<hr>
+<h1 id="async-writes-in-redux">Async Writes in Redux</h1>
+<hr>
+<h1 id="async-status-and-error-handling">Async Status and Error Handling</h1>
 <p>&hellip;</p>
+<h1 id="리덕스-쉽게">리덕스 쉽게</h1>
+<h2 id="리덕스-쓰는-이유">리덕스 쓰는 이유</h2>
+<p>Props 귀찮을 때
+State(변수)
+State보관함.js = store.js여기에 state를 전부다 보관
+세팅방법은</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// index.js
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Provider</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react-redux&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">createStore</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;redux&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">weight</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">reducer</span>(<span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">weight</span>, <span style="color:#a6e22e">action</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// 여기다가 스테이트 수정하는 방법을 전부다 여기에 씀. 이걸 해주는걸 리듀서라고 부름.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">action</span>.<span style="color:#a6e22e">type</span> <span style="color:#f92672">===</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">add</span>){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">state</span><span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">state</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">state</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">store</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">createStore</span>(<span style="color:#a6e22e">reducer</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ReactDOM</span>.<span style="color:#a6e22e">render</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">React</span>.<span style="color:#a6e22e">StrictMode</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Provider</span> <span style="color:#a6e22e">store</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">store</span>}<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">App</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/Provider&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/React.StrictMode&gt;</span>
+</span></span><span style="display:flex;"><span>)}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// App.js
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">useSelector</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;react-redux&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">App</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">we</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">useSelector</span>((<span style="color:#a6e22e">state</span>) =&gt; <span style="color:#a6e22e">state</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// 수정요청을 하는걸 여기서 부름. 그걸 해주는게 디스패치
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">dispatch</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">useDispatch</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>      {<span style="color:#a6e22e">we</span>}
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">button</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span>{() =&gt; {
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">dispatch</span>({ <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;add&#34;</span> });
+</span></span><span style="display:flex;"><span>        }}
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">더하기</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/button&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/div&gt;</span>
+</span></span><span style="display:flex;"><span>  );
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>쓰는 이유 2 : State 관리 용이</p>
+<p>컴포넌트들은 store.js에다가 상태를 변경해달라고 요청만 한다
+그럼 에러 났을때 컴퍼넌트 하나하나 안봐도 되고 store.js에서만 보면 되니까 추적이 쉽당</p>
 
 
 <footer class="footline">
@@ -4198,19 +4276,19 @@ A function provided by React Redux. It connects your React components to the Red
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1712066948"></script>
-    <script src="/js/perfect-scrollbar.min.js?1712066948"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1712066948"></script>
-    <script src="/js/jquery.sticky.js?1712066948"></script>
-    <script src="/js/featherlight.min.js?1712066948"></script>
-    <script src="/js/highlight.pack.js?1712066948"></script>
+    <script src="/js/clipboard.min.js?1712719388"></script>
+    <script src="/js/perfect-scrollbar.min.js?1712719388"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1712719388"></script>
+    <script src="/js/jquery.sticky.js?1712719388"></script>
+    <script src="/js/featherlight.min.js?1712719388"></script>
+    <script src="/js/highlight.pack.js?1712719388"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1712066948"></script>
-    <script src="/js/learn.js?1712066948"></script>
-    <script src="/js/hugo-learn.js?1712066948"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1712719388"></script>
+    <script src="/js/learn.js?1712719388"></script>
+    <script src="/js/hugo-learn.js?1712719388"></script>
     
         
-            <script src="/mermaid/mermaid.js?1712066948"></script>
+            <script src="/mermaid/mermaid.js?1712719388"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

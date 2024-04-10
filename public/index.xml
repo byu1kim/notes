@@ -104,7 +104,7 @@
       <link>http://localhost:1313/pluralsight/react/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pluralsight/react/</guid>
-      <description>redux : react state management library&#xA;Version React 17 Redux 4 React Router 5 Environment Build Dev environment Compile JSX Transpile JS Linting Generate index.html Reload on save =&amp;gt; one command (npm) with Node, Webpack, Babel, ESLint, npm Scripts Webpack webpack.config.dev.js file Babel Transpile modern JS : Tell Babel what browsers you need to support Compile JSX to JS : So the browser understand the code Configure Babel Go to package.</description>
+      <description>Redux React state management library&#xA;Version React 17 Redux 4 React Router 5 Environment Build Dev environment Compile JSX Transpile JS Linting Generate index.html Reload on save =&amp;gt; one command (npm) with Node, Webpack, Babel, ESLint, npm Scripts Webpack webpack.config.dev.js file Babel Transpile modern JS : Tell Babel what browsers you need to support Compile JSX to JS : So the browser understand the code Configure Babel Go to package.json and add below &amp;#34;babel&amp;#34;: {&#xD;&amp;#34;presets&amp;#34;: [&#xD;&amp;#34;babel-preset-react-app&amp;#34;&#xD;]&#xD;}, NPM package.</description>
     </item>
     <item>
       <title>Theory</title>

@@ -4,9 +4,11 @@ weight = 1
 pre = "<i class='fas fa-pen'></i> &nbsp"
 +++
 
-redux : react state management library
+# Redux
 
-# Version
+React state management library
+
+## Version
 
 - React 17
 - Redux 4
@@ -426,7 +428,17 @@ A function provided by React Redux. It connects your React components to the Red
 export default connect(mapStateToProps, mapDispatchToProps)(AuthorPage);
 ```
 
+mamState : what state you want to pass ?
+mapDispatchToProps : what action you want to pass ?
+both parameters are optional.
+
 ## mapStateToProps
+
+What state should I expose as props?
+When you define connect function,
+The component will subscribe to the Redux store updates,
+and anytime it updates, mapStateToProps will be called.
+This function returns an object.
 
 ## mapDispatchToProps
 
@@ -438,4 +450,81 @@ export default connect(mapStateToProps, mapDispatchToProps)(AuthorPage);
 
 ---
 
+# Async in Redux
+
+---
+
+# Async Writes in Redux
+
+---
+
+# Async Status and Error Handling
+
 ...
+
+# 리덕스 쉽게
+
+## 리덕스 쓰는 이유
+
+Props 귀찮을 때
+State(변수)
+State보관함.js = store.js여기에 state를 전부다 보관
+세팅방법은
+
+```js
+// index.js
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+
+const weight = 100;
+
+
+function reducer(state = weight, action){
+  // 여기다가 스테이트 수정하는 방법을 전부다 여기에 씀. 이걸 해주는걸 리듀서라고 부름.
+  if (action.type === 'add){
+    state++;
+    return state
+  }
+  return state;
+
+
+let store = createStore(reducer)
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>
+)}
+```
+
+```js
+// App.js
+import { useSelector } from "react-redux";
+
+function App() {
+  const we = useSelector((state) => state);
+
+  // 수정요청을 하는걸 여기서 부름. 그걸 해주는게 디스패치
+  const dispatch = useDispatch();
+
+  return (
+    <div>
+      {we}
+      <button
+        onClick={() => {
+          dispatch({ type: "add" });
+        }}
+      >
+        더하기
+      </button>
+    </div>
+  );
+}
+```
+
+쓰는 이유 2 : State 관리 용이
+
+컴포넌트들은 store.js에다가 상태를 변경해달라고 요청만 한다
+그럼 에러 났을때 컴퍼넌트 하나하나 안봐도 되고 store.js에서만 보면 되니까 추적이 쉽당
